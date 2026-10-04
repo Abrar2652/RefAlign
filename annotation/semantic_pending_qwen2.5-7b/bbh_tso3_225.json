@@ -1,0 +1,64 @@
+{
+ "query_id": "bbh_tso3_225",
+ "query": "Alice, Bob, and Claire are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Rodrigo, Bob is dancing with Jamie, and Claire is dancing with Lola.\nThroughout the song, the dancers often trade partners. First, Claire and Alice switch partners. Then, Bob and Claire switch partners. Finally, Claire and Alice switch partners. At the end of the dance, Bob is dancing with\nOptions:\n(A) Rodrigo\n(B) Jamie\n(C) Lola",
+ "ground_truth": "(A)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 225,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_225_r00",
+   "outcome": "success",
+   "final_answer": "A",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Claire and Alice switch partners twice, effectively returning to their original partners, and Bob trades with Claire, so at the end, Bob is dancing with Lola."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (A)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (A)"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_225_r11",
+   "outcome": "failure",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Track each dancer's partner through each switch, starting with Alice with Rodrigo, Bob with Jamie, and Claire with Lola, and follow the sequence of partner switches."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE Initial setup: Alice - Rodrigo, Bob - Jamie, Claire - Lola."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE First switch: Claire and Alice switch partners. Claire - Rodrigo, Alice - Lola, Bob - Jamie."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: C"
+    }
+   ]
+  }
+ ]
+}

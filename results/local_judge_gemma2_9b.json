@@ -1,0 +1,35 @@
+{
+  "model": "google/gemma-2-9b-it",
+  "lengths": {
+    "L5": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.4166666666666667,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L12": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.3333333333333333,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L24": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.20833333333333334,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L40": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.3333333333333333,
+      "aao_agent": 1.0,
+      "n": 24
+    }
+  },
+  "usage": {
+    "calls": 96,
+    "seconds": 107.67537379264832,
+    "prompt_tokens": 78880,
+    "completion_tokens": 1192
+  }
+}

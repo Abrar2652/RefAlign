@@ -1,0 +1,123 @@
+{
+ "query_id": "gsm8k_1188",
+ "query": "Digimon had its 20th anniversary.  When it came out John was twice as old as Jim.  If John is 28 now how old is Jim?",
+ "ground_truth": "24.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 1188,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_1188_r07",
+   "outcome": "success",
+   "final_answer": "24.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Determine Jim's current age by first finding John's age at Digimon's 20th anniversary (28 - 20 = 8), then noting Jim was half that age (8 / 2 = 4), so Jim is currently 4 + 20 = 24 years old."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 28 - 20 = 8.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 8 / 2 = 4.0 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 24"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 12"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1188_r01",
+   "outcome": "failure",
+   "final_answer": "20.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate Jim's current age by first finding John's age at the 20th anniversary, then determine the difference in their ages, and finally subtract this difference from John's current age."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH John's age 20 years ago if he is 28 now"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH John's age 20 years ago if he is "
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\n\nTo solve this, let's break it down:\n1. John is currently 28 years old.\n2. We need to find Jim's age 20 years ago when Digimon came out and John was twice as old as Jim.\n\nLet's denote Jim's age 20 years ago as \\( x \\).\n\nTherefore, John's age 20 years ago would be \\( 28 - 20 = 8 \\) years.\n\nAccording to the problem, John was twice as old as Jim 20 years ago, so we can write:\n\\[ 8 = 2x \\]\n\nSolving for \\( x \\):\n\\[ x = \\frac{8}{2} = 4 \\]\n\nThus, Jim was 4 years old 20 years ago. To find Jim's current age, we add 20 years:\n\\[ 4 + 20 = 24 \\]\n\nSo, Jim is currently 24 years old."
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1188_r04",
+   "outcome": "failure",
+   "final_answer": "7.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate Jim's current age as 14 by determining John's age difference (28 - 14 = 14), then dividing by 2 (14 / 2 = 7), and adding that to Jim's age when John was twice as old (7 + 7 = 14)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 28 - 14 = 14.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER CALC 14 / 2 = 7.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 7"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1188_r09",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate Jim's current age by first finding John's age at the time of Digimon's release (28 - 20 = 8), then determining Jim's age at that time (8 / 2 = 4), and finally adding the 20 years that have passed since then (4 + 20 = 24)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH Digimon's year of release relative to current year (20 years ago)"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH Digimon's year of release relativ"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 14"
+    }
+   ]
+  }
+ ]
+}

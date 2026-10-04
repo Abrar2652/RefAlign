@@ -1,0 +1,64 @@
+{
+ "query_id": "gsm8k_0465",
+ "query": "Miss Maria is a middle school teacher, and she loves to collect sports cards. She has six decks with 25 basketball cards in each deck and five boxes with 40 baseball cards in each box. She keeps 50 cards and gives the remaining cards to her students. If her students got ten cards each, how many students does Miss Maria have?",
+ "ground_truth": "30.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 465,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0465_r03",
+   "outcome": "success",
+   "final_answer": "30.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total number of cards (6 decks * 25 + 5 boxes * 40), subtract the 50 cards Miss Maria keeps, then divide the remaining cards by 10 to find the number of students."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC (6 * 25 + 5 * 40) = 350.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER CALC (350 - 50) / 10 = 30.0\nYour next ac"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 30"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0465_r05",
+   "outcome": "failure",
+   "final_answer": "200.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate the total number of cards, subtract the cards Miss Maria keeps, then divide by ten to find the number of students."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 6 * 25 = 150.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER CALC 5 * 40 = 200.0\nYour next action:"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 25"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "query_id": "real_t07",
+ "annotator": "adjudicated",
+ "labels": {
+  "real_t07_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r01": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r03": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r11": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t07_r13": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  }
+ }
+}

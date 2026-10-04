@@ -1,0 +1,59 @@
+{
+ "query_id": "bbh_tso3_154",
+ "query": "Alice, Bob, and Claire are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Patrick, Bob is dancing with Izzi, and Claire is dancing with Karl.\nThroughout the song, the dancers often trade partners. First, Claire and Bob switch partners. Then, Alice and Bob switch partners. Finally, Bob and Claire switch partners. At the end of the dance, Bob is dancing with\nOptions:\n(A) Patrick\n(B) Izzi\n(C) Karl",
+ "ground_truth": "(B)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 154,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_154_r08",
+   "outcome": "success",
+   "final_answer": "B",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Trace the partner changes step-by-step: Claire and Bob switch, Alice and Bob switch, then Bob and Claire switch, leaving Bob with Patrick."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (B)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: B"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_154_r05",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Trace the partner changes step-by-step to determine who Bob is dancing with at the end."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE Initial pairing: Alice - Patrick, Bob - Izzi, Claire - Karl."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER Worker NOTE Initial pairing: Alice - Patrick, Bob - Izzi, Cl"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: B"
+    }
+   ]
+  }
+ ]
+}

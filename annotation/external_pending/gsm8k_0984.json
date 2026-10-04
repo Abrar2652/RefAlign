@@ -1,0 +1,151 @@
+{
+ "query_id": "gsm8k_0984",
+ "query": "Pat has a flower bed that is 111 feet long.  Pat wants to fill her flower bed with plants.  Pat's flowers grow 12 inches wide so she needs to leave 1.5 feet between every plant.  Pat already owns 17 flowers.  Each flowering plant costs $6 at the store,  how much money will Pat spend at the store to fill up her flower bed?",
+ "ground_truth": "342.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 984,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0984_r02",
+   "outcome": "success",
+   "final_answer": "342.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, calculate the total number of plants Pat can fit in the flower bed, subtract the 17 flowers she already owns, and then multiply the number of additional plants needed by the cost per plant ($6) to find out how much she will spend at the store."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 111 * 12 = 1332.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 1.5 * 12 = 18.0 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 1332 / 18 = 74.0 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 74 - 17 = 57.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 57 * 6 = 342.0"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "ANSWER 342"
+    },
+    {
+     "index": 7,
+     "agent": "Verifier",
+     "content": "To determine how much money Pat will spend on flowering plants, we first need to calculate how many additional plants she can fit in her flower bed.\n\n1. Convert the length of the flower bed from feet to inches:\n   111 feet * 12 inches/foot = 1,332 inches.\n\n2. Calculate the width of each flower plus the space between plants:\n   Each plant is 12 inches wide and requires 1.5 feet (which is 18 inches) between plants. Therefore, the total space occupied by each plant along with the space before the next one is:\n   12 inches + 18 inches = 30 inches.\n\n3. Determine how many plants can fit in the flower bed:\n   Total space for each plant: 30 inches.\n   Number of plants that can fit: \n   1,332 inches / 30 inches per plant = 44.4.\n   Since Pat can't plant a fraction of a plant, we round down to 44 plants.\n\n4. Calculate the additional plants needed:\n   Pat already owns 17 flowers, so the number of additional plants she needs is:\n   44 plants - 17 plants = 27 additional plants.\n\n5. Calculate the total cost for the additional plants:\n   Each plant costs"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0984_r00",
+   "outcome": "failure",
+   "final_answer": "70.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, convert the flower bed length to inches, calculate the available space for planting considering the spacing and existing flowers, determine the number of additional plants needed, and finally multiply that number by the cost per plant to find the total expenditure."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 111 * 12 = 1332.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 1.5 * 12 = 18.0 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 1332 - (17 * 12 + (17 - 1) * 18) = 840.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER CALC 840 / 12 = 70.0"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 78"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0984_r08",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, determine how many plants can fit in the flower bed considering the spacing and then calculate the cost for the additional plants needed."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH length of the flower bed in inches and spacing between plants in inches."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH length of the flower bed in inches and spacing between plants in inches."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "SEARCH length of the flower bed in inches and spacing between plants in inches."
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "SEARCH length of the flower bed in inches and spacing between plants in inches."
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "SEARCH length of the flower bed in inches and spacing between plants in inches."
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "SEARCH length of the flower bed in inches and spacing between plants in inches."
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC 111 * 12 = 1332.0"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "SEARCH spacing between plants in inches."
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG  \nFINAL: 0"
+    }
+   ]
+  }
+ ]
+}

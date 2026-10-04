@@ -1,0 +1,20 @@
+% ALFWorld collection funnel.
+\begin{table}[!t]
+\caption{ALFWorld test split (134 unseen games, 8 rollouts each, GPT-4o-mini Planner$\to$Actor, 30-step cap): collection funnel. A failure is reference-eligible when its game has at least one successful rollout; 242 of 578 failures are eligible and 336 are not; 578 failures hit the step cap. Replay labels: 40 eligible failures were profiled on steps 1--10; 21 have an earliest repairable step under the strict rule (37 relaxed).}
+\label{tab:alf-funnel}
+\centering\scriptsize
+\begin{tabular}{lcccc}
+\toprule
+task type & games & rollouts & successes & games with both outcomes \\
+\midrule
+pick\_and\_place\_simple & 24 & 192 & 138 & 11 \\
+look\_at\_obj\_in\_light & 18 & 144 & 86 & 10 \\
+pick\_clean\_then\_place\_in\_recep & 31 & 248 & 83 & 11 \\
+pick\_heat\_then\_place\_in\_recep & 23 & 184 & 78 & 13 \\
+pick\_cool\_then\_place\_in\_recep & 21 & 168 & 92 & 9 \\
+pick\_two\_obj\_and\_place & 17 & 136 & 17 & 7 \\
+\midrule
+all & 134 & 1072 & 494 & 61 \\
+\bottomrule
+\end{tabular}
+\end{table}

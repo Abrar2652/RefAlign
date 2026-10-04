@@ -1,0 +1,28 @@
+% ALFWorld attribution and replay results.
+\begin{table*}[!t]
+\caption{ALFWorld test split: exact-step agreement with the replay-verified earliest repairable step (strict rule; $n{=}21$ labelled failures; Wilson 95\% intervals; macro over task types), and controlled replay at each method's selected step on the replay subset: A = the environment's expert action is substituted at the selected step and the same policy continues (success rate, with the no-edit resampling control at the same step after ``vs''); B = a fixed repair model proposes the action at the selected step. Replay rates pool two seeds per run; a selected step beyond the run's last action counts as a failed intervention. Paired exact McNemar tests on exact step, Holm over the prespecified family: refalign\_s vs judge\_matched: $b{=}0$, $c{=}2$, $p_{\mathrm{Holm}}{=}1.000$; refalign\_s vs lo\_norm\_pos: $b{=}1$, $c{=}4$, $p_{\mathrm{Holm}}{=}1.000$; refalign\_s vs random\_step: $b{=}1$, $c{=}1$, $p_{\mathrm{Holm}}{=}1.000$; refalign\_s vs refalign: $b{=}0$, $c{=}0$, $p_{\mathrm{Holm}}{=}1.000$}
+\label{tab:alf-main}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\toprule
+method & exact step vs replay label & macro & replay A: expert at selected step (vs no-edit) & replay B: repair model \\
+\midrule
+\pha{} (numeric, unchanged) & 1/21 (0.05) [0.01, 0.23] & 0.03 & 50/200 (0.25) vs 0.08 & 25/200 (0.12) \\
+\pha{}-S (structured) & 1/21 (0.05) [0.01, 0.23] & 0.03 & 58/200 (0.29) vs 0.12 & 29/200 (0.14) \\
+\pha{}-S, first reference & 1/21 (0.05) [0.01, 0.23] & 0.03 & 59/200 (0.29) vs 0.12 & 27/200 (0.14) \\
+\pha{}-S, action-only nearest & 0/21 (0.00) [0.00, 0.15] & 0.00 & 56/200 (0.28) vs 0.12 & 29/200 (0.14) \\
+\pha{}-S, random reference (5 seeds) & 1/21 (0.04) [0.01, 0.23] & 0.03 & 56/200 (0.28) vs 0.12 & 25/200 (0.12) \\
+GPT-4o single-trace (AAO) & 0/21 (0.00) [0.00, 0.15] & 0.00 & 17/30 (0.57) vs 0.07; 200 step-0 & 10/30 (0.33) \\
+GPT-4o, \pha{}-S reference & 3/21 (0.14) [0.05, 0.35] & 0.10 & 63/114 (0.55) vs 0.19; 102 step-0 & 27/114 (0.24) \\
+GPT-4o, first reference & 2/21 (0.10) [0.03, 0.29] & 0.07 & 56/106 (0.53) vs 0.16; 113 step-0 & 28/106 (0.26) \\
+GPT-4o, action-only nearest & 1/21 (0.05) [0.01, 0.23] & 0.03 & 61/112 (0.54) vs 0.17; 98 step-0 & 28/112 (0.25) \\
+GPT-4o, random reference (2 seeds) & 2/21 (0.10) [0.03, 0.29] & 0.07 & 64/114 (0.56) vs 0.14; 102 step-0 & 29/114 (0.25) \\
+LOTO most frequent step & 1/21 (0.05) [0.01, 0.23] & 0.05 & 61/200 (0.30) vs 0.24 & 48/200 (0.24) \\
+LOTO normalized position & 4/21 (0.19) [0.08, 0.40] & 0.16 & 72/200 (0.36) vs 0.24 & 53/200 (0.27) \\
+penultimate step & 0/21 (0.00) [0.00, 0.15] & 0.00 & 20/200 (0.10) vs 0.00 & 5/200 (0.03) \\
+last step & 0/21 (0.00) [0.00, 0.15] & 0.00 & 12/200 (0.06) vs 0.00 & 1/200 (0.01) \\
+random Actor step (5 seeds) & 1/21 (0.05) [0.01, 0.23] & 0.04 & 69/200 (0.34) vs 0.13 & 29/200 (0.14) \\
+\bottomrule
+\end{tabular}
+\end{table*}

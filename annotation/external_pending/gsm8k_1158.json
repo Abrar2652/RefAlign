@@ -1,0 +1,104 @@
+{
+ "query_id": "gsm8k_1158",
+ "query": "The Hortex company produces bottled carrot juices. Every day it can produce 4200 bottles of these juices. Each juice can cover 20% of 1 person'ts daily energy demand. How many more bottles of juices would Hortex have to produce to be able to satisfy 100% of the daily energy needs of 2300 people?",
+ "ground_truth": "7300.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 1158,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_1158_r09",
+   "outcome": "success",
+   "final_answer": "7300.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total number of bottles needed to meet the daily energy needs of 2300 people (which is 2300 bottles since each person needs 5 bottles for 100%) and then subtract the current production of 4200 bottles to find the additional bottles needed."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 = 11500.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 = 11500.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 11500 - 4200 = 7300.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER 7300"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "To find out how many bottles Hortex needs to produce to satisfy 100% of the daily energy needs of 2300 people, we first need to calculate the total bottle requirement for these people.\n\nSince each juice covers 20% of one person's daily energy demand, to cover 100% for one person, it would require:\n- 100% / 20% = 5 bottles of juice.\n\nFor 2300 people, the total number of bottles required would be:\n- 2300 people * 5 bottles/person = 11500 bottles.\n\nCurrently, Hortex produces 4200 bottles per day. To find out how many more bottles are needed, we subtract the current production from the total requirement:\n- 11500 bottles - 4200 bottles = 7300 bottles.\n\nThe worker's answer is correct.\n\nVERDICT: CORRECT\nFINAL: 7300"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1158_r05",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total number of bottles needed for 2300 people to meet 100% of their energy demand, then subtract the daily production of 4200 bottles to find how many more bottles are required."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 = 11500.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 11500 - 4200 = 7300 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 = 11500.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 = 11500.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 = 11500.0"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 = 11500.0"
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 = 11500.0"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 = 11500.0"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG  \nFINAL: 16800"
+    }
+   ]
+  }
+ ]
+}

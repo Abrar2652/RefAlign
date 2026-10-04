@@ -1,0 +1,17 @@
+{
+  "n_populations": 150,
+  "blomberg_K_mean": 1.0314322582863134,
+  "K_frac_significant": 0.19333333333333333,
+  "pagel_lambda_mean": 0.5353333333333333,
+  "lambda_frac_significant": 0.006666666666666667,
+  "fault_type": {
+    "knn_purity_tree": 0.34377777777777774,
+    "knn_purity_edit": 0.36666666666666664,
+    "random_baseline": 0.39919999999999994
+  },
+  "responsible_agent": {
+    "knn_purity_tree": 0.3757777777777777,
+    "knn_purity_edit": 0.4022222222222222,
+    "random_baseline": 0.40800000000000003
+  }
+}

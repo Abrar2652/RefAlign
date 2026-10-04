@@ -1,0 +1,185 @@
+{
+ "query_id": "gsm8k_0789",
+ "query": "Carson lives in an old house where the pipes will freeze if the temperature inside the house falls below 32 degrees. Every log of wood Carson burns heats the house up by 5 degrees. If it was 45 degrees during the day, and it's 33 degrees colder during the night compared to the day, how many logs does Carson need to burn to prevent the pipes from freezing?",
+ "ground_truth": "4.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 789,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0789_r12",
+   "outcome": "success",
+   "final_answer": "4.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Carson needs to burn 3 logs of wood to raise the temperature from 12 degrees (45 - 33) to at least 32 degrees."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 32 - 12 = 20.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 20 / 5 = 4.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 4"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0789_r01",
+   "outcome": "failure",
+   "final_answer": "20.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the nighttime temperature, determine the degrees needed to reach 32 degrees, and divide that by the heat provided by each log (5 degrees) to find the number of logs Carson needs to burn."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 32 - 12 = 20 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 32 - 12 = 20"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 20"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0789_r06",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Carson needs to burn 2 logs of wood to raise the temperature to 32 degrees and prevent the pipes from freezing."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 3"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0789_r07",
+   "outcome": "failure",
+   "final_answer": "20.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the nighttime temperature (45 - 33 = 12 degrees) and then determine how many logs are needed to raise the temperature to at least 32 degrees (32 - 12 = 20 degrees needed, so 20 / 5 = 4 logs)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER CALC 32 - 12 = 20.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "To solve this problem, we first need to determine the nighttime temperature in Carson's house.\n\n1. The daytime temperature is 45 degrees.\n2. During the night, it is 33 degrees colder, so the nighttime temperature will be:\n   \\[\n   45 - 33 = 12 \\text{ degrees}\n   \\]\n\nNext, we need to prevent the temperature from falling below 32 degrees. Since it's going to be 12 degrees at night, we need to raise the temperature from 12 degrees to 32 degrees.\n\nThe difference in temperature that needs to be achieved is:\n\\[\n32 - 12 = 20 \\text{ degrees}\n\\]\n\nEach log of wood burned raises the temperature by 5 degrees. To find out how many logs Carson needs to burn to achieve a 20 degree increase, we can use the formula:\n\\[\n\\text{Number of logs} = \\frac{\\text{Temperature increase needed}}{\\text{Temperature increase per log}} = \\frac{20}{5} = 4\n\\]\n\nTherefore, Carson needs to burn 4 logs of wood to prevent the pipes from freezing.\n\nSince the worker's answer of 20 logs is far higher than the required 4 logs, the worker's answer is"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0789_r10",
+   "outcome": "failure",
+   "final_answer": "12.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, calculate the nighttime temperature (45 - 33 = 12 degrees), then determine how many logs Carson needs to burn to raise the temperature back to at least 32 degrees (32 - 12 = 20 degrees needed, so 20 \u00f7 5 = 4 logs)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 45 - 33 = 12.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER CALC 45 - 33 = 12"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "To determine how many logs Carson needs to burn, we first need to calculate the nighttime temperature:\n\n1. Daytime temperature = 45 degrees.\n2. Nighttime temperature = 45 - 33 = 12 degrees.\n\nSince the pipes will freeze if the temperature falls below 32 degrees, we want to raise the temperature from 12 degrees to at least 32 degrees.\n\nNext, we calculate the temperature increase needed:\n\n32 degrees (required temperature) - 12 degrees (current nighttime temperature) = 20 degrees needed.\n\nEach log of wood increases the temperature by 5 degrees. To find out how many logs are needed to achieve a 20-degree increase, we divide the increase by the temperature gain per log:\n\n20 degrees needed / 5 degrees per log = 4 logs.\n\nTherefore, Carson needs to burn 4 logs to raise the temperature sufficiently.\n\nThe worker's answer, 12.0 logs, is incorrect.\n\nVERDICT: WRONG\nFINAL: 4"
+    }
+   ]
+  }
+ ]
+}

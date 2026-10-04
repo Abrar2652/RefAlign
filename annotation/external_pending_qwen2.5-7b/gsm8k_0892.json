@@ -1,0 +1,111 @@
+{
+ "query_id": "gsm8k_0892",
+ "query": "Ellen is on a diet. She eats two carrots, a salad, and a yogurt every day. The salad costs her $6, while the yogurt is half the price. How much does Ellen pay for one carrot every day when in total she pays $11 for her goods?",
+ "ground_truth": "1.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 892,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0892_r05",
+   "outcome": "success",
+   "final_answer": "1.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the cost of a carrot by first finding the cost of the yogurt ($6/2 = $3), then subtracting the cost of the salad and yogurt from the total daily cost ($11 - $6 - $3 = $2 for 2 carrots, so $1 for 1 carrot)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 6 / 2 = 3.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 11 - 6 - 3 = 2.0 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 1"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 2"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0892_r03",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Determine the cost of the carrot by subtracting the known costs from the total daily cost and then dividing."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH cost of yogurt given the salad cost and the relationship between them"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH cost of yogurt given the salad cost and the relationship between them"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "SEARCH cost of yogurt given the salad cost and the relationship between them"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "SEARCH cost of yogurt given the salad cost and the relationship between them"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH cost of yogurt given the salad co"
+    },
+    {
+     "index": 6,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 3"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0892_r06",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Determine the cost of the carrot by subtracting the known costs, then dividing the remaining amount by the number of carrots."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH cost of yogurt if it is half the price of the salad which costs $6"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH Cost of yogurt if it is half the "
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 2"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+%% Reference selection on ALFWorld.
+\begin{table}[!t]
+\caption{Does the reference matter on ALFWorld? For each alternative selection rule applied to \pha{}-S, the number of the $242$ reference-eligible failures whose predicted step changes relative to the content-aware nearest reference, and, on the changed and labelled runs, exact-step accuracy of the nearest-reference prediction versus the alternative (count of such runs in parentheses). Pool sizes (successful references: runs): 1: 91, 2: 48, 3: 30, 4: 20, 5: 24, 6: 16, 7: 13.}
+\label{tab:alf-refsel}
+\centering\scriptsize
+\begin{tabular}{lccc}
+\toprule
+selection rule & changed & nearest acc.\ on changed & alternative acc.\ on changed \\
+\midrule
+first & 5/242 (0.021) & 0.00 & 1.00 (1) \\
+edit & 3/242 (0.012) & 1.00 & 0.00 (1) \\
+random seed 0 & 7/242 (0.029) & 0.50 & 0.50 (2) \\
+random seed 1 & 8/242 (0.033) & 0.00 & 0.33 (3) \\
+random seed 2 & 9/242 (0.037) & 0.50 & 0.25 (4) \\
+random seed 3 & 7/242 (0.029) & 0.50 & 0.00 (2) \\
+random seed 4 & 9/242 (0.037) & 0.00 & 0.50 (2) \\
+GPT-4o judge: first & 52/242 & -- \\
+GPT-4o judge: edit & 38/242 & -- \\
+GPT-4o judge: random seed 0 & 67/242 & -- \\
+GPT-4o judge: random seed 1 & 56/242 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

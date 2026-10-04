@@ -1,0 +1,101 @@
+{
+ "query_id": "gsm8k_1069",
+ "query": "Mr Hezekiah had 20 trucks from his store supplying fertiliser to different farmers in his hometown dispatched for delivery on a particular day. Each truck was carrying 20 tons of fertiliser packed in bags. Two hours after the trucks had departed for delivery, Mr Hezekiah got the news that a quarter of the number of lorries dispatched for delivery had mechanical failures on the road and could not deliver the fertilisers to the farmers. Calculate the total number of tons of fertiliser that reached the farmers that day?",
+ "ground_truth": "300.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 1069,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_1069_r00",
+   "outcome": "success",
+   "final_answer": "300.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate 75% of 20 trucks to find the number of trucks without mechanical issues, then multiply by 20 tons per truck to find the total tons of fertiliser delivered."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC (75/100)*20 = 15.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 15 * 20 = 300.0 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 300.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 150"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1069_r09",
+   "outcome": "failure",
+   "final_answer": "5.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate that 5 trucks (a quarter of 20) had mechanical failures, leaving 15 trucks to deliver 300 tons of fertiliser (15 trucks * 20 tons/truck)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH Calculate the number of trucks that had mechanical failures, which is a quarter of 20."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 20 / 4 = 5.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker ANSWER 5.0\nWorker CALC (20 - 5) *"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 100"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1069_r12",
+   "outcome": "failure",
+   "final_answer": "20.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of trucks that had mechanical failures, subtract that from the total trucks, then multiply the remaining number of trucks by the tons each was carrying."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH total number of trucks - 20"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH total number of trucks - 20"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 300"
+    }
+   ]
+  }
+ ]
+}

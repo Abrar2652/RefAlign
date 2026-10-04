@@ -1,0 +1,155 @@
+% Experiment 1: paired tests.
+\begin{table*}[t]
+\centering\scriptsize
+\begin{tabular}{llccccccc}
+\toprule
+cell & comparison (X vs.\ Y) & acc$_X$ [95\% Wilson] & acc$_Y$ [95\% Wilson] & $b$ & $c$ & $p$ & $p_{\mathrm{Holm}}$ & Cohen's $h$ \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: Qwen2.5-7B-Instruct}} \\
+$L{=}5$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.62 [0.43, 0.79] & 9 & 0 & 0.004 & 0.004 & 1.32 \\
+$L{=}5$ & matched-phylo vs.\ AAO & 0.62 [0.43, 0.79] & 0.46 [0.28, 0.65] & 6 & 2 & 0.289 & 0.867 & 0.34 \\
+$L{=}12$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.29 [0.15, 0.49] & 17 & 0 & $<$0.001 & $<$0.001 & 2.00 \\
+$L{=}12$ & matched-phylo vs.\ AAO & 0.29 [0.15, 0.49] & 0.42 [0.24, 0.61] & 1 & 4 & 0.375 & 0.867 & -0.26 \\
+$L{=}24$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.38 [0.21, 0.57] & 15 & 0 & $<$0.001 & $<$0.001 & 1.82 \\
+$L{=}24$ & matched-phylo vs.\ AAO & 0.38 [0.21, 0.57] & 0.25 [0.12, 0.45] & 6 & 3 & 0.508 & 0.867 & 0.27 \\
+$L{=}40$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.12 [0.04, 0.31] & 21 & 0 & $<$0.001 & $<$0.001 & 2.42 \\
+$L{=}40$ & matched-phylo vs.\ AAO & 0.12 [0.04, 0.31] & 0.33 [0.18, 0.53] & 0 & 5 & 0.062 & 0.250 & -0.51 \\
+multi-culprit & RefAlign vs.\ matched-phylo & 1.00 [0.93, 1.00] & 0.29 [0.18, 0.43] & 34 & 0 & $<$0.001 & -- & 2.00 \\
+multi-culprit & matched-phylo vs.\ AAO & 0.29 [0.18, 0.43] & 0.29 [0.18, 0.43] & 5 & 5 & 1.000 & -- & 0.00 \\
+reorder $k{=}8$ & RefAlign vs.\ matched-phylo & 0.94 [0.82, 0.98] & 0.94 [0.82, 0.98] & 0 & 0 & 1.000 & -- & 0.00 \\
+reorder $k{=}8$ & matched-phylo vs.\ AAO & 0.94 [0.82, 0.98] & 0.19 [0.10, 0.35] & 28 & 1 & $<$0.001 & -- & 1.75 \\
+reorder $k{=}15$ & RefAlign vs.\ matched-phylo & 1.00 [0.90, 1.00] & 1.00 [0.90, 1.00] & 0 & 0 & 1.000 & -- & 0.00 \\
+reorder $k{=}15$ & matched-phylo vs.\ AAO & 1.00 [0.90, 1.00] & 0.14 [0.06, 0.29] & 31 & 0 & $<$0.001 & -- & 2.38 \\
+human & RefAlign vs.\ matched-phylo & 0.47 [0.31, 0.64] & 0.47 [0.31, 0.64] & 11 & 11 & 1.000 & -- & 0.00 \\
+human & matched-phylo vs.\ AAO & 0.47 [0.31, 0.64] & 0.41 [0.26, 0.58] & 7 & 5 & 0.774 & -- & 0.13 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: Qwen2.5-3B-Instruct}} \\
+$L{=}5$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.38 [0.21, 0.57] & 15 & 0 & $<$0.001 & $<$0.001 & 1.82 \\
+$L{=}5$ & matched-phylo vs.\ AAO & 0.38 [0.21, 0.57] & 0.29 [0.15, 0.49] & 5 & 3 & 0.727 & 1.000 & 0.18 \\
+$L{=}12$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.29 [0.15, 0.49] & 17 & 0 & $<$0.001 & $<$0.001 & 2.00 \\
+$L{=}12$ & matched-phylo vs.\ AAO & 0.29 [0.15, 0.49] & 0.08 [0.02, 0.26] & 5 & 0 & 0.062 & 0.250 & 0.56 \\
+$L{=}24$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.25 [0.12, 0.45] & 18 & 0 & $<$0.001 & $<$0.001 & 2.09 \\
+$L{=}24$ & matched-phylo vs.\ AAO & 0.25 [0.12, 0.45] & 0.12 [0.04, 0.31] & 3 & 0 & 0.250 & 0.750 & 0.32 \\
+$L{=}40$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.17 [0.07, 0.36] & 20 & 0 & $<$0.001 & $<$0.001 & 2.30 \\
+$L{=}40$ & matched-phylo vs.\ AAO & 0.17 [0.07, 0.36] & 0.08 [0.02, 0.26] & 2 & 0 & 0.500 & 1.000 & 0.26 \\
+multi-culprit & RefAlign vs.\ matched-phylo & 1.00 [0.93, 1.00] & 0.27 [0.17, 0.41] & 35 & 0 & $<$0.001 & -- & 2.05 \\
+multi-culprit & matched-phylo vs.\ AAO & 0.27 [0.17, 0.41] & 0.10 [0.05, 0.22] & 11 & 3 & 0.057 & -- & 0.44 \\
+reorder $k{=}8$ & RefAlign vs.\ matched-phylo & 0.94 [0.82, 0.98] & 0.69 [0.53, 0.82] & 9 & 0 & 0.004 & -- & 0.70 \\
+reorder $k{=}8$ & matched-phylo vs.\ AAO & 0.69 [0.53, 0.82] & 0.17 [0.08, 0.32] & 21 & 2 & $<$0.001 & -- & 1.13 \\
+reorder $k{=}15$ & RefAlign vs.\ matched-phylo & 1.00 [0.90, 1.00] & 0.42 [0.27, 0.58] & 21 & 0 & $<$0.001 & -- & 1.74 \\
+reorder $k{=}15$ & matched-phylo vs.\ AAO & 0.42 [0.27, 0.58] & 0.08 [0.03, 0.22] & 13 & 1 & 0.002 & -- & 0.82 \\
+human & RefAlign vs.\ matched-phylo & 0.47 [0.31, 0.64] & 0.53 [0.36, 0.69] & 11 & 13 & 0.839 & -- & -0.13 \\
+human & matched-phylo vs.\ AAO & 0.53 [0.36, 0.69] & 0.09 [0.03, 0.24] & 15 & 1 & $<$0.001 & -- & 1.01 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: Llama-3.1-8B-Instruct}} \\
+$L{=}5$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.67 [0.47, 0.82] & 8 & 0 & 0.008 & 0.008 & 1.23 \\
+$L{=}5$ & matched-phylo vs.\ AAO & 0.67 [0.47, 0.82] & 0.54 [0.35, 0.72] & 6 & 3 & 0.508 & 1.000 & 0.26 \\
+$L{=}12$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.42 [0.24, 0.61] & 14 & 0 & $<$0.001 & $<$0.001 & 1.74 \\
+$L{=}12$ & matched-phylo vs.\ AAO & 0.42 [0.24, 0.61] & 0.38 [0.21, 0.57] & 3 & 2 & 1.000 & 1.000 & 0.09 \\
+$L{=}24$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.08 [0.02, 0.26] & 22 & 0 & $<$0.001 & $<$0.001 & 2.56 \\
+$L{=}24$ & matched-phylo vs.\ AAO & 0.08 [0.02, 0.26] & 0.17 [0.07, 0.36] & 1 & 3 & 0.625 & 1.000 & -0.26 \\
+$L{=}40$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.54 [0.35, 0.72] & 11 & 0 & $<$0.001 & 0.002 & 1.49 \\
+$L{=}40$ & matched-phylo vs.\ AAO & 0.54 [0.35, 0.72] & 0.25 [0.12, 0.45] & 8 & 1 & 0.039 & 0.156 & 0.61 \\
+multi-culprit & RefAlign vs.\ matched-phylo & 1.00 [0.93, 1.00] & 0.48 [0.34, 0.62] & 25 & 0 & $<$0.001 & -- & 1.61 \\
+multi-culprit & matched-phylo vs.\ AAO & 0.48 [0.34, 0.62] & 0.33 [0.22, 0.47] & 16 & 9 & 0.230 & -- & 0.30 \\
+reorder $k{=}8$ & RefAlign vs.\ matched-phylo & 0.94 [0.82, 0.98] & 0.94 [0.82, 0.98] & 0 & 0 & 1.000 & -- & 0.00 \\
+reorder $k{=}8$ & matched-phylo vs.\ AAO & 0.94 [0.82, 0.98] & 0.08 [0.03, 0.22] & 31 & 0 & $<$0.001 & -- & 2.08 \\
+reorder $k{=}15$ & RefAlign vs.\ matched-phylo & 1.00 [0.90, 1.00] & 0.94 [0.82, 0.98] & 2 & 0 & 0.500 & -- & 0.48 \\
+reorder $k{=}15$ & matched-phylo vs.\ AAO & 0.94 [0.82, 0.98] & 0.06 [0.02, 0.18] & 32 & 0 & $<$0.001 & -- & 2.19 \\
+human & RefAlign vs.\ matched-phylo & 0.47 [0.31, 0.64] & 0.41 [0.26, 0.58] & 11 & 9 & 0.824 & -- & 0.13 \\
+human & matched-phylo vs.\ AAO & 0.41 [0.26, 0.58] & 0.41 [0.26, 0.58] & 10 & 10 & 1.000 & -- & 0.00 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: gemma-2-9b-it}} \\
+$L{=}5$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.67 [0.47, 0.82] & 8 & 0 & 0.008 & 0.008 & 1.23 \\
+$L{=}5$ & matched-phylo vs.\ AAO & 0.67 [0.47, 0.82] & 0.33 [0.18, 0.53] & 9 & 1 & 0.021 & 0.064 & 0.68 \\
+$L{=}12$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.50 [0.31, 0.69] & 12 & 0 & $<$0.001 & 0.001 & 1.57 \\
+$L{=}12$ & matched-phylo vs.\ AAO & 0.50 [0.31, 0.69] & 0.29 [0.15, 0.49] & 7 & 2 & 0.180 & 0.359 & 0.43 \\
+$L{=}24$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.58 [0.39, 0.76] & 10 & 0 & 0.002 & 0.004 & 1.40 \\
+$L{=}24$ & matched-phylo vs.\ AAO & 0.58 [0.39, 0.76] & 0.21 [0.09, 0.40] & 9 & 0 & 0.004 & 0.016 & 0.79 \\
+$L{=}40$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.38 [0.21, 0.57] & 15 & 0 & $<$0.001 & $<$0.001 & 1.82 \\
+$L{=}40$ & matched-phylo vs.\ AAO & 0.38 [0.21, 0.57] & 0.33 [0.18, 0.53] & 2 & 1 & 1.000 & 1.000 & 0.09 \\
+multi-culprit & RefAlign vs.\ matched-phylo & 1.00 [0.93, 1.00] & 0.52 [0.38, 0.66] & 23 & 0 & $<$0.001 & -- & 1.53 \\
+multi-culprit & matched-phylo vs.\ AAO & 0.52 [0.38, 0.66] & 0.46 [0.33, 0.60] & 12 & 9 & 0.664 & -- & 0.13 \\
+reorder $k{=}8$ & RefAlign vs.\ matched-phylo & 0.94 [0.82, 0.98] & 0.94 [0.82, 0.98] & 0 & 0 & 1.000 & -- & 0.00 \\
+reorder $k{=}8$ & matched-phylo vs.\ AAO & 0.94 [0.82, 0.98] & 0.00 [0.00, 0.10] & 34 & 0 & $<$0.001 & -- & 2.67 \\
+reorder $k{=}15$ & RefAlign vs.\ matched-phylo & 1.00 [0.90, 1.00] & 0.92 [0.78, 0.97] & 3 & 0 & 0.250 & -- & 0.59 \\
+reorder $k{=}15$ & matched-phylo vs.\ AAO & 0.92 [0.78, 0.97] & 0.00 [0.00, 0.10] & 33 & 0 & $<$0.001 & -- & 2.56 \\
+human & RefAlign vs.\ matched-phylo & 0.47 [0.31, 0.64] & 0.38 [0.23, 0.55] & 10 & 7 & 0.629 & -- & 0.19 \\
+human & matched-phylo vs.\ AAO & 0.38 [0.23, 0.55] & 0.47 [0.31, 0.64] & 10 & 13 & 0.678 & -- & -0.19 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: Ministral-8B-Instruct-2410}} \\
+$L{=}5$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.79 [0.60, 0.91] & 5 & 0 & 0.062 & 0.062 & 0.95 \\
+$L{=}5$ & matched-phylo vs.\ AAO & 0.79 [0.60, 0.91] & 0.42 [0.24, 0.61] & 10 & 1 & 0.012 & 0.047 & 0.79 \\
+$L{=}12$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.38 [0.21, 0.57] & 15 & 0 & $<$0.001 & $<$0.001 & 1.82 \\
+$L{=}12$ & matched-phylo vs.\ AAO & 0.38 [0.21, 0.57] & 0.25 [0.12, 0.45] & 3 & 0 & 0.250 & 0.375 & 0.27 \\
+$L{=}24$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.33 [0.18, 0.53] & 16 & 0 & $<$0.001 & $<$0.001 & 1.91 \\
+$L{=}24$ & matched-phylo vs.\ AAO & 0.33 [0.18, 0.53] & 0.17 [0.07, 0.36] & 4 & 0 & 0.125 & 0.375 & 0.39 \\
+$L{=}40$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.38 [0.21, 0.57] & 15 & 0 & $<$0.001 & $<$0.001 & 1.82 \\
+$L{=}40$ & matched-phylo vs.\ AAO & 0.38 [0.21, 0.57] & 0.21 [0.09, 0.40] & 4 & 0 & 0.125 & 0.375 & 0.37 \\
+multi-culprit & RefAlign vs.\ matched-phylo & 1.00 [0.93, 1.00] & 0.62 [0.48, 0.75] & 18 & 0 & $<$0.001 & -- & 1.32 \\
+multi-culprit & matched-phylo vs.\ AAO & 0.62 [0.48, 0.75] & 0.21 [0.12, 0.34] & 23 & 3 & $<$0.001 & -- & 0.88 \\
+reorder $k{=}8$ & RefAlign vs.\ matched-phylo & 0.94 [0.82, 0.98] & 0.94 [0.82, 0.98] & 0 & 0 & 1.000 & -- & 0.00 \\
+reorder $k{=}8$ & matched-phylo vs.\ AAO & 0.94 [0.82, 0.98] & 0.00 [0.00, 0.10] & 34 & 0 & $<$0.001 & -- & 2.67 \\
+reorder $k{=}15$ & RefAlign vs.\ matched-phylo & 1.00 [0.90, 1.00] & 0.92 [0.78, 0.97] & 3 & 0 & 0.250 & -- & 0.59 \\
+reorder $k{=}15$ & matched-phylo vs.\ AAO & 0.92 [0.78, 0.97] & 0.00 [0.00, 0.10] & 33 & 0 & $<$0.001 & -- & 2.56 \\
+human & RefAlign vs.\ matched-phylo & 0.47 [0.31, 0.64] & 0.25 [0.13, 0.42] & 10 & 3 & 0.092 & -- & 0.46 \\
+human & matched-phylo vs.\ AAO & 0.25 [0.13, 0.42] & 0.50 [0.34, 0.66] & 7 & 15 & 0.134 & -- & -0.52 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: DeepSeek-R1-Distill-Qwen-7B}} \\
+$L{=}5$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.67 [0.47, 0.82] & 8 & 0 & 0.008 & 0.008 & 1.23 \\
+$L{=}5$ & matched-phylo vs.\ AAO & 0.67 [0.47, 0.82] & 0.71 [0.51, 0.85] & 4 & 5 & 1.000 & 1.000 & -0.09 \\
+$L{=}12$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.12 [0.04, 0.31] & 21 & 0 & $<$0.001 & $<$0.001 & 2.42 \\
+$L{=}12$ & matched-phylo vs.\ AAO & 0.12 [0.04, 0.31] & 0.50 [0.31, 0.69] & 1 & 10 & 0.012 & 0.047 & -0.85 \\
+$L{=}24$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.08 [0.02, 0.26] & 22 & 0 & $<$0.001 & $<$0.001 & 2.56 \\
+$L{=}24$ & matched-phylo vs.\ AAO & 0.08 [0.02, 0.26] & 0.38 [0.21, 0.57] & 0 & 7 & 0.016 & 0.047 & -0.73 \\
+$L{=}40$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.00 [0.00, 0.14] & 24 & 0 & $<$0.001 & $<$0.001 & 3.14 \\
+$L{=}40$ & matched-phylo vs.\ AAO & 0.00 [0.00, 0.14] & 0.04 [0.01, 0.20] & 0 & 1 & 1.000 & 1.000 & -0.41 \\
+multi-culprit & RefAlign vs.\ matched-phylo & 1.00 [0.93, 1.00] & 0.25 [0.15, 0.39] & 36 & 0 & $<$0.001 & -- & 2.09 \\
+multi-culprit & matched-phylo vs.\ AAO & 0.25 [0.15, 0.39] & 0.50 [0.36, 0.64] & 1 & 13 & 0.002 & -- & -0.52 \\
+reorder $k{=}8$ & RefAlign vs.\ matched-phylo & 0.94 [0.82, 0.98] & 0.19 [0.10, 0.35] & 27 & 0 & $<$0.001 & -- & 1.75 \\
+reorder $k{=}8$ & matched-phylo vs.\ AAO & 0.19 [0.10, 0.35] & 0.17 [0.08, 0.32] & 5 & 4 & 1.000 & -- & 0.07 \\
+reorder $k{=}15$ & RefAlign vs.\ matched-phylo & 1.00 [0.90, 1.00] & 0.11 [0.04, 0.25] & 32 & 0 & $<$0.001 & -- & 2.46 \\
+reorder $k{=}15$ & matched-phylo vs.\ AAO & 0.11 [0.04, 0.25] & 0.17 [0.08, 0.32] & 4 & 6 & 0.754 & -- & -0.16 \\
+human & RefAlign vs.\ matched-phylo & 0.47 [0.31, 0.64] & 0.50 [0.34, 0.66] & 11 & 12 & 1.000 & -- & -0.06 \\
+human & matched-phylo vs.\ AAO & 0.50 [0.34, 0.66] & 0.44 [0.28, 0.61] & 6 & 4 & 0.754 & -- & 0.13 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: gpt-4o-2024-08-06}} \\
+$L{=}5$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.96 [0.80, 0.99] & 1 & 0 & 1.000 & 1.000 & 0.41 \\
+$L{=}5$ & matched-phylo vs.\ AAO & 0.96 [0.80, 0.99] & 0.62 [0.43, 0.79] & 8 & 0 & 0.008 & 0.016 & 0.91 \\
+$L{=}12$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 1.00 [0.86, 1.00] & 0 & 0 & 1.000 & 1.000 & 0.00 \\
+$L{=}12$ & matched-phylo vs.\ AAO & 1.00 [0.86, 1.00] & 0.71 [0.51, 0.85] & 7 & 0 & 0.016 & 0.016 & 1.14 \\
+$L{=}24$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 1.00 [0.86, 1.00] & 0 & 0 & 1.000 & 1.000 & 0.00 \\
+$L{=}24$ & matched-phylo vs.\ AAO & 1.00 [0.86, 1.00] & 0.62 [0.43, 0.79] & 9 & 0 & 0.004 & 0.012 & 1.32 \\
+$L{=}40$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.96 [0.80, 0.99] & 1 & 0 & 1.000 & 1.000 & 0.41 \\
+$L{=}40$ & matched-phylo vs.\ AAO & 0.96 [0.80, 0.99] & 0.46 [0.28, 0.65] & 12 & 0 & $<$0.001 & 0.002 & 1.24 \\
+multi-culprit & RefAlign vs.\ matched-phylo & 1.00 [0.93, 1.00] & 0.90 [0.78, 0.95] & 5 & 0 & 0.062 & -- & 0.66 \\
+multi-culprit & matched-phylo vs.\ AAO & 0.90 [0.78, 0.95] & 0.69 [0.55, 0.80] & 13 & 3 & 0.021 & -- & 0.53 \\
+reorder $k{=}8$ & RefAlign vs.\ matched-phylo & 0.94 [0.82, 0.98] & 0.97 [0.86, 1.00] & 0 & 1 & 1.000 & -- & -0.14 \\
+reorder $k{=}8$ & matched-phylo vs.\ AAO & 0.97 [0.86, 1.00] & 0.25 [0.14, 0.41] & 27 & 1 & $<$0.001 & -- & 1.76 \\
+reorder $k{=}15$ & RefAlign vs.\ matched-phylo & 1.00 [0.90, 1.00] & 1.00 [0.90, 1.00] & 0 & 0 & 1.000 & -- & 0.00 \\
+reorder $k{=}15$ & matched-phylo vs.\ AAO & 1.00 [0.90, 1.00] & 0.17 [0.08, 0.32] & 30 & 0 & $<$0.001 & -- & 2.30 \\
+human & RefAlign vs.\ matched-phylo & 0.47 [0.31, 0.64] & 0.69 [0.51, 0.82] & 5 & 12 & 0.143 & -- & -0.45 \\
+human & matched-phylo vs.\ AAO & 0.69 [0.51, 0.82] & 0.50 [0.34, 0.66] & 9 & 3 & 0.146 & -- & 0.38 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: gpt-4o-mini-2024-07-18}} \\
+$L{=}5$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 1.00 [0.86, 1.00] & 0 & 0 & 1.000 & 1.000 & 0.00 \\
+$L{=}5$ & matched-phylo vs.\ AAO & 1.00 [0.86, 1.00] & 0.54 [0.35, 0.72] & 11 & 0 & $<$0.001 & 0.004 & 1.49 \\
+$L{=}12$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.79 [0.60, 0.91] & 5 & 0 & 0.062 & 0.125 & 0.95 \\
+$L{=}12$ & matched-phylo vs.\ AAO & 0.79 [0.60, 0.91] & 0.50 [0.31, 0.69] & 8 & 1 & 0.039 & 0.062 & 0.62 \\
+$L{=}24$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.71 [0.51, 0.85] & 7 & 0 & 0.016 & 0.047 & 1.14 \\
+$L{=}24$ & matched-phylo vs.\ AAO & 0.71 [0.51, 0.85] & 0.33 [0.18, 0.53] & 9 & 0 & 0.004 & 0.012 & 0.77 \\
+$L{=}40$ & RefAlign vs.\ matched-phylo & 1.00 [0.86, 1.00] & 0.50 [0.31, 0.69] & 12 & 0 & $<$0.001 & 0.002 & 1.57 \\
+$L{=}40$ & matched-phylo vs.\ AAO & 0.50 [0.31, 0.69] & 0.25 [0.12, 0.45] & 6 & 0 & 0.031 & 0.062 & 0.52 \\
+multi-culprit & RefAlign vs.\ matched-phylo & 1.00 [0.93, 1.00] & 0.75 [0.61, 0.85] & 12 & 0 & $<$0.001 & -- & 1.05 \\
+multi-culprit & matched-phylo vs.\ AAO & 0.75 [0.61, 0.85] & 0.54 [0.40, 0.67] & 17 & 7 & 0.064 & -- & 0.44 \\
+reorder $k{=}8$ & RefAlign vs.\ matched-phylo & 0.94 [0.82, 0.98] & 0.94 [0.82, 0.98] & 0 & 0 & 1.000 & -- & 0.00 \\
+reorder $k{=}8$ & matched-phylo vs.\ AAO & 0.94 [0.82, 0.98] & 0.33 [0.20, 0.50] & 23 & 1 & $<$0.001 & -- & 1.43 \\
+reorder $k{=}15$ & RefAlign vs.\ matched-phylo & 1.00 [0.90, 1.00] & 1.00 [0.90, 1.00] & 0 & 0 & 1.000 & -- & 0.00 \\
+reorder $k{=}15$ & matched-phylo vs.\ AAO & 1.00 [0.90, 1.00] & 0.11 [0.04, 0.25] & 32 & 0 & $<$0.001 & -- & 2.46 \\
+human & RefAlign vs.\ matched-phylo & 0.47 [0.31, 0.64] & 0.25 [0.13, 0.42] & 12 & 5 & 0.143 & -- & 0.46 \\
+human & matched-phylo vs.\ AAO & 0.25 [0.13, 0.42] & 0.38 [0.23, 0.55] & 5 & 9 & 0.424 & -- & -0.27 \\
+\bottomrule
+\end{tabular}
+\caption{Exact (binomial) McNemar tests on paired exact-step outcomes ($b$: X right, Y wrong; $c$: X wrong, Y right). $p_{\mathrm{Holm}}$ applies Holm--Bonferroni within the family of the four length cells for each judge and comparison ($m{=}4$); the multi-culprit, reorderable-sum and human cells are single tests and are reported uncorrected. $n$ per cell as in Table~\ref{tab:matched-judge}.}
+\label{tab:matched-judge-tests}
+\end{table*}

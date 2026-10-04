@@ -1,0 +1,69 @@
+{
+ "query_id": "gsm8k_0789",
+ "query": "Carson lives in an old house where the pipes will freeze if the temperature inside the house falls below 32 degrees. Every log of wood Carson burns heats the house up by 5 degrees. If it was 45 degrees during the day, and it's 33 degrees colder during the night compared to the day, how many logs does Carson need to burn to prevent the pipes from freezing?",
+ "ground_truth": "4.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 789,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0789_r00",
+   "outcome": "success",
+   "final_answer": "4.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Carson needs to burn enough logs to increase the temperature from 12 degrees (33 degrees colder than 45 degrees) to 32 degrees, requiring 4 logs since each log raises the temperature by 5 degrees."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH how many 5 degree increments are needed to go from 12 to 32 degrees"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC (32 - 12) / 5 = 4.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 4"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 4"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0789_r06",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Carson needs to burn 7 logs of wood to raise the temperature from 12 degrees to 32 degrees."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH What is the temperature during the night?"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 8"
+    }
+   ]
+  }
+ ]
+}

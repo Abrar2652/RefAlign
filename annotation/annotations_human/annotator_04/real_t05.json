@@ -1,0 +1,51 @@
+{
+ "query_id": "real_t05",
+ "annotator": "annotator_04",
+ "labels": {
+  "real_t05_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "answers the 15/210 rate but never multiplies by 350 to get the liters needed",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t05_r04": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "sets up 0.0714*350 in the answer but never evaluates it to 25 L",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t05_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "states 0.0714*350 unevaluated; the product 25 is never computed",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t05_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "answer contains 0.0714*350 left uncomputed; 25 L never produced",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t05_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "leaves 0.0714*350 unevaluated in the answer; the final 25 is missing",
+   "annotator": "annotator_04",
+   "flag": null
+  }
+ }
+}

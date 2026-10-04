@@ -1,0 +1,106 @@
+{
+ "query_id": "gsm8k_0186",
+ "query": "Russell works at a pet store and is distributing straw among the rodents. The rats are kept in 3 cages in equal groups and each rat is given 6 pieces of straw. There are 10 cages of hamsters that are kept alone and each hamster is given 5 pieces of straw. There is also a pen of rabbits where 20 pieces of straw are distributed among the rabbits. No straw is used anywhere else in the store. If 160 pieces of straw have been distributed among the small rodents, how many rats are in each cage?",
+ "ground_truth": "5.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 186,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0186_r06",
+   "outcome": "success",
+   "final_answer": "5.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Distribute 60 pieces to the rats (160 total - 20 for rabbits - 75 for hamsters), then divide 60 by 3 cages to find 20 rats in total, so 20/3 = approximately 6.67 rats per cage, but since the number of rats must be a whole number, recheck the arithmetic to ensure accuracy."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH total straw used by hamsters (10 cages * 5 pieces per hamster)"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH total straw used by hamsters (10 cages * 5 pieces per hamster)"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "SEARCH total straw used by hamsters (10 cages * 5 pieces per hamster)"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER CALC 10 * 5"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 5"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0186_r08",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Determine the total straw given to hamsters and rabbits to find the straw given to rats, then divide by the number of cages to find the number of rats per cage."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH total straw given to hamsters and rabbits"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH total straw given to hamsters and rabbits"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH total straw given to hamsters and"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 2"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0186_r10",
+   "outcome": "failure",
+   "final_answer": "10.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Determine the total straw used by hamsters and rabbits, then find the remainder to be straw for rats, and divide by the straw per rat to find the number of rats per cage."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH total straw given to hamsters (10 cages * 5 pieces per hamster) and total straw given to rabbits (20 pieces total)"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH total straw given to hamsters (10"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 8"
+    }
+   ]
+  }
+ ]
+}

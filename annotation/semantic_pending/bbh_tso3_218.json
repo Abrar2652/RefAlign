@@ -1,0 +1,64 @@
+{
+ "query_id": "bbh_tso3_218",
+ "query": "Alice, Bob, and Claire are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets The Pearl, and Claire gets The Odyssey.\nAs the semester proceeds, they start trading around the new books. First, Bob and Alice swap books. Then, Bob and Claire swap books. Finally, Bob and Alice swap books. At the end of the semester, Bob has\nOptions:\n(A) Frankenstein\n(B) The Pearl\n(C) The Odyssey",
+ "ground_truth": "(B)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 218,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_218_r11",
+   "outcome": "success",
+   "final_answer": "B",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Create a step-by-step track of the trades to determine which book Bob has at the end of the semester."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (B)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: A"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_218_r00",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To determine which book Bob has at the end of the semester, I will trace the book trades step-by-step."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE Initially, Alice has Frankenstein, Bob has The Pearl, and Claire has The Odyssey. After the first swap (Bob and Alice), Alice will have The Pearl and Bob will have Frankenstein."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE After the first swap, Alice has The Pearl, and Bob has Frankenstein. Now, Claire still has The Odyssey. The current ownership is: Alice - The Pearl, Bob - Frankenstein, Claire - The Odyssey."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker NOTE Now, Bob and Claire will swap books. After this "
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (A)"
+    }
+   ]
+  }
+ ]
+}

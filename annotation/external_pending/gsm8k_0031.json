@@ -1,0 +1,230 @@
+{
+ "query_id": "gsm8k_0031",
+ "query": "Gunter is trying to count the jelly beans in a jar. He asks his friends how many they think are in the jar. One says 80. Another says 20 more than half the first one. A third says 25% more than the first one. What is their average guess?",
+ "ground_truth": "80.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 31,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0031_r05",
+   "outcome": "success",
+   "final_answer": "80.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the guesses by finding the values from the statements, then average those values."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH \"20 more than half of 80\""
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 80 / 2 + 20 = 60.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker SEARCH \"25% more than 80\"\nWorker "
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 85.0"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0031_r00",
+   "outcome": "failure",
+   "final_answer": "93.33333333333333",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the average guess, calculate the values given by the friends, which are 80, 80 + 20 (which is 100), and 80 + (0.25 * 80) (which is 100), and then compute the average of these three numbers."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 80 + 20 = 100.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 80 + (0.25 * 80) = 100.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC (80 + 100 + 100) / 3 = 93.33333333333333"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER 93.33333333333333"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "To determine the average guess, we need to calculate the guesses of all three friends based on the provided information.\n\n1. The first friend's guess is 80.\n2. The second friend's guess is 20 more than half the first one:\n   - Half of 80 = 40\n   - 40 + 20 = 60\n3. The third friend's guess is 25% more than the first one:\n   - 25% of 80 = 20\n   - 80 + 20 = 100\n\nNow, we have the guesses:\n- First friend's guess: 80\n- Second friend's guess: 60\n- Third friend's guess: 100\n\nTo find the average:\n(80 + 60 + 100) / 3 = 240 / 3 = 80\n\nSo, the average guess is 80.\n\nThe worker's answer is 93.33333333333333, which does not match the calculated average.\n\nVERDICT: WRONG\nFINAL: 80"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0031_r02",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the average guess, calculate the total of the three guesses (80, 80 + 20, and 80 + 20*0.25) and then divide by 3."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 80 + 20 = 100.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 80 * 0.25 = 20.0 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 80 + 20 * 0.25 = 85.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 80 + 100 + 85 = 265.0 = None"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 80 + 80 + 20 = 100 = None"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "SEARCH 25% of 80."
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC 80 * 0.25 = 20.0"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "CALC 80 + 20 + 100 = 200 = None"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 0"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0031_r03",
+   "outcome": "failure",
+   "final_answer": "3.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the average guess, calculate the individual guesses (80, 80 + 20 = 100, and 80 + 0.25 * 80 = 100), sum them up, and divide by the number of guesses (3)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 80 + 20 = 100.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 80 + 0.25 * 80 = 100.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 80 + 100 + 100 = 280.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER CALC 280 / 3"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 0"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0031_r08",
+   "outcome": "failure",
+   "final_answer": "140.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the average guess, calculate the total of all guesses (80, 100 (80 + 20), and 100 (80 + 25% of 80)) and divide by the number of guesses (3)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 80 + 20 = 100.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 80 * 0.25 = 20.0 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 80 + 20 * 0.25 = 100.0 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 80 + 20 * 0.25 = 85.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 80 + 20 * 0.25 = 85.0 = None"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "SEARCH Calculate half of the first guess (80) and add 20."
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC 80 / 2 + 20 = 60.0"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "ANSWER Worker CALC 80 + 60 = 140.0"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "To find the average guess, we first need to determine the individual guesses:\n\n1. The first friend guesses 80.\n2. The second friend guesses 20 more than half of the first person's guess:\n   - Half of 80 = 40\n   - 40 + 20 = 60 (the second friend's guess)\n3. The third friend guesses 25% more than the first person's guess:\n   - 25% of 80 = 20\n   - 80 + 20 = 100 (the third friend's guess)\n\nNow, we have the three guesses:\n- First friend: 80\n- Second friend: 60\n- Third friend: 100\n\nNext, we calculate the average guess:\nAverage = (80 + 60 + 100) / 3 = 240 / 3 = 80\n\nThe worker's answer of 140.0 is incorrect.\n\nVERDICT: WRONG\nFINAL: 80"
+    }
+   ]
+  }
+ ]
+}

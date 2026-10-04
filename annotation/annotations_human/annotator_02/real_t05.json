@@ -1,0 +1,51 @@
+{
+ "query_id": "real_t05",
+ "annotator": "annotator_02",
+ "labels": {
+  "real_t05_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: answers the per-km rate; the required final multiply-by-350 is entirely forgotten.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t05_r04": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Ex.C: rate 0.0714 computed but 0.0714*350 is never evaluated to 25 as a step before answering.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t05_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Ex.C: same pattern, the final *350 product is left uncomputed in the answer instead of yielding 25.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t05_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Ex.C: same pattern, 0.0714*350 never evaluated to 25 before the answer.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t05_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Ex.C: same pattern, the final *350 product step is missing so the answer is not 25.",
+   "annotator": "annotator_02",
+   "flag": null
+  }
+ }
+}

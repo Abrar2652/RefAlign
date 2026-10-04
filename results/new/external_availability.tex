@@ -1,0 +1,32 @@
+% Experiment 4A: reference availability on GSM8K (external tasks).
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lc}
+\toprule
+quantity & value \\
+\midrule
+tasks sampled (GSM8K test, seed 0) & 60 \\
+rollouts per task & 14 \\
+tasks with $\ge 1$ success and $\ge 1$ failure & 29/60 = 0.48 [0.36, 0.61] \\
+tasks with all rollouts successful & 16 \\
+tasks with no successful rollout (no reference) & 15 \\
+run-level success rate & 410/840 = 0.49 [0.45, 0.52] \\
+rollouts to first success (mean / median / max) & 2.58 / 1 / 13 \\
+failing runs with a reference / without & 220 / 210 \\
+RefAlign fallback rate on failing runs with a reference & 12/220 \\
+\midrule
+\multicolumn{2}{l}{\emph{agreement between methods (unlabeled runs; a proxy, not accuracy)}} \\
+RefAlign vs.\ matched judge, same step / within $\pm1$ & 0.23 [0.18, 0.29] / 0.36 \\
+RefAlign vs.\ single-trace AAO, same step & 0.16 [0.12, 0.21] \\
+matched judge vs.\ single-trace AAO, same step & 0.32 [0.26, 0.39] \\
+\bottomrule
+\end{tabular}
+\caption{Reference availability of the Planner$\to$Worker$\to$Verifier system on 60 randomly
+sampled GSM8K test problems (14 rollouts each, gpt-4o-mini-2024-07-18, temperature 1.0,
+fixed seeds; problem ids in \texttt{results/new/external\_gsm8k.json}). Intervals are 95\% Wilson.
+GSM8K provides only the final answer, so there is no decisive-step ground truth: the agreement rows compare
+two attribution methods on unlabeled failing runs and must not be read as accuracy; the judge is
+\texttt{gpt-4o-mini-2024-07-18} at temperature 0. An unlabeled annotation package for
+40 failing runs is exported to \texttt{annotation/external\_pending/}.}
+\label{tab:external-availability}
+\end{table}

@@ -1,0 +1,20 @@
+% Leakage-controlled positional baselines on the 32 natural failures (leave-one-family-out).
+\begin{table}[!t]
+\caption{Natural failures ($n{=}32$, four families): positional rules fitted leave-one-family-out beside \pha{}. Counts are correct/$n$ (proportion). $b$/$c$: runs correct only for \pha{} / only for the rule; $p$ is an exact McNemar test on exact step, Holm-corrected over the seven fitted rules (the most-frequent-agent and agent+step rules, omitted here, score 0/32 and 27/32 exact step). Fitted positions beyond a trace are clamped to its last step (never triggered). Family-macro exact step: \pha{} 0.53, most frequent step 0.86, normalized position and penultimate 0.90. The constant step-3 row uses the labels themselves and is a retrospective diagnostic, not a baseline.}
+\label{tab:positional}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccc}
+\toprule
+rule & exact step & exact agent & joint & $b$/$c$ & $p_{\mathrm{Holm}}$ \\\\
+\midrule
+\pha{} (no fitting) & 15/32 (0.47) & 17/32 (0.53) & 15/32 (0.47) & -- & -- \\
+most frequent step & 27/32 (0.84) & 30/32 (0.94) & 27/32 (0.84) & 4/16 & 0.035 \\
+most frequent (agent, step) & 27/32 (0.84) & 32/32 (1.00) & 27/32 (0.84) & 4/16 & 0.035 \\
+normalized position & 30/32 (0.94) & 32/32 (1.00) & 30/32 (0.94) & 0/15 & $<$0.001 \\
+penultimate step & 30/32 (0.94) & 32/32 (1.00) & 30/32 (0.94) & 0/15 & $<$0.001 \\
+last step & 0/32 (0.00) & 0/32 (0.00) & 0/32 (0.00) & 15/0 & $<$0.001 \\
+constant step 3 (post hoc) & 27/32 (0.84) & 32/32 (1.00) & 27/32 (0.84) & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

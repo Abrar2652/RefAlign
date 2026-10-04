@@ -1,0 +1,103 @@
+{
+ "query_id": "bbh_tso3_198",
+ "query": "Alice, Bob, and Claire are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets Moby Dick, and Claire gets The Fellowship of the Ring.\nAs the semester proceeds, they start trading around the new books. First, Alice and Bob swap books. Then, Claire and Alice swap books. Finally, Bob and Claire swap books. At the end of the semester, Claire has\nOptions:\n(A) Frankenstein\n(B) Moby Dick\n(C) The Fellowship of the Ring",
+ "ground_truth": "(A)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 198,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_198_r00",
+   "outcome": "success",
+   "final_answer": "A",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To determine which book Claire has at the end of the semester, track each trade chronologically: Alice gives her book to Bob, then swaps again with Claire, and finally, Claire trades with Bob, resulting in following through all trades to see the final outcome for Claire."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (A)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (B)"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_198_r02",
+   "outcome": "failure",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Trace the sequence of book trades between Alice, Bob, and Claire to determine which book Claire ends up with."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE Initially, Alice has Frankenstein, Bob has Moby Dick, and Claire has The Fellowship of the Ring."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG  \nFINAL: B"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_198_r03",
+   "outcome": "failure",
+   "final_answer": "B",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Track the sequence of trades to determine which book Claire ends up with after all swaps."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (B)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG  \nFINAL: A"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_198_r08",
+   "outcome": "failure",
+   "final_answer": "D",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To determine which book Claire has at the end of the semester, trace the series of trades made among Alice, Bob, and Claire step by step."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (D)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: B"
+    }
+   ]
+  }
+ ]
+}

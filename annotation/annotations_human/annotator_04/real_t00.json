@@ -1,0 +1,51 @@
+{
+ "query_id": "real_t00",
+ "annotator": "annotator_04",
+ "labels": {
+  "real_t00_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "reaches 156 after Monday then loops on 240*0.35; the 156-40 subtraction for Tuesday is never performed",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t00_r05": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers 156 (after-Monday) without ever subtracting Tuesday's 40 apples",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t00_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "gets 156 then repeats the Monday calc; the required 156-40 subtraction is absent",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t00_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers 156 immediately, omitting the subtraction of the 40 apples sold Tuesday",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t00_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers 156 and never subtracts the 40 from Tuesday to reach 116",
+   "annotator": "annotator_04",
+   "flag": null
+  }
+ }
+}

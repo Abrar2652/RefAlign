@@ -1,0 +1,35 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "lengths": {
+    "L5": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.4583333333333333,
+      "aao_agent": 0.9166666666666666,
+      "n": 24
+    },
+    "L12": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.25,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L24": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.16666666666666666,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L40": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.25,
+      "aao_agent": 1.0,
+      "n": 24
+    }
+  },
+  "usage": {
+    "calls": 96,
+    "seconds": 43.59919834136963,
+    "prompt_tokens": 72397,
+    "completion_tokens": 878
+  }
+}

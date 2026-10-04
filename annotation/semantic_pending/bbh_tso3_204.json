@@ -1,0 +1,54 @@
+{
+ "query_id": "bbh_tso3_204",
+ "query": "Alice, Bob, and Claire are holding a white elephant gift exchange. At the start of the event, they are each holding a present of a different color: Alice has a red present, Bob has a blue present, and Claire has a yellow present.\nAs the event progresses, pairs of people swap gifts. First, Alice and Claire swap their gifts. Then, Bob and Claire swap their gifts. Finally, Claire and Alice swap their gifts. At the end of the event, Bob has the\nOptions:\n(A) red present\n(B) blue present\n(C) yellow present",
+ "ground_truth": "(A)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 204,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_204_r03",
+   "outcome": "success",
+   "final_answer": "A",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Track the changes in gift ownership after each swap to determine which present Bob ends up with."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (A)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: A"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_204_r05",
+   "outcome": "failure",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Track the sequence of swaps to determine which present Bob has at the end of the exchange."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "To determine what Bob has at the end of the event, we can trace the swapping of gifts step by step:\n\n1. Initial gifts:\n   - Alice: Red present\n   - Bob: Blue present\n   - Claire: Yellow present\n\n2. After Alice and Claire swap:\n   - Alice: Yellow present (swapped her red for Claire's yellow)\n   - Bob: Blue present\n   - Claire: Red present (swapped her yellow for Alice's red)\n\n3. After Bob and Claire swap:\n   - Alice: Yellow present\n   - Bob: Red present (swapped his blue for Claire's red)\n   - Claire: Blue present (swapped her red for Bob's blue)\n\n4. After Claire and Alice swap:\n   - Alice: Blue present (swapped her yellow for Claire's blue)\n   - Bob: Red present\n   - Claire: Yellow present (swapped her blue for Alice's yellow)\n\nNow we can see that Bob has the red present at the end of the event.\n\nThus, the worker's answer is incorrect.\n\nVERDICT: WRONG\nFINAL: A"
+    }
+   ]
+  }
+ ]
+}

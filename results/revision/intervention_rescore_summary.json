@@ -1,0 +1,115 @@
+{
+ "gpt-4o-mini": {
+  "relabelled": [
+   [
+    "int_baseline_t03_r00",
+    "failure",
+    "success"
+   ],
+   [
+    "int_baseline_t03_r01",
+    "failure",
+    "success"
+   ],
+   [
+    "int_baseline_t03_r03",
+    "failure",
+    "success"
+   ],
+   [
+    "int_baseline_t03_r04",
+    "failure",
+    "success"
+   ],
+   [
+    "int_baseline_t03_r02",
+    "failure",
+    "success"
+   ],
+   [
+    "int_baseline_t03_r10",
+    "failure",
+    "success"
+   ],
+   [
+    "int_baseline_t03_r08",
+    "failure",
+    "success"
+   ],
+   [
+    "int_baseline_t03_r09",
+    "failure",
+    "success"
+   ],
+   [
+    "int_targeted_t03_r13",
+    "failure",
+    "success"
+   ],
+   [
+    "int_placebo_t03_r03",
+    "failure",
+    "success"
+   ],
+   [
+    "int_placebo_t03_r08",
+    "failure",
+    "success"
+   ]
+  ],
+  "pooled": {
+   "baseline": 52,
+   "targeted": 74,
+   "placebo": 73
+  }
+ },
+ "qwen2.5-7b": {
+  "relabelled": [
+   [
+    "int_baseline_t03_r03",
+    "failure",
+    "success"
+   ],
+   [
+    "int_baseline_t03_r00",
+    "failure",
+    "success"
+   ],
+   [
+    "int_baseline_t03_r09",
+    "failure",
+    "success"
+   ],
+   [
+    "int_targeted_t03_r03",
+    "failure",
+    "success"
+   ],
+   [
+    "int_targeted_t03_r11",
+    "success",
+    "failure"
+   ],
+   [
+    "int_placebo_t03_r05",
+    "failure",
+    "success"
+   ],
+   [
+    "int_placebo_t03_r07",
+    "failure",
+    "success"
+   ],
+   [
+    "int_placebo_t03_r10",
+    "failure",
+    "success"
+   ]
+  ],
+  "pooled": {
+   "baseline": 98,
+   "targeted": 102,
+   "placebo": 75
+  }
+ }
+}

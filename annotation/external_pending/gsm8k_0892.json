@@ -1,0 +1,148 @@
+{
+ "query_id": "gsm8k_0892",
+ "query": "Ellen is on a diet. She eats two carrots, a salad, and a yogurt every day. The salad costs her $6, while the yogurt is half the price. How much does Ellen pay for one carrot every day when in total she pays $11 for her goods?",
+ "ground_truth": "1.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 892,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0892_r03",
+   "outcome": "success",
+   "final_answer": "1.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, determine the total cost of the salad and yogurt, then subtract from the total of $11 to find the combined cost of the two carrots, and finally divide that amount by 2 to find the cost of one carrot."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 6 / 2 = 3.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 6 + 3 = 9 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 11 - 9 = 2.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 2.0 / 2 = 1.0 = None"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "ANSWER 1.0"
+    },
+    {
+     "index": 6,
+     "agent": "Verifier",
+     "content": "To find the cost of one carrot, let's denote the price of one carrot as \\( c \\). \n\nEllen's total daily expenditure can be expressed as follows:\n\n- Cost of two carrots: \\( 2c \\)\n- Cost of salad: \\( 6 \\)\n- Cost of yogurt: Since the yogurt costs half the price of the salad, it is \\( \\frac{6}{2} = 3 \\).\n\nPutting this together, we have:\n\n\\[\n2c + 6 + 3 = 11\n\\]\n\nThis simplifies to:\n\n\\[\n2c + 9 = 11\n\\]\n\nNow, we can solve for \\( c \\):\n\n\\[\n2c = 11 - 9\n\\]\n\\[\n2c = 2\n\\]\n\\[\nc = 1\n\\]\n\nSo, Ellen pays $1 for one carrot.\n\nThe worker's answer is \\( 1.0 \\), which is correct.\n\nVERDICT: CORRECT\nFINAL: 1"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0892_r02",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the price of one carrot, first, determine the daily cost of the salad and yogurt, then subtract this from the total cost to find the remaining amount for two carrots, and finally divide by two."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH cost of yogurt based on salad cost"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 6 / 2 = 3.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH total cost for salad and yogurt c"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 0"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0892_r05",
+   "outcome": "failure",
+   "final_answer": "2.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the cost of one carrot, subtract the total cost of the salad and yogurt from Ellen's total expenses, then divide the remaining amount by two (the number of carrots)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH cost of yogurt, given cost of salad is $6."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 6 / 2 = 3.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 11 - 6 - 3 = 2.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find the cost of one carrot, we can break down the information provided.\n\n1. The cost of the salad is $6.\n2. The cost of the yogurt, which is half the price of the salad, is $6 / 2 = $3.\n3. Therefore, the total cost of the salad and yogurt combined is $6 + $3 = $9.\n4. Ellen pays a total of $11 for her goods, which leaves her with $11 - $9 = $2 for the two carrots.\n5. This means the cost of the two carrots is $2, so the cost of one carrot is $2 / 2 = $1.\n\nTherefore, the worker's answer of 2.0 is incorrect.\n\nVERDICT: WRONG\nFINAL: 1"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0892_r10",
+   "outcome": "failure",
+   "final_answer": "2.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Subtract the cost of the salad and yogurt from the total amount Ellen pays, then divide the remaining amount by the number of carrots to find the cost per carrot."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH cost of yogurt based on the salad price"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 6 / 2 = 3.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker CALC 11 - 6 - 3 = 2.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To determine Ellen's daily spending breakdown:\n\n1. The salad costs $6.\n2. The yogurt is half the price of the salad, so it costs $6 / 2 = $3.\n3. The total amount Ellen spends daily is $11.\n\nNow, if we add the cost of the salad and yogurt:\n- Salad: $6\n- Yogurt: $3\n- Combined cost of salad and yogurt: $6 + $3 = $9\n\nThis leaves:\n$11 - $9 = $2 for the two carrots.\n\nSince she bought two carrots, to find the cost of one carrot, we divide the remaining amount by 2:\nCost of one carrot = $2 / 2 = $1.\n\nThe worker answered that the cost per carrot is $2. This is incorrect.\n\nVERDICT: WRONG\nFINAL: 1"
+    }
+   ]
+  }
+ ]
+}

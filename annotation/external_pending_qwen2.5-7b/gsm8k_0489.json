@@ -1,0 +1,64 @@
+{
+ "query_id": "gsm8k_0489",
+ "query": "The highest temperature ever recorded in Southlandia is -48 degrees Fahrenheit. The highest temperature ever recorded in Northlandia is 21 degrees Fahrenheit. The highest temperature recorded in Midlandia is -3 degrees Fahrenheit. What is the average highest temperature of these 3 countries?",
+ "ground_truth": "-10.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 489,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0489_r00",
+   "outcome": "success",
+   "final_answer": "-10.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: First, sum the highest temperatures (-48, 21, -3), then divide the sum by 3 to find the average."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC (-48 + 21 + -3) / 3 = -10.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER -10.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: -19.0"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0489_r07",
+   "outcome": "failure",
+   "final_answer": "-14.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Sum the highest temperatures of Southlandia, Northlandia, and Midlandia, then divide by 3."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC -48 + 21 + -3 / 3 = -28.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER -14.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: -14.67"
+    }
+   ]
+  }
+ ]
+}

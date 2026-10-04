@@ -1,0 +1,2972 @@
+{
+ "design": {
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "base_url": "http://localhost:8103/v1",
+  "temperature": 1.0,
+  "max_tokens": 256,
+  "max_worker_turns": 5,
+  "n_rollouts": 14,
+  "tasks": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "retained_families": [
+   0,
+   5,
+   7,
+   9
+  ],
+  "task_text": {
+   "t00": [
+    "A store had 240 apples. It sold 35% on Monday and 40 more on Tuesday. How many apples remain?",
+    116
+   ],
+   "t01": [
+    "A tank holds 900 L. It is 2/3 full, then 150 L are added. How many liters are in the tank now?",
+    750
+   ],
+   "t02": [
+    "A worker earns $18/hour for 40 hours and 1.5x that rate for 6 overtime hours. What is the total pay in dollars?",
+    882
+   ],
+   "t03": [
+    "A rectangle is 14 m by 9 m. A 2 m wide path runs around its inside edge. What is the area of the path in square meters?",
+    84
+   ],
+   "t04": [
+    "Three friends split a $150 bill: Ann pays twice as much as Bo, and Cy pays $10 more than Bo. How much does Ann pay in dollars?",
+    70
+   ],
+   "t05": [
+    "A car travels 210 km using 15 L of fuel. At the same efficiency, how many liters are needed for 350 km?",
+    25
+   ],
+   "t06": [
+    "A book club read 3 books averaging 280 pages; a 4th book has 360 pages. What is the average pages across all 4 books?",
+    300
+   ],
+   "t07": [
+    "A phone costs $600. Its price drops 15%, then rises 10% of the new price. What is the final price in dollars?",
+    561
+   ],
+   "t08": [
+    "A recipe for 4 servings needs 320 g flour. How many grams are needed for 7 servings?",
+    560
+   ],
+   "t09": [
+    "A train leaves at 09:20 and arrives at 13:05. The trip is 300 km. What is the average speed in km/h (rounded down)?",
+    80
+   ]
+  },
+  "prompt_lengths": {
+   "targeted_chars": 176,
+   "placebo_chars": 175
+  },
+  "started_utc": "2026-09-28T03:21:28.787381+00:00",
+  "finished_utc": "2026-09-28T03:21:28.787425+00:00",
+  "usage": {
+   "calls": 1961,
+   "prompt_tokens": 294573,
+   "completion_tokens": 46006,
+   "seconds_sum_latency": 1278.3,
+   "errors": 0,
+   "usd": 0.0,
+   "source": "recomputed from results/new/logs/api_log_exp3.jsonl (analysis-only rerun had dropped the in-memory tally)"
+  },
+  "response_models": [
+   "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "wallclock_utc": {
+   "first_call": "2026-09-28T03:16:24.274652+00:00",
+   "last_call": "2026-09-28T03:17:29.545393+00:00"
+  }
+ },
+ "per_task": {
+  "t00": {
+   "baseline": {
+    "fail": 11,
+    "n": 14,
+    "acc": 0.7857142857142857,
+    "wilson_lo": 0.524107694133997,
+    "wilson_hi": 0.9242861328730683
+   },
+   "targeted": {
+    "fail": 13,
+    "n": 14,
+    "acc": 0.9285714285714286,
+    "wilson_lo": 0.6853129557584889,
+    "wilson_hi": 0.987277784752109
+   },
+   "placebo": {
+    "fail": 4,
+    "n": 14,
+    "acc": 0.2857142857142857,
+    "wilson_lo": 0.11721378644576921,
+    "wilson_hi": 0.5464908432989318
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": 0.28205128205128205,
+    "p_value": 0.5955555555555556,
+    "table": [
+     [
+      11,
+      3
+     ],
+     [
+      13,
+      1
+     ]
+    ],
+    "diff": 0.1428571428571429,
+    "ci_lo": -0.13710149948182954,
+    "ci_hi": 0.41096988969001713,
+    "p_holm": 0.5955555555555556,
+    "holm_family": "task t00: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": 9.166666666666666,
+    "p_value": 0.021300907853606735,
+    "table": [
+     [
+      11,
+      3
+     ],
+     [
+      4,
+      10
+     ]
+    ],
+    "diff": -0.5,
+    "ci_lo": -0.7181618093955409,
+    "ci_hi": -0.1306188665565684,
+    "p_holm": 0.04260181570721347,
+    "holm_family": "task t00: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  },
+  "t01": {
+   "baseline": {
+    "fail": 0,
+    "n": 14,
+    "acc": 0.0,
+    "wilson_lo": 0.0,
+    "wilson_hi": 0.2153108027376358
+   },
+   "targeted": {
+    "fail": 1,
+    "n": 14,
+    "acc": 0.07142857142857142,
+    "wilson_lo": 0.012722215247890939,
+    "wilson_hi": 0.31468704424151117
+   },
+   "placebo": {
+    "fail": 0,
+    "n": 14,
+    "acc": 0.0,
+    "wilson_lo": 0.0,
+    "wilson_hi": 0.2153108027376358
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": 0.0,
+    "p_value": 1.0,
+    "table": [
+     [
+      0,
+      14
+     ],
+     [
+      1,
+      13
+     ]
+    ],
+    "diff": 0.07142857142857142,
+    "ci_lo": -0.15174216597115586,
+    "ci_hi": 0.31468704424151117,
+    "p_holm": 1.0,
+    "holm_family": "task t01: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": null,
+    "p_value": 1.0,
+    "table": [
+     [
+      0,
+      14
+     ],
+     [
+      0,
+      14
+     ]
+    ],
+    "diff": 0.0,
+    "ci_lo": -0.2153108027376358,
+    "ci_hi": 0.2153108027376358,
+    "p_holm": 1.0,
+    "holm_family": "task t01: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  },
+  "t02": {
+   "baseline": {
+    "fail": 11,
+    "n": 14,
+    "acc": 0.7857142857142857,
+    "wilson_lo": 0.524107694133997,
+    "wilson_hi": 0.9242861328730683
+   },
+   "targeted": {
+    "fail": 14,
+    "n": 14,
+    "acc": 1.0,
+    "wilson_lo": 0.7846891972623642,
+    "wilson_hi": 1.0
+   },
+   "placebo": {
+    "fail": 12,
+    "n": 14,
+    "acc": 0.8571428571428571,
+    "wilson_lo": 0.6005862050302965,
+    "wilson_hi": 0.9599060787285351
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": 0.0,
+    "p_value": 0.2222222222222222,
+    "table": [
+     [
+      11,
+      3
+     ],
+     [
+      14,
+      0
+     ]
+    ],
+    "diff": 0.2142857142857143,
+    "ci_lo": -0.041762911175392325,
+    "ci_hi": 0.47589230586600295,
+    "p_holm": 0.4444444444444444,
+    "holm_family": "task t02: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": 0.6111111111111112,
+    "p_value": 1.0,
+    "table": [
+     [
+      11,
+      3
+     ],
+     [
+      12,
+      2
+     ]
+    ],
+    "diff": 0.0714285714285714,
+    "ci_lo": -0.2201592756573496,
+    "ci_hi": 0.3524949131860346,
+    "p_holm": 1.0,
+    "holm_family": "task t02: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  },
+  "t03": {
+   "baseline": {
+    "fail": 14,
+    "n": 14,
+    "acc": 1.0,
+    "wilson_lo": 0.7846891972623642,
+    "wilson_hi": 1.0
+   },
+   "targeted": {
+    "fail": 13,
+    "n": 14,
+    "acc": 0.9285714285714286,
+    "wilson_lo": 0.6853129557584889,
+    "wilson_hi": 0.987277784752109
+   },
+   "placebo": {
+    "fail": 14,
+    "n": 14,
+    "acc": 1.0,
+    "wilson_lo": 0.7846891972623642,
+    "wilson_hi": 1.0
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": null,
+    "p_value": 1.0,
+    "table": [
+     [
+      14,
+      0
+     ],
+     [
+      13,
+      1
+     ]
+    ],
+    "diff": -0.0714285714285714,
+    "ci_lo": -0.31468704424151106,
+    "ci_hi": 0.15174216597115583,
+    "p_holm": 1.0,
+    "holm_family": "task t03: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": null,
+    "p_value": 1.0,
+    "table": [
+     [
+      14,
+      0
+     ],
+     [
+      14,
+      0
+     ]
+    ],
+    "diff": 0.0,
+    "ci_lo": -0.2153108027376357,
+    "ci_hi": 0.2153108027376357,
+    "p_holm": 1.0,
+    "holm_family": "task t03: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  },
+  "t04": {
+   "baseline": {
+    "fail": 13,
+    "n": 14,
+    "acc": 0.9285714285714286,
+    "wilson_lo": 0.6853129557584889,
+    "wilson_hi": 0.987277784752109
+   },
+   "targeted": {
+    "fail": 14,
+    "n": 14,
+    "acc": 1.0,
+    "wilson_lo": 0.7846891972623642,
+    "wilson_hi": 1.0
+   },
+   "placebo": {
+    "fail": 12,
+    "n": 14,
+    "acc": 0.8571428571428571,
+    "wilson_lo": 0.6005862050302965,
+    "wilson_hi": 0.9599060787285351
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": 0.0,
+    "p_value": 1.0,
+    "table": [
+     [
+      13,
+      1
+     ],
+     [
+      14,
+      0
+     ]
+    ],
+    "diff": 0.0714285714285714,
+    "ci_lo": -0.15174216597115583,
+    "ci_hi": 0.31468704424151106,
+    "p_holm": 1.0,
+    "holm_family": "task t04: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": 2.1666666666666665,
+    "p_value": 1.0,
+    "table": [
+     [
+      13,
+      1
+     ],
+     [
+      12,
+      2
+     ]
+    ],
+    "diff": -0.07142857142857151,
+    "ci_lo": -0.3346162459105244,
+    "ci_hi": 0.1926452142941898,
+    "p_holm": 1.0,
+    "holm_family": "task t04: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  },
+  "t05": {
+   "baseline": {
+    "fail": 11,
+    "n": 14,
+    "acc": 0.7857142857142857,
+    "wilson_lo": 0.524107694133997,
+    "wilson_hi": 0.9242861328730683
+   },
+   "targeted": {
+    "fail": 9,
+    "n": 14,
+    "acc": 0.6428571428571429,
+    "wilson_lo": 0.38764423103907397,
+    "wilson_hi": 0.8365526824644587
+   },
+   "placebo": {
+    "fail": 4,
+    "n": 14,
+    "acc": 0.2857142857142857,
+    "wilson_lo": 0.11721378644576921,
+    "wilson_hi": 0.5464908432989318
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": 2.037037037037037,
+    "p_value": 0.6776167471819645,
+    "table": [
+     [
+      11,
+      3
+     ],
+     [
+      9,
+      5
+     ]
+    ],
+    "diff": -0.1428571428571428,
+    "ci_lo": -0.43326338794091235,
+    "ci_hi": 0.18265164476928242,
+    "p_holm": 0.6776167471819645,
+    "holm_family": "task t05: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": 9.166666666666666,
+    "p_value": 0.021300907853606735,
+    "table": [
+     [
+      11,
+      3
+     ],
+     [
+      4,
+      10
+     ]
+    ],
+    "diff": -0.5,
+    "ci_lo": -0.7181618093955409,
+    "ci_hi": -0.1306188665565684,
+    "p_holm": 0.04260181570721347,
+    "holm_family": "task t05: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  },
+  "t06": {
+   "baseline": {
+    "fail": 14,
+    "n": 14,
+    "acc": 1.0,
+    "wilson_lo": 0.7846891972623642,
+    "wilson_hi": 1.0
+   },
+   "targeted": {
+    "fail": 14,
+    "n": 14,
+    "acc": 1.0,
+    "wilson_lo": 0.7846891972623642,
+    "wilson_hi": 1.0
+   },
+   "placebo": {
+    "fail": 11,
+    "n": 14,
+    "acc": 0.7857142857142857,
+    "wilson_lo": 0.524107694133997,
+    "wilson_hi": 0.9242861328730683
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": null,
+    "p_value": 1.0,
+    "table": [
+     [
+      14,
+      0
+     ],
+     [
+      14,
+      0
+     ]
+    ],
+    "diff": 0.0,
+    "ci_lo": -0.2153108027376357,
+    "ci_hi": 0.2153108027376357,
+    "p_holm": 1.0,
+    "holm_family": "task t06: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": null,
+    "p_value": 0.2222222222222222,
+    "table": [
+     [
+      14,
+      0
+     ],
+     [
+      11,
+      3
+     ]
+    ],
+    "diff": -0.2142857142857143,
+    "ci_lo": -0.47589230586600295,
+    "ci_hi": 0.041762911175392325,
+    "p_holm": 0.4444444444444444,
+    "holm_family": "task t06: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  },
+  "t07": {
+   "baseline": {
+    "fail": 11,
+    "n": 14,
+    "acc": 0.7857142857142857,
+    "wilson_lo": 0.524107694133997,
+    "wilson_hi": 0.9242861328730683
+   },
+   "targeted": {
+    "fail": 12,
+    "n": 14,
+    "acc": 0.8571428571428571,
+    "wilson_lo": 0.6005862050302965,
+    "wilson_hi": 0.9599060787285351
+   },
+   "placebo": {
+    "fail": 9,
+    "n": 14,
+    "acc": 0.6428571428571429,
+    "wilson_lo": 0.38764423103907397,
+    "wilson_hi": 0.8365526824644587
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": 0.6111111111111112,
+    "p_value": 1.0,
+    "table": [
+     [
+      11,
+      3
+     ],
+     [
+      12,
+      2
+     ]
+    ],
+    "diff": 0.0714285714285714,
+    "ci_lo": -0.2201592756573496,
+    "ci_hi": 0.3524949131860346,
+    "p_holm": 1.0,
+    "holm_family": "task t07: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": 2.037037037037037,
+    "p_value": 0.6776167471819645,
+    "table": [
+     [
+      11,
+      3
+     ],
+     [
+      9,
+      5
+     ]
+    ],
+    "diff": -0.1428571428571428,
+    "ci_lo": -0.43326338794091235,
+    "ci_hi": 0.18265164476928242,
+    "p_holm": 1.0,
+    "holm_family": "task t07: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  },
+  "t08": {
+   "baseline": {
+    "fail": 4,
+    "n": 14,
+    "acc": 0.2857142857142857,
+    "wilson_lo": 0.11721378644576921,
+    "wilson_hi": 0.5464908432989318
+   },
+   "targeted": {
+    "fail": 0,
+    "n": 14,
+    "acc": 0.0,
+    "wilson_lo": 0.0,
+    "wilson_hi": 0.2153108027376358
+   },
+   "placebo": {
+    "fail": 0,
+    "n": 14,
+    "acc": 0.0,
+    "wilson_lo": 0.0,
+    "wilson_hi": 0.2153108027376358
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": null,
+    "p_value": 0.09777777777777778,
+    "table": [
+     [
+      4,
+      10
+     ],
+     [
+      0,
+      14
+     ]
+    ],
+    "diff": -0.2857142857142857,
+    "ci_lo": -0.5464908432989318,
+    "ci_hi": -0.012307701979979047,
+    "p_holm": 0.19555555555555557,
+    "holm_family": "task t08: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": null,
+    "p_value": 0.09777777777777778,
+    "table": [
+     [
+      4,
+      10
+     ],
+     [
+      0,
+      14
+     ]
+    ],
+    "diff": -0.2857142857142857,
+    "ci_lo": -0.5464908432989318,
+    "ci_hi": -0.012307701979979047,
+    "p_holm": 0.19555555555555557,
+    "holm_family": "task t08: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  },
+  "t09": {
+   "baseline": {
+    "fail": 12,
+    "n": 14,
+    "acc": 0.8571428571428571,
+    "wilson_lo": 0.6005862050302965,
+    "wilson_hi": 0.9599060787285351
+   },
+   "targeted": {
+    "fail": 12,
+    "n": 14,
+    "acc": 0.8571428571428571,
+    "wilson_lo": 0.6005862050302965,
+    "wilson_hi": 0.9599060787285351
+   },
+   "placebo": {
+    "fail": 12,
+    "n": 14,
+    "acc": 0.8571428571428571,
+    "wilson_lo": 0.6005862050302965,
+    "wilson_hi": 0.9599060787285351
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": 1.0,
+    "p_value": 1.0,
+    "table": [
+     [
+      12,
+      2
+     ],
+     [
+      12,
+      2
+     ]
+    ],
+    "diff": 0.0,
+    "ci_lo": -0.27637220456093736,
+    "ci_hi": 0.27637220456093736,
+    "p_holm": 1.0,
+    "holm_family": "task t09: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": 1.0,
+    "p_value": 1.0,
+    "table": [
+     [
+      12,
+      2
+     ],
+     [
+      12,
+      2
+     ]
+    ],
+    "diff": 0.0,
+    "ci_lo": -0.27637220456093736,
+    "ci_hi": 0.27637220456093736,
+    "p_holm": 1.0,
+    "holm_family": "task t09: baseline vs targeted, baseline vs placebo (m=2)"
+   }
+  }
+ },
+ "pooled": {
+  "baseline": {
+   "fail": 101,
+   "n": 140,
+   "acc": 0.7214285714285714,
+   "wilson_lo": 0.6420160868875002,
+   "wilson_hi": 0.7890140243774739
+  },
+  "targeted": {
+   "fail": 102,
+   "n": 140,
+   "acc": 0.7285714285714285,
+   "wilson_lo": 0.649538767788565,
+   "wilson_hi": 0.7953955406139891
+  },
+  "placebo": {
+   "fail": 78,
+   "n": 140,
+   "acc": 0.5571428571428572,
+   "wilson_lo": 0.4744276571463636,
+   "wilson_hi": 0.6368059199542749
+  },
+  "baseline_vs_targeted": {
+   "odds_ratio": 0.9648064353946707,
+   "p_value": 1.0,
+   "table": [
+    [
+     101,
+     39
+    ],
+    [
+     102,
+     38
+    ]
+   ],
+   "diff": 0.0071428571428571175,
+   "ci_lo": -0.0968473102804503,
+   "ci_hi": 0.1109301620084453,
+   "p_holm": 1.0,
+   "holm_family": "pooled: baseline vs targeted, baseline vs placebo (m=2)"
+  },
+  "baseline_vs_placebo": {
+   "odds_ratio": 2.0585141354372123,
+   "p_value": 0.006050319602640019,
+   "table": [
+    [
+     101,
+     39
+    ],
+    [
+     78,
+     62
+    ]
+   ],
+   "diff": -0.16428571428571426,
+   "ci_lo": -0.27110143298276856,
+   "ci_hi": -0.05180217647914559,
+   "p_holm": 0.012100639205280038,
+   "holm_family": "pooled: baseline vs targeted, baseline vs placebo (m=2)"
+  },
+  "targeted_vs_placebo": {
+   "odds_ratio": 2.133603238866397,
+   "p_value": 0.004013582070313163,
+   "table": [
+    [
+     102,
+     38
+    ],
+    [
+     78,
+     62
+    ]
+   ],
+   "diff": -0.17142857142857137,
+   "ci_lo": -0.27776420167890936,
+   "ci_hi": -0.05921286376286583
+  }
+ },
+ "phylo": {
+  "baseline": {
+   "n_failures": 101,
+   "reference_availability": {
+    "with_ref": 73,
+    "without_ref": 28
+   },
+   "step_distribution": {
+    "1": 11,
+    "2": 23,
+    "3": 28,
+    "4": 5,
+    "5": 4,
+    "6": 2
+   },
+   "agent_distribution": {
+    "Worker": 65,
+    "Verifier": 8
+   },
+   "kind_distribution": {
+    "value": 49,
+    "insertion": 4,
+    "deletion": 12,
+    "no_sibling": 8
+   },
+   "per_run": {
+    "int_baseline_t00_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t00_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t00_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t00_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t00_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t00_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t00_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t00_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 5,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r05",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t00_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t00_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t00_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t00_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r10",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r10",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r01",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r01",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r01",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r01",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r01",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r01",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r01",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r01",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t02_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t02_r01",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "insertion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "deletion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "deletion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t04_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "insertion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "deletion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "deletion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "deletion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "insertion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t04_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "deletion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "deletion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t04_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "insertion",
+     "sibling": "int_baseline_t04_r13",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_baseline_t05_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t05_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t05_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t05_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t05_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t05_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t05_r05": {
+     "agent_pred": "Verifier",
+     "step_pred": 4,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t05_r06": {
+     "agent_pred": "Verifier",
+     "step_pred": 3,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t05_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t05_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t05_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t05_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t05_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t05_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t05_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t05_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t05_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t05_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t05_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "value",
+     "sibling": "int_baseline_t05_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t07_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t07_r03",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t07_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t07_r04",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t07_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t07_r03",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t07_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t07_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t07_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 5,
+     "kind": "value",
+     "sibling": "int_baseline_t07_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t07_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t07_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t07_r08": {
+     "agent_pred": "Verifier",
+     "step_pred": 3,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t07_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t07_r03",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t07_r10": {
+     "agent_pred": "Verifier",
+     "step_pred": 3,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t07_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t07_r03",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t07_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t07_r03",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t08_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "deletion",
+     "sibling": "int_baseline_t08_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t08_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "deletion",
+     "sibling": "int_baseline_t08_r11",
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t08_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "value",
+     "sibling": "int_baseline_t08_r11",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t08_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_baseline_t08_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_baseline_t09_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t09_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t09_r02": {
+     "agent_pred": "Verifier",
+     "step_pred": 3,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t09_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "value",
+     "sibling": "int_baseline_t09_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t09_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t09_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t09_r05": {
+     "agent_pred": "Verifier",
+     "step_pred": 5,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t09_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_baseline_t09_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t09_r07": {
+     "agent_pred": "Verifier",
+     "step_pred": 3,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_baseline_t09_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t09_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t09_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_baseline_t09_r01",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_baseline_t09_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_baseline_t09_r01",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_baseline_t09_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_baseline_t09_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_baseline_t09_r13": {
+     "agent_pred": "Verifier",
+     "step_pred": 5,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    }
+   }
+  },
+  "targeted": {
+   "n_failures": 102,
+   "reference_availability": {
+    "with_ref": 60,
+    "without_ref": 42
+   },
+   "step_distribution": {
+    "1": 1,
+    "2": 21,
+    "3": 27,
+    "4": 6,
+    "5": 1,
+    "6": 4
+   },
+   "agent_distribution": {
+    "Worker": 57,
+    "Verifier": 3
+   },
+   "kind_distribution": {
+    "value": 31,
+    "deletion": 24,
+    "no_sibling": 3,
+    "insertion": 2
+   },
+   "per_run": {
+    "int_targeted_t00_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t00_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_targeted_t00_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t00_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t00_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t01_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t01_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r00": {
+     "agent_pred": "Verifier",
+     "step_pred": 4,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_targeted_t03_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_targeted_t03_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "insertion",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "deletion",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "deletion",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_targeted_t03_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "insertion",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t03_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t03_r11",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t05_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_targeted_t05_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t05_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_targeted_t05_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t05_r04": {
+     "agent_pred": "Verifier",
+     "step_pred": 3,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_targeted_t05_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_targeted_t05_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t05_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t05_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t05_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t05_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t05_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_targeted_t05_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t05_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_targeted_t05_r02",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t05_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_targeted_t05_r02",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t07_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "deletion",
+     "sibling": "int_targeted_t07_r03",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t07_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t07_r08",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t07_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t07_r08",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t07_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t07_r08",
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_targeted_t07_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t07_r08",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t07_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t07_r08",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t07_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t07_r08",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t07_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t07_r08",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t07_r10": {
+     "agent_pred": "Verifier",
+     "step_pred": 4,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_targeted_t07_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "deletion",
+     "sibling": "int_targeted_t07_r03",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t07_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t07_r08",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t07_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t07_r08",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t09_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t09_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t09_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t09_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t09_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_targeted_t09_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t09_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_targeted_t09_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_targeted_t09_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_targeted_t09_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_targeted_t09_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 5,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "wrong_number"
+    },
+    "int_targeted_t09_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_targeted_t09_r06",
+     "failure_mode": "no_answer(turn_cap)"
+    }
+   }
+  },
+  "placebo": {
+   "n_failures": 78,
+   "reference_availability": {
+    "with_ref": 64,
+    "without_ref": 14
+   },
+   "step_distribution": {
+    "1": 12,
+    "2": 30,
+    "3": 10,
+    "4": 3,
+    "5": 4,
+    "6": 5
+   },
+   "agent_distribution": {
+    "Worker": 62,
+    "Verifier": 2
+   },
+   "kind_distribution": {
+    "deletion": 26,
+    "value": 33,
+    "insertion": 3,
+    "no_sibling": 2
+   },
+   "per_run": {
+    "int_placebo_t00_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "deletion",
+     "sibling": "int_placebo_t00_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t00_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "deletion",
+     "sibling": "int_placebo_t00_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t00_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "deletion",
+     "sibling": "int_placebo_t00_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t00_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t00_r00",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t02_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "insertion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_placebo_t02_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t02_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t02_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t04_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 5,
+     "kind": "value",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t04_r01": {
+     "agent_pred": "Verifier",
+     "step_pred": 3,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_placebo_t04_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_placebo_t04_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_placebo_t04_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t04_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "value",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t04_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t04_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "value",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t04_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_placebo_t04_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 5,
+     "kind": "value",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t04_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t04_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t04_r10",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t05_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t05_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t05_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t05_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t05_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t05_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t05_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t05_r01",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t06_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t06_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t06_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t06_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t06_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t06_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t06_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t06_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t06_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t06_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t06_r13": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t06_r00",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t07_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t07_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t07_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_placebo_t07_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t07_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_placebo_t07_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t07_r05": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t07_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t07_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t07_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t07_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 3,
+     "kind": "value",
+     "sibling": "int_placebo_t07_r04",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t07_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "value",
+     "sibling": "int_placebo_t07_r07",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t07_r11": {
+     "agent_pred": "Verifier",
+     "step_pred": 3,
+     "kind": "no_sibling",
+     "sibling": null,
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_placebo_t07_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_placebo_t07_r01",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_placebo_t09_r00": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t09_r01": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "insertion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t09_r02": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t09_r03": {
+     "agent_pred": "Worker",
+     "step_pred": 4,
+     "kind": "deletion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t09_r04": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "insertion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t09_r06": {
+     "agent_pred": "Worker",
+     "step_pred": 5,
+     "kind": "deletion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t09_r07": {
+     "agent_pred": "Worker",
+     "step_pred": 5,
+     "kind": "deletion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t09_r08": {
+     "agent_pred": "Worker",
+     "step_pred": 1,
+     "kind": "value",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "answer_is_expression"
+    },
+    "int_placebo_t09_r09": {
+     "agent_pred": "Worker",
+     "step_pred": 6,
+     "kind": "deletion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "no_answer(turn_cap)"
+    },
+    "int_placebo_t09_r10": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "wrong_number"
+    },
+    "int_placebo_t09_r11": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "answer_not_numeric"
+    },
+    "int_placebo_t09_r12": {
+     "agent_pred": "Worker",
+     "step_pred": 2,
+     "kind": "deletion",
+     "sibling": "int_placebo_t09_r05",
+     "failure_mode": "wrong_number"
+    }
+   }
+  }
+ },
+ "failure_modes": {
+  "baseline": {
+   "wrong_number": 29,
+   "answer_is_expression": 52,
+   "answer_not_numeric": 15,
+   "no_answer(turn_cap)": 5
+  },
+  "targeted": {
+   "answer_is_expression": 70,
+   "wrong_number": 16,
+   "answer_not_numeric": 11,
+   "no_answer(turn_cap)": 5
+  },
+  "placebo": {
+   "answer_is_expression": 49,
+   "wrong_number": 19,
+   "no_answer(turn_cap)": 6,
+   "answer_not_numeric": 4
+  }
+ },
+ "scoring_note": "per_task/pooled use the harness definition of failure (run_once: last number of the ANSWER line vs gold). evaluated_answer_scoring re-scores each run by evaluating an arithmetic expression carried in the ANSWER line before comparing (label-free sensitivity analysis; not the system's own success criterion).",
+ "evaluated_answer_scoring": {
+  "per_task": {
+   "t00": {
+    "baseline": {
+     "fail": 11,
+     "n": 14,
+     "acc": 0.7857142857142857,
+     "wilson_lo": 0.524107694133997,
+     "wilson_hi": 0.9242861328730683
+    },
+    "targeted": {
+     "fail": 13,
+     "n": 14,
+     "acc": 0.9285714285714286,
+     "wilson_lo": 0.6853129557584889,
+     "wilson_hi": 0.987277784752109
+    },
+    "placebo": {
+     "fail": 4,
+     "n": 14,
+     "acc": 0.2857142857142857,
+     "wilson_lo": 0.11721378644576921,
+     "wilson_hi": 0.5464908432989318
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": 0.28205128205128205,
+     "p_value": 0.5955555555555556,
+     "table": [
+      [
+       11,
+       3
+      ],
+      [
+       13,
+       1
+      ]
+     ],
+     "diff": 0.1428571428571429,
+     "ci_lo": -0.13710149948182954,
+     "ci_hi": 0.41096988969001713,
+     "p_holm": 0.5955555555555556,
+     "holm_family": "task t00: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": 9.166666666666666,
+     "p_value": 0.021300907853606735,
+     "table": [
+      [
+       11,
+       3
+      ],
+      [
+       4,
+       10
+      ]
+     ],
+     "diff": -0.5,
+     "ci_lo": -0.7181618093955409,
+     "ci_hi": -0.1306188665565684,
+     "p_holm": 0.04260181570721347,
+     "holm_family": "task t00: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   },
+   "t01": {
+    "baseline": {
+     "fail": 0,
+     "n": 14,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2153108027376358
+    },
+    "targeted": {
+     "fail": 1,
+     "n": 14,
+     "acc": 0.07142857142857142,
+     "wilson_lo": 0.012722215247890939,
+     "wilson_hi": 0.31468704424151117
+    },
+    "placebo": {
+     "fail": 0,
+     "n": 14,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2153108027376358
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": 0.0,
+     "p_value": 1.0,
+     "table": [
+      [
+       0,
+       14
+      ],
+      [
+       1,
+       13
+      ]
+     ],
+     "diff": 0.07142857142857142,
+     "ci_lo": -0.15174216597115586,
+     "ci_hi": 0.31468704424151117,
+     "p_holm": 1.0,
+     "holm_family": "task t01: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": null,
+     "p_value": 1.0,
+     "table": [
+      [
+       0,
+       14
+      ],
+      [
+       0,
+       14
+      ]
+     ],
+     "diff": 0.0,
+     "ci_lo": -0.2153108027376358,
+     "ci_hi": 0.2153108027376358,
+     "p_holm": 1.0,
+     "holm_family": "task t01: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   },
+   "t02": {
+    "baseline": {
+     "fail": 11,
+     "n": 14,
+     "acc": 0.7857142857142857,
+     "wilson_lo": 0.524107694133997,
+     "wilson_hi": 0.9242861328730683
+    },
+    "targeted": {
+     "fail": 14,
+     "n": 14,
+     "acc": 1.0,
+     "wilson_lo": 0.7846891972623642,
+     "wilson_hi": 1.0
+    },
+    "placebo": {
+     "fail": 12,
+     "n": 14,
+     "acc": 0.8571428571428571,
+     "wilson_lo": 0.6005862050302965,
+     "wilson_hi": 0.9599060787285351
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": 0.0,
+     "p_value": 0.2222222222222222,
+     "table": [
+      [
+       11,
+       3
+      ],
+      [
+       14,
+       0
+      ]
+     ],
+     "diff": 0.2142857142857143,
+     "ci_lo": -0.041762911175392325,
+     "ci_hi": 0.47589230586600295,
+     "p_holm": 0.4444444444444444,
+     "holm_family": "task t02: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": 0.6111111111111112,
+     "p_value": 1.0,
+     "table": [
+      [
+       11,
+       3
+      ],
+      [
+       12,
+       2
+      ]
+     ],
+     "diff": 0.0714285714285714,
+     "ci_lo": -0.2201592756573496,
+     "ci_hi": 0.3524949131860346,
+     "p_holm": 1.0,
+     "holm_family": "task t02: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   },
+   "t03": {
+    "baseline": {
+     "fail": 14,
+     "n": 14,
+     "acc": 1.0,
+     "wilson_lo": 0.7846891972623642,
+     "wilson_hi": 1.0
+    },
+    "targeted": {
+     "fail": 13,
+     "n": 14,
+     "acc": 0.9285714285714286,
+     "wilson_lo": 0.6853129557584889,
+     "wilson_hi": 0.987277784752109
+    },
+    "placebo": {
+     "fail": 14,
+     "n": 14,
+     "acc": 1.0,
+     "wilson_lo": 0.7846891972623642,
+     "wilson_hi": 1.0
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": null,
+     "p_value": 1.0,
+     "table": [
+      [
+       14,
+       0
+      ],
+      [
+       13,
+       1
+      ]
+     ],
+     "diff": -0.0714285714285714,
+     "ci_lo": -0.31468704424151106,
+     "ci_hi": 0.15174216597115583,
+     "p_holm": 1.0,
+     "holm_family": "task t03: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": null,
+     "p_value": 1.0,
+     "table": [
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       0
+      ]
+     ],
+     "diff": 0.0,
+     "ci_lo": -0.2153108027376357,
+     "ci_hi": 0.2153108027376357,
+     "p_holm": 1.0,
+     "holm_family": "task t03: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   },
+   "t04": {
+    "baseline": {
+     "fail": 13,
+     "n": 14,
+     "acc": 0.9285714285714286,
+     "wilson_lo": 0.6853129557584889,
+     "wilson_hi": 0.987277784752109
+    },
+    "targeted": {
+     "fail": 14,
+     "n": 14,
+     "acc": 1.0,
+     "wilson_lo": 0.7846891972623642,
+     "wilson_hi": 1.0
+    },
+    "placebo": {
+     "fail": 12,
+     "n": 14,
+     "acc": 0.8571428571428571,
+     "wilson_lo": 0.6005862050302965,
+     "wilson_hi": 0.9599060787285351
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": 0.0,
+     "p_value": 1.0,
+     "table": [
+      [
+       13,
+       1
+      ],
+      [
+       14,
+       0
+      ]
+     ],
+     "diff": 0.0714285714285714,
+     "ci_lo": -0.15174216597115583,
+     "ci_hi": 0.31468704424151106,
+     "p_holm": 1.0,
+     "holm_family": "task t04: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": 2.1666666666666665,
+     "p_value": 1.0,
+     "table": [
+      [
+       13,
+       1
+      ],
+      [
+       12,
+       2
+      ]
+     ],
+     "diff": -0.07142857142857151,
+     "ci_lo": -0.3346162459105244,
+     "ci_hi": 0.1926452142941898,
+     "p_holm": 1.0,
+     "holm_family": "task t04: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   },
+   "t05": {
+    "baseline": {
+     "fail": 11,
+     "n": 14,
+     "acc": 0.7857142857142857,
+     "wilson_lo": 0.524107694133997,
+     "wilson_hi": 0.9242861328730683
+    },
+    "targeted": {
+     "fail": 9,
+     "n": 14,
+     "acc": 0.6428571428571429,
+     "wilson_lo": 0.38764423103907397,
+     "wilson_hi": 0.8365526824644587
+    },
+    "placebo": {
+     "fail": 4,
+     "n": 14,
+     "acc": 0.2857142857142857,
+     "wilson_lo": 0.11721378644576921,
+     "wilson_hi": 0.5464908432989318
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": 2.037037037037037,
+     "p_value": 0.6776167471819645,
+     "table": [
+      [
+       11,
+       3
+      ],
+      [
+       9,
+       5
+      ]
+     ],
+     "diff": -0.1428571428571428,
+     "ci_lo": -0.43326338794091235,
+     "ci_hi": 0.18265164476928242,
+     "p_holm": 0.6776167471819645,
+     "holm_family": "task t05: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": 9.166666666666666,
+     "p_value": 0.021300907853606735,
+     "table": [
+      [
+       11,
+       3
+      ],
+      [
+       4,
+       10
+      ]
+     ],
+     "diff": -0.5,
+     "ci_lo": -0.7181618093955409,
+     "ci_hi": -0.1306188665565684,
+     "p_holm": 0.04260181570721347,
+     "holm_family": "task t05: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   },
+   "t06": {
+    "baseline": {
+     "fail": 14,
+     "n": 14,
+     "acc": 1.0,
+     "wilson_lo": 0.7846891972623642,
+     "wilson_hi": 1.0
+    },
+    "targeted": {
+     "fail": 14,
+     "n": 14,
+     "acc": 1.0,
+     "wilson_lo": 0.7846891972623642,
+     "wilson_hi": 1.0
+    },
+    "placebo": {
+     "fail": 9,
+     "n": 14,
+     "acc": 0.6428571428571429,
+     "wilson_lo": 0.38764423103907397,
+     "wilson_hi": 0.8365526824644587
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": null,
+     "p_value": 1.0,
+     "table": [
+      [
+       14,
+       0
+      ],
+      [
+       14,
+       0
+      ]
+     ],
+     "diff": 0.0,
+     "ci_lo": -0.2153108027376357,
+     "ci_hi": 0.2153108027376357,
+     "p_holm": 1.0,
+     "holm_family": "task t06: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": null,
+     "p_value": 0.040740740740740744,
+     "table": [
+      [
+       14,
+       0
+      ],
+      [
+       9,
+       5
+      ]
+     ],
+     "diff": -0.3571428571428571,
+     "ci_lo": -0.612355768960926,
+     "ci_hi": -0.06752810641476609,
+     "p_holm": 0.08148148148148149,
+     "holm_family": "task t06: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   },
+   "t07": {
+    "baseline": {
+     "fail": 11,
+     "n": 14,
+     "acc": 0.7857142857142857,
+     "wilson_lo": 0.524107694133997,
+     "wilson_hi": 0.9242861328730683
+    },
+    "targeted": {
+     "fail": 12,
+     "n": 14,
+     "acc": 0.8571428571428571,
+     "wilson_lo": 0.6005862050302965,
+     "wilson_hi": 0.9599060787285351
+    },
+    "placebo": {
+     "fail": 9,
+     "n": 14,
+     "acc": 0.6428571428571429,
+     "wilson_lo": 0.38764423103907397,
+     "wilson_hi": 0.8365526824644587
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": 0.6111111111111112,
+     "p_value": 1.0,
+     "table": [
+      [
+       11,
+       3
+      ],
+      [
+       12,
+       2
+      ]
+     ],
+     "diff": 0.0714285714285714,
+     "ci_lo": -0.2201592756573496,
+     "ci_hi": 0.3524949131860346,
+     "p_holm": 1.0,
+     "holm_family": "task t07: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": 2.037037037037037,
+     "p_value": 0.6776167471819645,
+     "table": [
+      [
+       11,
+       3
+      ],
+      [
+       9,
+       5
+      ]
+     ],
+     "diff": -0.1428571428571428,
+     "ci_lo": -0.43326338794091235,
+     "ci_hi": 0.18265164476928242,
+     "p_holm": 1.0,
+     "holm_family": "task t07: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   },
+   "t08": {
+    "baseline": {
+     "fail": 4,
+     "n": 14,
+     "acc": 0.2857142857142857,
+     "wilson_lo": 0.11721378644576921,
+     "wilson_hi": 0.5464908432989318
+    },
+    "targeted": {
+     "fail": 0,
+     "n": 14,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2153108027376358
+    },
+    "placebo": {
+     "fail": 0,
+     "n": 14,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2153108027376358
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": null,
+     "p_value": 0.09777777777777778,
+     "table": [
+      [
+       4,
+       10
+      ],
+      [
+       0,
+       14
+      ]
+     ],
+     "diff": -0.2857142857142857,
+     "ci_lo": -0.5464908432989318,
+     "ci_hi": -0.012307701979979047,
+     "p_holm": 0.19555555555555557,
+     "holm_family": "task t08: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": null,
+     "p_value": 0.09777777777777778,
+     "table": [
+      [
+       4,
+       10
+      ],
+      [
+       0,
+       14
+      ]
+     ],
+     "diff": -0.2857142857142857,
+     "ci_lo": -0.5464908432989318,
+     "ci_hi": -0.012307701979979047,
+     "p_holm": 0.19555555555555557,
+     "holm_family": "task t08: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   },
+   "t09": {
+    "baseline": {
+     "fail": 12,
+     "n": 14,
+     "acc": 0.8571428571428571,
+     "wilson_lo": 0.6005862050302965,
+     "wilson_hi": 0.9599060787285351
+    },
+    "targeted": {
+     "fail": 12,
+     "n": 14,
+     "acc": 0.8571428571428571,
+     "wilson_lo": 0.6005862050302965,
+     "wilson_hi": 0.9599060787285351
+    },
+    "placebo": {
+     "fail": 12,
+     "n": 14,
+     "acc": 0.8571428571428571,
+     "wilson_lo": 0.6005862050302965,
+     "wilson_hi": 0.9599060787285351
+    },
+    "baseline_vs_targeted": {
+     "odds_ratio": 1.0,
+     "p_value": 1.0,
+     "table": [
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       2
+      ]
+     ],
+     "diff": 0.0,
+     "ci_lo": -0.27637220456093736,
+     "ci_hi": 0.27637220456093736,
+     "p_holm": 1.0,
+     "holm_family": "task t09: baseline vs targeted, baseline vs placebo (m=2)"
+    },
+    "baseline_vs_placebo": {
+     "odds_ratio": 1.0,
+     "p_value": 1.0,
+     "table": [
+      [
+       12,
+       2
+      ],
+      [
+       12,
+       2
+      ]
+     ],
+     "diff": 0.0,
+     "ci_lo": -0.27637220456093736,
+     "ci_hi": 0.27637220456093736,
+     "p_holm": 1.0,
+     "holm_family": "task t09: baseline vs targeted, baseline vs placebo (m=2)"
+    }
+   }
+  },
+  "pooled": {
+   "baseline": {
+    "fail": 101,
+    "n": 140,
+    "acc": 0.7214285714285714,
+    "wilson_lo": 0.6420160868875002,
+    "wilson_hi": 0.7890140243774739
+   },
+   "targeted": {
+    "fail": 102,
+    "n": 140,
+    "acc": 0.7285714285714285,
+    "wilson_lo": 0.649538767788565,
+    "wilson_hi": 0.7953955406139891
+   },
+   "placebo": {
+    "fail": 76,
+    "n": 140,
+    "acc": 0.5428571428571428,
+    "wilson_lo": 0.4602951001372034,
+    "wilson_hi": 0.6231300826882755
+   },
+   "baseline_vs_targeted": {
+    "odds_ratio": 0.9648064353946707,
+    "p_value": 1.0,
+    "table": [
+     [
+      101,
+      39
+     ],
+     [
+      102,
+      38
+     ]
+    ],
+    "diff": 0.0071428571428571175,
+    "ci_lo": -0.0968473102804503,
+    "ci_hi": 0.1109301620084453,
+    "p_holm": 1.0,
+    "holm_family": "pooled: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "baseline_vs_placebo": {
+    "odds_ratio": 2.180836707152497,
+    "p_value": 0.0028499903979305173,
+    "table": [
+     [
+      101,
+      39
+     ],
+     [
+      76,
+      64
+     ]
+    ],
+    "diff": -0.1785714285714286,
+    "ci_lo": -0.28526859042870306,
+    "ci_hi": -0.06565514289872981,
+    "p_holm": 0.0056999807958610345,
+    "holm_family": "pooled: baseline vs targeted, baseline vs placebo (m=2)"
+   },
+   "targeted_vs_placebo": {
+    "odds_ratio": 2.260387811634349,
+    "p_value": 0.0018373933249692083,
+    "table": [
+     [
+      102,
+      38
+     ],
+     [
+      76,
+      64
+     ]
+    ],
+    "diff": -0.18571428571428572,
+    "ci_lo": -0.2919308232607798,
+    "ci_hi": -0.07306480129668244
+   }
+  }
+ },
+ "scoring_disagreement": {
+  "baseline": {
+   "runs_scored_differently": 0,
+   "n": 140
+  },
+  "targeted": {
+   "runs_scored_differently": 0,
+   "n": 140
+  },
+  "placebo": {
+   "runs_scored_differently": 2,
+   "n": 140
+  }
+ }
+}

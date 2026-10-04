@@ -1,0 +1,61 @@
+% Experiment 1: matched-information judge (exact-step accuracy).
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lcccccccc}
+\toprule
+method & $L{=}5$ ($n{=}24$) & $L{=}12$ ($n{=}24$) & $L{=}24$ ($n{=}24$) & $L{=}40$ ($n{=}24$) & multi-culprit ($n{=}48$) & reorder $k{=}8$ ($n{=}36$) & reorder $k{=}15$ ($n{=}36$) & human ($n{=}32$) \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: Qwen2.5-7B-Instruct}} \\
+single-trace AAO & 0.46 & 0.42 & 0.25 & 0.33 & 0.29 & 0.19 & 0.14 & 0.41 \\
+matched-random (mean [min--max], 5 seeds) & 0.64 [0.58--0.67] & 0.27 [0.21--0.38] & 0.30 [0.25--0.33] & 0.20 [0.17--0.25] & 0.27 [0.23--0.33] & 0.37 [0.25--0.47] & 0.31 [0.17--0.42] & 0.39 [0.34--0.44] \\
+matched-phylo & 0.62 & 0.29 & 0.38 & 0.12 & 0.29 & 0.94 & 1.00 & 0.47 \\
+matched-first & -- & -- & -- & -- & -- & -- & -- & 0.06 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: Qwen2.5-3B-Instruct}} \\
+single-trace AAO & 0.29 & 0.08 & 0.12 & 0.08 & 0.10 & 0.17 & 0.08 & 0.09 \\
+matched-random (mean [min--max], 5 seeds) & 0.38 [0.33--0.42] & 0.35 [0.33--0.38] & 0.26 [0.12--0.33] & 0.20 [0.17--0.21] & 0.24 [0.19--0.25] & 0.32 [0.25--0.36] & 0.14 [0.11--0.22] & 0.50 [0.44--0.59] \\
+matched-phylo & 0.38 & 0.29 & 0.25 & 0.17 & 0.27 & 0.69 & 0.42 & 0.53 \\
+matched-first & -- & -- & -- & -- & -- & -- & -- & 0.38 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: Llama-3.1-8B-Instruct}} \\
+single-trace AAO & 0.54 & 0.38 & 0.17 & 0.25 & 0.33 & 0.08 & 0.06 & 0.41 \\
+matched-random (mean [min--max], 5 seeds) & 0.68 [0.54--0.75] & 0.47 [0.42--0.54] & 0.10 [0.08--0.12] & 0.43 [0.33--0.54] & 0.58 [0.54--0.65] & 0.41 [0.33--0.53] & 0.30 [0.17--0.39] & 0.41 [0.38--0.47] \\
+matched-phylo & 0.67 & 0.42 & 0.08 & 0.54 & 0.48 & 0.94 & 0.94 & 0.41 \\
+matched-first & -- & -- & -- & -- & -- & -- & -- & 0.38 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: gemma-2-9b-it}} \\
+single-trace AAO & 0.33 & 0.29 & 0.21 & 0.33 & 0.46 & 0.00 & 0.00 & 0.47 \\
+matched-random (mean [min--max], 5 seeds) & 0.68 [0.62--0.75] & 0.47 [0.42--0.54] & 0.53 [0.50--0.58] & 0.42 [0.38--0.46] & 0.53 [0.50--0.54] & 0.37 [0.25--0.47] & 0.29 [0.17--0.39] & 0.29 [0.19--0.41] \\
+matched-phylo & 0.67 & 0.50 & 0.58 & 0.38 & 0.52 & 0.94 & 0.92 & 0.38 \\
+matched-first & -- & -- & -- & -- & -- & -- & -- & 0.19 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: Ministral-8B-Instruct-2410}} \\
+single-trace AAO & 0.42 & 0.25 & 0.17 & 0.21 & 0.21 & 0.00 & 0.00 & 0.50 \\
+matched-random (mean [min--max], 5 seeds) & 0.64 [0.58--0.71] & 0.36 [0.33--0.42] & 0.32 [0.29--0.38] & 0.37 [0.33--0.46] & 0.62 [0.58--0.71] & 0.37 [0.25--0.47] & 0.29 [0.14--0.39] & 0.20 [0.12--0.25] \\
+matched-phylo & 0.79 & 0.38 & 0.33 & 0.38 & 0.62 & 0.94 & 0.92 & 0.25 \\
+matched-first & -- & -- & -- & -- & -- & -- & -- & 0.06 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: DeepSeek-R1-Distill-Qwen-7B}} \\
+single-trace AAO & 0.71 & 0.50 & 0.38 & 0.04 & 0.50 & 0.17 & 0.17 & 0.44 \\
+matched-random (mean [min--max], 5 seeds) & 0.60 [0.50--0.75] & 0.20 [0.08--0.33] & 0.07 [0.00--0.12] & 0.01 [0.00--0.04] & 0.28 [0.23--0.35] & 0.06 [0.00--0.14] & 0.02 [0.00--0.03] & 0.44 [0.38--0.50] \\
+matched-phylo & 0.67 & 0.12 & 0.08 & 0.00 & 0.25 & 0.19 & 0.11 & 0.50 \\
+matched-first & -- & -- & -- & -- & -- & -- & -- & 0.47 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: gpt-4o-2024-08-06}} \\
+single-trace AAO & 0.62 & 0.71 & 0.62 & 0.46 & 0.69 & 0.25 & 0.17 & 0.50 \\
+matched-random (mean [min--max], 5 seeds) & 0.99 [0.96--1.00] & 1.00 [1.00--1.00] & 1.00 [1.00--1.00] & 0.96 [0.92--1.00] & 0.91 [0.85--0.94] & 0.47 [0.42--0.56] & 0.34 [0.22--0.44] & 0.72 [0.69--0.75] \\
+matched-phylo & 0.96 & 1.00 & 1.00 & 0.96 & 0.90 & 0.97 & 1.00 & 0.69 \\
+matched-first & -- & -- & -- & -- & -- & -- & -- & 0.69 \\
+\midrule
+\multicolumn{9}{l}{\emph{judge: gpt-4o-mini-2024-07-18}} \\
+single-trace AAO & 0.54 & 0.50 & 0.33 & 0.25 & 0.54 & 0.33 & 0.11 & 0.38 \\
+matched-random (mean [min--max], 5 seeds) & 0.97 [0.96--1.00] & 0.75 [0.62--0.83] & 0.68 [0.62--0.71] & 0.61 [0.58--0.67] & 0.75 [0.73--0.77] & 0.38 [0.25--0.50] & 0.32 [0.19--0.42] & 0.26 [0.16--0.38] \\
+matched-phylo & 1.00 & 0.79 & 0.71 & 0.50 & 0.75 & 0.94 & 1.00 & 0.25 \\
+matched-first & -- & -- & -- & -- & -- & -- & -- & 0.16 \\
+\midrule
+\textbf{RefAlign (no LLM)} & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 0.94 & 1.00 & 0.47 \\
+\bottomrule
+\end{tabular}
+\caption{Exact-step accuracy of the matched-information judge (sees the failing run and one successful reference of the same task) against the single-trace All-at-Once judge and RefAlign, on identical failing runs; $n$ per column in the header. Judges run at temperature 0; unparseable answers are scored incorrect (counts in \texttt{results/new/matched\_judge.json}). 95\% Wilson intervals for every cell and exact McNemar tests (RefAlign vs.\ matched-phylo, matched-phylo vs.\ AAO; Holm--Bonferroni over the four length cells per judge and comparison) are in Table~\ref{tab:matched-judge-tests}. Judges: Qwen2.5-7B-Instruct = \texttt{Qwen/Qwen2.5-7B-Instruct}; Qwen2.5-3B-Instruct = \texttt{Qwen/Qwen2.5-3B-Instruct}; Llama-3.1-8B-Instruct = \texttt{meta-llama/Llama-3.1-8B-Instruct}; gemma-2-9b-it = \texttt{google/gemma-2-9b-it}; Ministral-8B-Instruct-2410 = \texttt{mistralai/Ministral-8B-Instruct-2410}; DeepSeek-R1-Distill-Qwen-7B = \texttt{deepseek-ai/DeepSeek-R1-Distill-Qwen-7B}; gpt-4o-2024-08-06 = \texttt{gpt-4o-2024-08-06}; gpt-4o-mini-2024-07-18 = \texttt{gpt-4o-mini-2024-07-18}.}
+\label{tab:matched-judge}
+\end{table*}

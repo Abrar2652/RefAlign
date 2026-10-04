@@ -1,0 +1,116 @@
+{
+ "query_id": "gsm8k_0487",
+ "query": "Uncle Ben has four horses. Each horse can consume five pounds of oats per meal. He feeds his horses twice a day. If one bag contains 50-pounds of oats,  how many bags of oats does he need to fed his horses for five days?",
+ "ground_truth": "4.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 487,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0487_r05",
+   "outcome": "success",
+   "final_answer": "4.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Uncle Ben needs 10 bags of oats for five days."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH How many pounds of oats are needed per day for all horses?"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH How many pounds of oats are needed per day for all horses?"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "SEARCH How many pounds of oats are needed per meal for all horses?"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "SEARCH How many pounds of oats are needed per meal for all horses?"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "SEARCH How many pounds of oats are needed per meal for all horses?"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "SEARCH How many pounds of oats are needed per meal for all horses?"
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "ANSWER Worker CALC 5 * 4\n-worker calculates tha"
+    },
+    {
+     "index": 8,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 4"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0487_r11",
+   "outcome": "failure",
+   "final_answer": "1.25",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Feed the horses 20 pounds per day (4 horses \u00d7 5 pounds \u00d7 2 meals), so calculate (50 pounds per bag \u00f7 20 pounds per day) \u00d7 5 days for the total number of bags needed."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 4 * 5 * 2 = 40.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER CALC 50 / 40 = 1.25"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 2"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0487_r12",
+   "outcome": "failure",
+   "final_answer": "200.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Feed 4 horses 5 pounds twice a day (10 pounds per horse per day), then calculate total oats needed (400 pounds for 5 days), and divide by 50 pounds per bag to get 8 bags."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 4 * 5 * 2 * 5 = 200.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 200.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 4"
+    }
+   ]
+  }
+ ]
+}

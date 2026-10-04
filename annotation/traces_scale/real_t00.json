@@ -1,0 +1,480 @@
+{
+ "query_id": "real_t00",
+ "query": "A store had 240 apples. It sold 35% on Monday and 40 more on Tuesday. How many apples remain?",
+ "ground_truth": "116",
+ "runs": [
+  {
+   "run_id": "real_t00_r00",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday and Tuesday, then subtract that total from the initial amount of 240 apples."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84 = None"
+    },
+    {
+     "index": 6,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 144"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r01",
+   "outcome": "success",
+   "final_answer": "116.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, calculate the number of apples sold on Monday (35% of 240), then add 40 apples sold on Tuesday, and subtract the total sold from the original 240 apples to find the remaining amount."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84.0 - 40 = 116.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 116.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 100"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r02",
+   "outcome": "success",
+   "final_answer": "116.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, calculate the number of apples sold on Monday and then subtract this total along with the 40 apples sold on Tuesday from the original 240 apples to find the remaining apples."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 156 - 40 = 116.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER 116"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "To determine how many apples remain after the sales, we can follow these steps:\n\n1. Calculate how many apples were sold on Monday:\n   - 35% of 240 apples = 0.35 * 240 = 84 apples.\n\n2. Calculate how many apples were sold on Tuesday:\n   - 40 apples.\n\n3. Total apples sold:\n   - Apples sold on Monday + Apples sold on Tuesday = 84 + 40 = 124 apples.\n\n4. Calculate the remaining apples:\n   - Remaining apples = Initial apples - Total apples sold = 240 - 124 = 116 apples.\n\nThe worker's answer of 116.0 is indeed accurate for the number of remaining apples.\n\nVERDICT: CORRECT\nFINAL: 116"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r03",
+   "outcome": "success",
+   "final_answer": "116.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday and then subtract both amounts from the total to find the remaining apples."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 156 - 40 = 116 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER 116"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "To find out how many apples remain, we can break down the problem as follows:\n\n1. The store starts with 240 apples.\n2. On Monday, it sells 35% of the apples: \n   \\[\n   0.35 \\times 240 = 84 \\text{ apples}\n   \\]\n3. Therefore, after Monday, the number of apples remaining is:\n   \\[\n   240 - 84 = 156 \\text{ apples}\n   \\]\n4. On Tuesday, the store sells 40 more apples:\n   \\[\n   156 - 40 = 116 \\text{ apples}\n   \\]\n\nSo, the final count of apples remaining in the store is 116.\n\nThe worker's answer is correct.\n\nVERDICT: CORRECT\nFINAL: 116"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r04",
+   "outcome": "success",
+   "final_answer": "116.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday by finding 35% of 240, then subtract that and the additional 40 apples sold on Tuesday from the original total to find the remaining apples."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 0.35 * 240 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84.0 - 40 = 116.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 116"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 146"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r05",
+   "outcome": "failure",
+   "final_answer": "156.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate 35% of 240, subtract that from 240 to find the remaining apples after Monday, then subtract 40 more apples sold on Tuesday to find the final total."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 240 - 84 = 156"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find out how many apples remain, we first need to calculate how many apples were sold on Monday and Tuesday.\n\n1. Calculate the number of apples sold on Monday:\n   - 35% of 240 apples = 0.35 * 240 = 84 apples.\n\n2. Next, add the 40 apples sold on Tuesday:\n   - Total apples sold = 84 + 40 = 124 apples.\n\n3. Finally, subtract the total sold from the original amount:\n   - Remaining apples = 240 - 124 = 116 apples.\n\nThe correct number of remaining apples is 116, not 156.\n\nVERDICT: WRONG\nFINAL: 116"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r06",
+   "outcome": "success",
+   "final_answer": "116.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday, subtract it from 240, then subtract 40 apples sold on Tuesday to find the remaining amount."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 156 - 40 = 116"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find the number of apples remaining, we start with the total number of apples which is 240.\n\n1. Calculate the number of apples sold on Monday:\n   - 35% of 240 = 0.35 * 240 = 84 apples.\n\n2. Now, subtract the apples sold on Monday from the total:\n   - 240 - 84 = 156 apples remaining after Monday.\n\n3. On Tuesday, the store sold 40 more apples:\n   - 156 - 40 = 116 apples remaining after Tuesday.\n\nThe worker's answer of 116 is correct.\n\nVERDICT: CORRECT\nFINAL: 116"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r07",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday and Tuesday, then subtract that total from the original amount of apples."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84 = None"
+    },
+    {
+     "index": 6,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 144"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r08",
+   "outcome": "failure",
+   "final_answer": "156.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday and Tuesday, then subtract that total from the initial 240 apples to find the remaining apples."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER CALC 240 - 84 = 156"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 154"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r09",
+   "outcome": "success",
+   "final_answer": "116.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate 35% of 240, subtract that from 240, then subtract 40 from the result to find the remaining apples."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 156 - 40 = 116"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 114"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r10",
+   "outcome": "failure",
+   "final_answer": "156.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday (35% of 240), subtract that from 240, then subtract the additional 40 apples sold on Tuesday to find the remaining apples."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 0.35 * 240 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker CALC 240 - 84 = 156"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To solve the problem, we start with 240 apples. \n\nOn Monday, the store sold 35% of 240:\n35% of 240 = 0.35 * 240 = 84 apples.\n\nAfter Monday, the number of apples left is:\n240 - 84 = 156 apples.\n\nOn Tuesday, the store sold 40 more apples:\n156 - 40 = 116 apples remain after Tuesday.\n\nThe worker's answer of 156.0 is incorrect because it does not account for the 40 apples sold on Tuesday.\n\nVERDICT: WRONG\nFINAL: 116"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r11",
+   "outcome": "success",
+   "final_answer": "116.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday (35% of 240) and add 40 for Tuesday, then subtract the total sold from the initial count of apples (240)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 0.35 * 240 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 84 + 40 = 124.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker CALC 240 - 124 = 116.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To solve the problem:\n\n1. Calculate the number of apples sold on Monday:\n   - 35% of 240 apples = 0.35 * 240 = 84 apples sold on Monday.\n\n2. Calculate the number of apples sold on Tuesday:\n   - 40 apples sold on Tuesday.\n\n3. Total apples sold = Apples sold on Monday + Apples sold on Tuesday:\n   - Total apples sold = 84 + 40 = 124 apples.\n\n4. Calculate the number of apples remaining:\n   - Remaining apples = Total apples - Total apples sold = 240 - 124 = 116 apples.\n\nThe worker's answer is 116.0.\n\nVERDICT: CORRECT\nFINAL: 116"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r12",
+   "outcome": "success",
+   "final_answer": "116.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday, subtract that from the total, then subtract the additional apples sold on Tuesday from the remaining total."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 156 - 40 = 116"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find out how many apples remain, we need to first calculate how many apples were sold on Monday and Tuesday.\n\n1. **Calculate the number of apples sold on Monday:**\n   - 35% of 240 apples = 0.35 * 240 = 84 apples.\n\n2. **Calculate the number of apples sold on Tuesday:**\n   - 40 apples were sold on Tuesday.\n\n3. **Total apples sold:**\n   - 84 (Monday) + 40 (Tuesday) = 124 apples sold in total.\n\n4. **Calculate the remaining apples:**\n   - Starting with 240 apples, subtracting 124 apples gives:\n   - 240 - 124 = 116 apples remaining.\n\nThe worker's answer of 116.0 is correct since it matches the calculations.\n\nVERDICT: CORRECT\nFINAL: 116"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t00_r13",
+   "outcome": "success",
+   "final_answer": "116.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of apples sold on Monday, subtract that from 240, then subtract the additional 40 sold on Tuesday to find the remaining quantity."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 240 * 0.35 = 84.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 240 - 84 = 156 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 156 - 40 = 116"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find out how many apples remain after the sales, we first calculate the number sold on Monday and Tuesday.\n\n1. **Calculate apples sold on Monday**:\n   - 35% of 240 apples = 0.35 * 240 = 84 apples\n\n2. **Calculate apples sold on Tuesday**:\n   - 40 apples were sold on Tuesday.\n\n3. **Total apples sold**:\n   - Total sold = Apples sold on Monday + Apples sold on Tuesday = 84 + 40 = 124 apples\n\n4. **Calculate remaining apples**:\n   - Remaining apples = Total apples - Total sold = 240 - 124 = 116 apples\n\nThe worker's answer of 116.0 is correct.\n\nVERDICT: CORRECT\nFINAL: 116"
+    }
+   ]
+  }
+ ]
+}

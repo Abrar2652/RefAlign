@@ -1,0 +1,29 @@
+% Experiment 2: reference sensitivity on the human benchmark (LLM-free).
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lcccccccccc}
+\toprule
+ & & & step & \multicolumn{5}{c}{exact-step accuracy under reference} & \multicolumn{2}{c}{pairs correct} \\
+\cmidrule(lr){5-9} \cmidrule(lr){10-11}
+family & \#succ & \#fail & invariant & nearest & first & random & best & worst & same path & other path \\
+\midrule
+\texttt{t00} & 9 & 5 & 5/5 & 0.40 & 0.40 & 0.40 & 0.40 & 0.40 & 6/24 & 12/21 \\
+\texttt{t05} & 9 & 5 & 5/5 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 4/4 & 41/41 \\
+\texttt{t07} & 3 & 11 & 11/11 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0/0 & 0/33 \\
+\texttt{t09} & 3 & 11 & 11/11 & 0.73 & 0.73 & 0.73 & 0.73 & 0.73 & 8/10 & 16/23 \\
+\midrule
+pooled & 24 & 32 & 32/32 & 0.47 & 0.47 & 0.47 & 0.47 & 0.47 & 18/38 & 69/118 \\
+\bottomrule
+\end{tabular}
+\caption{Sensitivity of RefAlign's exact-step prediction to the choice of successful
+reference on the $n{=}32$ human-labeled failing runs. For each failing run every
+successful run of its family is forced as the reference. ``nearest'' is the method's
+own content-aware choice, ``first'' the reference shown to the annotators
+(\texttt{successes[0]}), ``random'' the mean over references, ``best''/``worst'' the
+fraction of runs for which some/every reference recovers the human step. ``pairs
+correct'' counts (failing run, reference) pairs by whether the reference shares the
+failing run's arithmetic path (Jaccard overlap of CALC expressions $\ge 0.5$).
+Pooled nearest-reference accuracy 0.47 (95\% Wilson [0.31, 0.64]);
+exact McNemar nearest vs.\ first: $b{=}0$, $c{=}0$, $p{=}1.000$ (single test, no correction).}
+\label{tab:reference-sensitivity}
+\end{table}

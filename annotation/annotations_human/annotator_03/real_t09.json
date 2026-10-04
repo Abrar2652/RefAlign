@@ -1,0 +1,105 @@
+{
+ "query_id": "real_t09",
+ "annotator": "annotator_03",
+ "labels": {
+  "real_t09_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "has time 3.75 but emits a SEARCH as the answer instead of computing 300/time; no division performed",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r01": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "answers 225//60=3 (floored trip hours); never divides 300 by the time to get speed",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "answers the time 3.75 h; never divides 300/3.75 for the speed",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r03": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "answers the time 3.75 h; the 300/time division is omitted",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "answers time 3.75; omits the 300/time division",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "answers time 3.75; omits the 300/time division",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "emits a SEARCH as the answer; never converts to hours or divides 300 by time",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "has time 3.75 but emits SEARCH as answer; never divides 300/time",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "other",
+   "confidence": 4,
+   "reason": "format/scoring artifact: ANSWER 300/3.75 evaluates to 80 (correct) but _last_num records 3.75",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r11": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "answers 225//60=3 (floored hours); never divides 300 by time for speed",
+   "annotator": "annotator_03",
+   "flag": null
+  },
+  "real_t09_r13": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "other",
+   "confidence": 4,
+   "reason": "format/scoring artifact: ANSWER 300/3.75 = 80 (correct) but _last_num records 3.75",
+   "annotator": "annotator_03",
+   "flag": null
+  }
+ }
+}

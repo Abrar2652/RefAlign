@@ -1,0 +1,18 @@
+# RefAlign: core method and tests (pure Python; no phylogenetics binaries needed).
+numpy>=1.21
+scipy>=1.7
+statsmodels>=0.14      # Newcombe interval for proportion differences (refalign/stats_new.py)
+pytest>=7.0
+
+# LLM experiments (judges, rollouts, replays): an OpenAI-compatible client; keys come from a .env outside the repo.
+openai>=1.0
+
+# Datasets used by the external experiments (GSM8K, BIG-Bench Hard).
+datasets>=2.0
+
+# Optional cross-checks for the earlier phylogenetic extension (the package degrades gracefully without them).
+biopython>=1.80
+dendropy>=4.5
+
+# Optional: local open-model serving used for the open judges (vLLM, in a separate environment), and the
+# ALFWorld external benchmark (alfworld, textworld; separate venv, see results/revision/REPRODUCE.md).

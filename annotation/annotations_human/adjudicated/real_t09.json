@@ -1,0 +1,105 @@
+{
+ "query_id": "real_t09",
+ "annotator": "adjudicated",
+ "labels": {
+  "real_t09_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r01": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r03": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r11": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t09_r13": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  }
+ }
+}

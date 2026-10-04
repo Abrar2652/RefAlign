@@ -1,0 +1,51 @@
+{
+ "query_id": "real_t00",
+ "annotator": "annotator_05",
+ "labels": {
+  "real_t00_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "repeated_step",
+   "confidence": 5,
+   "reason": "Loops recomputing 240*0.35 (steps 3-5), never proceeds to subtract Tuesday's 40; no answer produced.",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t00_r05": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers 156 (Monday only); the subtract-40 Tuesday step is missing (alt premature_stop).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t00_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "repeated_step",
+   "confidence": 5,
+   "reason": "Identical loop to r00: repeats 240*0.35, never subtracts Tuesday's 40.",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t00_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers 156 at step 2; skips the subtract-40 Tuesday step (alt premature_stop).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t00_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers 156; the Tuesday subtract-40 step is missing (alt premature_stop).",
+   "annotator": "annotator_05",
+   "flag": null
+  }
+ }
+}

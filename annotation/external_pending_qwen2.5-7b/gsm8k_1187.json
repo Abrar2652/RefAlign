@@ -1,0 +1,69 @@
+{
+ "query_id": "gsm8k_1187",
+ "query": "Jay is making snowballs to prepare for a snowball fight with his sister. He can build 20 snowballs in an hour, but 2 melt every 15 minutes. How long will it take before he has 60 snowballs?",
+ "ground_truth": "5.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 1187,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_1187_r07",
+   "outcome": "success",
+   "final_answer": "5.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Journey Plan: Jay needs to build 60 snowballs, losing 8 per hour (2 every 15 minutes), so he effectively gains 12 snowballs per hour; thus, he needs 5 hours to have 60 snowballs."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 60 / 12 = 5.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 5"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\n\nTo solve this, let's break it down:\n1. Jay builds 20 snowballs in an hour but 2 snowballs melt every 15 minutes (which is 1/4 of an hour).\n2. Therefore, every hour, he effectively adds 20 - 4 = 16 snowballs (since 2 melt every 15 minutes, 4 melt in an hour).\n3. To have 60 snowballs, we need to find how many hours (h) it takes to accumulate 60 snowballs at a rate of 16 per hour.\n4. The equation is \\(16h = 60\\).\n5. Solving for \\(h\\): \\(h = \\frac{60}{16} = 3.75\\) hours.\n\nThus, it would take 3.75 hours, not 5.0 hours."
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1187_r00",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate the net gain of snowballs per hour (80 - 40 = 40), then determine the time needed to reach 60 snowballs (60 / 40 = 1.5 hours)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 20 - 2 * 4 / 1 = 12.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH How many snowballs melt in an hour if 2 melt every 15 minutes?"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 3"
+    }
+   ]
+  }
+ ]
+}

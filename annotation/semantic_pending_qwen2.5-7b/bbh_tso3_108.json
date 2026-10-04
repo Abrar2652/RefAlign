@@ -1,0 +1,74 @@
+{
+ "query_id": "bbh_tso3_108",
+ "query": "Alice, Bob, and Claire are playing a game. At the start of the game, they are each holding a ball: Alice has a blue ball, Bob has a white ball, and Claire has a red ball.\nAs the game progresses, pairs of players trade balls. First, Claire and Bob swap balls. Then, Alice and Bob swap balls. Finally, Claire and Bob swap balls. At the end of the game, Alice has the\nOptions:\n(A) blue ball\n(B) white ball\n(C) red ball",
+ "ground_truth": "(C)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 108,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_108_r00",
+   "outcome": "success",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Start by tracking each swap and its effect on who has what ball, ending with Claire and Bob's final swap to determine Alice's ball."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE Initially, Alice has the blue ball, Bob has the white ball, and Claire has the red ball. Let's begin with the first swap between Claire and Bob. After Claire and Bob swap, Claire now has the white ball, and Bob has the red ball."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE Now we track the second swap between Alice and Bob. After Alice and Bob swap, Alice will have the red ball, and Bob will have the blue ball. Next, Claire and Bob swap again, ensuring Bob ends up with the white ball as he originally had. After this swap, Claire has the blue ball, and Bob has the white ball."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: C"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_108_r13",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Trace the ball swaps: Claire and Bob swap (Claire has red, Bob has white), then Alice and Bob swap (Alice has blue, Bob has red), then Claire and Bob swap again (Claire ends up with red)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE After the first swap (Claire and Bob swap), Claire has the white ball and Bob has the red ball."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE After the second swap (Alice and Bob swap), Alice has the white ball and Bob has the blue ball."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker NOTE After the final swap (Claire and Bob swap again)"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (B)"
+    }
+   ]
+  }
+ ]
+}

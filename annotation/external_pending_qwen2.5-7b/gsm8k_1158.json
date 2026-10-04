@@ -1,0 +1,94 @@
+{
+ "query_id": "gsm8k_1158",
+ "query": "The Hortex company produces bottled carrot juices. Every day it can produce 4200 bottles of these juices. Each juice can cover 20% of 1 person'ts daily energy demand. How many more bottles of juices would Hortex have to produce to be able to satisfy 100% of the daily energy needs of 2300 people?",
+ "ground_truth": "7300.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 1158,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_1158_r03",
+   "outcome": "success",
+   "final_answer": "7300.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Hortex needs to produce enough bottles to cover 20% of 2300 people's daily energy needs, then scale up to 100%, and the difference will show how many more bottles are needed. Plan: Calculate the total bottles needed for 100% demand (2300 people * 100%/20% = 11500 bottles), subtract current production (4200 bottles), and the difference is 7300 additional bottles needed."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 2300 * 5 - 4200 = 7300.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 7300"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 7300"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1158_r01",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Hortex needs to produce an additional 4600 bottles of juice to meet 100% of the daily energy needs for 2300 people."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH How many bottles of juice are needed to meet 100% of the daily energy needs for 2300 people?"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH How many bottles of juice are needed to meet 100% of the daily energy needs for 2300 people?"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "SEARCH How many bottles of juice does Hortex produce daily?"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "SEARCH How many bottles of juice does Hortex produce daily?"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "SEARCH How many bottles of juice does Hortex produce daily?"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "SEARCH How many bottles of juice can Hortex produce daily?"
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "SEARCH How many bottles of juice does Hortex produce daily?"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "SEARCH How many bottles of juice does each person's daily energy demand require?"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 0"
+    }
+   ]
+  }
+ ]
+}

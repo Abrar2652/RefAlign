@@ -1,0 +1,79 @@
+{
+ "query_id": "gsm8k_1187",
+ "query": "Jay is making snowballs to prepare for a snowball fight with his sister. He can build 20 snowballs in an hour, but 2 melt every 15 minutes. How long will it take before he has 60 snowballs?",
+ "ground_truth": "5.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 1187,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_1187_r02",
+   "outcome": "success",
+   "final_answer": "5.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the net rate of snowballs Jay creates per hour after accounting for the melting and then determine the time required to reach 60 snowballs at that rate."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 20 - (2 * 4)  # 2 snowballs melt every 15 minutes, so in an hour (4 intervals of 15 minutes), total melting is 2 * 4. = None"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 20 - (2 * 4) = 12.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 60 / 12.0 = 5.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER 5.0"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "To solve this problem, we need to calculate the rate at which Jay is actually able to produce snowballs after accounting for the melting snowballs.\n\n1. **Snowball production**: Jay builds 20 snowballs in 1 hour (60 minutes), which means he is building at a rate of \\( \\frac{20 \\text{ snowballs}}{60 \\text{ minutes}} = \\frac{1}{3} \\text{ snowballs per minute} \\).\n\n2. **Melting snowballs**: Every 15 minutes, 2 snowballs melt. In 1 minute, this translates to \\( \\frac{2}{15} \\) snowballs melting per minute.\n\n3. **Net production rate**: Therefore, the net production of snowballs per minute is:\n   \\( \\frac{1}{3} \\text{ snowballs per minute} - \\frac{2}{15} \\text{ snowballs per minute} \\).\n\n   To subtract these fractions, we need a common denominator. The least common multiple of 3 and 15 is 15. Thus:\n   - Convert \\( \\frac{1}{3} \\) to fifteenths: \\( \\frac{1}{3} = \\frac{5}{"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1187_r10",
+   "outcome": "failure",
+   "final_answer": "60.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the time it takes for Jay to have 60 snowballs, calculate the effective snowball production rate after accounting for meltage and then determine how long it takes to reach the desired total."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH effective snowball production rate after accounting for meltage."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 20 - (2 * 4) = 12.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH time it takes to build 60 snowbal"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 45"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,353 @@
+{
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r01": {
+"game_id": "pick_and_place_simple-Candle-None-Cart-401/trial_T20190909_081908_677973",
+"task_type": "pick_and_place_simple",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"other",
+"plan",
+"take"
+],
+"n_candidates": 19
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 5,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 6,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 28,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 9,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 4,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00"
+]
+},
+"alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r00": {
+"game_id": "pick_and_place_simple-Watch-None-SideTable-222/trial_T20190909_051813_197569",
+"task_type": "pick_and_place_simple",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 11,
+"reference": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 11,
+"reference": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"go",
+"open",
+"other",
+"plan",
+"take"
+],
+"n_candidates": 12
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 11,
+"reference": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 11,
+"reference": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 11,
+"reference": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 6,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 11,
+"reference": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 4,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 11,
+"reference": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 11,
+"reference": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 20,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 11,
+"reference": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 25,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01"
+]
+},
+"alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r01": {
+"game_id": "pick_cool_then_place_in_recep-Plate-None-Cabinet-7/trial_T20190907_231206_512424",
+"task_type": "pick_cool_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"kind": "deletion",
+"abstain": false,
+"required": [
+"close",
+"cool",
+"examine",
+"go",
+"open",
+"other",
+"plan",
+"take"
+],
+"n_candidates": 21
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 26,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 2,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 18,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 18,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 4,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00"
+]
+}
+}

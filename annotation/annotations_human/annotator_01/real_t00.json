@@ -1,0 +1,51 @@
+{
+ "query_id": "real_t00",
+ "annotator": "annotator_01",
+ "labels": {
+  "real_t00_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "repeated_step",
+   "confidence": 4,
+   "reason": "Step 2 (240-84=156) is correct; step 3 is the first spurious repeat of the Monday calc instead of subtracting 40.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t00_r05": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 4,
+   "reason": "Answers 156 (after Monday) without ever subtracting Tuesday's 40.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t00_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "repeated_step",
+   "confidence": 4,
+   "reason": "Step 2 correct; step 3 is the first spurious repeat of 240*0.35, run loops and never subtracts 40.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t00_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "premature_stop",
+   "confidence": 4,
+   "reason": "Answers 156 immediately after Monday, never subtracting Tuesday's 40.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t00_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 4,
+   "reason": "Answers 156 without the Tuesday -40 step.",
+   "annotator": "annotator_01",
+   "flag": null
+  }
+ }
+}

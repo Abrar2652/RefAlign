@@ -1,0 +1,54 @@
+{
+ "query_id": "bbh_tso3_130",
+ "query": "Alice, Bob, and Claire are holding a white elephant gift exchange. At the start of the event, they are each holding a present of a different color: Alice has a pink ball, Bob has a blue present, and Claire has a brown present.\nAs the event progresses, pairs of people swap gifts. First, Claire and Alice swap their gifts. Then, Bob and Alice swap their gifts. Finally, Alice and Claire swap their gifts. At the end of the event, Bob has the\nOptions:\n(A) pink ball\n(B) blue present\n(C) brown present",
+ "ground_truth": "(C)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 130,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_130_r01",
+   "outcome": "success",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Track the swaps: Claire -> Alice (brown -> pink), Bob -> Alice (blue -> pink), Alice -> Claire (pink -> brown). So, Bob ends up with the brown present."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: C"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_130_r10",
+   "outcome": "failure",
+   "final_answer": "B",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Alice and Claire swap gifts twice, leaving Alice with the brown present, and Bob remains with the blue present, so at the end, Bob has the brown present (C)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (B)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: B"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "query_id": "real_t09",
+ "annotator": "annotator_01",
+ "labels": {
+  "real_t09_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 4,
+   "reason": "Time (3.75) correct at step 2; answer slot performs a SEARCH instead of computing 300/3.75.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r01": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "premature_stop",
+   "confidence": 4,
+   "reason": "Answers the travel time (225//60=3), never dividing 300 by the time.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 4,
+   "reason": "Answers the travel time 3.75, never dividing 300 by it.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r03": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "premature_stop",
+   "confidence": 4,
+   "reason": "Answers the travel time 3.75, never dividing 300 by it.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 4,
+   "reason": "Answers the travel time 3.75, never dividing 300 by it.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 4,
+   "reason": "Answers the travel time 3.75, never dividing 300 by it.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 4,
+   "reason": "Time correct at step 2; answer slot performs a SEARCH instead of computing 300/3.75.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 4,
+   "reason": "Time (3.75) correct at step 2; answer slot performs a SEARCH instead of computing 300/3.75.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "ANSWER-CALC form (300/3.75) fails to evaluate and records 3.75.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r11": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "premature_stop",
+   "confidence": 4,
+   "reason": "Answers the travel time (225//60=3), never dividing 300 by the time.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t09_r13": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "ANSWER-CALC form (300/3.75) fails to evaluate and records 3.75.",
+   "annotator": "annotator_01",
+   "flag": null
+  }
+ }
+}

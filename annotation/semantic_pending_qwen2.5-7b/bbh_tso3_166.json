@@ -1,0 +1,64 @@
+{
+ "query_id": "bbh_tso3_166",
+ "query": "Alice, Bob, and Claire are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets The Great Gatsby, Bob gets The Pearl, and Claire gets The Odyssey.\nAs the semester proceeds, they start trading around the new books. First, Alice and Claire swap books. Then, Bob and Alice swap books. Finally, Alice and Claire swap books. At the end of the semester, Bob has\nOptions:\n(A) The Great Gatsby\n(B) The Pearl\n(C) The Odyssey",
+ "ground_truth": "(C)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 166,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_166_r01",
+   "outcome": "success",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Alice and Claire end up with their original books, so after all swaps, Bob has The Great Gatsby."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE After the first swap (Alice and Claire trade), Alice has The Odyssey, Claire has The Great Gatsby, and Bob has The Pearl."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE After the second swap (Bob and Alice trade), Alice has The Pearl, Claire has The Great Gatsby, and Bob has The Odyssey."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: C"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_166_r10",
+   "outcome": "failure",
+   "final_answer": "A",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Track the book swaps step-by-step to determine which book Bob ends up with at the end."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (A)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (B)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "query_id": "gsm8k_0969",
+ "query": "John decides to buy new phones for him, his 2 kids, and his wife.  Each phone after the first 2 is half price.  If the phone price is $600 how much did he pay for them all?",
+ "ground_truth": "1800.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 969,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0969_r00",
+   "outcome": "success",
+   "final_answer": "1800.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Buy 2 full-price phones and 2 half-price phones: (2 * $600) + (2 * $300) = $1200 + $600 = $1800."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 2 * 600 + 2 * 300 = 1800.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 1800"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 1200"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0969_r01",
+   "outcome": "failure",
+   "final_answer": "2100.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Buy the first two phones at full price ($1200) and the remaining three at half price ($900), totaling $2100."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 600 * 2 + 600 / 2 * 3 = 2100.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 2100"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 2850"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0969_r06",
+   "outcome": "failure",
+   "final_answer": "2100.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Buy the first 2 phones at full price ($1200) and the next 3 at half price ($900), totaling $2100."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 600 * 2 + 600 / 2 * 3 = 2100.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 2100"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 2400"
+    }
+   ]
+  }
+ ]
+}

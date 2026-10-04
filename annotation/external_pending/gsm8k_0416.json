@@ -1,0 +1,161 @@
+{
+ "query_id": "gsm8k_0416",
+ "query": "A herd consists of camels and dromedaries. There are 180 heads and 304 bumps. How many dromedaries are there if camels have two humps each and dromedaries have one hump each?",
+ "ground_truth": "56.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 416,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0416_r08",
+   "outcome": "success",
+   "final_answer": "56.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Let the number of camels be \\( C \\) and the number of dromedaries be \\( D \\); then set up the equations \\( C + D = 180 \\) and \\( 2C + D = 304 \\), and solve for \\( D \\)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 2 * (C + D) = 2 * 180 = None"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH equations for solving the number of camels and dromedaries."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 2 * 180 = 360.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "SEARCH equations for solving systems of linear equations."
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 2 * 180 - 304 = 56.0"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "ANSWER CALC 360 - 304 = 56"
+    },
+    {
+     "index": 7,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 56"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0416_r03",
+   "outcome": "failure",
+   "final_answer": "180.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Let the number of camels be \\( C \\) and the number of dromedaries be \\( D \\); set up the equations \\( C + D = 180 \\) and \\( 2C + D = 304 \\), then solve for \\( D \\)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC C + D = 180 = None"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH equations for camels and dromedaries based on heads and bumps"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC C + D = 180 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC C + D = 180 = None"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC C + D = 180 = None"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "ANSWER CALC C + D = 180"
+    },
+    {
+     "index": 7,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 180"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0416_r10",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Let the number of camels be \\( C \\) and the number of dromedaries be \\( D \\); set up the equations \\( C + D = 180 \\) and \\( 2C + D = 304 \\), and solve for \\( D \\)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH equations for the number of camels and dromedaries based on heads and bumps."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH equations for the number of camels and dromedaries based on heads and bumps."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 2 * (C + D) = 2 * 180 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "SEARCH equations for camels and dromedaries based on heads and bumps."
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "SEARCH equations for the number of camels and dromedaries based on heads and bumps."
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "SEARCH equations for the number of camels and dromedaries based on heads and bumps."
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC 2 * 180 = 360 = None"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH equations for the number of camel"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 88"
+    }
+   ]
+  }
+ ]
+}

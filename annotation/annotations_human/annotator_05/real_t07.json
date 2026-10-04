@@ -1,0 +1,105 @@
+{
+ "query_id": "real_t07",
+ "annotator": "annotator_05",
+ "labels": {
+  "real_t07_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r01": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers 510 after the 15% drop; the 10% rise step is entirely missing (alt premature_stop).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r03": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r11": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t07_r13": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Computes 510*0.10=51 (the increment) and reports it as final; should add back to 510 (=561) (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  }
+ }
+}

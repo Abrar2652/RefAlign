@@ -1,0 +1,46 @@
+{
+ "query_id": "real_t05",
+ "annotator": "annotator_05",
+ "labels": {
+  "real_t05_r02": {
+   "flag": "ambiguous",
+   "annotator": "annotator_05"
+  },
+  "real_t05_r04": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 2,
+   "reason": "ANSWER holds unevaluated 0.0714*350 (=25); not reduced to a value, parsed as 350 (alt other/parse-artifact).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t05_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 2,
+   "reason": "ANSWER holds unevaluated 0.0714*350 (=25); not reduced to a value, parsed as 350 (alt other/parse-artifact).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t05_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 2,
+   "reason": "ANSWER holds unevaluated 0.0714*350 (=25); not reduced to a value, parsed as 350 (alt other/parse-artifact).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t05_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 2,
+   "reason": "ANSWER holds unevaluated 0.0714*350 (=25); not reduced to a value, parsed as 350 (alt other/parse-artifact).",
+   "annotator": "annotator_05",
+   "flag": null
+  }
+ }
+}

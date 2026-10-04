@@ -1,0 +1,76 @@
+{
+ "query_id": "bbh_tso3_110",
+ "query": "Alice, Bob, and Claire are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets Catch-22, and Claire gets Ulysses.\nAs the semester proceeds, they start trading around the new books. First, Bob and Alice swap books. Then, Alice and Claire swap books. Finally, Claire and Bob swap books. At the end of the semester, Claire has\nOptions:\n(A) Frankenstein\n(B) Catch-22\n(C) Ulysses",
+ "ground_truth": "(A)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 110,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_110_r00",
+   "outcome": "success",
+   "final_answer": "A",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Track the sequence of book swaps to determine which book Claire ends up with at the end of the semester."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (A)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: C"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_110_r01",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To determine which book Claire has at the end of the semester, trace the sequence of trades between Alice, Bob, and Claire step by step."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER Next action is to process the swap between Alice and Claire."
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (C)"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_110_r03",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To determine which book Claire has at the end of the semester, trace the sequence of trades involving the books among Alice, Bob, and Claire."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER None yet (continue tracing)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: C"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "query_id": "gsm8k_0418",
+ "query": "Zack's locker is half as big as Timothy's locker. Peter's locker is 1/4 as big as Zack's locker. If Peter's locker is 5 cubic inches, how big is Timothy's locker in cubic inches?",
+ "ground_truth": "40.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 418,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0418_r00",
+   "outcome": "success",
+   "final_answer": "40.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Determine the volume of Zack's locker first (4 times Peter's), then use that to find Timothy's locker volume (2 times Zack's)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5 * 4 = 20.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 40.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 40"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0418_r02",
+   "outcome": "failure",
+   "final_answer": "20.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: First, determine the size of Zack's locker, then use that to find the size of Timothy's locker."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5 * 4 = 20.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 20.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 20"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0418_r03",
+   "outcome": "failure",
+   "final_answer": "20.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Determine the size of Zack's locker from Peter's size, then find Timothy's locker size by doubling Zack's size."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5 * 4 = 20.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 20.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 20"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0418_r08",
+   "outcome": "failure",
+   "final_answer": "20.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: First, determine the size of Zack's locker, then use that to find the size of Timothy's locker."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5 * 4 = 20.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 20.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 20"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0418_r09",
+   "outcome": "failure",
+   "final_answer": "20.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Determine the size of Zack's and Timothy's lockers by working from Peter's size using the given ratios."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5 * 4 = 20.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 20.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 20"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0418_r11",
+   "outcome": "failure",
+   "final_answer": "10.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Determine the size of Zack's locker by doubling the size of Peter's locker, then determine the size of Timothy's locker by doubling Zack's locker size."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5 * 2 = 10.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 10.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 40"
+    }
+   ]
+  }
+ ]
+}

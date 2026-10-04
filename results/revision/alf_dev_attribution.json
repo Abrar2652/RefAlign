@@ -1,0 +1,2926 @@
+{
+"alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r02": {
+"game_id": "look_at_obj_in_light-CD-None-DeskLamp-320/trial_T20190907_224451_655673",
+"task_type": "look_at_obj_in_light",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"move",
+"plan",
+"take",
+"use"
+],
+"n_candidates": 15
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 3,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 15,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 21,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 9,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 8,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00"
+]
+},
+"alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r01": {
+"game_id": "look_at_obj_in_light-CD-None-DeskLamp-320/trial_T20190907_224451_655673",
+"task_type": "look_at_obj_in_light",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"move",
+"plan",
+"take",
+"use"
+],
+"n_candidates": 18
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 7,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 15,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 27,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00"
+]
+},
+"alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r03": {
+"game_id": "look_at_obj_in_light-CD-None-DeskLamp-320/trial_T20190907_224451_655673",
+"task_type": "look_at_obj_in_light",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"move",
+"plan",
+"take",
+"use"
+],
+"n_candidates": 22
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 19,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 24,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 2,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 2,
+"reference": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"kind": "action",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 19,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00"
+]
+},
+"alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r01": {
+"game_id": "look_at_obj_in_light-Pillow-None-DeskLamp-323/trial_T20190908_053153_077977",
+"task_type": "look_at_obj_in_light",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"plan",
+"take",
+"use"
+],
+"n_candidates": 22
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 20,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 2,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 25,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 26,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00"
+]
+},
+"alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r03": {
+"game_id": "look_at_obj_in_light-Pillow-None-DeskLamp-323/trial_T20190908_053153_077977",
+"task_type": "look_at_obj_in_light",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"plan",
+"take",
+"use"
+],
+"n_candidates": 22
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 21,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 20,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 12,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 9,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 15,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00"
+]
+},
+"alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r02": {
+"game_id": "look_at_obj_in_light-Pillow-None-DeskLamp-323/trial_T20190908_053153_077977",
+"task_type": "look_at_obj_in_light",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"plan",
+"take",
+"use"
+],
+"n_candidates": 21
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 19,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 7,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 22,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 15,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_look_at_obj_in_light-Pillow-None-DeskLamp-323__trial_T20190908_053153_077977_r00"
+]
+},
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r01": {
+"game_id": "pick_and_place_simple-Candle-None-Cart-401/trial_T20190909_081908_677973",
+"task_type": "pick_and_place_simple",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 10,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 10,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"move",
+"plan",
+"take"
+],
+"n_candidates": 15
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 10,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 10,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 10,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 5,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 10,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 6,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 10,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 28,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 10,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 9,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 10,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 4,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00"
+]
+},
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r02": {
+"game_id": "pick_and_place_simple-Candle-None-Cart-401/trial_T20190909_081908_677973",
+"task_type": "pick_and_place_simple",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"move",
+"plan",
+"take"
+],
+"n_candidates": 16
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 11,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 11,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 25,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 18,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 5,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00"
+]
+},
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r03": {
+"game_id": "pick_and_place_simple-Candle-None-Cart-401/trial_T20190909_081908_677973",
+"task_type": "pick_and_place_simple",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"examine",
+"go",
+"move",
+"plan",
+"take"
+],
+"n_candidates": 19
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 26,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 12,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 15,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 27,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00"
+]
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r03": {
+"game_id": "pick_clean_then_place_in_recep-Ladle-None-DiningTable-4/trial_T20190909_164840_568811",
+"task_type": "pick_clean_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 3,
+"refalign": {
+"agent": "Actor",
+"step": 24,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 17,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"clean",
+"move",
+"plan",
+"take"
+],
+"n_candidates": 4
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 17,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r01",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 17,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 17,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r01",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 20,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 17,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 7,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 17,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r01",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 6,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 17,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 18,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 17,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r01",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 15,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r01",
+"alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r00",
+"alf_valid_seen_pick_clean_then_place_in_recep-Ladle-None-DiningTable-4__trial_T20190909_164840_568811_r02"
+]
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r01": {
+"game_id": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402/trial_T20190908_055221_984342",
+"task_type": "pick_clean_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 2,
+"refalign": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"clean",
+"close",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 11
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02",
+"kind": "action",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 12,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02",
+"kind": "action",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 22,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 7,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 2,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02",
+"kind": "action",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 25,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02"
+]
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r03": {
+"game_id": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402/trial_T20190908_055221_984342",
+"task_type": "pick_clean_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 2,
+"refalign": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 16,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02",
+"kind": "action",
+"abstain": false,
+"required": [
+"clean",
+"close",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 7
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 16,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02",
+"kind": "action",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 22,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 13,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 10,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 20,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 16,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02",
+"kind": "action",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 2,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r02"
+]
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r03": {
+"game_id": "pick_clean_then_place_in_recep-SoapBar-None-Drawer-423/trial_T20190906_202340_749336",
+"task_type": "pick_clean_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 5,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"clean",
+"go",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 17
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 25,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 26,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 9,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 10,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 11,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00"
+]
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r01": {
+"game_id": "pick_clean_then_place_in_recep-SoapBar-None-Drawer-423/trial_T20190906_202340_749336",
+"task_type": "pick_clean_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 6,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"clean",
+"go",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 16
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 9,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 14,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 9,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 17,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00"
+]
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r02": {
+"game_id": "pick_clean_then_place_in_recep-SoapBar-None-Drawer-423/trial_T20190906_202340_749336",
+"task_type": "pick_clean_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"clean",
+"go",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 18
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 28,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 4,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 12,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 23,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Drawer-423__trial_T20190906_202340_749336_r00"
+]
+},
+"alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r01": {
+"game_id": "pick_cool_then_place_in_recep-Cup-None-SideTable-21/trial_T20190906_192823_237997",
+"task_type": "pick_cool_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 7,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 7,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"cool",
+"examine",
+"go",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 18
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 7,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 7,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 7,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 7,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 18,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 7,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 6,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 7,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 25,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 7,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 10,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00"
+]
+},
+"alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r02": {
+"game_id": "pick_cool_then_place_in_recep-Cup-None-SideTable-21/trial_T20190906_192823_237997",
+"task_type": "pick_cool_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"cool",
+"examine",
+"go",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 14
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 20,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 10,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 12,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 21,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 9,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 10,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00"
+]
+},
+"alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r03": {
+"game_id": "pick_cool_then_place_in_recep-Cup-None-SideTable-21/trial_T20190906_192823_237997",
+"task_type": "pick_cool_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"cool",
+"examine",
+"go",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 20
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 28,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 10,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 12,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 21,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 27,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_cool_then_place_in_recep-Cup-None-SideTable-21__trial_T20190906_192823_237997_r00"
+]
+},
+"alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r02": {
+"game_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1/trial_T20190908_042713_075616",
+"task_type": "pick_cool_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 3,
+"refalign": {
+"agent": "Actor",
+"step": 8,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r01",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 8,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r03",
+"kind": "deletion",
+"abstain": false,
+"required": [
+"cool",
+"move",
+"plan",
+"take"
+],
+"n_candidates": 1
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 8,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r03",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 8,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r01",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 8,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 28,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 8,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 25,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 8,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 3,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 8,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r01",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 18,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 8,
+"reference": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r03",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 9,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r03",
+"alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r00",
+"alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r01"
+]
+},
+"alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r00": {
+"game_id": "pick_heat_then_place_in_recep-Potato-None-Fridge-12/trial_T20190908_014451_271080",
+"task_type": "pick_heat_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 15,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 15,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"go",
+"heat",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 8
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 15,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 15,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 15,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 24,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 15,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 25,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 15,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 15,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 15,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 22,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02"
+]
+},
+"alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r01": {
+"game_id": "pick_heat_then_place_in_recep-Potato-None-Fridge-12/trial_T20190908_014451_271080",
+"task_type": "pick_heat_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"go",
+"heat",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 22
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 10,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 16,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 20,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 26,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 21,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02"
+]
+},
+"alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r03": {
+"game_id": "pick_heat_then_place_in_recep-Potato-None-Fridge-12/trial_T20190908_014451_271080",
+"task_type": "pick_heat_then_place_in_recep",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"go",
+"heat",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 17
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 22,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 4,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 3,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 6,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_heat_then_place_in_recep-Potato-None-Fridge-12__trial_T20190908_014451_271080_r02"
+]
+},
+"alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r01": {
+"game_id": "pick_two_obj_and_place-CreditCard-None-Safe-323/trial_T20190907_001129_214240",
+"task_type": "pick_two_obj_and_place",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 4,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"close",
+"go",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 18
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 7,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 17,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 2,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 10,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 1,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 7,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00"
+]
+},
+"alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r02": {
+"game_id": "pick_two_obj_and_place-CreditCard-None-Safe-323/trial_T20190907_001129_214240",
+"task_type": "pick_two_obj_and_place",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "deletion",
+"abstain": false,
+"required": [
+"close",
+"go",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 16
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "deletion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 19,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 26,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 14,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 7,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "deletion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 28,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00"
+]
+},
+"alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r03": {
+"game_id": "pick_two_obj_and_place-CreditCard-None-Safe-323/trial_T20190907_001129_214240",
+"task_type": "pick_two_obj_and_place",
+"n_steps": 31,
+"n_actor_steps": 30,
+"n_successes": 1,
+"refalign": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false,
+"required": [
+"close",
+"go",
+"move",
+"open",
+"plan",
+"take"
+],
+"n_candidates": 22
+},
+"refalign_s_first": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_edit": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"refalign_s_random-s0": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s0": {
+"agent": "Actor",
+"step": 19,
+"reference": null
+},
+"refalign_s_random-s1": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s1": {
+"agent": "Actor",
+"step": 13,
+"reference": null
+},
+"refalign_s_random-s2": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s2": {
+"agent": "Actor",
+"step": 22,
+"reference": null
+},
+"refalign_s_random-s3": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s3": {
+"agent": "Actor",
+"step": 4,
+"reference": null
+},
+"refalign_s_random-s4": {
+"agent": "Actor",
+"step": 3,
+"reference": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00",
+"kind": "insertion",
+"abstain": false
+},
+"random_step-s4": {
+"agent": "Actor",
+"step": 21,
+"reference": null
+},
+"last_step": {
+"agent": "Actor",
+"step": 30,
+"reference": null
+},
+"penultimate": {
+"agent": "Actor",
+"step": 29,
+"reference": null
+},
+"reference_pool": [
+"alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Safe-323__trial_T20190907_001129_214240_r00"
+]
+}
+}

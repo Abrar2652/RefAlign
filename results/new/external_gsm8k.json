@@ -1,0 +1,6415 @@
+{
+ "design": {
+  "dataset": "openai/gsm8k main test (HF datasets)",
+  "task_seed": 0,
+  "gsm8k_test_indices": [
+   5,
+   31,
+   45,
+   52,
+   54,
+   55,
+   108,
+   152,
+   161,
+   184,
+   186,
+   202,
+   247,
+   270,
+   308,
+   381,
+   399,
+   406,
+   416,
+   418,
+   420,
+   434,
+   465,
+   487,
+   489,
+   491,
+   500,
+   512,
+   528,
+   529,
+   536,
+   567,
+   597,
+   658,
+   689,
+   693,
+   695,
+   789,
+   805,
+   867,
+   884,
+   892,
+   922,
+   950,
+   969,
+   984,
+   1061,
+   1069,
+   1086,
+   1122,
+   1127,
+   1133,
+   1137,
+   1158,
+   1187,
+   1188,
+   1202,
+   1222,
+   1291,
+   1312
+  ],
+  "model": "gpt-4o-mini-2024-07-18",
+  "revision": null,
+  "base_url": null,
+  "temperature": 1.0,
+  "max_tokens": 256,
+  "max_worker_turns": 8,
+  "n_rollouts": 14,
+  "system": "experiments/real_agents.run_once (Planner->Worker->Verifier), unchanged prompts",
+  "started_utc": "2026-09-28T08:31:38.111345+00:00",
+  "usage_rollouts": {
+   "calls": 5480,
+   "prompt_tokens": 1045195,
+   "completion_tokens": 124889,
+   "seconds": 3843.7,
+   "errors": 0,
+   "usd": null
+  },
+  "response_models": [
+   "gpt-4o-mini-2024-07-18"
+  ],
+  "judge": {
+   "name": "gpt-4o-mini",
+   "model": "gpt-4o-mini-2024-07-18",
+   "temperature": 0.0,
+   "max_tokens": 128,
+   "usage": {
+    "calls": 440,
+    "prompt_tokens": 192034,
+    "completion_tokens": 4048,
+    "errors": 0
+   }
+  },
+  "finished_utc": "2026-09-28T08:36:00.825556+00:00"
+ },
+ "availability": {
+  "n_tasks": 60,
+  "rollouts_per_task": 14,
+  "tasks_with_success_and_failure": {
+   "c": 29,
+   "n": 60,
+   "acc": 0.48333333333333334,
+   "wilson_lo": 0.36175049539732795,
+   "wilson_hi": 0.6069218996740751
+  },
+  "tasks_all_success": 16,
+  "tasks_all_failure": 15,
+  "tasks_mixed": 29,
+  "success_rate_runs": {
+   "c": 410,
+   "n": 840,
+   "acc": 0.4880952380952381,
+   "wilson_lo": 0.4544234127648577,
+   "wilson_hi": 0.521875452631077
+  },
+  "rollouts_to_first_success": {
+   "n_tasks_with_success": 45,
+   "mean": 2.577777777777778,
+   "median": 1.0,
+   "max": 13,
+   "histogram": {
+    "1": 29,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "6": 2,
+    "7": 1,
+    "9": 2,
+    "10": 1,
+    "13": 1
+   }
+  },
+  "failing_runs_with_reference": 220,
+  "failing_runs_without_reference": 210,
+  "per_task": {
+   "gsm8k_0005": {
+    "n_success": 9,
+    "n_failure": 5,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 5
+   },
+   "gsm8k_0031": {
+    "n_success": 4,
+    "n_failure": 10,
+    "rollouts_to_first_success": 6,
+    "gsm8k_test_index": 31
+   },
+   "gsm8k_0045": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 45
+   },
+   "gsm8k_0052": {
+    "n_success": 11,
+    "n_failure": 3,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 52
+   },
+   "gsm8k_0054": {
+    "n_success": 10,
+    "n_failure": 4,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 54
+   },
+   "gsm8k_0055": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 55
+   },
+   "gsm8k_0108": {
+    "n_success": 2,
+    "n_failure": 12,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 108
+   },
+   "gsm8k_0152": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 152
+   },
+   "gsm8k_0161": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 161
+   },
+   "gsm8k_0184": {
+    "n_success": 1,
+    "n_failure": 13,
+    "rollouts_to_first_success": 7,
+    "gsm8k_test_index": 184
+   },
+   "gsm8k_0186": {
+    "n_success": 2,
+    "n_failure": 12,
+    "rollouts_to_first_success": 3,
+    "gsm8k_test_index": 186
+   },
+   "gsm8k_0202": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 202
+   },
+   "gsm8k_0247": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 247
+   },
+   "gsm8k_0270": {
+    "n_success": 3,
+    "n_failure": 11,
+    "rollouts_to_first_success": 4,
+    "gsm8k_test_index": 270
+   },
+   "gsm8k_0308": {
+    "n_success": 3,
+    "n_failure": 11,
+    "rollouts_to_first_success": 4,
+    "gsm8k_test_index": 308
+   },
+   "gsm8k_0381": {
+    "n_success": 10,
+    "n_failure": 4,
+    "rollouts_to_first_success": 2,
+    "gsm8k_test_index": 381
+   },
+   "gsm8k_0399": {
+    "n_success": 12,
+    "n_failure": 2,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 399
+   },
+   "gsm8k_0406": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 406
+   },
+   "gsm8k_0416": {
+    "n_success": 1,
+    "n_failure": 13,
+    "rollouts_to_first_success": 9,
+    "gsm8k_test_index": 416
+   },
+   "gsm8k_0418": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 418
+   },
+   "gsm8k_0420": {
+    "n_success": 12,
+    "n_failure": 2,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 420
+   },
+   "gsm8k_0434": {
+    "n_success": 3,
+    "n_failure": 11,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 434
+   },
+   "gsm8k_0465": {
+    "n_success": 10,
+    "n_failure": 4,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 465
+   },
+   "gsm8k_0487": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 487
+   },
+   "gsm8k_0489": {
+    "n_success": 13,
+    "n_failure": 1,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 489
+   },
+   "gsm8k_0491": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 491
+   },
+   "gsm8k_0500": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 500
+   },
+   "gsm8k_0512": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 512
+   },
+   "gsm8k_0528": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 528
+   },
+   "gsm8k_0529": {
+    "n_success": 6,
+    "n_failure": 8,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 529
+   },
+   "gsm8k_0536": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 536
+   },
+   "gsm8k_0567": {
+    "n_success": 11,
+    "n_failure": 3,
+    "rollouts_to_first_success": 2,
+    "gsm8k_test_index": 567
+   },
+   "gsm8k_0597": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 597
+   },
+   "gsm8k_0658": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 658
+   },
+   "gsm8k_0689": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 689
+   },
+   "gsm8k_0693": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 693
+   },
+   "gsm8k_0695": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 695
+   },
+   "gsm8k_0789": {
+    "n_success": 2,
+    "n_failure": 12,
+    "rollouts_to_first_success": 13,
+    "gsm8k_test_index": 789
+   },
+   "gsm8k_0805": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 805
+   },
+   "gsm8k_0867": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 867
+   },
+   "gsm8k_0884": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 884
+   },
+   "gsm8k_0892": {
+    "n_success": 3,
+    "n_failure": 11,
+    "rollouts_to_first_success": 4,
+    "gsm8k_test_index": 892
+   },
+   "gsm8k_0922": {
+    "n_success": 6,
+    "n_failure": 8,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 922
+   },
+   "gsm8k_0950": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 950
+   },
+   "gsm8k_0969": {
+    "n_success": 12,
+    "n_failure": 2,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 969
+   },
+   "gsm8k_0984": {
+    "n_success": 4,
+    "n_failure": 10,
+    "rollouts_to_first_success": 3,
+    "gsm8k_test_index": 984
+   },
+   "gsm8k_1061": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 1061
+   },
+   "gsm8k_1069": {
+    "n_success": 12,
+    "n_failure": 2,
+    "rollouts_to_first_success": 2,
+    "gsm8k_test_index": 1069
+   },
+   "gsm8k_1086": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 1086
+   },
+   "gsm8k_1122": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 1122
+   },
+   "gsm8k_1127": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 1127
+   },
+   "gsm8k_1133": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 1133
+   },
+   "gsm8k_1137": {
+    "n_success": 0,
+    "n_failure": 14,
+    "rollouts_to_first_success": null,
+    "gsm8k_test_index": 1137
+   },
+   "gsm8k_1158": {
+    "n_success": 2,
+    "n_failure": 12,
+    "rollouts_to_first_success": 10,
+    "gsm8k_test_index": 1158
+   },
+   "gsm8k_1187": {
+    "n_success": 7,
+    "n_failure": 7,
+    "rollouts_to_first_success": 3,
+    "gsm8k_test_index": 1187
+   },
+   "gsm8k_1188": {
+    "n_success": 1,
+    "n_failure": 13,
+    "rollouts_to_first_success": 6,
+    "gsm8k_test_index": 1188
+   },
+   "gsm8k_1202": {
+    "n_success": 2,
+    "n_failure": 12,
+    "rollouts_to_first_success": 9,
+    "gsm8k_test_index": 1202
+   },
+   "gsm8k_1222": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 1222
+   },
+   "gsm8k_1291": {
+    "n_success": 14,
+    "n_failure": 0,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 1291
+   },
+   "gsm8k_1312": {
+    "n_success": 12,
+    "n_failure": 2,
+    "rollouts_to_first_success": 1,
+    "gsm8k_test_index": 1312
+   }
+  }
+ },
+ "attribution": {
+  "n_failing_with_reference": 220,
+  "per_run": {
+   "gsm8k_0005_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0005_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 369
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 547,
+     "reference": "gsm8k_0005_r06"
+    }
+   },
+   "gsm8k_0005_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0005_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 380
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 554,
+     "reference": "gsm8k_0005_r06"
+    }
+   },
+   "gsm8k_0005_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0005_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 397
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 563,
+     "reference": "gsm8k_0005_r00"
+    }
+   },
+   "gsm8k_0005_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0005_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 364
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 544,
+     "reference": "gsm8k_0005_r00"
+    }
+   },
+   "gsm8k_0005_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0005_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 384
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 569,
+     "reference": "gsm8k_0005_r06"
+    }
+   },
+   "gsm8k_0031_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "reference": "gsm8k_0031_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 536
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 453,
+     "reference": "gsm8k_0031_r05"
+    }
+   },
+   "gsm8k_0031_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0031_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 310
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 438,
+     "reference": "gsm8k_0031_r05"
+    }
+   },
+   "gsm8k_0031_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0031_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 395
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 522,
+     "reference": "gsm8k_0031_r05"
+    }
+   },
+   "gsm8k_0031_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "reference": "gsm8k_0031_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 321
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 436,
+     "reference": "gsm8k_0031_r05"
+    }
+   },
+   "gsm8k_0031_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "value",
+     "reference": "gsm8k_0031_r11",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 8,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 554
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 601,
+     "reference": "gsm8k_0031_r11"
+    }
+   },
+   "gsm8k_0031_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0031_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 441
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 422,
+     "reference": "gsm8k_0031_r05"
+    }
+   },
+   "gsm8k_0031_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "reference": "gsm8k_0031_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 555
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 456,
+     "reference": "gsm8k_0031_r05"
+    }
+   },
+   "gsm8k_0031_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 8,
+     "kind": "value",
+     "reference": "gsm8k_0031_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 8,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 601
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 555,
+     "reference": "gsm8k_0031_r05"
+    }
+   },
+   "gsm8k_0031_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "kind": "value",
+     "reference": "gsm8k_0031_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 7,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 518
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 468,
+     "reference": "gsm8k_0031_r05"
+    }
+   },
+   "gsm8k_0031_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0031_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 309
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 409,
+     "reference": "gsm8k_0031_r05"
+    }
+   },
+   "gsm8k_0052_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0052_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 270
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 417,
+     "reference": "gsm8k_0052_r01"
+    }
+   },
+   "gsm8k_0052_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0052_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 270
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 416,
+     "reference": "gsm8k_0052_r01"
+    }
+   },
+   "gsm8k_0052_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0052_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 271
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 416,
+     "reference": "gsm8k_0052_r01"
+    }
+   },
+   "gsm8k_0054_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "deletion",
+     "reference": "gsm8k_0054_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 316
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 423,
+     "reference": "gsm8k_0054_r00"
+    }
+   },
+   "gsm8k_0054_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0054_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 470
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 580,
+     "reference": "gsm8k_0054_r00"
+    }
+   },
+   "gsm8k_0054_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0054_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 461
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 583,
+     "reference": "gsm8k_0054_r00"
+    }
+   },
+   "gsm8k_0054_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0054_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 454
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 580,
+     "reference": "gsm8k_0054_r00"
+    }
+   },
+   "gsm8k_0108_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r11",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 420
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 707,
+     "reference": "gsm8k_0108_r11"
+    }
+   },
+   "gsm8k_0108_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 420
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 571,
+     "reference": "gsm8k_0108_r00"
+    }
+   },
+   "gsm8k_0108_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r11",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 416
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 699,
+     "reference": "gsm8k_0108_r11"
+    }
+   },
+   "gsm8k_0108_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r11",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 422
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 708,
+     "reference": "gsm8k_0108_r11"
+    }
+   },
+   "gsm8k_0108_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r11",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 421
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 708,
+     "reference": "gsm8k_0108_r11"
+    }
+   },
+   "gsm8k_0108_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 7,
+     "kind": "value",
+     "reference": "gsm8k_0108_r11",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 9,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 404
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 682,
+     "reference": "gsm8k_0108_r11"
+    }
+   },
+   "gsm8k_0108_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0108_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 304
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 453,
+     "reference": "gsm8k_0108_r00"
+    }
+   },
+   "gsm8k_0108_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 392
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 531,
+     "reference": "gsm8k_0108_r00"
+    }
+   },
+   "gsm8k_0108_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r11",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 414
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 695,
+     "reference": "gsm8k_0108_r11"
+    }
+   },
+   "gsm8k_0108_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r11",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 410
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 695,
+     "reference": "gsm8k_0108_r11"
+    }
+   },
+   "gsm8k_0108_r12": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 422
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 535,
+     "reference": "gsm8k_0108_r00"
+    }
+   },
+   "gsm8k_0108_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0108_r11",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 8,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 426
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 711,
+     "reference": "gsm8k_0108_r11"
+    }
+   },
+   "gsm8k_0184_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 286
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 397,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 267
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 371,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 290
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 398,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 363
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 476,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 375
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 491,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 297
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 382,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 8,
+     "kind": "deletion",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 8,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 372
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 488,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 270
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 371,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 259
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 375,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 264
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 371,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 297
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 400,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r12": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 259
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 372,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0184_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 8,
+     "kind": "deletion",
+     "reference": "gsm8k_0184_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 8,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 382
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 486,
+     "reference": "gsm8k_0184_r06"
+    }
+   },
+   "gsm8k_0186_r00": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0186_r04",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 349
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 504,
+     "reference": "gsm8k_0186_r04"
+    }
+   },
+   "gsm8k_0186_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0186_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 405
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 640,
+     "reference": "gsm8k_0186_r02"
+    }
+   },
+   "gsm8k_0186_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0186_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 530
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 773,
+     "reference": "gsm8k_0186_r02"
+    }
+   },
+   "gsm8k_0186_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0186_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 453
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 683,
+     "reference": "gsm8k_0186_r02"
+    }
+   },
+   "gsm8k_0186_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0186_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 416
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 654,
+     "reference": "gsm8k_0186_r02"
+    }
+   },
+   "gsm8k_0186_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0186_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 489
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 676,
+     "reference": "gsm8k_0186_r02"
+    }
+   },
+   "gsm8k_0186_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0186_r04",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 340
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 486,
+     "reference": "gsm8k_0186_r04"
+    }
+   },
+   "gsm8k_0186_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0186_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 425
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 645,
+     "reference": "gsm8k_0186_r02"
+    }
+   },
+   "gsm8k_0186_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0186_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 404
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 635,
+     "reference": "gsm8k_0186_r02"
+    }
+   },
+   "gsm8k_0186_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0186_r04",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 329
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 485,
+     "reference": "gsm8k_0186_r04"
+    }
+   },
+   "gsm8k_0186_r12": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0186_r04",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 444
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 600,
+     "reference": "gsm8k_0186_r04"
+    }
+   },
+   "gsm8k_0186_r13": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0186_r04",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 350
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 499,
+     "reference": "gsm8k_0186_r04"
+    }
+   },
+   "gsm8k_0270_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0270_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Verifier",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 290
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 415,
+     "reference": "gsm8k_0270_r07"
+    }
+   },
+   "gsm8k_0270_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 8,
+     "kind": "value",
+     "reference": "gsm8k_0270_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 474
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 728,
+     "reference": "gsm8k_0270_r03"
+    }
+   },
+   "gsm8k_0270_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0270_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 485
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 735,
+     "reference": "gsm8k_0270_r03"
+    }
+   },
+   "gsm8k_0270_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0270_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 478
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 734,
+     "reference": "gsm8k_0270_r03"
+    }
+   },
+   "gsm8k_0270_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0270_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 481
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 736,
+     "reference": "gsm8k_0270_r03"
+    }
+   },
+   "gsm8k_0270_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0270_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 286
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 416,
+     "reference": "gsm8k_0270_r07"
+    }
+   },
+   "gsm8k_0270_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 7,
+     "kind": "value",
+     "reference": "gsm8k_0270_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 9,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 451
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 701,
+     "reference": "gsm8k_0270_r03"
+    }
+   },
+   "gsm8k_0270_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0270_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 473
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 727,
+     "reference": "gsm8k_0270_r03"
+    }
+   },
+   "gsm8k_0270_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0270_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 475
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 730,
+     "reference": "gsm8k_0270_r03"
+    }
+   },
+   "gsm8k_0270_r12": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0270_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 475
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 728,
+     "reference": "gsm8k_0270_r03"
+    }
+   },
+   "gsm8k_0270_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0270_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 477
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 735,
+     "reference": "gsm8k_0270_r03"
+    }
+   },
+   "gsm8k_0308_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "value",
+     "reference": "gsm8k_0308_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 251
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 376,
+     "reference": "gsm8k_0308_r07"
+    }
+   },
+   "gsm8k_0308_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "value",
+     "reference": "gsm8k_0308_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 246
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 372,
+     "reference": "gsm8k_0308_r07"
+    }
+   },
+   "gsm8k_0308_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "value",
+     "reference": "gsm8k_0308_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 325
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 469,
+     "reference": "gsm8k_0308_r03"
+    }
+   },
+   "gsm8k_0308_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0308_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 327
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 467,
+     "reference": "gsm8k_0308_r03"
+    }
+   },
+   "gsm8k_0308_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "deletion",
+     "reference": "gsm8k_0308_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 361
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 494,
+     "reference": "gsm8k_0308_r03"
+    }
+   },
+   "gsm8k_0308_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "value",
+     "reference": "gsm8k_0308_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 248
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 374,
+     "reference": "gsm8k_0308_r07"
+    }
+   },
+   "gsm8k_0308_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0308_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 317
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 457,
+     "reference": "gsm8k_0308_r03"
+    }
+   },
+   "gsm8k_0308_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "value",
+     "reference": "gsm8k_0308_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 250
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 375,
+     "reference": "gsm8k_0308_r07"
+    }
+   },
+   "gsm8k_0308_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "kind": "value",
+     "reference": "gsm8k_0308_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 8,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 5,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 410
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 538,
+     "reference": "gsm8k_0308_r03"
+    }
+   },
+   "gsm8k_0308_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0308_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 276
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 407,
+     "reference": "gsm8k_0308_r03"
+    }
+   },
+   "gsm8k_0308_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "deletion",
+     "reference": "gsm8k_0308_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 341
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 476,
+     "reference": "gsm8k_0308_r03"
+    }
+   },
+   "gsm8k_0381_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0381_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 391
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 402,
+     "reference": "gsm8k_0381_r02"
+    }
+   },
+   "gsm8k_0381_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0381_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 353
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 403,
+     "reference": "gsm8k_0381_r02"
+    }
+   },
+   "gsm8k_0381_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0381_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Verifier",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 234
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 377,
+     "reference": "gsm8k_0381_r02"
+    }
+   },
+   "gsm8k_0381_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0381_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 353
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 391,
+     "reference": "gsm8k_0381_r02"
+    }
+   },
+   "gsm8k_0399_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0399_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Verifier",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 251
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 359,
+     "reference": "gsm8k_0399_r02"
+    }
+   },
+   "gsm8k_0399_r12": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0399_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 247
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 398,
+     "reference": "gsm8k_0399_r01"
+    }
+   },
+   "gsm8k_0416_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 419
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 606,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "insertion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 378
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 571,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "deletion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 7,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 350
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 534,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 8,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 338
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 529,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "deletion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 287
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 475,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 382
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 575,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 415
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 608,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "insertion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 396
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 582,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 418
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 611,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 411
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 604,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "deletion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 327
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 515,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r12": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 6,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 396
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 589,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0416_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0416_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 398
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 605,
+     "reference": "gsm8k_0416_r08"
+    }
+   },
+   "gsm8k_0420_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "deletion",
+     "reference": "gsm8k_0420_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 256
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 393,
+     "reference": "gsm8k_0420_r00"
+    }
+   },
+   "gsm8k_0420_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0420_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 461
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 599,
+     "reference": "gsm8k_0420_r00"
+    }
+   },
+   "gsm8k_0434_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 369
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 586,
+     "reference": "gsm8k_0434_r00"
+    }
+   },
+   "gsm8k_0434_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 630
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 609,
+     "reference": "gsm8k_0434_r12"
+    }
+   },
+   "gsm8k_0434_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 357
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 557,
+     "reference": "gsm8k_0434_r12"
+    }
+   },
+   "gsm8k_0434_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 393
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 593,
+     "reference": "gsm8k_0434_r12"
+    }
+   },
+   "gsm8k_0434_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 381
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 597,
+     "reference": "gsm8k_0434_r00"
+    }
+   },
+   "gsm8k_0434_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 586
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 614,
+     "reference": "gsm8k_0434_r12"
+    }
+   },
+   "gsm8k_0434_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 397
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 608,
+     "reference": "gsm8k_0434_r00"
+    }
+   },
+   "gsm8k_0434_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 614
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 607,
+     "reference": "gsm8k_0434_r12"
+    }
+   },
+   "gsm8k_0434_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 7,
+     "kind": "value",
+     "reference": "gsm8k_0434_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 9,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 338
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 555,
+     "reference": "gsm8k_0434_r00"
+    }
+   },
+   "gsm8k_0434_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 372
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 592,
+     "reference": "gsm8k_0434_r00"
+    }
+   },
+   "gsm8k_0434_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0434_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 374
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 590,
+     "reference": "gsm8k_0434_r00"
+    }
+   },
+   "gsm8k_0465_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0465_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 475
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 606,
+     "reference": "gsm8k_0465_r00"
+    }
+   },
+   "gsm8k_0465_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_0465_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 469
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 605,
+     "reference": "gsm8k_0465_r00"
+    }
+   },
+   "gsm8k_0465_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "deletion",
+     "reference": "gsm8k_0465_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 302
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 421,
+     "reference": "gsm8k_0465_r00"
+    }
+   },
+   "gsm8k_0465_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "deletion",
+     "reference": "gsm8k_0465_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 302
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 431,
+     "reference": "gsm8k_0465_r00"
+    }
+   },
+   "gsm8k_0489_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0489_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 282
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 418,
+     "reference": "gsm8k_0489_r00"
+    }
+   },
+   "gsm8k_0529_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0529_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 309
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 423,
+     "reference": "gsm8k_0529_r00"
+    }
+   },
+   "gsm8k_0529_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0529_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 310
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 425,
+     "reference": "gsm8k_0529_r00"
+    }
+   },
+   "gsm8k_0529_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0529_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 310
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 423,
+     "reference": "gsm8k_0529_r00"
+    }
+   },
+   "gsm8k_0529_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0529_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 302
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 417,
+     "reference": "gsm8k_0529_r00"
+    }
+   },
+   "gsm8k_0529_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 8,
+     "kind": "deletion",
+     "reference": "gsm8k_0529_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 7,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 323
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 438,
+     "reference": "gsm8k_0529_r00"
+    }
+   },
+   "gsm8k_0529_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0529_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 309
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 425,
+     "reference": "gsm8k_0529_r00"
+    }
+   },
+   "gsm8k_0529_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "deletion",
+     "reference": "gsm8k_0529_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 262
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 366,
+     "reference": "gsm8k_0529_r00"
+    }
+   },
+   "gsm8k_0529_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0529_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 309
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 423,
+     "reference": "gsm8k_0529_r00"
+    }
+   },
+   "gsm8k_0567_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0567_r04",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 322
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 446,
+     "reference": "gsm8k_0567_r04"
+    }
+   },
+   "gsm8k_0567_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0567_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 556
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 526,
+     "reference": "gsm8k_0567_r01"
+    }
+   },
+   "gsm8k_0567_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0567_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 337
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 496,
+     "reference": "gsm8k_0567_r01"
+    }
+   },
+   "gsm8k_0789_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 302
+    },
+    "matched-phylo": {
+     "agent": "Verifier",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 410,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 304
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 425,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 7,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 350
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 468,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 300
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 437,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 312
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 409,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 8,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 357
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 6,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 483,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 378
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 520,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 473
+    },
+    "matched-phylo": {
+     "agent": "Verifier",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 427,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 317
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 410,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 385
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 527,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 459
+    },
+    "matched-phylo": {
+     "agent": "Verifier",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 426,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0789_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0789_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 307
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 425,
+     "reference": "gsm8k_0789_r12"
+    }
+   },
+   "gsm8k_0892_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0892_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 349
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 525,
+     "reference": "gsm8k_0892_r03"
+    }
+   },
+   "gsm8k_0892_r01": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0892_r04",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 268
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 414,
+     "reference": "gsm8k_0892_r04"
+    }
+   },
+   "gsm8k_0892_r02": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0892_r04",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 280
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 424,
+     "reference": "gsm8k_0892_r04"
+    }
+   },
+   "gsm8k_0892_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0892_r04",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 444
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 456,
+     "reference": "gsm8k_0892_r04"
+    }
+   },
+   "gsm8k_0892_r06": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0892_r04",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 282
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 429,
+     "reference": "gsm8k_0892_r04"
+    }
+   },
+   "gsm8k_0892_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0892_r03",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 368
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 553,
+     "reference": "gsm8k_0892_r03"
+    }
+   },
+   "gsm8k_0892_r08": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0892_r04",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 288
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 435,
+     "reference": "gsm8k_0892_r04"
+    }
+   },
+   "gsm8k_0892_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0892_r04",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 468
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 445,
+     "reference": "gsm8k_0892_r04"
+    }
+   },
+   "gsm8k_0892_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_0892_r04",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 450
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 451,
+     "reference": "gsm8k_0892_r04"
+    }
+   },
+   "gsm8k_0892_r12": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0892_r04",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 280
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 424,
+     "reference": "gsm8k_0892_r04"
+    }
+   },
+   "gsm8k_0892_r13": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0892_r04",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 286
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 434,
+     "reference": "gsm8k_0892_r04"
+    }
+   },
+   "gsm8k_0922_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0922_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 374
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 613,
+     "reference": "gsm8k_0922_r07"
+    }
+   },
+   "gsm8k_0922_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "kind": "value",
+     "reference": "gsm8k_0922_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 7,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 307
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 517,
+     "reference": "gsm8k_0922_r01"
+    }
+   },
+   "gsm8k_0922_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "reference": "gsm8k_0922_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 284
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 413,
+     "reference": "gsm8k_0922_r08"
+    }
+   },
+   "gsm8k_0922_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "reference": "gsm8k_0922_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 286
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 414,
+     "reference": "gsm8k_0922_r08"
+    }
+   },
+   "gsm8k_0922_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0922_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 375
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 613,
+     "reference": "gsm8k_0922_r07"
+    }
+   },
+   "gsm8k_0922_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0922_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 376
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 612,
+     "reference": "gsm8k_0922_r07"
+    }
+   },
+   "gsm8k_0922_r12": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0922_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 374
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 613,
+     "reference": "gsm8k_0922_r07"
+    }
+   },
+   "gsm8k_0922_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "value",
+     "reference": "gsm8k_0922_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 8,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 330
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 540,
+     "reference": "gsm8k_0922_r01"
+    }
+   },
+   "gsm8k_0969_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "kind": "value",
+     "reference": "gsm8k_0969_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 7,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 449
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 489,
+     "reference": "gsm8k_0969_r00"
+    }
+   },
+   "gsm8k_0969_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0969_r00",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 447
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 613,
+     "reference": "gsm8k_0969_r00"
+    }
+   },
+   "gsm8k_0984_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "reference": "gsm8k_0984_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 356
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 519,
+     "reference": "gsm8k_0984_r06"
+    }
+   },
+   "gsm8k_0984_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0984_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 418
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 598,
+     "reference": "gsm8k_0984_r02"
+    }
+   },
+   "gsm8k_0984_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_0984_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 306
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 467,
+     "reference": "gsm8k_0984_r06"
+    }
+   },
+   "gsm8k_0984_r04": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0984_r06",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 303
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 473,
+     "reference": "gsm8k_0984_r06"
+    }
+   },
+   "gsm8k_0984_r05": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_0984_r06",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 322
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 473,
+     "reference": "gsm8k_0984_r06"
+    }
+   },
+   "gsm8k_0984_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 8,
+     "kind": "value",
+     "reference": "gsm8k_0984_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 6,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 460
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 671,
+     "reference": "gsm8k_0984_r12"
+    }
+   },
+   "gsm8k_0984_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0984_r13",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 394
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 611,
+     "reference": "gsm8k_0984_r13"
+    }
+   },
+   "gsm8k_0984_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0984_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 417
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 617,
+     "reference": "gsm8k_0984_r12"
+    }
+   },
+   "gsm8k_0984_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "reference": "gsm8k_0984_r06",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 368
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 535,
+     "reference": "gsm8k_0984_r06"
+    }
+   },
+   "gsm8k_0984_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_0984_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 5,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 432
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 623,
+     "reference": "gsm8k_0984_r02"
+    }
+   },
+   "gsm8k_1069_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1069_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 421
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 546,
+     "reference": "gsm8k_1069_r01"
+    }
+   },
+   "gsm8k_1069_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "insertion",
+     "reference": "gsm8k_1069_r01",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 420
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 544,
+     "reference": "gsm8k_1069_r01"
+    }
+   },
+   "gsm8k_1158_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 404
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 565,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 402
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 570,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 400
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 565,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 404
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 568,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 406
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 565,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 407
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 568,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 399
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 566,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 403
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 564,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_1158_r12",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 469
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 453,
+     "reference": "gsm8k_1158_r12"
+    }
+   },
+   "gsm8k_1158_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 406
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 566,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 402
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 563,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1158_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1158_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 405
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 566,
+     "reference": "gsm8k_1158_r09"
+    }
+   },
+   "gsm8k_1187_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "kind": "value",
+     "reference": "gsm8k_1187_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 7,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 535
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 523,
+     "reference": "gsm8k_1187_r02"
+    }
+   },
+   "gsm8k_1187_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1187_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 373
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 546,
+     "reference": "gsm8k_1187_r02"
+    }
+   },
+   "gsm8k_1187_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1187_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 402
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 591,
+     "reference": "gsm8k_1187_r02"
+    }
+   },
+   "gsm8k_1187_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1187_r02",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 397
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 579,
+     "reference": "gsm8k_1187_r02"
+    }
+   },
+   "gsm8k_1187_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_1187_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 496
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 453,
+     "reference": "gsm8k_1187_r09"
+    }
+   },
+   "gsm8k_1187_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_1187_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 280
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 414,
+     "reference": "gsm8k_1187_r09"
+    }
+   },
+   "gsm8k_1187_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1187_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 378
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 528,
+     "reference": "gsm8k_1187_r09"
+    }
+   },
+   "gsm8k_1188_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 339
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 471,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 350
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 477,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 364
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 468,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r03": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 436
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 549,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 9,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 351
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 470,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 350
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 481,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 368
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 505,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 408
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 549,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r09": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 358
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 477,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r10": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 346
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 484,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 269
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 380,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r12": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "insertion",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 361
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 481,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1188_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_1188_r05",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 246
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 379,
+     "reference": "gsm8k_1188_r05"
+    }
+   },
+   "gsm8k_1202_r00": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_1202_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 318
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 446,
+     "reference": "gsm8k_1202_r08"
+    }
+   },
+   "gsm8k_1202_r01": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "reference": "gsm8k_1202_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 315
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 491,
+     "reference": "gsm8k_1202_r09"
+    }
+   },
+   "gsm8k_1202_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_1202_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 447
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 404,
+     "reference": "gsm8k_1202_r08"
+    }
+   },
+   "gsm8k_1202_r03": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_1202_r08",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 271
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 395,
+     "reference": "gsm8k_1202_r08"
+    }
+   },
+   "gsm8k_1202_r04": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "kind": "value",
+     "reference": "gsm8k_1202_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 7,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 554
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 531,
+     "reference": "gsm8k_1202_r09"
+    }
+   },
+   "gsm8k_1202_r05": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 5,
+     "kind": "value",
+     "reference": "gsm8k_1202_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 7,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 339
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 516,
+     "reference": "gsm8k_1202_r09"
+    }
+   },
+   "gsm8k_1202_r06": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "reference": "gsm8k_1202_r08",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 277
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 3,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 403,
+     "reference": "gsm8k_1202_r08"
+    }
+   },
+   "gsm8k_1202_r07": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "reference": "gsm8k_1202_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 6,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 4,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 295
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 474,
+     "reference": "gsm8k_1202_r09"
+    }
+   },
+   "gsm8k_1202_r10": {
+    "phylo": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "reference": "gsm8k_1202_r08",
+     "reference_how": "nearest_sibling (fallback path)"
+    },
+    "n_steps": 5,
+    "failure_mode": "answer_not_numeric",
+    "aao": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 277
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 400,
+     "reference": "gsm8k_1202_r08"
+    }
+   },
+   "gsm8k_1202_r11": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 7,
+     "kind": "value",
+     "reference": "gsm8k_1202_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 9,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 562
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 580,
+     "reference": "gsm8k_1202_r09"
+    }
+   },
+   "gsm8k_1202_r12": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 7,
+     "kind": "value",
+     "reference": "gsm8k_1202_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 9,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 591
+    },
+    "matched-phylo": {
+     "agent": "Planner",
+     "step": 0,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 588,
+     "reference": "gsm8k_1202_r09"
+    }
+   },
+   "gsm8k_1202_r13": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 9,
+     "kind": "deletion",
+     "reference": "gsm8k_1202_r09",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 10,
+    "failure_mode": "no_answer(turn_cap)",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 398
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 583,
+     "reference": "gsm8k_1202_r09"
+    }
+   },
+   "gsm8k_1312_r02": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "reference": "gsm8k_1312_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "wrong_number",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 413
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 2,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 382,
+     "reference": "gsm8k_1312_r07"
+    }
+   },
+   "gsm8k_1312_r08": {
+    "phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "kind": "value",
+     "reference": "gsm8k_1312_r07",
+     "reference_how": "meta.sibling"
+    },
+    "n_steps": 4,
+    "failure_mode": "answer_is_expression",
+    "aao": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 272
+    },
+    "matched-phylo": {
+     "agent": "Worker",
+     "step": 1,
+     "step_parsed": true,
+     "agent_parsed": true,
+     "tokens": 367,
+     "reference": "gsm8k_1312_r07"
+    }
+   }
+  },
+  "phylo_fallback_rate": {
+   "c": 12,
+   "n": 220,
+   "acc": 0.05454545454545454,
+   "wilson_lo": 0.03147425933660221,
+   "wilson_hi": 0.0929060005463368
+  },
+  "phylo_kind_distribution": {
+   "deletion": 93,
+   "value": 87,
+   "insertion": 28,
+   "no_sibling": 12
+  },
+  "phylo_step_distribution": {
+   "1": 34,
+   "2": 34,
+   "3": 29,
+   "4": 21,
+   "5": 8,
+   "6": 3,
+   "7": 5,
+   "8": 6,
+   "9": 80
+  },
+  "phylo_agent_distribution": {
+   "Worker": 208,
+   "Verifier": 12
+  },
+  "failure_mode_distribution": {
+   "no_answer(turn_cap)": 112,
+   "wrong_number": 14,
+   "answer_is_expression": 70,
+   "answer_not_numeric": 24
+  },
+  "agreement_PROXY_not_accuracy": {
+   "note": "agreement between two attribution methods on UNLABELED runs; this is not accuracy",
+   "phylo_vs_matched-phylo": {
+    "step": {
+     "c": 50,
+     "n": 220,
+     "acc": 0.22727272727272727,
+     "wilson_lo": 0.17685496560037206,
+     "wilson_hi": 0.287051315960611
+    },
+    "agent": {
+     "c": 136,
+     "n": 220,
+     "acc": 0.6181818181818182,
+     "wilson_lo": 0.5524763380495339,
+     "wilson_hi": 0.6798309399407068
+    },
+    "step_within_1": {
+     "c": 79,
+     "n": 220,
+     "acc": 0.35909090909090907,
+     "wilson_lo": 0.29861652762727753,
+     "wilson_hi": 0.4244017178458971
+    }
+   },
+   "phylo_vs_aao": {
+    "step": {
+     "c": 35,
+     "n": 220,
+     "acc": 0.1590909090909091,
+     "wilson_lo": 0.11667017983374496,
+     "wilson_hi": 0.2132126721174839
+    },
+    "agent": {
+     "c": 169,
+     "n": 220,
+     "acc": 0.7681818181818182,
+     "wilson_lo": 0.7081061799927729,
+     "wilson_hi": 0.819052643138927
+    }
+   },
+   "matched-phylo_vs_aao": {
+    "step": {
+     "c": 71,
+     "n": 220,
+     "acc": 0.32272727272727275,
+     "wilson_lo": 0.26444806758196127,
+     "wilson_hi": 0.38709101543267777
+    },
+    "agent": {
+     "c": 139,
+     "n": 220,
+     "acc": 0.6318181818181818,
+     "wilson_lo": 0.5663317973091555,
+     "wilson_hi": 0.692780166603036
+    }
+   },
+   "judge": "gpt-4o-mini",
+   "aao_unparsed_step": 0,
+   "matched_unparsed_step": 0,
+   "tokens_mean": {
+    "aao": 375.2227272727273,
+    "matched-phylo": 516.0590909090909
+   }
+  }
+ },
+ "annotation_package": {
+  "dir": "annotation/external_pending_gpt-4o-mini",
+  "n_runs": 40,
+  "n_tasks": 20,
+  "runs": {
+   "gsm8k_0031": [
+    "gsm8k_0031_r00",
+    "gsm8k_0031_r02",
+    "gsm8k_0031_r03",
+    "gsm8k_0031_r08"
+   ],
+   "gsm8k_0052": [
+    "gsm8k_0052_r06"
+   ],
+   "gsm8k_0054": [
+    "gsm8k_0054_r03"
+   ],
+   "gsm8k_0184": [
+    "gsm8k_0184_r03"
+   ],
+   "gsm8k_0186": [
+    "gsm8k_0186_r10"
+   ],
+   "gsm8k_0270": [
+    "gsm8k_0270_r02",
+    "gsm8k_0270_r05",
+    "gsm8k_0270_r06"
+   ],
+   "gsm8k_0308": [
+    "gsm8k_0308_r01",
+    "gsm8k_0308_r05",
+    "gsm8k_0308_r06"
+   ],
+   "gsm8k_0416": [
+    "gsm8k_0416_r03",
+    "gsm8k_0416_r10"
+   ],
+   "gsm8k_0420": [
+    "gsm8k_0420_r10"
+   ],
+   "gsm8k_0434": [
+    "gsm8k_0434_r06"
+   ],
+   "gsm8k_0529": [
+    "gsm8k_0529_r09"
+   ],
+   "gsm8k_0789": [
+    "gsm8k_0789_r01",
+    "gsm8k_0789_r06",
+    "gsm8k_0789_r07",
+    "gsm8k_0789_r10"
+   ],
+   "gsm8k_0892": [
+    "gsm8k_0892_r02",
+    "gsm8k_0892_r05",
+    "gsm8k_0892_r10"
+   ],
+   "gsm8k_0922": [
+    "gsm8k_0922_r02",
+    "gsm8k_0922_r03",
+    "gsm8k_0922_r05",
+    "gsm8k_0922_r11",
+    "gsm8k_0922_r13"
+   ],
+   "gsm8k_0969": [
+    "gsm8k_0969_r06"
+   ],
+   "gsm8k_0984": [
+    "gsm8k_0984_r00",
+    "gsm8k_0984_r08"
+   ],
+   "gsm8k_1158": [
+    "gsm8k_1158_r05"
+   ],
+   "gsm8k_1187": [
+    "gsm8k_1187_r10"
+   ],
+   "gsm8k_1188": [
+    "gsm8k_1188_r07",
+    "gsm8k_1188_r09",
+    "gsm8k_1188_r10"
+   ],
+   "gsm8k_1312": [
+    "gsm8k_1312_r08"
+   ]
+  },
+  "seed": 0
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "query_id": "real_t05",
+ "annotator": "annotator_01",
+ "labels": {
+  "real_t05_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 3,
+   "reason": "Answers the 15/210 ratio; the *350 operation is entirely absent so it stops before finishing.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t05_r04": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "ANSWER-CALC form (0.0714*350) fails to evaluate and records 350; correct runs do the *350 as a separate CALC.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t05_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "ANSWER-CALC form (0.0714*350) fails to evaluate and records 350.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t05_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "ANSWER-CALC form (0.0714*350) fails to evaluate and records 350.",
+   "annotator": "annotator_01",
+   "flag": null
+  },
+  "real_t05_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "ANSWER-CALC form (0.0714*350) fails to evaluate and records 350.",
+   "annotator": "annotator_01",
+   "flag": null
+  }
+ }
+}

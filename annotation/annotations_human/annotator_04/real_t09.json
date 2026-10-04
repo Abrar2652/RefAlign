@@ -1,0 +1,105 @@
+{
+ "query_id": "real_t09",
+ "annotator": "annotator_04",
+ "labels": {
+  "real_t09_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "has duration 3.75h but never divides 300 by it; answer is a stray SEARCH",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r01": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "answers 225//60=3 (mangled duration); the 300/3.75 speed division is absent",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers the 3.75h duration and never divides 300 by it for speed",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r03": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers 3.75h; the 300/3.75 speed division is never performed",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers duration 3.75h, omitting the 300/duration division for speed",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers 3.75h instead of dividing 300 by it to get the speed",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "duration found but answer is a stray SEARCH; the 300/3.75 division is absent",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "has 3.75h but answer is a stray SEARCH; speed division never done",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "answer states 300/3.75 but leaves it unevaluated; 80 never produced",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r11": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "answers 225//60=3; the 300/3.75 speed division is missing",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t09_r13": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "leaves 300/3.75 unevaluated in the answer; 80 never computed",
+   "annotator": "annotator_04",
+   "flag": null
+  }
+ }
+}

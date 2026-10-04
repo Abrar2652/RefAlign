@@ -1,0 +1,74 @@
+{
+ "query_id": "gsm8k_0529",
+ "query": "Tom bought a CD for $4, and a headphone set. In total, he paid $48. How many more CDs would Tom have been able to buy if he had decided not to buy the headphone set?",
+ "ground_truth": "11.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 529,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0529_r00",
+   "outcome": "success",
+   "final_answer": "11.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the cost of the headphone set by subtracting the cost of the CD from the total amount spent, then divide that amount by the cost of a CD to find out how many additional CDs could have been purchased."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 48 - 4 = 44.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 44 / 4 = 11.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 11."
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 11"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0529_r09",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, subtract the cost of the CD from the total amount paid to find the cost of the headphones, then divide the remaining amount by the price of the CD to determine how many more CDs he could have bought."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH cost of headphone set"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 48 - 4 = 44.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH price of a CD"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 11"
+    }
+   ]
+  }
+ ]
+}

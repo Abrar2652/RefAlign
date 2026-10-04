@@ -1,0 +1,64 @@
+{
+ "query_id": "bbh_tso3_073",
+ "query": "Alice, Bob, and Claire are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets Moby Dick, and Claire gets The Fellowship of the Ring.\nAs the semester proceeds, they start trading around the new books. First, Alice and Bob swap books. Then, Claire and Alice swap books. Finally, Bob and Claire swap books. At the end of the semester, Alice has\nOptions:\n(A) Frankenstein\n(B) Moby Dick\n(C) The Fellowship of the Ring",
+ "ground_truth": "(C)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 73,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_073_r01",
+   "outcome": "success",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Track the book swaps step by step to determine which book Alice ends up with."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: C"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_073_r00",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Swap the books step-by-step: Alice gets Moby Dick, Bob gets Frankenstein, Claire gets The Fellowship of the Ring; final swap results in Alice having Moby Dick."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE Alice and Bob swap books. Initially Alice has Frankenstein and Bob has Moby Dick. After the swap, Alice has Moby Dick, and Bob has Frankenstein."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE Claire and Alice swap books. Initially Claire has The Fellowship of the Ring and Alice has Moby Dick. After the swap, Alice has The Fellowship of the Ring, and Claire has Moby Dick."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker NOTE Bob and Claire swap books. Initially Bob has Fra"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (B)"
+    }
+   ]
+  }
+ ]
+}

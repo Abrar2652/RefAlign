@@ -1,0 +1,74 @@
+{
+ "query_id": "gsm8k_0054",
+ "query": "The Doubtfire sisters are driving home with 7 kittens adopted from the local animal shelter when their mother calls to inform them that their two house cats have just had kittens. She says that Patchy, the first cat, has had thrice the number of adopted kittens, while Trixie, the other cat, has had 12. How many kittens does the Doubtfire family now have?",
+ "ground_truth": "40.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 54,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0054_r00",
+   "outcome": "success",
+   "final_answer": "40.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the total number of kittens, add the 7 adopted kittens to the number of kittens from Patchy (3 times 7) and Trixie (12)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 3 * 7 = 21.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 7 + 21 + 12 = 40.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 40"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 40"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0054_r03",
+   "outcome": "failure",
+   "final_answer": "12.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the total number of kittens the Doubtfire family now has, add the 7 adopted kittens to the number of kittens Patchy had (21) and Trixie's kittens (12), resulting in 7 + 21 + 12."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH number of kittens that Patchy had."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 3 * 7 = 21.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 7 + 21 + 12."
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 26"
+    }
+   ]
+  }
+ ]
+}

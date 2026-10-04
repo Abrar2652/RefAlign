@@ -1,0 +1,35 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "lengths": {
+    "L5": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.2916666666666667,
+      "aao_agent": 0.9583333333333334,
+      "n": 24
+    },
+    "L12": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.08333333333333333,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L24": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.125,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L40": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.08333333333333333,
+      "aao_agent": 1.0,
+      "n": 24
+    }
+  },
+  "usage": {
+    "calls": 96,
+    "seconds": 50.1746928691864,
+    "prompt_tokens": 78679,
+    "completion_tokens": 914
+  }
+}

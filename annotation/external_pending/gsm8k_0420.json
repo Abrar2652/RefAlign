@@ -1,0 +1,99 @@
+{
+ "query_id": "gsm8k_0420",
+ "query": "To fund his store, Mr. Josue solicited money from two banks. The first bank gave him $4000, and the second company gave him twice as much. If he initially had $5000 in capital, how much capital does he have now?",
+ "ground_truth": "17000.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 420,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0420_r00",
+   "outcome": "success",
+   "final_answer": "17000.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Add the amounts from both banks to Mr. Josue's initial capital: $5000 + $4000 + ($4000 * 2)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 4000 * 2 = 8000.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 5000 + 4000 + 8000 = 17000.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 17000"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 9000"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0420_r10",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Add Mr. Josue's initial capital of $5000 to the $4000 from the first bank and $8000 (twice $4000) from the second bank to find his total capital."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5000 + 4000 + (2 * 4000) = 17000.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 5000 + 4000 + (2 * 4000) = 17000.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 5000 + 4000 + (2 * 4000) = 17000.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 5000 + 4000 + (2 * 4000) = 17000.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 5000 + 4000 + (2 * 4000) = 17000.0"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "CALC 5000 + 4000 + (2 * 4000) = 17000.0"
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC 5000 + 4000 + (2 * 4000) = 17000.0"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "CALC 5000 + 4000 + (2 * 4000) = 17000.0"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 9000"
+    }
+   ]
+  }
+ ]
+}

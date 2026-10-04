@@ -1,0 +1,69 @@
+% Experiment 3: intervention at the attributed step vs a placebo elsewhere.
+\begin{table*}[t]
+\centering\scriptsize
+\begin{tabular}{lccccccc}
+\toprule
+ & \multicolumn{3}{c}{failures / rollouts} & \multicolumn{2}{c}{targeted $-$ baseline} & \multicolumn{2}{c}{placebo $-$ baseline} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+task & baseline & targeted (Worker) & placebo (Planner) & $\Delta$ fail rate [95\% CI] & $p$ / $p_{\mathrm{Holm}}$ & $\Delta$ fail rate [95\% CI] & $p$ / $p_{\mathrm{Holm}}$ \\
+\midrule
+\texttt{t00}$^\dagger$ & 11/14 & 13/14 & 4/14 & +0.14 [-0.14, +0.41] & 0.596 / 0.596 & -0.50 [-0.72, -0.13] & 0.021 / 0.043 \\
+\texttt{t01} & 0/14 & 1/14 & 0/14 & +0.07 [-0.15, +0.31] & 1.000 / 1.000 & +0.00 [-0.22, +0.22] & 1.000 / 1.000 \\
+\texttt{t02} & 11/14 & 14/14 & 12/14 & +0.21 [-0.04, +0.48] & 0.222 / 0.444 & +0.07 [-0.22, +0.35] & 1.000 / 1.000 \\
+\texttt{t03} & 14/14 & 13/14 & 14/14 & -0.07 [-0.31, +0.15] & 1.000 / 1.000 & +0.00 [-0.22, +0.22] & 1.000 / 1.000 \\
+\texttt{t04} & 13/14 & 14/14 & 12/14 & +0.07 [-0.15, +0.31] & 1.000 / 1.000 & -0.07 [-0.33, +0.19] & 1.000 / 1.000 \\
+\texttt{t05}$^\dagger$ & 11/14 & 9/14 & 4/14 & -0.14 [-0.43, +0.18] & 0.678 / 0.678 & -0.50 [-0.72, -0.13] & 0.021 / 0.043 \\
+\texttt{t06} & 14/14 & 14/14 & 11/14 & +0.00 [-0.22, +0.22] & 1.000 / 1.000 & -0.21 [-0.48, +0.04] & 0.222 / 0.444 \\
+\texttt{t07}$^\dagger$ & 11/14 & 12/14 & 9/14 & +0.07 [-0.22, +0.35] & 1.000 / 1.000 & -0.14 [-0.43, +0.18] & 0.678 / 1.000 \\
+\texttt{t08} & 4/14 & 0/14 & 0/14 & -0.29 [-0.55, -0.01] & 0.098 / 0.196 & -0.29 [-0.55, -0.01] & 0.098 / 0.196 \\
+\texttt{t09}$^\dagger$ & 12/14 & 12/14 & 12/14 & +0.00 [-0.28, +0.28] & 1.000 / 1.000 & +0.00 [-0.28, +0.28] & 1.000 / 1.000 \\
+\midrule
+pooled & 101/140 [0.64, 0.79] & 102/140 [0.65, 0.80] & 78/140 [0.47, 0.64] & +0.01 [-0.10, +0.11] & 1.000 / 1.000 & -0.16 [-0.27, -0.05] & 0.006 / 0.012 \\
+\bottomrule
+\end{tabular}
+\caption{Failure rates of the Planner$\to$Worker$\to$Verifier system under the original prompts, a
+one-sentence verification instruction added to the Worker prompt (the step the human labels
+attribute), and an equally long instruction added to the Planner prompt (placebo). All three
+conditions were regenerated with identical sampling (Qwen2.5-7B-Instruct, temperature $1.0$,
+14 rollouts per task and condition, fixed seeds).
+$\dagger$: the four families of the human benchmark. Pooled rows give 95\% Wilson intervals.
+$\Delta$ is the difference in failure rate with a Newcombe score interval; $p$ is a two-sided
+Fisher exact test and $p_{\mathrm{Holm}}$ the Holm--Bonferroni value within the family of the two
+comparisons of that row ($m{=}2$). Scoring: harness scoring (run\_once: last number of the ANSWER line vs.\ gold, as in the human-benchmark collection).}
+\label{tab:intervention-qwen}
+\end{table*}
+
+% Experiment 3: intervention at the attributed step vs a placebo elsewhere.
+\begin{table*}[t]
+\centering\scriptsize
+\begin{tabular}{lccccccc}
+\toprule
+ & \multicolumn{3}{c}{failures / rollouts} & \multicolumn{2}{c}{targeted $-$ baseline} & \multicolumn{2}{c}{placebo $-$ baseline} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+task & baseline & targeted (Worker) & placebo (Planner) & $\Delta$ fail rate [95\% CI] & $p$ / $p_{\mathrm{Holm}}$ & $\Delta$ fail rate [95\% CI] & $p$ / $p_{\mathrm{Holm}}$ \\
+\midrule
+\texttt{t00}$^\dagger$ & 11/14 & 13/14 & 4/14 & +0.14 [-0.14, +0.41] & 0.596 / 0.596 & -0.50 [-0.72, -0.13] & 0.021 / 0.043 \\
+\texttt{t01} & 0/14 & 1/14 & 0/14 & +0.07 [-0.15, +0.31] & 1.000 / 1.000 & +0.00 [-0.22, +0.22] & 1.000 / 1.000 \\
+\texttt{t02} & 11/14 & 14/14 & 12/14 & +0.21 [-0.04, +0.48] & 0.222 / 0.444 & +0.07 [-0.22, +0.35] & 1.000 / 1.000 \\
+\texttt{t03} & 14/14 & 13/14 & 14/14 & -0.07 [-0.31, +0.15] & 1.000 / 1.000 & +0.00 [-0.22, +0.22] & 1.000 / 1.000 \\
+\texttt{t04} & 13/14 & 14/14 & 12/14 & +0.07 [-0.15, +0.31] & 1.000 / 1.000 & -0.07 [-0.33, +0.19] & 1.000 / 1.000 \\
+\texttt{t05}$^\dagger$ & 11/14 & 9/14 & 4/14 & -0.14 [-0.43, +0.18] & 0.678 / 0.678 & -0.50 [-0.72, -0.13] & 0.021 / 0.043 \\
+\texttt{t06} & 14/14 & 14/14 & 9/14 & +0.00 [-0.22, +0.22] & 1.000 / 1.000 & -0.36 [-0.61, -0.07] & 0.041 / 0.081 \\
+\texttt{t07}$^\dagger$ & 11/14 & 12/14 & 9/14 & +0.07 [-0.22, +0.35] & 1.000 / 1.000 & -0.14 [-0.43, +0.18] & 0.678 / 1.000 \\
+\texttt{t08} & 4/14 & 0/14 & 0/14 & -0.29 [-0.55, -0.01] & 0.098 / 0.196 & -0.29 [-0.55, -0.01] & 0.098 / 0.196 \\
+\texttt{t09}$^\dagger$ & 12/14 & 12/14 & 12/14 & +0.00 [-0.28, +0.28] & 1.000 / 1.000 & +0.00 [-0.28, +0.28] & 1.000 / 1.000 \\
+\midrule
+pooled & 101/140 [0.64, 0.79] & 102/140 [0.65, 0.80] & 76/140 [0.46, 0.62] & +0.01 [-0.10, +0.11] & 1.000 / 1.000 & -0.18 [-0.29, -0.07] & 0.003 / 0.006 \\
+\bottomrule
+\end{tabular}
+\caption{Failure rates of the Planner$\to$Worker$\to$Verifier system under the original prompts, a
+one-sentence verification instruction added to the Worker prompt (the step the human labels
+attribute), and an equally long instruction added to the Planner prompt (placebo). All three
+conditions were regenerated with identical sampling (Qwen2.5-7B-Instruct, temperature $1.0$,
+14 rollouts per task and condition, fixed seeds).
+$\dagger$: the four families of the human benchmark. Pooled rows give 95\% Wilson intervals.
+$\Delta$ is the difference in failure rate with a Newcombe score interval; $p$ is a two-sided
+Fisher exact test and $p_{\mathrm{Holm}}$ the Holm--Bonferroni value within the family of the two
+comparisons of that row ($m{=}2$). Scoring: evaluated-answer scoring (an arithmetic expression in the ANSWER line is evaluated before comparison; label-free sensitivity analysis).}
+\label{tab:intervention-evaluated-qwen}
+\end{table*}

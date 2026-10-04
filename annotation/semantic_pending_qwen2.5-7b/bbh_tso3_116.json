@@ -1,0 +1,118 @@
+{
+ "query_id": "bbh_tso3_116",
+ "query": "Alice, Bob, and Claire are playing a game. At the start of the game, they are each holding a ball: Alice has a green ball, Bob has a black ball, and Claire has a purple ball.\nAs the game progresses, pairs of players trade balls. First, Bob and Alice swap balls. Then, Claire and Alice swap balls. Finally, Bob and Alice swap balls. At the end of the game, Alice has the\nOptions:\n(A) green ball\n(B) black ball\n(C) purple ball",
+ "ground_truth": "(A)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 116,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_116_r08",
+   "outcome": "success",
+   "final_answer": "A",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Start with tracking each swap and its effect on Alice's ball, ending with Bob and Alice's swap giving Alice the black ball."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (A)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (B)"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_116_r00",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Track the ball changes step-by-step: Bob and Alice swap (Bob: black, Alice: green), Claire and Alice swap (Claire: green, Alice: black), then Bob and Alice swap again (Bob: green, Alice: black)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE After the first swap (Bob and Alice), the balls are distributed as follows: Bob has the black ball, Alice has the green ball, and Claire still has the purple ball."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE After the second swap (Claire and Alice), the balls are distributed as follows: Bob still has the black ball, Alice now has the green ball, and Claire has the green ball that used to belong to Alice."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker NOTE After the final swap (Bob and Alice), the balls "
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (B)"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_116_r01",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Track the ball exchanges step-by-step to determine Alice's final ball."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE Initially, Alice has the green ball, Bob has the black ball, and Claire has the purple ball. First, Bob and Alice swap balls. After this swap, Alice will have the black ball and Bob will have the green ball."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE After the first swap, Alice has the black ball and Bob has the green ball. Next, Claire and Alice swap balls. After this swap, Alice will have the purple ball and Claire will have the black ball."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker NOTE After the second swap, Alice has the purple ball"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (B)"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_116_r04",
+   "outcome": "failure",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Track the ball swaps step-by-step: Bob->Alice, Claire->Alice, Bob->Alice, to determine Alice ends with the purple ball."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: C"
+    }
+   ]
+  }
+ ]
+}

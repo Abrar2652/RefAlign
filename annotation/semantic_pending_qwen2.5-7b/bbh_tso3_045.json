@@ -1,0 +1,79 @@
+{
+ "query_id": "bbh_tso3_045",
+ "query": "Alice, Bob, and Claire are holding a white elephant gift exchange. At the start of the event, they are each holding a present of a different color: Alice has a black ball, Bob has a purple present, and Claire has a blue present.\nAs the event progresses, pairs of people swap gifts. First, Claire and Alice swap their gifts. Then, Bob and Claire swap their gifts. Finally, Alice and Bob swap their gifts. At the end of the event, Claire has the\nOptions:\n(A) black ball\n(B) purple present\n(C) blue present",
+ "ground_truth": "(B)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 45,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_045_r00",
+   "outcome": "success",
+   "final_answer": "B",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "(C) blue present. Swap the gifts step-by-step to determine the final holder of each gift."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE Initial state - Alice has the black ball, Bob has the purple present, and Claire has the blue present."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE After Claire and Alice swap their gifts, Alice will have the blue present and Claire will have the black ball. Bob still has the purple present."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER (B) purple present"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: B"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_045_r07",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Follow the gift swaps step-by-step: Claire and Alice swap (Claire gets black ball, Alice gets blue), then Bob and Claire swap (Bob gets black ball, Claire gets purple), then Alice and Bob swap (Alice gets purple, Bob gets black ball). Thus, Claire ends up with the purple present."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "NOTE Claire and Alice swap gifts: Claire now has the blue present, and Alice now has the black ball."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "NOTE Claire and Alice swap gifts: Claire now has the blue present, and Alice now has the black ball."
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "NOTE Claire and Bob then swap gifts: Bob now has the blue present, and Claire now has the black ball."
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER Worker NOTE Alice and Bob then swap gifts: Alice now has the"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG"
+    }
+   ]
+  }
+ ]
+}

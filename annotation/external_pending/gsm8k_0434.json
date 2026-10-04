@@ -1,0 +1,119 @@
+{
+ "query_id": "gsm8k_0434",
+ "query": "The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy bars did he buy?",
+ "ground_truth": "5.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 434,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0434_r00",
+   "outcome": "success",
+   "final_answer": "5.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, calculate the total amount George spent on chips, then determine how much he had left after purchasing 3 bags, and use the remaining money to find out how many candy bars he could buy with the remaining amount."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5 * 100 = 500.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 3 * 40 = 120 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 500 - 120 = 380 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 0.01 * 500 = 5.0 = None"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 380 - 5 = 375 = None"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "CALC 375 / 75 = 5 = None"
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "ANSWER 5"
+    },
+    {
+     "index": 8,
+     "agent": "Verifier",
+     "content": "To determine if the worker's answer is correct, we need to analyze the information provided.\n\nGeorge spent $5 in total, and he bought chips which cost $0.40 each and candy bars which cost $0.75 each. He also had 1% of his money left after spending.\n\nFirst, let's calculate how much money 1% of $5 is:\n1% of $5 = 0.01 * 5 = $0.05\n\nThis indicates that he had $0.05 left after his purchases. Therefore, the amount he spent is:\n$5 - $0.05 = $4.95\n\nNext, George bought 3 bags of chips:\nCost of 3 bags of chips = 3 * $0.40 = $1.20\n\nNow we can find out how much money he spent on candy bars:\nAmount spent on candy bars = Total spent - Cost of chips = $4.95 - $1.20 = $3.75\n\nNext, we determine how many candy bars he bought with the amount spent on candy bars:\nNumber of candy bars = Amount spent on candy bars / Cost per candy bar \n= $3.75 / $0.75 = 5\n\nThe worker's answer states that"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0434_r06",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, calculate the total amount George spent and how much he has left, then set up an equation to find the number of candy bars he bought using the remaining money."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5 * 100 - 1 = 499 = None"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 5 * 100 - 1 = 499 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 5 * 100 - 1 = 499 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC 5 * 100 - 1 = 499 = None"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC 5 * 100 - 1 = 499.0"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "CALC 5 * 100 - 1 = 499.0"
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC 5 * 100 - 1 = 499 = None"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "CALC 5 * 100 - 1 = 499 = None"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 0"
+    }
+   ]
+  }
+ ]
+}

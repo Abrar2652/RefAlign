@@ -1,0 +1,69 @@
+{
+ "query_id": "gsm8k_1312",
+ "query": "Tom's restaurant gets 6 reservations a night.  They normally order 2 meals that cost $5 each and a $5 bottle of wine.  How much do they make a week if they are open 2 days a week?",
+ "ground_truth": "180.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 1312,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_1312_r00",
+   "outcome": "success",
+   "final_answer": "180.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total revenue per night for the reservations, then multiply that by the number of nights open in a week."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 6 * (2 * 5 + 5) = 90.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 90 * 2 = 180 = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 180"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find out how much Tom's restaurant makes in a week, we can calculate it step by step.\n\n1. **Reservations per night** = 6\n2. **Days open per week** = 2\n\nTotal reservations per week = 6 reservations/night * 2 nights/week = 12 reservations/week.\n\n3. **Cost of meals** = 2 meals * $5/meal = $10\n4. **Cost of wine** = $5\n\nTotal cost per reservation = Cost of meals + Cost of wine = $10 + $5 = $15.\n\nTotal revenue per week = Total reservations per week * Total cost per reservation = 12 reservations * $15/reservation = $180.\n\nThe worker's answer of 180.0 is correct.\n\nVERDICT: CORRECT\nFINAL: 180"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1312_r08",
+   "outcome": "failure",
+   "final_answer": "90.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total income from reservations by multiplying the number of reservations (6) by the total cost per reservation (2 meals x $5 + $5 wine) and then multiply that amount by the number of days they are open per week (2)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 2 * 5 + 5 = 15.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER CALC 6 * 15 = 90.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 60"
+    }
+   ]
+  }
+ ]
+}

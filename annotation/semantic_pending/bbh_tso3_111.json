@@ -1,0 +1,76 @@
+{
+ "query_id": "bbh_tso3_111",
+ "query": "Alice, Bob, and Claire are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing right midfielder, Bob is playing goalkeeper, and Claire is playing left winger.\nAs the game progresses, pairs of players occasionally swap positions. First, Claire and Alice trade positions. Then, Bob and Claire trade positions. Finally, Alice and Claire trade positions. At the end of the match, Alice is playing\nOptions:\n(A) right midfielder\n(B) goalkeeper\n(C) left winger",
+ "ground_truth": "(B)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 111,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_111_r05",
+   "outcome": "success",
+   "final_answer": "B",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Track the position swaps step-by-step to identify Alice's final position after all trades."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (B)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: A"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_111_r06",
+   "outcome": "failure",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Track the series of position swaps step-by-step to determine Alice's final position."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: C"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_111_r08",
+   "outcome": "failure",
+   "final_answer": "C",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To solve the reasoning task, track the positions of Alice, Bob, and Claire after each swap and determine Alice's final position."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (C)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: C"
+    }
+   ]
+  }
+ ]
+}

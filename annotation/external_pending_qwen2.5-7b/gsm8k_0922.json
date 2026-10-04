@@ -1,0 +1,69 @@
+{
+ "query_id": "gsm8k_0922",
+ "query": "Martha has been collecting shells since she turned 5 years old, every month she collects one shell. By her 10th birthday, how many shells will Martha have collected?",
+ "ground_truth": "60.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 922,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0922_r05",
+   "outcome": "success",
+   "final_answer": "60.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate the number of months from age 5 to age 10 and since she collects one shell per month, the number of months is the total number of shells collected."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH Number of months between age 5 and age 10"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 60"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 55"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0922_r03",
+   "outcome": "failure",
+   "final_answer": "10.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate the number of months from age 5 to 10, then since she collects 1 shell per month, that will be the total number of shells."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH number of months from age 5 to 10"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH number of months from age 5 to 10"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 10"
+    }
+   ]
+  }
+ ]
+}

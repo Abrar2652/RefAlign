@@ -1,0 +1,64 @@
+{
+ "query_id": "gsm8k_0270",
+ "query": "Mary buys 3 bags of M&Ms. The first bag has 300 M&Ms in it. The second bag has 12 more M&Ms than the first, and the third bag has a hole in it, so it only has half the number of M&Ms that the first bag had. How many M&Ms did Mary get total?",
+ "ground_truth": "762.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 270,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0270_r00",
+   "outcome": "success",
+   "final_answer": "762.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of M&Ms in each bag, then sum them up: 300 + 312 + 150."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 300 + 312 + 150 = 762.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 762"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 516"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0270_r05",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate the number of M&Ms in each bag, then sum them up."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH Number of M&Ms in the second bag"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH Number of M&Ms in the second bag"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 312"
+    }
+   ]
+  }
+ ]
+}

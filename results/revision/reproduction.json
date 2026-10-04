@@ -1,0 +1,187 @@
+{
+ "rows": [
+  {
+   "claim": "RefAlign 24/24 at L=5,12,24,40 (recomputed)",
+   "observed": {
+    "5": 24,
+    "12": 24,
+    "24": 24,
+    "40": 24
+   },
+   "expected": {
+    "5": 24,
+    "12": 24,
+    "24": 24,
+    "40": 24
+   },
+   "ok": true,
+   "note": "source: experiments/chain_agents.build_population seed 0 noise=True; evaluator: step == decisive_step"
+  },
+  {
+   "claim": "RefAlign 24/24 at each length (saved matched_judge.json, phylo rows)",
+   "observed": {
+    "5": 24,
+    "12": 24,
+    "24": 24,
+    "40": 24
+   },
+   "expected": {
+    "5": 24,
+    "12": 24,
+    "24": 24,
+    "40": 24
+   },
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "natural failures = 32 runs from 4 families",
+   "observed": [
+    32,
+    4
+   ],
+   "expected": [
+    32,
+    4
+   ],
+   "ok": true,
+   "note": "per family {'real_t00': 5, 'real_t05': 5, 'real_t07': 11, 'real_t09': 11}"
+  },
+  {
+   "claim": "RefAlign exact step on human benchmark (recomputed)",
+   "observed": "15/32",
+   "expected": "15/32",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "RefAlign exact step (results/human_perrun.json)",
+   "observed": "15/32",
+   "expected": "15/32",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "RefAlign exact agent on human benchmark (recomputed)",
+   "observed": "17/32",
+   "expected": "17/32",
+   "ok": true,
+   "note": "0.53 in the manuscript"
+  },
+  {
+   "claim": "reference-conditioned GPT-4o exact step",
+   "observed": "22/32 = 0.688",
+   "expected": "22/32 = 0.688",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "GPT-4o single-trace AAO exact step (human)",
+   "observed": "16/32",
+   "expected": "16/32",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "GPT-4o matched-first exact step (human)",
+   "observed": "22/32",
+   "expected": "22/32",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "all human-labeled culprit agents are Workers",
+   "observed": {
+    "Worker": 32
+   },
+   "expected": {
+    "Worker": 32
+   },
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "labels at zero-based step 3",
+   "observed": 27,
+   "expected": 27,
+   "ok": true,
+   "note": "full distribution {2: 2, 3: 27, 4: 3}"
+  },
+  {
+   "claim": "POST-HOC diagnostic: constant 'step 3' prediction",
+   "observed": "27/32 = 0.844",
+   "expected": "27/32 = 0.844",
+   "ok": true,
+   "note": "not an independently selected baseline; leave-one-family-out baselines are in positional_baselines.json"
+  },
+  {
+   "claim": "prediction invariant across references on all 32 natural failures",
+   "observed": "32/32",
+   "expected": "32/32",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "nearest and first reference coincide",
+   "observed": 9,
+   "expected": 9,
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "non-numeric study: fallback on all reference-available failures",
+   "observed": "347/347",
+   "expected": "347/347",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "non-numeric study: runs containing a NOTE step",
+   "observed": "22/560",
+   "expected": "22/560",
+   "ok": true,
+   "note": ""
+  },
+  {
+   "claim": "reorderable sum (content-aware / edit) k=8,15",
+   "observed": {
+    "k8_edit": 13,
+    "k8_content": 34,
+    "k15_edit": 13,
+    "k15_content": 36
+   },
+   "expected": {
+    "k8_edit": 13,
+    "k8_content": 34,
+    "k15_edit": 13,
+    "k15_content": 36
+   },
+   "ok": true,
+   "note": "n=36 each"
+  },
+  {
+   "claim": "t03 answer key in annotation/collect_traces.py",
+   "observed": 76,
+   "expected": 76,
+   "ok": true,
+   "note": "manuscript uses the corrected key 76; 84 is superseded"
+  },
+  {
+   "claim": "saved intervention.json pooled failures (OLD key 84)",
+   "observed": [
+    60,
+    75,
+    75
+   ],
+   "expected": [
+    60,
+    75,
+    75
+   ],
+   "ok": true,
+   "note": "manuscript reports 52/74/73 after correcting t03 to 76; rescoring is in intervention_rescored_*.json"
+  }
+ ],
+ "n_ok": 19,
+ "n": 19
+}

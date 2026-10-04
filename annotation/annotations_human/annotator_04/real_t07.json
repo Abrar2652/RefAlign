@@ -1,0 +1,105 @@
+{
+ "query_id": "real_t07",
+ "annotator": "annotator_04",
+ "labels": {
+  "real_t07_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "computes the 51 rise amount but never adds it back to 510 to reach 561",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r01": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers 51 (the 10% rise) without adding it to 510 for the final 561",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers 510 after the drop and never applies the 10% rise step at all",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r03": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "gets 51 as the rise but omits the 510+51 addition",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "computes 51 rise then answers it; the addition to 510 is absent",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers the 51 rise amount, missing the addition back to 510",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "produces 51 but never adds it to 510 to get 561",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "computes 10% rise=51 and stops; the 510+51 add is never done",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers 51 without adding it back to the 510 base price",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r11": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "gives the 51 rise; the addition to 510 for the 561 final is absent",
+   "annotator": "annotator_04",
+   "flag": null
+  },
+  "real_t07_r13": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 5,
+   "reason": "answers 51, omitting the 510+51 addition for the final price",
+   "annotator": "annotator_04",
+   "flag": null
+  }
+ }
+}

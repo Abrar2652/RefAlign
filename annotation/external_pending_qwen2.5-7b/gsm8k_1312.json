@@ -1,0 +1,91 @@
+{
+ "query_id": "gsm8k_1312",
+ "query": "Tom's restaurant gets 6 reservations a night.  They normally order 2 meals that cost $5 each and a $5 bottle of wine.  How much do they make a week if they are open 2 days a week?",
+ "ground_truth": "180.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 1312,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_1312_r06",
+   "outcome": "success",
+   "final_answer": "180.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate daily revenue per night (6 tables * $15 meal + $5 wine), then multiply by 2 days for the weekly revenue."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC (6 * (2 * 5 + 5)) * 2 = 180.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 180"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\n\nExplanation: The worker's calculation seems to have been based on daily sales without properly adjusting for the number of days the restaurant is open. Let's break it down correctly:\n\n1. **Meal Cost per Night**: 2 meals at $5 each = $10.\n2. **Wine Cost per Night**: $5.\n3. **Total Cost per Night**: $10 (meals) + $5 (wine) = $15.\n4. **Reservations per Night**: 6.\n5. **Total Revenue per Night**: 6 reservations * $15 = $90.\n6. **Days Open per Week**: 2.\n7. **Weekly Revenue**: $90 per night * 2 nights = $180.\n\nTherefore, the correct weekly revenue, given the restaurant's operations, is indeed $180, but the worker\u2019s statement should clarify the logic and context around the calculation for better understanding."
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1312_r09",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate weekly revenue by multiplying nightly profit by 2."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH nightly profit calculation needed"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH nightly profit calculation needed"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG  \nFINAL: 0"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1312_r10",
+   "outcome": "failure",
+   "final_answer": "210.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate the nightly revenue from meals and wine, then multiply by the number of days the restaurant is open."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 2 * 5 + 5 = 15.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 210.0"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 240"
+    }
+   ]
+  }
+ ]
+}

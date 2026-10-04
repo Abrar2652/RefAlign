@@ -1,0 +1,105 @@
+{
+ "query_id": "real_t09",
+ "annotator": "annotator_02",
+ "labels": {
+  "real_t09_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: time 3.75 h computed but the required final 300/3.75 division is never performed.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r01": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Ex.C: answers floored time (225//60=3); the required 300/time division is missing.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: answers the time 3.75 instead of doing the required 300/3.75 division.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r03": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: answers time 3.75; the required 300/3.75 division is forgotten.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: answers time 3.75 instead of computing 300/3.75.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: answers time 3.75 instead of computing 300/3.75.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: time 225 computed but the final division is replaced by a junk SEARCH; 300/time missing.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: time 3.75 computed but the final division is replaced by a junk SEARCH; 300/time missing.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Ex.C: 300/3.75 left uncomputed in the answer, so the final division step is missing.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r11": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Ex.C: answers floored time (225//60=3); the required 300/time division is missing.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t09_r13": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Ex.C: 300/3.75 left uncomputed in the answer, so the final division step is missing.",
+   "annotator": "annotator_02",
+   "flag": null
+  }
+ }
+}

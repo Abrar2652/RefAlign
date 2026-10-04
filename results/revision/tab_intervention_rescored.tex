@@ -1,0 +1,14 @@
+% Prompt intervention, rescored with the corrected t03 key (76).
+\begin{table*}[!t]
+\caption{Global prompt intervention, ten task families, $14$ rollouts per family and condition, answer key of the path-area task corrected to $76$ before scoring (model outputs unchanged). Failure counts out of $140$; differences are targeted/placebo minus baseline with Newcombe $95\%$ intervals; $p$ from two-sided Fisher exact tests, Holm-corrected over the two comparisons per model. A global prompt change is not a replay of a single step.}
+\label{tab:intervention}
+\centering\small
+\begin{tabular}{lccccccc}
+\toprule
+agent model & baseline & Worker instr. & Planner placebo & $\Delta$ Worker [95\% CI] & $p_{\mathrm{Holm}}$ & $\Delta$ Planner [95\% CI] & $p_{\mathrm{Holm}}$ \\
+\midrule
+GPT-4o-mini & 52/140 & 74/140 & 73/140 & +0.157 [+0.041, +0.268] & 0.023 & +0.150 [+0.034, +0.261] & 0.023 \\
+Qwen2.5-7B & 98/140 & 102/140 & 75/140 & +0.029 [-0.077, +0.133] & 0.692 & -0.164 [-0.272, -0.050] & 0.013 \\
+\bottomrule
+\end{tabular}
+\end{table*}

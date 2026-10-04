@@ -1,0 +1,277 @@
+{
+ "query_id": "gsm8k_0922",
+ "query": "Martha has been collecting shells since she turned 5 years old, every month she collects one shell. By her 10th birthday, how many shells will Martha have collected?",
+ "ground_truth": "60.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 922,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0922_r00",
+   "outcome": "success",
+   "final_answer": "60.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total number of months from Martha's 5th birthday to her 10th birthday, which is 5 years or 60 months, and since she collects one shell each month, she will have collected 60 shells."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 5 * 12 = 60.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER 60"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 60"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0922_r02",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total number of months from Martha's 5th to her 10th birthday and multiply by the number of shells she collects each month."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 60"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0922_r03",
+   "outcome": "failure",
+   "final_answer": "12.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total number of months from Martha's 5th birthday to her 10th birthday and multiply that by the number of shells she collects each month."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "ANSWER CALC (10 - 5) * 12"
+    },
+    {
+     "index": 6,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 60"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0922_r05",
+   "outcome": "failure",
+   "final_answer": "12.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total number of months from Martha's 5th birthday to her 10th birthday and then multiply that by the number of shells she collects each month."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER CALC (10 - 5) * 12"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 60"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0922_r11",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the number of months from Martha's 5th birthday to her 10th birthday and multiply that by the number of shells she collects each month."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 7,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 8,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 9,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG  \nFINAL: 60"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0922_r13",
+   "outcome": "failure",
+   "final_answer": "12.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the total number of months from Martha's 5th birthday to her 10th birthday and multiply that by the number of shells she collects each month."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 5,
+     "agent": "Worker",
+     "content": "CALC (10 - 5) * 12 = 60.0"
+    },
+    {
+     "index": 6,
+     "agent": "Worker",
+     "content": "ANSWER CALC (10 - 5) * 12"
+    },
+    {
+     "index": 7,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG  \nFINAL: 60"
+    }
+   ]
+  }
+ ]
+}

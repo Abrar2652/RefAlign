@@ -1,0 +1,6102 @@
+{
+ "design": {
+  "families": [
+   "real_t00",
+   "real_t05",
+   "real_t07",
+   "real_t09"
+  ],
+  "n_failing": 32,
+  "gold": "results/human_perrun.json (== annotations_human/adjudicated)",
+  "reference_forcing": "monkeypatch phyloagent.contrastive._nearest_sibling; contrastive_localize otherwise unmodified (default config)",
+  "same_path_definition": "Jaccard overlap of normalised Worker CALC expressions >= 0.5"
+ },
+ "families": {
+  "real_t00": {
+   "n_success": 9,
+   "n_fail": 5,
+   "first_reference": "real_t00_r01",
+   "runs": {
+    "real_t00_r00": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t00_r12",
+     "own_prediction": [
+      "Worker",
+      6
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      6
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 6,
+     "step_correct_same_path": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t00_r01": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t00_r02": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 8.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r03": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r04": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t00_r06": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r09": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r11": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t00_r12": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 6.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r13": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      }
+     }
+    },
+    "real_t00_r05": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t00_r06",
+     "own_prediction": [
+      "Planner",
+      0
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      0
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 6,
+     "step_correct_same_path": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t00_r01": {
+       "agent": "Planner",
+       "step": 0,
+       "kind": "insertion",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t00_r02": {
+       "agent": "Planner",
+       "step": 0,
+       "kind": "insertion",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 6.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r03": {
+       "agent": "Planner",
+       "step": 0,
+       "kind": "insertion",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 6.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r04": {
+       "agent": "Planner",
+       "step": 0,
+       "kind": "insertion",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t00_r06": {
+       "agent": "Planner",
+       "step": 0,
+       "kind": "insertion",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r09": {
+       "agent": "Planner",
+       "step": 0,
+       "kind": "insertion",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r11": {
+       "agent": "Planner",
+       "step": 0,
+       "kind": "insertion",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t00_r12": {
+       "agent": "Planner",
+       "step": 0,
+       "kind": "insertion",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r13": {
+       "agent": "Planner",
+       "step": 0,
+       "kind": "insertion",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      }
+     }
+    },
+    "real_t00_r07": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t00_r12",
+     "own_prediction": [
+      "Worker",
+      6
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      6
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 6,
+     "step_correct_same_path": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t00_r01": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t00_r02": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 8.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r03": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r04": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t00_r06": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r09": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r11": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t00_r12": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 6.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r13": {
+       "agent": "Worker",
+       "step": 6,
+       "kind": "deletion",
+       "agent_correct": true,
+       "step_correct": false,
+       "edit_distance": 3.0,
+       "content_distance": 7.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      }
+     }
+    },
+    "real_t00_r08": {
+     "gold": [
+      "Worker",
+      2
+     ],
+     "nearest_reference": "real_t00_r01",
+     "own_prediction": [
+      "Worker",
+      2
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      2
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 6,
+     "step_correct_same_path": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true,
+      true
+     ],
+     "references": {
+      "real_t00_r01": {
+       "agent": "Worker",
+       "step": 2,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t00_r02": {
+       "agent": "Worker",
+       "step": 2,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 2.0,
+       "content_distance": 6.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r03": {
+       "agent": "Worker",
+       "step": 2,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 2.0,
+       "content_distance": 6.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r04": {
+       "agent": "Worker",
+       "step": 2,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t00_r06": {
+       "agent": "Worker",
+       "step": 2,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r09": {
+       "agent": "Worker",
+       "step": 2,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r11": {
+       "agent": "Worker",
+       "step": 2,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t00_r12": {
+       "agent": "Worker",
+       "step": 2,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t00_r13": {
+       "agent": "Worker",
+       "step": 2,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      }
+     }
+    },
+    "real_t00_r10": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t00_r06",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "references": {
+      "real_t00_r01": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t00_r02": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t00_r03": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t00_r04": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t00_r06": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 1.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t00_r09": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t00_r11": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t00_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 1.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t00_r13": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 1.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      }
+     }
+    }
+   },
+   "summary": {
+    "frac_invariant_step": {
+     "c": 5,
+     "n": 5,
+     "acc": 1.0,
+     "wilson_lo": 0.5655175352168251,
+     "wilson_hi": 1.0
+    },
+    "step_acc_nearest": {
+     "c": 2,
+     "n": 5,
+     "acc": 0.4,
+     "wilson_lo": 0.11762077423264794,
+     "wilson_hi": 0.769275718723987
+    },
+    "step_acc_first": {
+     "c": 2,
+     "n": 5,
+     "acc": 0.4,
+     "wilson_lo": 0.11762077423264794,
+     "wilson_hi": 0.769275718723987
+    },
+    "step_acc_best": {
+     "c": 2,
+     "n": 5,
+     "acc": 0.4,
+     "wilson_lo": 0.11762077423264794,
+     "wilson_hi": 0.769275718723987
+    },
+    "step_acc_worst": {
+     "c": 2,
+     "n": 5,
+     "acc": 0.4,
+     "wilson_lo": 0.11762077423264794,
+     "wilson_hi": 0.769275718723987
+    },
+    "step_acc_mean_random_ref": 0.4,
+    "agent_acc_nearest": {
+     "c": 4,
+     "n": 5,
+     "acc": 0.8,
+     "wilson_lo": 0.3755346297625253,
+     "wilson_hi": 0.9637758913675698
+    },
+    "agent_acc_first": {
+     "c": 4,
+     "n": 5,
+     "acc": 0.8,
+     "wilson_lo": 0.3755346297625253,
+     "wilson_hi": 0.9637758913675698
+    },
+    "n_runs_with_same_path_ref": 4,
+    "same_path_pairs": {
+     "c": 6,
+     "n": 24,
+     "acc": 0.25,
+     "wilson_lo": 0.11999366228595001,
+     "wilson_hi": 0.4489944400515401
+    },
+    "other_path_pairs": {
+     "c": 12,
+     "n": 21,
+     "acc": 0.5714285714285714,
+     "wilson_lo": 0.36546554369306716,
+     "wilson_hi": 0.7553003107462404
+    },
+    "nearest_is_first": {
+     "c": 1,
+     "n": 5,
+     "acc": 0.2,
+     "wilson_lo": 0.036224108632430196,
+     "wilson_hi": 0.6244653702374747
+    }
+   }
+  },
+  "real_t05": {
+   "n_success": 9,
+   "n_fail": 5,
+   "first_reference": "real_t05_r00",
+   "runs": {
+    "real_t05_r02": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t05_r00",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "references": {
+      "real_t05_r00": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t05_r01": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t05_r03": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t05_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t05_r07": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t05_r08": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t05_r11": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t05_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 2.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r13": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t05_r04": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t05_r00",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "references": {
+      "real_t05_r00": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r01": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r03": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r07": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r08": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r11": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t05_r13": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      }
+     }
+    },
+    "real_t05_r06": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t05_r00",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "references": {
+      "real_t05_r00": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r01": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r03": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r07": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r08": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r11": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t05_r13": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      }
+     }
+    },
+    "real_t05_r09": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t05_r00",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "references": {
+      "real_t05_r00": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r01": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r03": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r07": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r08": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r11": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t05_r13": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      }
+     }
+    },
+    "real_t05_r10": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t05_r00",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "references": {
+      "real_t05_r00": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r01": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r03": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r07": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r08": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r11": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t05_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t05_r13": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      }
+     }
+    }
+   },
+   "summary": {
+    "frac_invariant_step": {
+     "c": 5,
+     "n": 5,
+     "acc": 1.0,
+     "wilson_lo": 0.5655175352168251,
+     "wilson_hi": 1.0
+    },
+    "step_acc_nearest": {
+     "c": 5,
+     "n": 5,
+     "acc": 1.0,
+     "wilson_lo": 0.5655175352168251,
+     "wilson_hi": 1.0
+    },
+    "step_acc_first": {
+     "c": 5,
+     "n": 5,
+     "acc": 1.0,
+     "wilson_lo": 0.5655175352168251,
+     "wilson_hi": 1.0
+    },
+    "step_acc_best": {
+     "c": 5,
+     "n": 5,
+     "acc": 1.0,
+     "wilson_lo": 0.5655175352168251,
+     "wilson_hi": 1.0
+    },
+    "step_acc_worst": {
+     "c": 5,
+     "n": 5,
+     "acc": 1.0,
+     "wilson_lo": 0.5655175352168251,
+     "wilson_hi": 1.0
+    },
+    "step_acc_mean_random_ref": 1.0,
+    "agent_acc_nearest": {
+     "c": 5,
+     "n": 5,
+     "acc": 1.0,
+     "wilson_lo": 0.5655175352168251,
+     "wilson_hi": 1.0
+    },
+    "agent_acc_first": {
+     "c": 5,
+     "n": 5,
+     "acc": 1.0,
+     "wilson_lo": 0.5655175352168251,
+     "wilson_hi": 1.0
+    },
+    "n_runs_with_same_path_ref": 4,
+    "same_path_pairs": {
+     "c": 4,
+     "n": 4,
+     "acc": 1.0,
+     "wilson_lo": 0.5101091635454027,
+     "wilson_hi": 1.0
+    },
+    "other_path_pairs": {
+     "c": 41,
+     "n": 41,
+     "acc": 1.0,
+     "wilson_lo": 0.9143324298155682,
+     "wilson_hi": 1.0
+    },
+    "nearest_is_first": {
+     "c": 5,
+     "n": 5,
+     "acc": 1.0,
+     "wilson_lo": 0.5655175352168251,
+     "wilson_hi": 1.0
+    }
+   }
+  },
+  "real_t07": {
+   "n_success": 3,
+   "n_fail": 11,
+   "first_reference": "real_t07_r04",
+   "runs": {
+    "real_t07_r00": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r05",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r01": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r05",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r02": {
+     "gold": [
+      "Worker",
+      2
+     ],
+     "nearest_reference": "real_t07_r12",
+     "own_prediction": [
+      "Verifier",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 3,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 3,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 6.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 3,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r03": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r05",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r06": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r12",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r07": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r12",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r08": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r12",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r09": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r05",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r10": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r12",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r11": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r05",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 2.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t07_r13": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t07_r12",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t07_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 5.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t07_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "no_sibling",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    }
+   },
+   "summary": {
+    "frac_invariant_step": {
+     "c": 11,
+     "n": 11,
+     "acc": 1.0,
+     "wilson_lo": 0.7411670330319684,
+     "wilson_hi": 1.0
+    },
+    "step_acc_nearest": {
+     "c": 0,
+     "n": 11,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2588329669680317
+    },
+    "step_acc_first": {
+     "c": 0,
+     "n": 11,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2588329669680317
+    },
+    "step_acc_best": {
+     "c": 0,
+     "n": 11,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2588329669680317
+    },
+    "step_acc_worst": {
+     "c": 0,
+     "n": 11,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2588329669680317
+    },
+    "step_acc_mean_random_ref": 0.0,
+    "agent_acc_nearest": {
+     "c": 0,
+     "n": 11,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2588329669680317
+    },
+    "agent_acc_first": {
+     "c": 0,
+     "n": 11,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2588329669680317
+    },
+    "n_runs_with_same_path_ref": 0,
+    "same_path_pairs": {
+     "c": 0,
+     "n": 0,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 1.0
+    },
+    "other_path_pairs": {
+     "c": 0,
+     "n": 33,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.10426999754245206
+    },
+    "nearest_is_first": {
+     "c": 0,
+     "n": 11,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.2588329669680317
+    }
+   }
+  },
+  "real_t09": {
+   "n_success": 3,
+   "n_fail": 11,
+   "first_reference": "real_t09_r04",
+   "runs": {
+    "real_t09_r00": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t09_r12",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      false
+     ],
+     "step_correct_other_path": [
+      false,
+      false
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t09_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 1.0,
+       "path_overlap": 0.5,
+       "same_path": true
+      }
+     }
+    },
+    "real_t09_r01": {
+     "gold": [
+      "Worker",
+      4
+     ],
+     "nearest_reference": "real_t09_r04",
+     "own_prediction": [
+      "Worker",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Worker",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.2,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Worker",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.5,
+       "same_path": true
+      },
+      "real_t09_r12": {
+       "agent": "Worker",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t09_r02": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t09_r12",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t09_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t09_r03": {
+     "gold": [
+      "Worker",
+      4
+     ],
+     "nearest_reference": "real_t09_r04",
+     "own_prediction": [
+      "Worker",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Worker",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Worker",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t09_r12": {
+       "agent": "Worker",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t09_r06": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t09_r12",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t09_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t09_r07": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t09_r12",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.25,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 4.0,
+       "path_overlap": 0.6666666666666666,
+       "same_path": true
+      },
+      "real_t09_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t09_r08": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t09_r12",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 0,
+     "step_correct_same_path": [],
+     "step_correct_other_path": [
+      false,
+      false,
+      false
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.3333333333333333,
+       "same_path": false
+      },
+      "real_t09_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t09_r09": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t09_r12",
+     "own_prediction": [
+      "Verifier",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": false,
+     "step_correct_first": false,
+     "step_correct_best": false,
+     "step_correct_worst": false,
+     "step_correct_mean": 0.0,
+     "agent_correct_nearest": false,
+     "agent_correct_first": false,
+     "agent_correct_mean": 0.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      false
+     ],
+     "step_correct_other_path": [
+      false,
+      false
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 1.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t09_r12": {
+       "agent": "Verifier",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": false,
+       "step_correct": false,
+       "edit_distance": 0.0,
+       "content_distance": 1.0,
+       "path_overlap": 0.5,
+       "same_path": true
+      }
+     }
+    },
+    "real_t09_r10": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t09_r12",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t09_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.5,
+       "same_path": true
+      }
+     }
+    },
+    "real_t09_r11": {
+     "gold": [
+      "Worker",
+      4
+     ],
+     "nearest_reference": "real_t09_r04",
+     "own_prediction": [
+      "Worker",
+      4
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      4
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Worker",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.2,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Worker",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.5,
+       "same_path": true
+      },
+      "real_t09_r12": {
+       "agent": "Worker",
+       "step": 4,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      }
+     }
+    },
+    "real_t09_r13": {
+     "gold": [
+      "Worker",
+      3
+     ],
+     "nearest_reference": "real_t09_r12",
+     "own_prediction": [
+      "Worker",
+      3
+     ],
+     "invariant_step": true,
+     "distinct_steps": [
+      3
+     ],
+     "step_correct_nearest": true,
+     "step_correct_first": true,
+     "step_correct_best": true,
+     "step_correct_worst": true,
+     "step_correct_mean": 1.0,
+     "agent_correct_nearest": true,
+     "agent_correct_first": true,
+     "agent_correct_mean": 1.0,
+     "n_same_path_refs": 1,
+     "step_correct_same_path": [
+      true
+     ],
+     "step_correct_other_path": [
+      true,
+      true
+     ],
+     "references": {
+      "real_t09_r04": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t09_r05": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 1.0,
+       "content_distance": 3.0,
+       "path_overlap": 0.0,
+       "same_path": false
+      },
+      "real_t09_r12": {
+       "agent": "Worker",
+       "step": 3,
+       "kind": "value",
+       "agent_correct": true,
+       "step_correct": true,
+       "edit_distance": 0.0,
+       "content_distance": 2.0,
+       "path_overlap": 0.5,
+       "same_path": true
+      }
+     }
+    }
+   },
+   "summary": {
+    "frac_invariant_step": {
+     "c": 11,
+     "n": 11,
+     "acc": 1.0,
+     "wilson_lo": 0.7411670330319684,
+     "wilson_hi": 1.0
+    },
+    "step_acc_nearest": {
+     "c": 8,
+     "n": 11,
+     "acc": 0.7272727272727273,
+     "wilson_lo": 0.4343546988238708,
+     "wilson_hi": 0.9025394070997511
+    },
+    "step_acc_first": {
+     "c": 8,
+     "n": 11,
+     "acc": 0.7272727272727273,
+     "wilson_lo": 0.4343546988238708,
+     "wilson_hi": 0.9025394070997511
+    },
+    "step_acc_best": {
+     "c": 8,
+     "n": 11,
+     "acc": 0.7272727272727273,
+     "wilson_lo": 0.4343546988238708,
+     "wilson_hi": 0.9025394070997511
+    },
+    "step_acc_worst": {
+     "c": 8,
+     "n": 11,
+     "acc": 0.7272727272727273,
+     "wilson_lo": 0.4343546988238708,
+     "wilson_hi": 0.9025394070997511
+    },
+    "step_acc_mean_random_ref": 0.7272727272727273,
+    "agent_acc_nearest": {
+     "c": 8,
+     "n": 11,
+     "acc": 0.7272727272727273,
+     "wilson_lo": 0.4343546988238708,
+     "wilson_hi": 0.9025394070997511
+    },
+    "agent_acc_first": {
+     "c": 8,
+     "n": 11,
+     "acc": 0.7272727272727273,
+     "wilson_lo": 0.4343546988238708,
+     "wilson_hi": 0.9025394070997511
+    },
+    "n_runs_with_same_path_ref": 10,
+    "same_path_pairs": {
+     "c": 8,
+     "n": 10,
+     "acc": 0.8,
+     "wilson_lo": 0.4901624715366418,
+     "wilson_hi": 0.9433178485456248
+    },
+    "other_path_pairs": {
+     "c": 16,
+     "n": 23,
+     "acc": 0.6956521739130435,
+     "wilson_lo": 0.49134243731240806,
+     "wilson_hi": 0.84395975546786
+    },
+    "nearest_is_first": {
+     "c": 3,
+     "n": 11,
+     "acc": 0.2727272727272727,
+     "wilson_lo": 0.09746059290024892,
+     "wilson_hi": 0.5656453011761292
+    }
+   }
+  }
+ },
+ "per_run": {
+  "real_t00_r00": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t00_r12",
+   "own_prediction": [
+    "Worker",
+    6
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    6
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 6,
+   "step_correct_same_path": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t00_r01": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t00_r02": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 8.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r03": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r04": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t00_r06": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r09": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r11": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t00_r12": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 6.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r13": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    }
+   }
+  },
+  "real_t00_r05": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t00_r06",
+   "own_prediction": [
+    "Planner",
+    0
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    0
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 6,
+   "step_correct_same_path": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t00_r01": {
+     "agent": "Planner",
+     "step": 0,
+     "kind": "insertion",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t00_r02": {
+     "agent": "Planner",
+     "step": 0,
+     "kind": "insertion",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 6.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r03": {
+     "agent": "Planner",
+     "step": 0,
+     "kind": "insertion",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 6.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r04": {
+     "agent": "Planner",
+     "step": 0,
+     "kind": "insertion",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t00_r06": {
+     "agent": "Planner",
+     "step": 0,
+     "kind": "insertion",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r09": {
+     "agent": "Planner",
+     "step": 0,
+     "kind": "insertion",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r11": {
+     "agent": "Planner",
+     "step": 0,
+     "kind": "insertion",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t00_r12": {
+     "agent": "Planner",
+     "step": 0,
+     "kind": "insertion",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r13": {
+     "agent": "Planner",
+     "step": 0,
+     "kind": "insertion",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    }
+   }
+  },
+  "real_t00_r07": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t00_r12",
+   "own_prediction": [
+    "Worker",
+    6
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    6
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 6,
+   "step_correct_same_path": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t00_r01": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t00_r02": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 8.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r03": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r04": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t00_r06": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r09": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r11": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t00_r12": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 6.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r13": {
+     "agent": "Worker",
+     "step": 6,
+     "kind": "deletion",
+     "agent_correct": true,
+     "step_correct": false,
+     "edit_distance": 3.0,
+     "content_distance": 7.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    }
+   }
+  },
+  "real_t00_r08": {
+   "gold": [
+    "Worker",
+    2
+   ],
+   "nearest_reference": "real_t00_r01",
+   "own_prediction": [
+    "Worker",
+    2
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    2
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 6,
+   "step_correct_same_path": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true,
+    true
+   ],
+   "references": {
+    "real_t00_r01": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t00_r02": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 2.0,
+     "content_distance": 6.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r03": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 2.0,
+     "content_distance": 6.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r04": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t00_r06": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r09": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r11": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t00_r12": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t00_r13": {
+     "agent": "Worker",
+     "step": 2,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    }
+   }
+  },
+  "real_t00_r10": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t00_r06",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "references": {
+    "real_t00_r01": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t00_r02": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t00_r03": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t00_r04": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t00_r06": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 1.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t00_r09": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t00_r11": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t00_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 1.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t00_r13": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 1.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    }
+   }
+  },
+  "real_t05_r02": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t05_r00",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "references": {
+    "real_t05_r00": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t05_r01": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t05_r03": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t05_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t05_r07": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t05_r08": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t05_r11": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t05_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 2.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r13": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t05_r04": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t05_r00",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "references": {
+    "real_t05_r00": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r01": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r03": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r07": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r08": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r11": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t05_r13": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    }
+   }
+  },
+  "real_t05_r06": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t05_r00",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "references": {
+    "real_t05_r00": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r01": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r03": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r07": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r08": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r11": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t05_r13": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    }
+   }
+  },
+  "real_t05_r09": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t05_r00",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "references": {
+    "real_t05_r00": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r01": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r03": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r07": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r08": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r11": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t05_r13": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    }
+   }
+  },
+  "real_t05_r10": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t05_r00",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "references": {
+    "real_t05_r00": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r01": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r03": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r07": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r08": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r11": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t05_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t05_r13": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r00": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r05",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r01": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r05",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r02": {
+   "gold": [
+    "Worker",
+    2
+   ],
+   "nearest_reference": "real_t07_r12",
+   "own_prediction": [
+    "Verifier",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 3,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 3,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 6.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 3,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r03": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r05",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r06": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r12",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r07": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r12",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r08": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r12",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r09": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r05",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r10": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r12",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r11": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r05",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 2.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t07_r13": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t07_r12",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t07_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 5.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t07_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "no_sibling",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t09_r00": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t09_r12",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    false
+   ],
+   "step_correct_other_path": [
+    false,
+    false
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t09_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 1.0,
+     "path_overlap": 0.5,
+     "same_path": true
+    }
+   }
+  },
+  "real_t09_r01": {
+   "gold": [
+    "Worker",
+    4
+   ],
+   "nearest_reference": "real_t09_r04",
+   "own_prediction": [
+    "Worker",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.2,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.5,
+     "same_path": true
+    },
+    "real_t09_r12": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t09_r02": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t09_r12",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t09_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t09_r03": {
+   "gold": [
+    "Worker",
+    4
+   ],
+   "nearest_reference": "real_t09_r04",
+   "own_prediction": [
+    "Worker",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t09_r12": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t09_r06": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t09_r12",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t09_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t09_r07": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t09_r12",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.25,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 4.0,
+     "path_overlap": 0.6666666666666666,
+     "same_path": true
+    },
+    "real_t09_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t09_r08": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t09_r12",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 0,
+   "step_correct_same_path": [],
+   "step_correct_other_path": [
+    false,
+    false,
+    false
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.3333333333333333,
+     "same_path": false
+    },
+    "real_t09_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t09_r09": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t09_r12",
+   "own_prediction": [
+    "Verifier",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": false,
+   "step_correct_first": false,
+   "step_correct_best": false,
+   "step_correct_worst": false,
+   "step_correct_mean": 0.0,
+   "agent_correct_nearest": false,
+   "agent_correct_first": false,
+   "agent_correct_mean": 0.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    false
+   ],
+   "step_correct_other_path": [
+    false,
+    false
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 1.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t09_r12": {
+     "agent": "Verifier",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": false,
+     "step_correct": false,
+     "edit_distance": 0.0,
+     "content_distance": 1.0,
+     "path_overlap": 0.5,
+     "same_path": true
+    }
+   }
+  },
+  "real_t09_r10": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t09_r12",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t09_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.5,
+     "same_path": true
+    }
+   }
+  },
+  "real_t09_r11": {
+   "gold": [
+    "Worker",
+    4
+   ],
+   "nearest_reference": "real_t09_r04",
+   "own_prediction": [
+    "Worker",
+    4
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    4
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.2,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.5,
+     "same_path": true
+    },
+    "real_t09_r12": {
+     "agent": "Worker",
+     "step": 4,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    }
+   }
+  },
+  "real_t09_r13": {
+   "gold": [
+    "Worker",
+    3
+   ],
+   "nearest_reference": "real_t09_r12",
+   "own_prediction": [
+    "Worker",
+    3
+   ],
+   "invariant_step": true,
+   "distinct_steps": [
+    3
+   ],
+   "step_correct_nearest": true,
+   "step_correct_first": true,
+   "step_correct_best": true,
+   "step_correct_worst": true,
+   "step_correct_mean": 1.0,
+   "agent_correct_nearest": true,
+   "agent_correct_first": true,
+   "agent_correct_mean": 1.0,
+   "n_same_path_refs": 1,
+   "step_correct_same_path": [
+    true
+   ],
+   "step_correct_other_path": [
+    true,
+    true
+   ],
+   "references": {
+    "real_t09_r04": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t09_r05": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 1.0,
+     "content_distance": 3.0,
+     "path_overlap": 0.0,
+     "same_path": false
+    },
+    "real_t09_r12": {
+     "agent": "Worker",
+     "step": 3,
+     "kind": "value",
+     "agent_correct": true,
+     "step_correct": true,
+     "edit_distance": 0.0,
+     "content_distance": 2.0,
+     "path_overlap": 0.5,
+     "same_path": true
+    }
+   }
+  }
+ },
+ "pooled": {
+  "step_acc_nearest": {
+   "c": 15,
+   "n": 32,
+   "acc": 0.46875,
+   "wilson_lo": 0.30869387108068835,
+   "wilson_hi": 0.6355048288102536
+  },
+  "step_acc_first": {
+   "c": 15,
+   "n": 32,
+   "acc": 0.46875,
+   "wilson_lo": 0.30869387108068835,
+   "wilson_hi": 0.6355048288102536
+  },
+  "step_acc_best": {
+   "c": 15,
+   "n": 32,
+   "acc": 0.46875,
+   "wilson_lo": 0.30869387108068835,
+   "wilson_hi": 0.6355048288102536
+  },
+  "step_acc_worst": {
+   "c": 15,
+   "n": 32,
+   "acc": 0.46875,
+   "wilson_lo": 0.30869387108068835,
+   "wilson_hi": 0.6355048288102536
+  },
+  "invariant": {
+   "c": 32,
+   "n": 32,
+   "acc": 1.0,
+   "wilson_lo": 0.8928208017449293,
+   "wilson_hi": 1.0
+  },
+  "nearest_agent": {
+   "c": 17,
+   "n": 32,
+   "acc": 0.53125,
+   "wilson_lo": 0.3644951711897464,
+   "wilson_hi": 0.6913061289193116
+  },
+  "first_agent": {
+   "c": 17,
+   "n": 32,
+   "acc": 0.53125,
+   "wilson_lo": 0.3644951711897464,
+   "wilson_hi": 0.6913061289193116
+  },
+  "step_acc_mean_random_ref": 0.46875,
+  "mcnemar_nearest_vs_first_step": {
+   "b": 0,
+   "c": 0,
+   "n_discordant": 0,
+   "p_value": 1.0,
+   "n": 32,
+   "acc_x": 0.46875,
+   "acc_y": 0.46875,
+   "cohens_h": 0.0
+  },
+  "mcnemar_nearest_vs_first_agent": {
+   "b": 0,
+   "c": 0,
+   "n_discordant": 0,
+   "p_value": 1.0,
+   "n": 32,
+   "acc_x": 0.53125,
+   "acc_y": 0.53125,
+   "cohens_h": 0.0
+  },
+  "correlation_with_step_correct": {
+   "edit_distance": {
+    "point_biserial_r": -0.4948110074926202,
+    "p": 5.175168451234705e-11,
+    "spearman_rho": -0.4735949632477603,
+    "spearman_p": 4.26260320407365e-10,
+    "n_pairs": 156
+   },
+   "content_distance": {
+    "point_biserial_r": -0.4100953578887596,
+    "p": 1.05704287547347e-07,
+    "spearman_rho": -0.38303379143974087,
+    "spearman_p": 8.008841934746895e-07,
+    "n_pairs": 156
+   },
+   "path_overlap": {
+    "point_biserial_r": 0.1793076548433122,
+    "p": 0.025108827315298142,
+    "spearman_rho": 0.22391022595868718,
+    "spearman_p": 0.004955478408521145,
+    "n_pairs": 156
+   }
+  },
+  "same_path_pairs": {
+   "c": 18,
+   "n": 38,
+   "acc": 0.47368421052631576,
+   "wilson_lo": 0.3247902332252607,
+   "wilson_hi": 0.6274102861550332
+  },
+  "other_path_pairs": {
+   "c": 69,
+   "n": 118,
+   "acc": 0.5847457627118644,
+   "wilson_lo": 0.49453649386124565,
+   "wilson_hi": 0.6696112452874842
+  },
+  "fisher_same_vs_other_path": {
+   "odds_ratio": 0.6391304347826087,
+   "p_value": 0.26254959735657835,
+   "table": [
+    [
+     18,
+     20
+    ],
+    [
+     69,
+     49
+    ]
+   ]
+  },
+  "n_pairs": 156
+ }
+}

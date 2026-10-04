@@ -1,0 +1,6030 @@
+{
+"jobs": [
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133919_856963_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133919_856963_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r06",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r06",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r04",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r06",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r06",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141958_463362_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141958_463362_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_201444_037645_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_201444_037645_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_201444_037645_r06",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_201444_037645_r06",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r05",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r05",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SoapBottle-None-Toilet-424__trial_T20190907_004404_604165_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-SoapBottle-None-Toilet-424__trial_T20190907_004404_604165_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r07",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205221_748352_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205221_748352_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205221_748352_r07",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205221_748352_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r05",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r06",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r06",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r03",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r03",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r00",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r07",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r00",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_114622_738670_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r03",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 6,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r03",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r03",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145143_820541_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145143_820541_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145356_918528_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145356_918528_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r06",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r06",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113610_425142_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113610_425142_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171806_406231_r06",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171806_406231_r06",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171850_960211_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171850_960211_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-CD-None-Safe-308__trial_T20190907_050942_897916_r06",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-CD-None-Safe-308__trial_T20190907_050942_897916_r06",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-CD-None-Safe-308__trial_T20190907_051056_585414_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-CD-None-Safe-308__trial_T20190907_051056_585414_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-CD-None-Safe-308__trial_T20190907_051056_585414_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-CD-None-Safe-308__trial_T20190907_051056_585414_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190908_010306_215435_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190908_010306_215435_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190908_010306_215435_r04",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190908_010306_215435_r04",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190908_010306_215435_r05",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190908_010306_215435_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r03",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r03",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-Cabinet-424__trial_T20190909_081746_857594_r03",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-Cabinet-424__trial_T20190909_081746_857594_r03",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-Cabinet-424__trial_T20190909_081746_857594_r05",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-Cabinet-424__trial_T20190909_081746_857594_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r02",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r02",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r03",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r03",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r05",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r05",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r01",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r01",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 6,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_mode_step",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 5,
+"modes": [
+"expert",
+"noedit",
+"repair"
+],
+"selected_by": [
+"lo_norm_pos",
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 1,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 2,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 3,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 4,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 7,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 8,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 9,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+},
+{
+"run_id": "alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07",
+"step": 10,
+"modes": [
+"expert",
+"noedit"
+],
+"selected_by": [
+"profile"
+]
+}
+],
+"profile_runs": [
+"alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07"
+],
+"method_subset": [
+"alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133919_856963_r01",
+"alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r04",
+"alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133935_066606_r06",
+"alf_valid_unseen_look_at_obj_in_light-Bowl-None-DeskLamp-308__trial_T20190907_133953_562557_r00",
+"alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r03",
+"alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r04",
+"alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141942_810052_r06",
+"alf_valid_unseen_look_at_obj_in_light-CD-None-DeskLamp-308__trial_T20190908_141958_463362_r02",
+"alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_161733_213242_r00",
+"alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_201444_037645_r02",
+"alf_valid_unseen_look_at_obj_in_light-Mug-None-DeskLamp-308__trial_T20190908_201444_037645_r06",
+"alf_valid_unseen_pick_and_place_simple-PepperShaker-None-Drawer-10__trial_T20190906_184021_215264_r03",
+"alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r01",
+"alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r02",
+"alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r03",
+"alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191429_743650_r05",
+"alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r05",
+"alf_valid_unseen_pick_and_place_simple-SaltShaker-None-Cabinet-10__trial_T20190906_191445_723170_r07",
+"alf_valid_unseen_pick_and_place_simple-SoapBottle-None-Toilet-424__trial_T20190907_004404_604165_r01",
+"alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r02",
+"alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r04",
+"alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205204_244321_r07",
+"alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205221_748352_r02",
+"alf_valid_unseen_pick_and_place_simple-Vase-None-Safe-219__trial_T20190908_205221_748352_r07",
+"alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074524_006355_r02",
+"alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074556_124850_r04",
+"alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r01",
+"alf_valid_unseen_pick_and_place_simple-Watch-None-Safe-219__trial_T20190907_074643_810052_r02",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Bowl-None-Cabinet-10__trial_T20190909_061232_368489_r00",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r05",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r06",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Cloth-None-Cabinet-424__trial_T20190908_022436_073995_r07",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Knife-None-CounterTop-10__trial_T20190909_110347_624008_r01",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r01",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032434_013084_r07",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r00",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r01",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_032518_891433_r03",
+"alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r00",
+"alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r01",
+"alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r06",
+"alf_valid_unseen_pick_clean_then_place_in_recep-SoapBar-None-CounterTop-424__trial_T20190907_074106_050405_r07",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r00",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r01",
+"alf_valid_unseen_pick_clean_then_place_in_recep-Spatula-None-Drawer-10__trial_T20190907_080800_275989_r04",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-10__trial_T20190909_174807_646433_r04",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r00",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r01",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-Cabinet-10__trial_T20190909_121559_082363_r02",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r01",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r04",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r05",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_183853_958104_r07",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Pan-None-CounterTop-10__trial_T20190908_114622_738670_r07",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r00",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r02",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r04",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033157_424297_r07",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r01",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r02",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033228_194678_r07",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r00",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r03",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r05",
+"alf_valid_unseen_pick_cool_then_place_in_recep-Potato-None-Microwave-10__trial_T20190907_033306_962974_r07",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r01",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r03",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-Fridge-10__trial_T20190906_182435_622538_r04",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145050_918567_r00",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145143_820541_r02",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Apple-None-GarbageCan-10__trial_T20190908_145356_918528_r04",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r01",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r02",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r04",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r05",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113523_123938_r06",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Egg-None-GarbageCan-10__trial_T20190908_113610_425142_r02",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171806_406231_r06",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171850_960211_r02",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r02",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r04",
+"alf_valid_unseen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-10__trial_T20190907_171933_349922_r05",
+"alf_valid_unseen_pick_two_obj_and_place-CD-None-Safe-308__trial_T20190907_050942_897916_r06",
+"alf_valid_unseen_pick_two_obj_and_place-CD-None-Safe-308__trial_T20190907_051056_585414_r02",
+"alf_valid_unseen_pick_two_obj_and_place-CD-None-Safe-308__trial_T20190907_051056_585414_r04",
+"alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190908_010306_215435_r02",
+"alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190908_010306_215435_r04",
+"alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190908_010306_215435_r05",
+"alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r01",
+"alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r02",
+"alf_valid_unseen_pick_two_obj_and_place-PepperShaker-None-Drawer-10__trial_T20190912_221141_608117_r03",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-Cabinet-424__trial_T20190909_081746_857594_r03",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-Cabinet-424__trial_T20190909_081746_857594_r05",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r01",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r02",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r03",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r05",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064053_839817_r06",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r01",
+"alf_valid_unseen_pick_two_obj_and_place-SoapBar-None-GarbageCan-424__trial_T20190909_064221_368939_r07"
+],
+"not_replayable": [],
+"kmax": 10
+}

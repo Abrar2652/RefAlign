@@ -1,0 +1,51 @@
+{
+ "query_id": "real_t00",
+ "annotator": "annotator_02",
+ "labels": {
+  "real_t00_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "repeated_step",
+   "confidence": 5,
+   "reason": "Ex.A: computes 156 then loops on 240*0.35 for steps 3-5, stalling at step 2 and never subtracting Tuesday's 40.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t00_r05": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: 84 and 156 correct, but the answer step forgets the required final subtraction of Tuesday's 40.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t00_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "repeated_step",
+   "confidence": 5,
+   "reason": "Ex.A: same as r00, stalls at 156 and loops on 240*0.35, never subtracting the 40.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t00_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: answers 240-84=156 at step 2, forgetting the required final subtraction of 40.",
+   "annotator": "annotator_02",
+   "flag": null
+  },
+  "real_t00_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "Ex.C: 156 correct but the answer step forgets to subtract Tuesday's 40.",
+   "annotator": "annotator_02",
+   "flag": null
+  }
+ }
+}

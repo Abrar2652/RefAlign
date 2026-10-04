@@ -1,0 +1,424 @@
+{
+  "leaderboard": [
+    {
+      "name": "PhyloAgent (full)",
+      "summary": {
+        "n": 750,
+        "agent_acc": 0.6506666666666666,
+        "step_acc": 0.4866666666666667,
+        "step_acc_tol1": 0.7053333333333334,
+        "step_acc_tol2": 0.8266666666666667
+      },
+      "ci": {
+        "agent_acc": [
+          0.6186666666666667,
+          0.684
+        ],
+        "step_acc": [
+          0.452,
+          0.5226666666666666
+        ],
+        "step_acc_tol1": [
+          0.6733333333333333,
+          0.7386666666666667
+        ],
+        "step_acc_tol2": [
+          0.7999666666666667,
+          0.8533333333333334
+        ]
+      }
+    },
+    {
+      "name": "random",
+      "summary": {
+        "n": 750,
+        "agent_acc": 0.27066666666666667,
+        "step_acc": 0.116,
+        "step_acc_tol1": 0.35333333333333333,
+        "step_acc_tol2": 0.5346666666666666
+      },
+      "ci": {
+        "agent_acc": [
+          0.24,
+          0.304
+        ],
+        "step_acc": [
+          0.09333333333333334,
+          0.13866666666666666
+        ],
+        "step_acc_tol1": [
+          0.32133333333333336,
+          0.388
+        ],
+        "step_acc_tol2": [
+          0.49733333333333335,
+          0.568
+        ]
+      }
+    },
+    {
+      "name": "first_step",
+      "summary": {
+        "n": 750,
+        "agent_acc": 0.044,
+        "step_acc": 0.0,
+        "step_acc_tol1": 0.08533333333333333,
+        "step_acc_tol2": 0.24266666666666667
+      },
+      "ci": {
+        "agent_acc": [
+          0.029333333333333333,
+          0.058666666666666666
+        ],
+        "step_acc": [
+          0.0,
+          0.0
+        ],
+        "step_acc_tol1": [
+          0.06533333333333333,
+          0.10666666666666667
+        ],
+        "step_acc_tol2": [
+          0.212,
+          0.2733333333333333
+        ]
+      }
+    },
+    {
+      "name": "last_step",
+      "summary": {
+        "n": 750,
+        "agent_acc": 0.144,
+        "step_acc": 0.036,
+        "step_acc_tol1": 0.16933333333333334,
+        "step_acc_tol2": 0.30266666666666664
+      },
+      "ci": {
+        "agent_acc": [
+          0.11866666666666667,
+          0.16933333333333334
+        ],
+        "step_acc": [
+          0.024,
+          0.050666666666666665
+        ],
+        "step_acc_tol1": [
+          0.144,
+          0.196
+        ],
+        "step_acc_tol2": [
+          0.272,
+          0.336
+        ]
+      }
+    },
+    {
+      "name": "most_active_agent",
+      "summary": {
+        "n": 750,
+        "agent_acc": 0.33066666666666666,
+        "step_acc": 0.11333333333333333,
+        "step_acc_tol1": 0.296,
+        "step_acc_tol2": 0.5293333333333333
+      },
+      "ci": {
+        "agent_acc": [
+          0.29733333333333334,
+          0.364
+        ],
+        "step_acc": [
+          0.09066666666666667,
+          0.13603333333333317
+        ],
+        "step_acc_tol1": [
+          0.2613333333333333,
+          0.328
+        ],
+        "step_acc_tol2": [
+          0.49333333333333335,
+          0.564
+        ]
+      }
+    },
+    {
+      "name": "longest_agent",
+      "summary": {
+        "n": 750,
+        "agent_acc": 0.33066666666666666,
+        "step_acc": 0.06133333333333333,
+        "step_acc_tol1": 0.36533333333333334,
+        "step_acc_tol2": 0.528
+      },
+      "ci": {
+        "agent_acc": [
+          0.29733333333333334,
+          0.364
+        ],
+        "step_acc": [
+          0.04530000000000001,
+          0.07736666666666649
+        ],
+        "step_acc_tol1": [
+          0.3293333333333333,
+          0.39866666666666667
+        ],
+        "step_acc_tol2": [
+          0.492,
+          0.5626666666666666
+        ]
+      }
+    },
+    {
+      "name": "edit_nn",
+      "summary": {
+        "n": 750,
+        "agent_acc": 0.14933333333333335,
+        "step_acc": 0.04,
+        "step_acc_tol1": 0.17066666666666666,
+        "step_acc_tol2": 0.31066666666666665
+      },
+      "ci": {
+        "agent_acc": [
+          0.124,
+          0.17466666666666666
+        ],
+        "step_acc": [
+          0.02666666666666667,
+          0.05466666666666667
+        ],
+        "step_acc_tol1": [
+          0.14533333333333334,
+          0.19733333333333333
+        ],
+        "step_acc_tol2": [
+          0.28,
+          0.3453333333333333
+        ]
+      }
+    }
+  ],
+  "ablations": {
+    "a_alignment": [
+      {
+        "method": "align=MSA (forced)",
+        "agent": {
+          "diff": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "p_value": 1.0,
+          "mcnemar_b": 0,
+          "mcnemar_c": 0,
+          "mcnemar_p_value": 1.0,
+          "n_common": 750
+        },
+        "step": {
+          "diff": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "p_value": 1.0,
+          "mcnemar_b": 0,
+          "mcnemar_c": 0,
+          "mcnemar_p_value": 1.0,
+          "n_common": 750
+        }
+      },
+      {
+        "method": "align=pairwise (forced)",
+        "agent": {
+          "diff": 0.10933333333333334,
+          "ci_lo": 0.06666666666666667,
+          "ci_hi": 0.152,
+          "p_value": 0.0,
+          "mcnemar_b": 183,
+          "mcnemar_c": 101,
+          "mcnemar_p_value": 1.307612686210639e-06,
+          "n_common": 750
+        },
+        "step": {
+          "diff": 0.037333333333333336,
+          "ci_lo": -0.004,
+          "ci_hi": 0.07733333333333334,
+          "p_value": 0.0756,
+          "mcnemar_b": 139,
+          "mcnemar_c": 111,
+          "mcnemar_p_value": 0.0875023303659631,
+          "n_common": 750
+        }
+      }
+    ],
+    "b_tree": [
+      {
+        "method": "tree=UPGMA",
+        "agent": {
+          "diff": -0.005333333333333333,
+          "ci_lo": -0.012,
+          "ci_hi": 0.0013333333333333333,
+          "p_value": 0.1392,
+          "mcnemar_b": 1,
+          "mcnemar_c": 5,
+          "mcnemar_p_value": 0.21875,
+          "n_common": 750
+        },
+        "step": {
+          "diff": -0.006666666666666667,
+          "ci_lo": -0.013333333333333334,
+          "ci_hi": -0.0013333333333333333,
+          "p_value": 0.0108,
+          "mcnemar_b": 0,
+          "mcnemar_c": 5,
+          "mcnemar_p_value": 0.0625,
+          "n_common": 750
+        }
+      },
+      {
+        "method": "-tree (uniform wt)",
+        "agent": {
+          "diff": -0.005333333333333333,
+          "ci_lo": -0.014666666666666666,
+          "ci_hi": 0.004,
+          "p_value": 0.3088,
+          "mcnemar_b": 4,
+          "mcnemar_c": 8,
+          "mcnemar_p_value": 0.3876953125,
+          "n_common": 750
+        },
+        "step": {
+          "diff": -0.005333333333333333,
+          "ci_lo": -0.013333333333333334,
+          "ci_hi": 0.0013333333333333333,
+          "p_value": 0.2028,
+          "mcnemar_b": 2,
+          "mcnemar_c": 6,
+          "mcnemar_p_value": 0.2890625,
+          "n_common": 750
+        }
+      }
+    ],
+    "c_geometry": [
+      {
+        "method": "geom=tree/sibling",
+        "agent": {
+          "diff": 0.0026666666666666666,
+          "ci_lo": -0.018666666666666668,
+          "ci_hi": 0.024033333333332848,
+          "p_value": 0.8392,
+          "mcnemar_b": 36,
+          "mcnemar_c": 34,
+          "mcnemar_p_value": 0.9049745264594623,
+          "n_common": 750
+        },
+        "step": {
+          "diff": 0.009333333333333334,
+          "ci_lo": -0.013333333333333334,
+          "ci_hi": 0.03333333333333333,
+          "p_value": 0.4384,
+          "mcnemar_b": 43,
+          "mcnemar_c": 36,
+          "mcnemar_p_value": 0.49989687686032663,
+          "n_common": 750
+        }
+      },
+      {
+        "method": "geom=edit/sibling",
+        "agent": {
+          "diff": -0.068,
+          "ci_lo": -0.09733333333333333,
+          "ci_hi": -0.037333333333333336,
+          "p_value": 0.0,
+          "mcnemar_b": 43,
+          "mcnemar_c": 94,
+          "mcnemar_p_value": 1.567942262150112e-05,
+          "n_common": 750
+        },
+        "step": {
+          "diff": -0.04666666666666667,
+          "ci_lo": -0.07866666666666666,
+          "ci_hi": -0.014666666666666666,
+          "p_value": 0.0052,
+          "mcnemar_b": 62,
+          "mcnemar_c": 97,
+          "mcnemar_p_value": 0.006822620067898665,
+          "n_common": 750
+        }
+      },
+      {
+        "method": "geom=uniform/sibling",
+        "agent": {
+          "diff": 0.04133333333333333,
+          "ci_lo": 0.006666666666666667,
+          "ci_hi": 0.07733333333333334,
+          "p_value": 0.0236,
+          "mcnemar_b": 106,
+          "mcnemar_c": 75,
+          "mcnemar_p_value": 0.025483292434829635,
+          "n_common": 750
+        },
+        "step": {
+          "diff": 0.072,
+          "ci_lo": 0.034666666666666665,
+          "ci_hi": 0.11066666666666666,
+          "p_value": 0.0,
+          "mcnemar_b": 130,
+          "mcnemar_c": 76,
+          "mcnemar_p_value": 0.00020560691138247234,
+          "n_common": 750
+        }
+      }
+    ],
+    "d_evostat": [
+      {
+        "method": "rule=support",
+        "agent": {
+          "diff": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "p_value": 1.0,
+          "mcnemar_b": 0,
+          "mcnemar_c": 0,
+          "mcnemar_p_value": 1.0,
+          "n_common": 750
+        },
+        "step": {
+          "diff": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "p_value": 1.0,
+          "mcnemar_b": 0,
+          "mcnemar_c": 0,
+          "mcnemar_p_value": 1.0,
+          "n_common": 750
+        }
+      }
+    ],
+    "localizer": [
+      {
+        "method": "localizer=msa_column",
+        "agent": {
+          "diff": 0.008,
+          "ci_lo": -0.012,
+          "ci_hi": 0.028,
+          "p_value": 0.4604,
+          "mcnemar_b": 34,
+          "mcnemar_c": 28,
+          "mcnemar_p_value": 0.5257733601756501,
+          "n_common": 750
+        },
+        "step": {
+          "diff": 0.018666666666666668,
+          "ci_lo": -0.004,
+          "ci_hi": 0.04,
+          "p_value": 0.1032,
+          "mcnemar_b": 42,
+          "mcnemar_c": 28,
+          "mcnemar_p_value": 0.11960933562988493,
+          "n_common": 750
+        }
+      }
+    ]
+  },
+  "failure_signal": {
+    "n": 20,
+    "frac_significant": 0.45,
+    "median_p": 0.067
+  }
+}

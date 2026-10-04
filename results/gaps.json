@@ -1,0 +1,103 @@
+{
+  "multiculprit_contrastive": {
+    "L5": {
+      "agent": 1.0,
+      "step": 1.0,
+      "n": 48,
+      "per_fault_step": {
+        "value": 1.0,
+        "wrong_op": 1.0,
+        "skip": 1.0,
+        "repeat": 1.0
+      }
+    },
+    "L12": {
+      "agent": 1.0,
+      "step": 1.0,
+      "n": 48,
+      "per_fault_step": {
+        "value": 1.0,
+        "wrong_op": 1.0,
+        "skip": 1.0,
+        "repeat": 1.0
+      }
+    },
+    "L24": {
+      "agent": 1.0,
+      "step": 1.0,
+      "n": 48,
+      "per_fault_step": {
+        "value": 1.0,
+        "wrong_op": 1.0,
+        "skip": 1.0,
+        "repeat": 1.0
+      }
+    },
+    "L40": {
+      "agent": 0.9583333333333334,
+      "step": 0.9583333333333334,
+      "n": 48,
+      "per_fault_step": {
+        "value": 1.0,
+        "wrong_op": 1.0,
+        "skip": 1.0,
+        "repeat": 0.8333333333333334
+      }
+    }
+  },
+  "multiculprit_vs_llm": {
+    "length": 12,
+    "methods": {
+      "contrastive (no LLM)": {
+        "agent": 1.0,
+        "step": 1.0,
+        "n": 48
+      },
+      "most_active_agent": {
+        "agent": 0.2916666666666667,
+        "step": 0.0625,
+        "n": 48
+      },
+      "last_step": {
+        "agent": 0.0,
+        "step": 0.0,
+        "n": 48
+      },
+      "all_at_once": {
+        "agent": 0.4375,
+        "step": 0.5,
+        "n": 48
+      },
+      "binary_search": {
+        "agent": 0.14583333333333334,
+        "step": 0.0,
+        "n": 48
+      },
+      "step_by_step": {
+        "agent": 0.0,
+        "step": 0.0,
+        "n": 48
+      },
+      "_tokens": 78250,
+      "_calls": 288
+    }
+  },
+  "diversity": {
+    "k8_edit": {
+      "step": 0.3611111111111111,
+      "n": 36
+    },
+    "k8_content": {
+      "step": 0.9444444444444444,
+      "n": 36
+    },
+    "k15_edit": {
+      "step": 0.3611111111111111,
+      "n": 36
+    },
+    "k15_content": {
+      "step": 1.0,
+      "n": 36
+    }
+  }
+}

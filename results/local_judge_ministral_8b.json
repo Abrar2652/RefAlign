@@ -1,0 +1,35 @@
+{
+  "model": "mistralai/Ministral-8B-Instruct-2410",
+  "lengths": {
+    "L5": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.3333333333333333,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L12": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.25,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L24": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.20833333333333334,
+      "aao_agent": 1.0,
+      "n": 24
+    },
+    "L40": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.25,
+      "aao_agent": 1.0,
+      "n": 24
+    }
+  },
+  "usage": {
+    "calls": 96,
+    "seconds": 56.93976616859436,
+    "prompt_tokens": 78877,
+    "completion_tokens": 1112
+  }
+}

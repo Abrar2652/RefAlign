@@ -1,0 +1,35 @@
+{
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "lengths": {
+    "L5": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.7916666666666666,
+      "aao_agent": 0.8333333333333334,
+      "n": 24
+    },
+    "L12": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.5833333333333334,
+      "aao_agent": 0.75,
+      "n": 24
+    },
+    "L24": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.4166666666666667,
+      "aao_agent": 0.5416666666666666,
+      "n": 24
+    },
+    "L40": {
+      "contrastive_step": 1.0,
+      "aao_step": 0.125,
+      "aao_agent": 0.5416666666666666,
+      "n": 24
+    }
+  },
+  "usage": {
+    "calls": 96,
+    "seconds": 2891.4396052360535,
+    "prompt_tokens": 78007,
+    "completion_tokens": 97231
+  }
+}

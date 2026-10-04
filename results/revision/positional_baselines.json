@@ -1,0 +1,3467 @@
+{
+ "design": {
+  "evaluation": "leave-one-task-family-out over 4 families; all label-dependent parameters fitted on the other 3 families",
+  "invalid_position_rule": "predicted step >= len(trace) is clamped to len(trace)-1; predicted step < 0 is clamped to 0",
+  "n_runs": 32,
+  "families": {
+   "real_t00": 5,
+   "real_t05": 5,
+   "real_t07": 11,
+   "real_t09": 11
+  },
+  "fits_per_held_out_family": {
+   "real_t00": {
+    "mode_step": 3,
+    "mode_agent": "Worker",
+    "mode_joint": [
+     "Worker",
+     3
+    ],
+    "mean_norm_pos": 0.7524691358024691
+   },
+   "real_t05": {
+    "mode_step": 3,
+    "mode_agent": "Worker",
+    "mode_joint": [
+     "Worker",
+     3
+    ],
+    "mean_norm_pos": 0.7308641975308641
+   },
+   "real_t07": {
+    "mode_step": 3,
+    "mode_agent": "Worker",
+    "mode_joint": [
+     "Worker",
+     3
+    ],
+    "mean_norm_pos": 0.7293650793650793
+   },
+   "real_t09": {
+    "mode_step": 3,
+    "mode_agent": "Worker",
+    "mode_joint": [
+     "Worker",
+     3
+    ],
+    "mean_norm_pos": 0.7182539682539681
+   }
+  },
+  "tie_break": "most frequent; ties broken by string order (deterministic)",
+  "posthoc_const_step3": "retrospective diagnostic using the labels themselves; not a leakage-controlled baseline"
+ },
+ "summary": {
+  "mode_step": {
+   "pooled": {
+    "step_correct": {
+     "c": 27,
+     "n": 32,
+     "acc": 0.84375,
+     "wilson_lo": 0.682458504024696,
+     "wilson_hi": 0.9313557971749429
+    },
+    "agent_correct": {
+     "c": 30,
+     "n": 32,
+     "acc": 0.9375,
+     "wilson_lo": 0.7985287685584542,
+     "wilson_hi": 0.982689432968359
+    },
+    "joint_correct": {
+     "c": 27,
+     "n": 32,
+     "acc": 0.84375,
+     "wilson_lo": 0.682458504024696,
+     "wilson_hi": 0.9313557971749429
+    }
+   },
+   "by_family": {
+    "real_t00": {
+     "step_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     },
+     "agent_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     },
+     "joint_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     }
+    },
+    "real_t05": {
+     "step_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     }
+    },
+    "real_t07": {
+     "step_correct": {
+      "c": 10,
+      "n": 11,
+      "acc": 0.9090909090909091,
+      "wilson_lo": 0.6226415635484043,
+      "wilson_hi": 0.9837678271141151
+     },
+     "agent_correct": {
+      "c": 10,
+      "n": 11,
+      "acc": 0.9090909090909091,
+      "wilson_lo": 0.6226415635484043,
+      "wilson_hi": 0.9837678271141151
+     },
+     "joint_correct": {
+      "c": 10,
+      "n": 11,
+      "acc": 0.9090909090909091,
+      "wilson_lo": 0.6226415635484043,
+      "wilson_hi": 0.9837678271141151
+     }
+    },
+    "real_t09": {
+     "step_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     }
+    }
+   },
+   "family_macro": {
+    "step_correct": 0.8590909090909091,
+    "agent_correct": 0.9272727272727272,
+    "joint_correct": 0.8590909090909091
+   }
+  },
+  "mode_agent": {
+   "pooled": {
+    "step_correct": {
+     "c": 0,
+     "n": 32,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.1071791982550706
+    },
+    "agent_correct": {
+     "c": 32,
+     "n": 32,
+     "acc": 1.0,
+     "wilson_lo": 0.8928208017449293,
+     "wilson_hi": 1.0
+    },
+    "joint_correct": {
+     "c": 0,
+     "n": 32,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.1071791982550706
+    }
+   },
+   "by_family": {
+    "real_t00": {
+     "step_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     }
+    },
+    "real_t05": {
+     "step_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     }
+    },
+    "real_t07": {
+     "step_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     }
+    },
+    "real_t09": {
+     "step_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     }
+    }
+   },
+   "family_macro": {
+    "step_correct": 0.0,
+    "agent_correct": 1.0,
+    "joint_correct": 0.0
+   }
+  },
+  "mode_joint": {
+   "pooled": {
+    "step_correct": {
+     "c": 27,
+     "n": 32,
+     "acc": 0.84375,
+     "wilson_lo": 0.682458504024696,
+     "wilson_hi": 0.9313557971749429
+    },
+    "agent_correct": {
+     "c": 32,
+     "n": 32,
+     "acc": 1.0,
+     "wilson_lo": 0.8928208017449293,
+     "wilson_hi": 1.0
+    },
+    "joint_correct": {
+     "c": 27,
+     "n": 32,
+     "acc": 0.84375,
+     "wilson_lo": 0.682458504024696,
+     "wilson_hi": 0.9313557971749429
+    }
+   },
+   "by_family": {
+    "real_t00": {
+     "step_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     }
+    },
+    "real_t05": {
+     "step_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     }
+    },
+    "real_t07": {
+     "step_correct": {
+      "c": 10,
+      "n": 11,
+      "acc": 0.9090909090909091,
+      "wilson_lo": 0.6226415635484043,
+      "wilson_hi": 0.9837678271141151
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 10,
+      "n": 11,
+      "acc": 0.9090909090909091,
+      "wilson_lo": 0.6226415635484043,
+      "wilson_hi": 0.9837678271141151
+     }
+    },
+    "real_t09": {
+     "step_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     }
+    }
+   },
+   "family_macro": {
+    "step_correct": 0.8590909090909091,
+    "agent_correct": 1.0,
+    "joint_correct": 0.8590909090909091
+   }
+  },
+  "mode_agent+mode_step": {
+   "pooled": {
+    "step_correct": {
+     "c": 27,
+     "n": 32,
+     "acc": 0.84375,
+     "wilson_lo": 0.682458504024696,
+     "wilson_hi": 0.9313557971749429
+    },
+    "agent_correct": {
+     "c": 32,
+     "n": 32,
+     "acc": 1.0,
+     "wilson_lo": 0.8928208017449293,
+     "wilson_hi": 1.0
+    },
+    "joint_correct": {
+     "c": 27,
+     "n": 32,
+     "acc": 0.84375,
+     "wilson_lo": 0.682458504024696,
+     "wilson_hi": 0.9313557971749429
+    }
+   },
+   "by_family": {
+    "real_t00": {
+     "step_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     }
+    },
+    "real_t05": {
+     "step_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     }
+    },
+    "real_t07": {
+     "step_correct": {
+      "c": 10,
+      "n": 11,
+      "acc": 0.9090909090909091,
+      "wilson_lo": 0.6226415635484043,
+      "wilson_hi": 0.9837678271141151
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 10,
+      "n": 11,
+      "acc": 0.9090909090909091,
+      "wilson_lo": 0.6226415635484043,
+      "wilson_hi": 0.9837678271141151
+     }
+    },
+    "real_t09": {
+     "step_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     }
+    }
+   },
+   "family_macro": {
+    "step_correct": 0.8590909090909091,
+    "agent_correct": 1.0,
+    "joint_correct": 0.8590909090909091
+   }
+  },
+  "norm_pos": {
+   "pooled": {
+    "step_correct": {
+     "c": 30,
+     "n": 32,
+     "acc": 0.9375,
+     "wilson_lo": 0.7985287685584542,
+     "wilson_hi": 0.982689432968359
+    },
+    "agent_correct": {
+     "c": 32,
+     "n": 32,
+     "acc": 1.0,
+     "wilson_lo": 0.8928208017449293,
+     "wilson_hi": 1.0
+    },
+    "joint_correct": {
+     "c": 30,
+     "n": 32,
+     "acc": 0.9375,
+     "wilson_lo": 0.7985287685584542,
+     "wilson_hi": 0.982689432968359
+    }
+   },
+   "by_family": {
+    "real_t00": {
+     "step_correct": {
+      "c": 3,
+      "n": 5,
+      "acc": 0.6,
+      "wilson_lo": 0.23072428127601297,
+      "wilson_hi": 0.8823792257673521
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 3,
+      "n": 5,
+      "acc": 0.6,
+      "wilson_lo": 0.23072428127601297,
+      "wilson_hi": 0.8823792257673521
+     }
+    },
+    "real_t05": {
+     "step_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     }
+    },
+    "real_t07": {
+     "step_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     }
+    },
+    "real_t09": {
+     "step_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     }
+    }
+   },
+   "family_macro": {
+    "step_correct": 0.9,
+    "agent_correct": 1.0,
+    "joint_correct": 0.9
+   }
+  },
+  "last_step": {
+   "pooled": {
+    "step_correct": {
+     "c": 0,
+     "n": 32,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.1071791982550706
+    },
+    "agent_correct": {
+     "c": 0,
+     "n": 32,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.1071791982550706
+    },
+    "joint_correct": {
+     "c": 0,
+     "n": 32,
+     "acc": 0.0,
+     "wilson_lo": 0.0,
+     "wilson_hi": 0.1071791982550706
+    }
+   },
+   "by_family": {
+    "real_t00": {
+     "step_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     },
+     "agent_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     },
+     "joint_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     }
+    },
+    "real_t05": {
+     "step_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     },
+     "agent_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     },
+     "joint_correct": {
+      "c": 0,
+      "n": 5,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.43448246478317476
+     }
+    },
+    "real_t07": {
+     "step_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     },
+     "agent_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     },
+     "joint_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     }
+    },
+    "real_t09": {
+     "step_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     },
+     "agent_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     },
+     "joint_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     }
+    }
+   },
+   "family_macro": {
+    "step_correct": 0.0,
+    "agent_correct": 0.0,
+    "joint_correct": 0.0
+   }
+  },
+  "penultimate_step": {
+   "pooled": {
+    "step_correct": {
+     "c": 30,
+     "n": 32,
+     "acc": 0.9375,
+     "wilson_lo": 0.7985287685584542,
+     "wilson_hi": 0.982689432968359
+    },
+    "agent_correct": {
+     "c": 32,
+     "n": 32,
+     "acc": 1.0,
+     "wilson_lo": 0.8928208017449293,
+     "wilson_hi": 1.0
+    },
+    "joint_correct": {
+     "c": 30,
+     "n": 32,
+     "acc": 0.9375,
+     "wilson_lo": 0.7985287685584542,
+     "wilson_hi": 0.982689432968359
+    }
+   },
+   "by_family": {
+    "real_t00": {
+     "step_correct": {
+      "c": 3,
+      "n": 5,
+      "acc": 0.6,
+      "wilson_lo": 0.23072428127601297,
+      "wilson_hi": 0.8823792257673521
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 3,
+      "n": 5,
+      "acc": 0.6,
+      "wilson_lo": 0.23072428127601297,
+      "wilson_hi": 0.8823792257673521
+     }
+    },
+    "real_t05": {
+     "step_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     }
+    },
+    "real_t07": {
+     "step_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     }
+    },
+    "real_t09": {
+     "step_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     }
+    }
+   },
+   "family_macro": {
+    "step_correct": 0.9,
+    "agent_correct": 1.0,
+    "joint_correct": 0.9
+   }
+  },
+  "refalign": {
+   "pooled": {
+    "step_correct": {
+     "c": 15,
+     "n": 32,
+     "acc": 0.46875,
+     "wilson_lo": 0.30869387108068835,
+     "wilson_hi": 0.6355048288102536
+    },
+    "agent_correct": {
+     "c": 17,
+     "n": 32,
+     "acc": 0.53125,
+     "wilson_lo": 0.3644951711897464,
+     "wilson_hi": 0.6913061289193116
+    },
+    "joint_correct": {
+     "c": 15,
+     "n": 32,
+     "acc": 0.46875,
+     "wilson_lo": 0.30869387108068835,
+     "wilson_hi": 0.6355048288102536
+    }
+   },
+   "by_family": {
+    "real_t00": {
+     "step_correct": {
+      "c": 2,
+      "n": 5,
+      "acc": 0.4,
+      "wilson_lo": 0.11762077423264794,
+      "wilson_hi": 0.769275718723987
+     },
+     "agent_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     },
+     "joint_correct": {
+      "c": 2,
+      "n": 5,
+      "acc": 0.4,
+      "wilson_lo": 0.11762077423264794,
+      "wilson_hi": 0.769275718723987
+     }
+    },
+    "real_t05": {
+     "step_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     }
+    },
+    "real_t07": {
+     "step_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     },
+     "agent_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     },
+     "joint_correct": {
+      "c": 0,
+      "n": 11,
+      "acc": 0.0,
+      "wilson_lo": 0.0,
+      "wilson_hi": 0.2588329669680317
+     }
+    },
+    "real_t09": {
+     "step_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     },
+     "agent_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     },
+     "joint_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     }
+    }
+   },
+   "family_macro": {
+    "step_correct": 0.5318181818181817,
+    "agent_correct": 0.6318181818181818,
+    "joint_correct": 0.5318181818181817
+   }
+  },
+  "posthoc_const_step3": {
+   "pooled": {
+    "step_correct": {
+     "c": 27,
+     "n": 32,
+     "acc": 0.84375,
+     "wilson_lo": 0.682458504024696,
+     "wilson_hi": 0.9313557971749429
+    },
+    "agent_correct": {
+     "c": 32,
+     "n": 32,
+     "acc": 1.0,
+     "wilson_lo": 0.8928208017449293,
+     "wilson_hi": 1.0
+    },
+    "joint_correct": {
+     "c": 27,
+     "n": 32,
+     "acc": 0.84375,
+     "wilson_lo": 0.682458504024696,
+     "wilson_hi": 0.9313557971749429
+    }
+   },
+   "by_family": {
+    "real_t00": {
+     "step_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 4,
+      "n": 5,
+      "acc": 0.8,
+      "wilson_lo": 0.3755346297625253,
+      "wilson_hi": 0.9637758913675698
+     }
+    },
+    "real_t05": {
+     "step_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "agent_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 5,
+      "n": 5,
+      "acc": 1.0,
+      "wilson_lo": 0.5655175352168251,
+      "wilson_hi": 1.0
+     }
+    },
+    "real_t07": {
+     "step_correct": {
+      "c": 10,
+      "n": 11,
+      "acc": 0.9090909090909091,
+      "wilson_lo": 0.6226415635484043,
+      "wilson_hi": 0.9837678271141151
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 10,
+      "n": 11,
+      "acc": 0.9090909090909091,
+      "wilson_lo": 0.6226415635484043,
+      "wilson_hi": 0.9837678271141151
+     }
+    },
+    "real_t09": {
+     "step_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     },
+     "agent_correct": {
+      "c": 11,
+      "n": 11,
+      "acc": 1.0,
+      "wilson_lo": 0.7411670330319684,
+      "wilson_hi": 1.0
+     },
+     "joint_correct": {
+      "c": 8,
+      "n": 11,
+      "acc": 0.7272727272727273,
+      "wilson_lo": 0.4343546988238708,
+      "wilson_hi": 0.9025394070997511
+     }
+    }
+   },
+   "family_macro": {
+    "step_correct": 0.8590909090909091,
+    "agent_correct": 1.0,
+    "joint_correct": 0.8590909090909091
+   }
+  }
+ },
+ "tests_vs_refalign_step": {
+  "mode_step": {
+   "b": 4,
+   "c": 16,
+   "n_discordant": 20,
+   "p_value": 0.01181793212890625,
+   "n": 32,
+   "acc_x": 0.46875,
+   "acc_y": 0.84375,
+   "cohens_h": -0.8205815272227273,
+   "p_holm": 0.03545379638671875,
+   "family": "RefAlign vs each of the 7 LOFO baselines, exact step (m=7)"
+  },
+  "mode_agent": {
+   "b": 15,
+   "c": 0,
+   "n_discordant": 15,
+   "p_value": 6.103515625e-05,
+   "n": 32,
+   "acc_x": 0.46875,
+   "acc_y": 0.0,
+   "cohens_h": 1.5082555649984053,
+   "p_holm": 0.00042724609375,
+   "family": "RefAlign vs each of the 7 LOFO baselines, exact step (m=7)"
+  },
+  "mode_joint": {
+   "b": 4,
+   "c": 16,
+   "n_discordant": 20,
+   "p_value": 0.01181793212890625,
+   "n": 32,
+   "acc_x": 0.46875,
+   "acc_y": 0.84375,
+   "cohens_h": -0.8205815272227273,
+   "p_holm": 0.03545379638671875,
+   "family": "RefAlign vs each of the 7 LOFO baselines, exact step (m=7)"
+  },
+  "mode_agent+mode_step": {
+   "b": 4,
+   "c": 16,
+   "n_discordant": 20,
+   "p_value": 0.01181793212890625,
+   "n": 32,
+   "acc_x": 0.46875,
+   "acc_y": 0.84375,
+   "cohens_h": -0.8205815272227273,
+   "p_holm": 0.03545379638671875,
+   "family": "RefAlign vs each of the 7 LOFO baselines, exact step (m=7)"
+  },
+  "norm_pos": {
+   "b": 0,
+   "c": 15,
+   "n_discordant": 15,
+   "p_value": 6.103515625e-05,
+   "n": 32,
+   "acc_x": 0.46875,
+   "acc_y": 0.9375,
+   "cohens_h": -1.127976578307231,
+   "p_holm": 0.00042724609375,
+   "family": "RefAlign vs each of the 7 LOFO baselines, exact step (m=7)"
+  },
+  "last_step": {
+   "b": 15,
+   "c": 0,
+   "n_discordant": 15,
+   "p_value": 6.103515625e-05,
+   "n": 32,
+   "acc_x": 0.46875,
+   "acc_y": 0.0,
+   "cohens_h": 1.5082555649984053,
+   "p_holm": 0.00042724609375,
+   "family": "RefAlign vs each of the 7 LOFO baselines, exact step (m=7)"
+  },
+  "penultimate_step": {
+   "b": 0,
+   "c": 15,
+   "n_discordant": 15,
+   "p_value": 6.103515625e-05,
+   "n": 32,
+   "acc_x": 0.46875,
+   "acc_y": 0.9375,
+   "cohens_h": -1.127976578307231,
+   "p_holm": 0.00042724609375,
+   "family": "RefAlign vs each of the 7 LOFO baselines, exact step (m=7)"
+  }
+ },
+ "per_run": {
+  "real_t00_r00": {
+   "family": "real_t00",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 7,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 5,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 6,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 5,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 6,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t00_r05": {
+   "family": "real_t00",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Planner",
+    "step": 0,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t00_r07": {
+   "family": "real_t00",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 7,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 5,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 6,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 5,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 6,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t00_r08": {
+   "family": "real_t00",
+   "gold_agent": "Worker",
+   "gold_step": 2,
+   "n_steps": 4,
+   "mode_step": {
+    "agent": "Verifier",
+    "step": 3,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 2,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 3,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 2,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 2,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   }
+  },
+  "real_t00_r10": {
+   "family": "real_t00",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t05_r02": {
+   "family": "real_t05",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t05_r04": {
+   "family": "real_t05",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t05_r06": {
+   "family": "real_t05",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t05_r09": {
+   "family": "real_t05",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t05_r10": {
+   "family": "real_t05",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r00": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r01": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r02": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 2,
+   "n_steps": 4,
+   "mode_step": {
+    "agent": "Verifier",
+    "step": 3,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 2,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 3,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 2,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 3,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   }
+  },
+  "real_t07_r03": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r06": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r07": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r08": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r09": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r10": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r11": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t07_r13": {
+   "family": "real_t07",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t09_r00": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t09_r01": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 4,
+   "n_steps": 6,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 4,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 5,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 4,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 4,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   }
+  },
+  "real_t09_r02": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t09_r03": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 4,
+   "n_steps": 6,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 4,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 5,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 4,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 4,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   }
+  },
+  "real_t09_r06": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t09_r07": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t09_r08": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t09_r09": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t09_r10": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  },
+  "real_t09_r11": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 4,
+   "n_steps": 6,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 4,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 5,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 4,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 4,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   }
+  },
+  "real_t09_r13": {
+   "family": "real_t09",
+   "gold_agent": "Worker",
+   "gold_step": 3,
+   "n_steps": 5,
+   "mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent": {
+    "agent": "Worker",
+    "step": null,
+    "agent_correct": true,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "mode_joint": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "mode_agent+mode_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "norm_pos": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "last_step": {
+    "agent": "Verifier",
+    "step": 4,
+    "agent_correct": false,
+    "step_correct": false,
+    "joint_correct": false
+   },
+   "penultimate_step": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "refalign": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   },
+   "posthoc_const_step3": {
+    "agent": "Worker",
+    "step": 3,
+    "agent_correct": true,
+    "step_correct": true,
+    "joint_correct": true
+   }
+  }
+ }
+}

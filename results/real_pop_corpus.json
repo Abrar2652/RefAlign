@@ -1,0 +1,2914 @@
+{
+ "annotations": {
+  "task00_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task00_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task00_f03": {
+   "agent": "Worker",
+   "step": 3,
+   "fault_type": "premature"
+  },
+  "task01_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task01_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task01_f03": {
+   "agent": "Worker",
+   "step": 3,
+   "fault_type": "premature"
+  },
+  "task02_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task02_f01": {
+   "agent": "Worker",
+   "step": 3,
+   "fault_type": "wrong_tool"
+  },
+  "task02_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task03_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task03_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task03_f03": {
+   "agent": "Worker",
+   "step": 3,
+   "fault_type": "premature"
+  },
+  "task04_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task04_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task04_f03": {
+   "agent": "Worker",
+   "step": 3,
+   "fault_type": "premature"
+  },
+  "task05_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task05_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task06_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task06_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task07_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task07_f01": {
+   "agent": "Worker",
+   "step": 3,
+   "fault_type": "wrong_tool"
+  },
+  "task07_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task08_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task08_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task09_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task09_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task10_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task10_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  },
+  "task11_f00": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "premature"
+  },
+  "task11_f02": {
+   "agent": "Worker",
+   "step": 2,
+   "fault_type": "bad_calc"
+  }
+ },
+ "populations": [
+  {
+   "query_id": "task00",
+   "query": "A shop sells pens at $3 each. Ann buys 7 pens and pays with a $50 bill. How much change does she get?",
+   "runs": [
+    {
+     "run_id": "task00_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total cost of 7 pens and subtract it from the $50 bill to find Ann's change."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 7 = 21.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 50 - 21 = 29 = None"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 29"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 29"
+      }
+     ]
+    },
+    {
+     "run_id": "task00_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total cost of the pens by multiplying the price per pen by the number of pens, then subtract that total from the amount paid."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 7 = 21.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 50 - 21 = 29.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 29"
+      }
+     ]
+    },
+    {
+     "run_id": "task00_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total cost of the pens by multiplying 7 by $3, then subtract that amount from $50 to find the change."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 7 * 3 = 21.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 50 - 21 = 29 = None"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 29"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 29"
+      }
+     ]
+    },
+    {
+     "run_id": "task00_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total cost of the pens by multiplying the price per pen by the number of pens purchased, then subtract that total from the amount paid."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 7 = 21.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 50 - 21 = 29.0 = None"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 29"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 29"
+      }
+     ]
+    },
+    {
+     "run_id": "task00_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total cost of the pens by multiplying the price per pen by the number of pens, then subtract that total from the amount paid to find the change."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 7 = 21.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 36"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 36"
+      }
+     ]
+    },
+    {
+     "run_id": "task00_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total cost of the pens by multiplying the price per pen by the number of pens purchased, then subtract that total from the amount paid."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 7 = 21.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 50 - 21 = 29.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 29"
+      }
+     ]
+    },
+    {
+     "run_id": "task00_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total cost of the pens by multiplying the price per pen by the number of pens, then subtract that total from the amount paid with the $50 bill to find the change."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 7 = 21.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 29+9 = 38.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 50 - 21 = 29 = None"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 50 - 21 = 29 = None"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 50 - 21 = 29 = None"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 43"
+      }
+     ]
+    },
+    {
+     "run_id": "task00_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total cost of the pens by multiplying the price per pen by the number of pens, then subtract that total from the amount paid to find the change."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 7 = 21.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 50 - 21 = 29 = None"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 36"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 36"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task01",
+   "query": "A train travels 60 km in 45 minutes. What is its speed in km/h?",
+   "runs": [
+    {
+     "run_id": "task01_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the speed in km/h, divide the distance (60 km) by the time in hours (0.75 hours)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 60 / 0.75 = 80.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 80.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 80"
+      }
+     ]
+    },
+    {
+     "run_id": "task01_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the speed in km/h, divide the distance (60 km) by the time in hours (0.75 hours)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 60 / 0.75 = 80.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 80"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 80"
+      }
+     ]
+    },
+    {
+     "run_id": "task01_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Convert the time from minutes to hours and then divide the distance by the time to find the speed in km/h."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 45 / 60 = 0.75"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 60 / 0.75 = 80.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 80.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 80"
+      }
+     ]
+    },
+    {
+     "run_id": "task01_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the speed in km/h, divide the distance (60 km) by the time in hours (0.75 hours)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 60 / 0.75 = 80.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 80.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 80"
+      }
+     ]
+    },
+    {
+     "run_id": "task01_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the speed in km/h, divide the distance (60 km) by the time in hours (0.75 hours) by converting 45 minutes into hours."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 45 / 60 = 0.75"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 87"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 80"
+      }
+     ]
+    },
+    {
+     "run_id": "task01_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the speed in km/h, divide the distance (60 km) by the time in hours (0.75 hours)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 60 / 0.75 = 80.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 80.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 80"
+      }
+     ]
+    },
+    {
+     "run_id": "task01_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the speed, divide the distance (60 km) by the time in hours (0.75 hours), which is 60 km \u00f7 0.75 h = 80 km/h."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 45 / 60 = 0.75"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 80+9 = 89.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 60 / 0.75 = 80.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 80"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 80"
+      }
+     ]
+    },
+    {
+     "run_id": "task01_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the speed in km/h, convert the travel time from minutes to hours and then use the formula speed = distance/time."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 45 / 60 = 0.75"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 60 / 0.75 = 80.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 87"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 80"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task02",
+   "query": "A rectangle is 8 m long and 5 m wide. What is its perimeter in meters?",
+   "runs": [
+    {
+     "run_id": "task02_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the perimeter of the rectangle, use the formula P = 2(length + width), substituting 8 m for length and 5 m for width."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 26"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 26"
+      }
+     ]
+    },
+    {
+     "run_id": "task02_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the perimeter of the rectangle, use the formula: Perimeter = 2 \u00d7 (length + width)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 26"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 26"
+      }
+     ]
+    },
+    {
+     "run_id": "task02_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the perimeter of the rectangle, use the formula P = 2(length + width), substituting 8 m for length and 5 m for width."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 26.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 26"
+      }
+     ]
+    },
+    {
+     "run_id": "task02_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the perimeter of the rectangle, use the formula P = 2(length + width) and substitute the given values."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 26"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 26"
+      }
+     ]
+    },
+    {
+     "run_id": "task02_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the perimeter of the rectangle, use the formula P = 2(length + width), substituting in the values 8 m and 5 m."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 33"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 26"
+      }
+     ]
+    },
+    {
+     "run_id": "task02_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the perimeter of the rectangle, use the formula P = 2(length + width), which in this case is P = 2(8 m + 5 m)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "search",
+       "content": "SEARCH unrelated background info"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 26"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 26"
+      }
+     ]
+    },
+    {
+     "run_id": "task02_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the perimeter of the rectangle, use the formula P = 2(length + width)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 26+9 = 35.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 26"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 26"
+      }
+     ]
+    },
+    {
+     "run_id": "task02_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the perimeter of the rectangle, use the formula P = 2(length + width), substituting 8 m for length and 5 m for width."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 2 * (8 + 5) = 26.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 26"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 26"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task03",
+   "query": "Tom has 3 boxes with 12 apples each and eats 5. How many apples remain?",
+   "runs": [
+    {
+     "run_id": "task03_c00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total number of apples by multiplying the number of boxes by the number of apples per box, then subtract the number of apples Tom eats."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 12 = 36.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 36 - 5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 31"
+      }
+     ]
+    },
+    {
+     "run_id": "task03_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total number of apples by multiplying the number of boxes by the number of apples per box, then subtract the number of apples Tom eats."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 12 = 36.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 36 - 5 = 31"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 31"
+      }
+     ]
+    },
+    {
+     "run_id": "task03_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total number of apples by multiplying the number of boxes by the apples per box, then subtract the number of apples Tom eats."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 12 = 36.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 36 - 5 = 31"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 31"
+      }
+     ]
+    },
+    {
+     "run_id": "task03_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total number of apples by multiplying the number of boxes by the apples per box, then subtract the number of apples Tom eats."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 12 = 36.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 36 - 5 = 31"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 31"
+      }
+     ]
+    },
+    {
+     "run_id": "task03_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total number of apples by multiplying the number of boxes by the number of apples per box, then subtract the number of apples Tom eats."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 12 = 36.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 38"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 31"
+      }
+     ]
+    },
+    {
+     "run_id": "task03_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total number of apples by multiplying the number of boxes by the number of apples per box, and then subtract the number of apples Tom eats."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 12 = 36.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 36 - 5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG  \nFINAL: 31"
+      }
+     ]
+    },
+    {
+     "run_id": "task03_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total number of apples by multiplying the number of boxes by the apples per box, then subtract the number of apples Tom eats."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 12 = 36.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 31+9 = 40.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 36 - 5 = 31.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 31"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 31"
+      }
+     ]
+    },
+    {
+     "run_id": "task03_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total number of apples by multiplying the number of boxes by the number of apples per box, then subtract the number of apples Tom ate."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 3 * 12 = 36.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 36 - 5 = 31.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 38"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 31"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task04",
+   "query": "A 20% discount is applied to a $75 jacket. What is the final price in dollars?",
+   "runs": [
+    {
+     "run_id": "task04_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate 20% of $75, subtract that amount from $75 to find the final price."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 * 0.20 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 - 15.0 = 60.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 60.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 60"
+      }
+     ]
+    },
+    {
+     "run_id": "task04_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate 20% of $75 and subtract that amount from the original price to find the final price."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 * 0.20 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 - 15.0 = 60.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 60.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 60"
+      }
+     ]
+    },
+    {
+     "run_id": "task04_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate 20% of $75, subtract that amount from $75 to find the final price."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 * 0.20 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 75 - 15.0 = 60.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 60"
+      }
+     ]
+    },
+    {
+     "run_id": "task04_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate 20% of $75 and subtract that amount from $75 to find the final price."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 * 0.20 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 - 15.0 = 60.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 60.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 60"
+      }
+     ]
+    },
+    {
+     "run_id": "task04_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate 20% of $75, subtract that amount from $75 to find the final price."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 * 0.20 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 67"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 60"
+      }
+     ]
+    },
+    {
+     "run_id": "task04_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate 20% of $75 and subtract that amount from $75 to find the final price."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 * 0.20 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 75 - 15.0 = 60.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 60.0"
+      }
+     ]
+    },
+    {
+     "run_id": "task04_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate 20% of $75, subtract that amount from $75 to find the final price."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 * 0.20 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 60+9 = 69.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 - 15 = 60 = None"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 - 15 = 60 = None"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 - 15 = 60 = None"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 0"
+      }
+     ]
+    },
+    {
+     "run_id": "task04_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate 20% of $75, subtract that amount from the original price to find the final price."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 * 0.20 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 75 - 15.0 = 60.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 67"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 60"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task05",
+   "query": "A car uses 6 liters per 100 km. How many liters for a 250 km trip?",
+   "runs": [
+    {
+     "run_id": "task05_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the total liters needed for a 250 km trip, multiply the distance by the fuel consumption rate (250 km * 6 liters/100 km) and then divide by 100."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 / 100 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 15.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 15"
+      }
+     ]
+    },
+    {
+     "run_id": "task05_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the total liters needed, multiply the distance (250 km) by the fuel consumption rate (6 liters/100 km) and divide by 100."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 / 100 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 15.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 15"
+      }
+     ]
+    },
+    {
+     "run_id": "task05_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the fuel consumption by multiplying the distance (250 km) by the fuel usage per 100 km (6 liters), then divide by 100."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 / 100 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 15.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 15"
+      }
+     ]
+    },
+    {
+     "run_id": "task05_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the fuel consumption by multiplying the distance (250 km) by the fuel usage rate (6 liters/100 km) and then dividing by 100."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC (250 * 6) / 100 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 15.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 15"
+      }
+     ]
+    },
+    {
+     "run_id": "task05_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the fuel consumption by multiplying the distance (250 km) by the fuel usage rate (6 liters per 100 km) and then divide by 100."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 / 100 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 22"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 15.0"
+      }
+     ]
+    },
+    {
+     "run_id": "task05_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the total liters needed for a 250 km trip, multiply the distance (250 km) by the fuel consumption rate (6 liters/100 km) and then divide by 100."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 / 100 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 15.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 15"
+      }
+     ]
+    },
+    {
+     "run_id": "task05_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total liters used by multiplying the distance (250 km) by the fuel consumption rate (6 liters/100 km) and then divide by 100."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 / 100 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 15+9 = 24.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 15.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 15"
+      }
+     ]
+    },
+    {
+     "run_id": "task05_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the total liters used for a 250 km trip, multiply 250 km by the fuel consumption rate (6 liters/100 km) and then divide by 100."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 / 100 = 15.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 15.0"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task06",
+   "query": "If 5 workers build a wall in 8 days, how many worker-days is that?",
+   "runs": [
+    {
+     "run_id": "task06_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the total worker-days, multiply the number of workers by the number of days: 5 workers \u00d7 8 days = 40 worker-days."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 5 * 8 = 40.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 40"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 40"
+      }
+     ]
+    },
+    {
+     "run_id": "task06_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the number of workers by the number of days to find the total worker-days: 5 workers \u00d7 8 days = 40 worker-days."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 5 * 8 = 40.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 40"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 40"
+      }
+     ]
+    },
+    {
+     "run_id": "task06_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total worker-days by multiplying the number of workers by the number of days: 5 workers \u00d7 8 days = 40 worker-days."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 5 * 8 = 40.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 40"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 40"
+      }
+     ]
+    },
+    {
+     "run_id": "task06_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total worker-days by multiplying the number of workers by the number of days: 5 workers \u00d7 8 days = 40 worker-days."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 5 * 8 = 40.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 40"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 40"
+      }
+     ]
+    },
+    {
+     "run_id": "task06_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the number of workers (5) by the number of days (8) to find the total worker-days."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 5 * 8 = 40.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 47"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 40"
+      }
+     ]
+    },
+    {
+     "run_id": "task06_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the number of workers by the number of days to find the total worker-days: 5 workers \u00d7 8 days = 40 worker-days."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 5 * 8 = 40.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 40"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 40"
+      }
+     ]
+    },
+    {
+     "run_id": "task06_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the number of workers by the number of days to find the total worker-days: 5 workers \u00d7 8 days = 40 worker-days."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 5 * 8 = 40.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 40+9 = 49.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 40"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 40"
+      }
+     ]
+    },
+    {
+     "run_id": "task06_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To solve the task, multiply the number of workers (5) by the number of days (8) to find the total worker-days."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 5 * 8 = 40.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 40"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 40"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task07",
+   "query": "A recipe needs 250 g flour per cake. How many kg for 6 cakes?",
+   "runs": [
+    {
+     "run_id": "task07_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply 250 g by 6 to get the total grams needed, then convert to kilograms by dividing by 1000."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 = 1500.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1500 / 1000 = 1.5"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 1.5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 1.5"
+      }
+     ]
+    },
+    {
+     "run_id": "task07_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply 250 g by 6 to find the total grams needed, then convert the result to kilograms by dividing by 1000."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 = 1500.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1500 / 1000 = 1.5"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 1.5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 1.5"
+      }
+     ]
+    },
+    {
+     "run_id": "task07_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply 250 g by 6 to find the total grams needed, then convert to kilograms by dividing by 1000."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 = 1500.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 1500 / 1000 = 1.5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 1.5"
+      }
+     ]
+    },
+    {
+     "run_id": "task07_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Calculate the total flour needed by multiplying 250 g by 6, then convert the result from grams to kilograms."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 = 1500.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 1500 / 1000 = 1.5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 1.5"
+      }
+     ]
+    },
+    {
+     "run_id": "task07_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply 250 g by 6 to find the total grams needed, then convert grams to kilograms by dividing by 1000."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 = 1500.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 8.5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 1.5"
+      }
+     ]
+    },
+    {
+     "run_id": "task07_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply 250 g by 6 to find the total grams needed, then convert grams to kilograms by dividing by 1000."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 = 1500.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1500 / 1000 = 1.5"
+      },
+      {
+       "agent": "Worker",
+       "action": "search",
+       "content": "SEARCH unrelated background info"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 1.5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 1.5"
+      }
+     ]
+    },
+    {
+     "run_id": "task07_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply 250 g by 6 to find the total grams needed, then convert the result to kilograms."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 = 1500.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1+9 = 10.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1500 / 1000 = 1.5"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 1.5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 1.5"
+      }
+     ]
+    },
+    {
+     "run_id": "task07_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply 250 g by 6 to find the total grams needed, then convert grams to kilograms by dividing by 1000."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 250 * 6 = 1500.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER CALC 1500 / 1000 = 1.5"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 1.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task08",
+   "query": "A tank holds 1200 L and drains at 40 L/min. How many minutes to empty?",
+   "runs": [
+    {
+     "run_id": "task08_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total volume of the tank (1200 L) by the drainage rate (40 L/min) to find the time in minutes to empty the tank."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1200 / 40 = 30.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 30"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 30"
+      }
+     ]
+    },
+    {
+     "run_id": "task08_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total volume of the tank (1200 L) by the drainage rate (40 L/min) to find the time to empty the tank."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1200 / 40 = 30.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 30"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 30"
+      }
+     ]
+    },
+    {
+     "run_id": "task08_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total volume of the tank (1200 L) by the drainage rate (40 L/min) to find the time in minutes to empty the tank."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1200 / 40 = 30.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 30"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 30"
+      }
+     ]
+    },
+    {
+     "run_id": "task08_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total volume of the tank (1200 L) by the drainage rate (40 L/min) to find the time to empty it."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1200 / 40 = 30.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 30"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 30"
+      }
+     ]
+    },
+    {
+     "run_id": "task08_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total volume of the tank (1200 L) by the drainage rate (40 L/min) to find the time to empty."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1200 / 40 = 30.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 37"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 30"
+      }
+     ]
+    },
+    {
+     "run_id": "task08_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "To find the time to empty the tank, divide the total volume of the tank (1200 L) by the drainage rate (40 L/min)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1200 / 40 = 30.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 30"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 30"
+      }
+     ]
+    },
+    {
+     "run_id": "task08_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total volume of the tank (1200 L) by the drain rate (40 L/min) to find the time in minutes to empty the tank."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1200 / 40 = 30.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 30+9 = 39.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 30"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 30"
+      }
+     ]
+    },
+    {
+     "run_id": "task08_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total volume of the tank (1200 L) by the drainage rate (40 L/min) to find the time in minutes to empty the tank."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 1200 / 40 = 30.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 30"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task09",
+   "query": "Sara saves $15 per week. How much has she saved after 12 weeks?",
+   "runs": [
+    {
+     "run_id": "task09_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply Sara's weekly savings of $15 by the number of weeks, which is 12, to find her total savings."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 15 * 12 = 180.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 180"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 180"
+      }
+     ]
+    },
+    {
+     "run_id": "task09_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply Sara's weekly savings of $15 by the number of weeks, which is 12, to find her total savings."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 15 * 12 = 180.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 180"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 180"
+      }
+     ]
+    },
+    {
+     "run_id": "task09_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the amount Sara saves per week ($15) by the number of weeks (12) to find her total savings."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 15 * 12 = 180.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 180"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 180"
+      }
+     ]
+    },
+    {
+     "run_id": "task09_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the amount Sara saves per week ($15) by the number of weeks (12)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 15 * 12 = 180.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 180"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 180"
+      }
+     ]
+    },
+    {
+     "run_id": "task09_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply $15 by 12 to find out how much Sara has saved after 12 weeks."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 15 * 12 = 180.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 187"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 180"
+      }
+     ]
+    },
+    {
+     "run_id": "task09_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the amount Sara saves per week ($15) by the number of weeks (12) to find her total savings."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 15 * 12 = 180.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 180"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 180"
+      }
+     ]
+    },
+    {
+     "run_id": "task09_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the amount Sara saves per week ($15) by the number of weeks (12) to find her total savings."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 15 * 12 = 180.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 180+9 = 189.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 180"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 0"
+      }
+     ]
+    },
+    {
+     "run_id": "task09_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply Sara's weekly savings of $15 by the number of weeks, which is 12, to find the total savings."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 15 * 12 = 180.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 180"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task10",
+   "query": "A book has 320 pages; Jo reads 40 pages a day. How many days to finish?",
+   "runs": [
+    {
+     "run_id": "task10_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total number of pages (320) by the number of pages Jo reads per day (40)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 320 / 40 = 8.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 8"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 8"
+      }
+     ]
+    },
+    {
+     "run_id": "task10_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total number of pages (320) by the number of pages Jo reads per day (40) to find the total days needed."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 320 / 40 = 8.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 8"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 8"
+      }
+     ]
+    },
+    {
+     "run_id": "task10_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total number of pages (320) by the number of pages Jo reads per day (40) to find the number of days to finish the book."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 320 / 40 = 8.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 8"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 8"
+      }
+     ]
+    },
+    {
+     "run_id": "task10_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total number of pages (320) by the number of pages Jo reads per day (40)."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 320 / 40 = 8.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 8"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 8"
+      }
+     ]
+    },
+    {
+     "run_id": "task10_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total number of pages (320) by the number of pages Jo reads per day (40) to find the number of days needed to finish the book."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 320 / 40 = 8.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 15"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 8"
+      }
+     ]
+    },
+    {
+     "run_id": "task10_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total number of pages (320) by the number of pages Jo reads per day (40) to find the number of days needed to finish the book."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 320 / 40 = 8.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 8"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 8"
+      }
+     ]
+    },
+    {
+     "run_id": "task10_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total number of pages (320) by the number of pages Jo reads per day (40) to find the number of days to finish the book."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 320 / 40 = 8.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 8+9 = 17.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 8"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 8"
+      }
+     ]
+    },
+    {
+     "run_id": "task10_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Divide the total pages (320) by the pages read per day (40) to find the number of days needed to finish the book."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 320 / 40 = 8.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 8"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 8"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "query_id": "task11",
+   "query": "An item costs $12; buying 25 of them, what is the total cost in dollars?",
+   "runs": [
+    {
+     "run_id": "task11_c00",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the cost of one item ($12) by the quantity (25) to find the total cost."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 12 * 25 = 300.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 300"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: CORRECT\nFINAL: 300"
+      }
+     ]
+    },
+    {
+     "run_id": "task11_c01",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the cost of one item ($12) by the quantity (25) to find the total cost."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 12 * 25 = 300.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 300"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 300"
+      }
+     ]
+    },
+    {
+     "run_id": "task11_c02",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the cost of one item ($12) by the quantity (25) to find the total cost."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 12 * 25 = 300.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 300"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 300"
+      }
+     ]
+    },
+    {
+     "run_id": "task11_c03",
+     "success": true,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the cost of one item by the number of items: $12 \u00d7 25."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 12 * 25 = 300.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 300"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 300"
+      }
+     ]
+    },
+    {
+     "run_id": "task11_f00",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the cost of one item ($12) by the quantity (25) to find the total cost."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 12 * 25 = 300.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 307"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 300"
+      }
+     ]
+    },
+    {
+     "run_id": "task11_f01",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the cost of one item ($12) by the quantity (25) to find the total cost."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 12 * 25 = 300.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 300"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 300"
+      }
+     ]
+    },
+    {
+     "run_id": "task11_f02",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the cost of one item ($12) by the number of items (25) to find the total cost."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 12 * 25 = 300.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 300+9 = 309.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 300"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 300"
+      }
+     ]
+    },
+    {
+     "run_id": "task11_f03",
+     "success": false,
+     "steps": [
+      {
+       "agent": "Planner",
+       "action": "plan",
+       "content": "Multiply the cost of one item ($12) by the quantity (25) to find the total cost."
+      },
+      {
+       "agent": "Worker",
+       "action": "calc",
+       "content": "CALC 12 * 25 = 300.0"
+      },
+      {
+       "agent": "Worker",
+       "action": "answer",
+       "content": "ANSWER 300"
+      },
+      {
+       "agent": "Verifier",
+       "action": "check",
+       "content": "VERDICT: WRONG\nFINAL: 300"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

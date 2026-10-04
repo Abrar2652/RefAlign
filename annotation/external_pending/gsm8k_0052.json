@@ -1,0 +1,74 @@
+{
+ "query_id": "gsm8k_0052",
+ "query": "Uriah's book bag is getting too heavy for him. He needs to remove 15 pounds from it. His comic books weigh 1/4 pound each and his toys weigh 1/2 pound each. If he removes 30 comic books, how many toys does he need to remove?",
+ "ground_truth": "15.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 52,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0052_r00",
+   "outcome": "success",
+   "final_answer": "15.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, calculate the weight removed by the 30 comic books and then determine how many toys he needs to remove to make up the remaining weight to reach the total of 15 pounds."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 30 * (1/4) = 7.5"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 15 - 7.5 = 7.5"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 7.5 / (1/2) = 15.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER 15"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 15"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0052_r06",
+   "outcome": "failure",
+   "final_answer": "7.5",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, calculate the total weight of the 30 comic books removed and then determine how many toys need to be removed to reach the 15-pound reduction goal."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 30 * (1/4) = 7.5"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER CALC 15 - 7.5 = 7.5"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 7.5"
+    }
+   ]
+  }
+ ]
+}

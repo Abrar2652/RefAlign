@@ -1,0 +1,54 @@
+{
+ "query_id": "bbh_tso3_173",
+ "query": "Alice, Bob, and Claire are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing striker, Bob is playing right winger, and Claire is playing goalkeeper.\nAs the game progresses, pairs of players occasionally swap positions. First, Claire and Bob trade positions. Then, Bob and Alice trade positions. Finally, Alice and Claire trade positions. At the end of the match, Bob is playing\nOptions:\n(A) striker\n(B) right winger\n(C) goalkeeper",
+ "ground_truth": "(A)",
+ "source": "BBH tracking_shuffled_objects_three_objects",
+ "gsm8k_test_index": 173,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "bbh_tso3_173_r00",
+   "outcome": "success",
+   "final_answer": "A",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To determine Bob's final position, track the series of swaps: Claire (goalkeeper) and Bob (right winger) swap, making Claire (right winger) and Bob (goalkeeper); then Bob (goalkeeper) and Alice (striker) swap, resulting in Bob (striker) and Alice (goalkeeper); finally, Alice (goalkeeper) and Claire (right winger) swap, resulting in Alice (right winger) and Claire (goalkeeper), leaving Bob as the striker. Hence, the answer is (A) striker."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER (A)"
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG  \nFINAL: B"
+    }
+   ]
+  },
+  {
+   "run_id": "bbh_tso3_173_r03",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Track the position of Bob after each swap and determine his final position."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "ANSWER None yet."
+    },
+    {
+     "index": 2,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: (B) right winger"
+    }
+   ]
+  }
+ ]
+}

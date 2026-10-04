@@ -1,0 +1,51 @@
+{
+ "query_id": "real_t00",
+ "annotator": "adjudicated",
+ "labels": {
+  "real_t00_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "repeated_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t00_r05": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t00_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "repeated_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t00_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 2,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  },
+  "real_t00_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 4,
+   "reason": "diverse-panel majority",
+   "annotator": "adjudicated",
+   "flag": null
+  }
+ }
+}

@@ -1,0 +1,5975 @@
+{
+"alf_valid_seen_pick_and_place_simple-TissueBox-None-Toilet-426__trial_T20190910_155319_795672_r00": {
+"run_id": "alf_valid_seen_pick_and_place_simple-TissueBox-None-Toilet-426__trial_T20190910_155319_795672_r00",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Search the drawers for the tissue box, then place it on the toilet."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 1 -> OBS: You open the drawer 1. The drawer 1 is open. In it, you see a candle 1, and a soapbar 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a tissuebox 1."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take tissuebox 1 from drawer 2 -> OBS: You pick up the tissuebox 1 from the drawer 2."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toilet 1 -> OBS: You arrive at toilet 1. On the toilet 1, you see a spraybottle 1, and a toiletpaper 1."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move tissuebox 1 to toilet 1 -> OBS: You move the tissuebox 1 to the toilet 1."
+}
+],
+"game_id": "pick_and_place_simple-TissueBox-None-Toilet-426/trial_T20190910_155319_795672",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_and_place_simple-TissueBox-None-Toilet-426/trial_T20190910_155319_795672/game.tw-pddl",
+"task_type": "pick_and_place_simple",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "put some tissuebox on toilet.",
+"plan": "Search the drawers for the tissue box, then place it on the toilet.",
+"actions": [
+"go to drawer 1",
+"open drawer 1",
+"go to drawer 2",
+"open drawer 2",
+"take tissuebox 1 from drawer 2",
+"go to toilet 1",
+"move tissuebox 1 to toilet 1"
+],
+"expert_actions": [
+"look",
+"open drawer 1",
+"close drawer 1",
+"open drawer 2",
+"take tissuebox 1 from drawer 2",
+"close drawer 2",
+"move tissuebox 1 to toilet 1"
+],
+"n_actor_steps": 7,
+"invalid_actions": 0,
+"hit_cap": false,
+"seed_base": 212578521,
+"seeds_used": [
+212578521,
+212578522,
+212578523,
+212578524,
+212578525,
+212578526,
+212578527,
+212578528
+],
+"n_llm_calls": 8,
+"tokens": 9145,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 6.9
+},
+"alf_valid_seen_pick_and_place_simple-TissueBox-None-Toilet-426__trial_T20190910_155319_795672_r01": {
+"run_id": "alf_valid_seen_pick_and_place_simple-TissueBox-None-Toilet-426__trial_T20190910_155319_795672_r01",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look in the drawer 1 for the tissue box, then place it on the toilet."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 1 -> OBS: You open the drawer 1. The drawer 1 is open. In it, you see a candle 1, and a soapbar 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see nothing."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a tissuebox 1."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take tissuebox 1 from drawer 2 -> OBS: You pick up the tissuebox 1 from the drawer 2."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toilet 1 -> OBS: You arrive at toilet 1. On the toilet 1, you see a spraybottle 1, and a toiletpaper 1."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move tissuebox 1 to toilet 1 -> OBS: You move the tissuebox 1 to the toilet 1."
+}
+],
+"game_id": "pick_and_place_simple-TissueBox-None-Toilet-426/trial_T20190910_155319_795672",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_and_place_simple-TissueBox-None-Toilet-426/trial_T20190910_155319_795672/game.tw-pddl",
+"task_type": "pick_and_place_simple",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "put some tissuebox on toilet.",
+"plan": "Look in the drawer 1 for the tissue box, then place it on the toilet.",
+"actions": [
+"go to drawer 1",
+"open drawer 1",
+"go to garbagecan 1",
+"go to drawer 2",
+"open drawer 2",
+"take tissuebox 1 from drawer 2",
+"go to toilet 1",
+"move tissuebox 1 to toilet 1"
+],
+"expert_actions": [
+"look",
+"open drawer 1",
+"close drawer 1",
+"go to toilet 1",
+"open drawer 2",
+"take tissuebox 1 from drawer 2",
+"close drawer 2",
+"move tissuebox 1 to toilet 1"
+],
+"n_actor_steps": 8,
+"invalid_actions": 0,
+"hit_cap": false,
+"seed_base": 2074902607,
+"seeds_used": [
+2074902607,
+2074902608,
+2074902609,
+2074902610,
+2074902611,
+2074902612,
+2074902613,
+2074902614,
+2074902615
+],
+"n_llm_calls": 9,
+"tokens": 10531,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 7.6
+},
+"alf_valid_seen_pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415__trial_T20190908_050518_595510_r01": {
+"run_id": "alf_valid_seen_pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415__trial_T20190908_050518_595510_r01",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look in the drawers to find the toilet paper. Once located, place the toilet paper on the toilet paper hanger."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 1 -> OBS: You open the drawer 1. The drawer 1 is open. In it, you see a soapbar 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a candle 2, and a soapbottle 1."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 3 -> OBS: You arrive at drawer 3. The drawer 3 is closed."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 3 -> OBS: You open the drawer 3. The drawer 3 is open. In it, you see a toiletpaper 1."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from drawer 3 -> OBS: You pick up the toiletpaper 1 from the drawer 3."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toiletpaperhanger 1 -> OBS: You arrive at toiletpaperhanger 1. On the toiletpaperhanger 1, you see nothing."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toiletpaperhanger 1 -> OBS: You move the toiletpaper 1 to the toiletpaperhanger 1."
+}
+],
+"game_id": "pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415/trial_T20190908_050518_595510",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415/trial_T20190908_050518_595510/game.tw-pddl",
+"task_type": "pick_and_place_simple",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "put a toiletpaper in toiletpaperhanger.",
+"plan": "Look in the drawers to find the toilet paper. Once located, place the toilet paper on the toilet paper hanger.",
+"actions": [
+"go to drawer 1",
+"open drawer 1",
+"go to drawer 2",
+"open drawer 2",
+"go to drawer 3",
+"open drawer 3",
+"take toiletpaper 1 from drawer 3",
+"go to toiletpaperhanger 1",
+"move toiletpaper 1 to toiletpaperhanger 1"
+],
+"expert_actions": [
+"look",
+"open drawer 1",
+"close drawer 1",
+"open drawer 2",
+"close drawer 2",
+"open drawer 3",
+"take toiletpaper 1 from drawer 3",
+"close drawer 3",
+"move toiletpaper 1 to toiletpaperhanger 1"
+],
+"n_actor_steps": 9,
+"invalid_actions": 0,
+"hit_cap": false,
+"seed_base": 1660577907,
+"seeds_used": [
+1660577907,
+1660577908,
+1660577909,
+1660577910,
+1660577911,
+1660577912,
+1660577913,
+1660577914,
+1660577915,
+1660577916
+],
+"n_llm_calls": 10,
+"tokens": 11914,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 8.4
+},
+"alf_valid_seen_pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415__trial_T20190908_050518_595510_r00": {
+"run_id": "alf_valid_seen_pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415__trial_T20190908_050518_595510_r00",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look in the drawers or on the countertop for the toilet paper, take it, and then place it on the toilet paper hanger."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 1 -> OBS: You open the drawer 1. The drawer 1 is open. In it, you see a soapbar 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cloth 1, a mirror 1, and a spraybottle 1."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a candle 2, and a soapbottle 1."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 3 -> OBS: You arrive at drawer 3. The drawer 3 is closed."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 3 -> OBS: You open the drawer 3. The drawer 3 is open. In it, you see a toiletpaper 1."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from drawer 3 -> OBS: You pick up the toiletpaper 1 from the drawer 3."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toiletpaperhanger 1 -> OBS: You arrive at toiletpaperhanger 1. On the toiletpaperhanger 1, you see nothing."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toiletpaperhanger 1 -> OBS: You move the toiletpaper 1 to the toiletpaperhanger 1."
+}
+],
+"game_id": "pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415/trial_T20190908_050518_595510",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_and_place_simple-ToiletPaper-None-ToiletPaperHanger-415/trial_T20190908_050518_595510/game.tw-pddl",
+"task_type": "pick_and_place_simple",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "put a toiletpaper in toiletpaperhanger.",
+"plan": "Look in the drawers or on the countertop for the toilet paper, take it, and then place it on the toilet paper hanger.",
+"actions": [
+"go to drawer 1",
+"open drawer 1",
+"go to countertop 1",
+"go to drawer 2",
+"open drawer 2",
+"go to drawer 3",
+"open drawer 3",
+"take toiletpaper 1 from drawer 3",
+"go to toiletpaperhanger 1",
+"move toiletpaper 1 to toiletpaperhanger 1"
+],
+"expert_actions": [
+"look",
+"open drawer 1",
+"close drawer 1",
+"go to toiletpaperhanger 1",
+"open drawer 2",
+"close drawer 2",
+"open drawer 3",
+"take toiletpaper 1 from drawer 3",
+"close drawer 3",
+"move toiletpaper 1 to toiletpaperhanger 1"
+],
+"n_actor_steps": 10,
+"invalid_actions": 0,
+"hit_cap": false,
+"seed_base": 368924901,
+"seeds_used": [
+368924901,
+368924902,
+368924903,
+368924904,
+368924905,
+368924906,
+368924907,
+368924908,
+368924909,
+368924910,
+368924911
+],
+"n_llm_calls": 11,
+"tokens": 13492,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 8.9
+},
+"alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r00": {
+"run_id": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r00",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look in the drawers and around the room for the watch; once found, place it on the sidetable 1."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 1 -> OBS: You open the drawer 1. The drawer 1 is open. In it, you see nothing."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see nothing."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 3 -> OBS: You arrive at drawer 3. The drawer 3 is closed."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 3 -> OBS: You open the drawer 3. The drawer 3 is open. In it, you see nothing."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 4 -> OBS: You open the drawer 4. The drawer 4 is open. In it, you see nothing."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see nothing."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to armchair 1 -> OBS: You arrive at armchair 1. On the armchair 1, you see a creditcard 2, and a newspaper 2."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to coffeetable 1 -> OBS: You arrive at coffeetable 1. On the coffeetable 1, you see a laptop 1, a watch 2, and a watch 1."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take watch 1 from coffeetable 1 -> OBS: You pick up the watch 1 from the coffeetable 1."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to sidetable 1 -> OBS: You arrive at sidetable 1. On the sidetable 1, you see a newspaper 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move watch 1 to sidetable 1 -> OBS: You move the watch 1 to the sidetable 1."
+}
+],
+"game_id": "pick_and_place_simple-Watch-None-SideTable-222/trial_T20190909_051813_197569",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_and_place_simple-Watch-None-SideTable-222/trial_T20190909_051813_197569/game.tw-pddl",
+"task_type": "pick_and_place_simple",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "put some watch on sidetable.",
+"plan": "Look in the drawers and around the room for the watch; once found, place it on the sidetable 1.",
+"actions": [
+"go to drawer 1",
+"open drawer 1",
+"go to drawer 2",
+"open drawer 2",
+"go to drawer 3",
+"open drawer 3",
+"open drawer 4",
+"go to garbagecan 1",
+"go to armchair 1",
+"go to coffeetable 1",
+"take watch 1 from coffeetable 1",
+"go to sidetable 1",
+"move watch 1 to sidetable 1"
+],
+"expert_actions": [
+"look",
+"open drawer 1",
+"close drawer 1",
+"open drawer 2",
+"close drawer 2",
+"open drawer 3",
+"close drawer 3",
+"go to sidetable 1",
+"go to sidetable 1",
+"go to sidetable 1",
+"take watch 1 from coffeetable 1",
+"go to sidetable 1",
+"move watch 1 to sidetable 1"
+],
+"n_actor_steps": 13,
+"invalid_actions": 0,
+"hit_cap": false,
+"seed_base": 2205971232,
+"seeds_used": [
+2205971232,
+2205971233,
+2205971234,
+2205971235,
+2205971236,
+2205971237,
+2205971238,
+2205971239,
+2205971240,
+2205971241,
+2205971242,
+2205971243,
+2205971244,
+2205971245
+],
+"n_llm_calls": 14,
+"tokens": 17629,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 10.1
+},
+"alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00": {
+"run_id": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r00",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Check under the desk lamp on desk 2 for the CD, then pick it up and place it on shelf 5."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to desk 2 -> OBS: You arrive at desk 2. On the desk 2, you see a book 1, a pen 2, a pen 1, and a pencil 2."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cd 2."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 2 from shelf 1 -> OBS: You pick up the cd 2 from the shelf 1."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 2 -> OBS: There's nothing special about cd 2."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 5 -> OBS: You arrive at shelf 5. On the shelf 5, you see nothing."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 2 to shelf 5 -> OBS: You move the cd 2 to the shelf 5."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine shelf 5 -> OBS: On the shelf 5, you see a cd 2."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 2 from shelf 5 -> OBS: You pick up the cd 2 from the shelf 5."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 2 -> OBS: There's nothing special about cd 2."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 2 to shelf 3 -> OBS: You move the cd 2 to the shelf 3."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine shelf 3 -> OBS: On the shelf 3, you see a cd 2."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 2 from shelf 3 -> OBS: You pick up the cd 2 from the shelf 3."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 2 -> OBS: There's nothing special about cd 2."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 2 to shelf 5 -> OBS: You move the cd 2 to the shelf 5."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 2 from shelf 5 -> OBS: You pick up the cd 2 from the shelf 5."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 2 -> OBS: There's nothing special about cd 2."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine shelf 5 -> OBS: On the shelf 5, you see nothing."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a creditcard 3."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine shelf 4 -> OBS: On the shelf 4, you see a creditcard 3."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 2 to shelf 4 -> OBS: You move the cd 2 to the shelf 4."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 2 from shelf 4 -> OBS: You pick up the cd 2 from the shelf 4."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 2 -> OBS: There's nothing special about cd 2."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to desk 1 -> OBS: You arrive at desk 1. On the desk 1, you see a cd 1, a cellphone 1, a creditcard 2, and a creditcard 1."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 2 to desk 1 -> OBS: You move the cd 2 to the desk 1."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine desk 1 -> OBS: On the desk 1, you see a cd 2, a cd 1, a cellphone 1, a creditcard 2, and a creditcard 1."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 1 from desk 1 -> OBS: You pick up the cd 1 from the desk 1."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 1 -> OBS: There's nothing special about cd 1."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 1 to desk 1 -> OBS: You move the cd 1 to the desk 1."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 1 from desk 1 -> OBS: You pick up the cd 1 from the desk 1."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 1 -> OBS: There's nothing special about cd 1."
+}
+],
+"game_id": "look_at_obj_in_light-CD-None-DeskLamp-320/trial_T20190907_224451_655673",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/look_at_obj_in_light-CD-None-DeskLamp-320/trial_T20190907_224451_655673/game.tw-pddl",
+"task_type": "look_at_obj_in_light",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "look at cd under the desklamp.",
+"plan": "Check under the desk lamp on desk 2 for the CD, then pick it up and place it on shelf 5.",
+"actions": [
+"go to desk 2",
+"go to shelf 1",
+"take cd 2 from shelf 1",
+"examine cd 2",
+"go to shelf 5",
+"move cd 2 to shelf 5",
+"examine shelf 5",
+"take cd 2 from shelf 5",
+"examine cd 2",
+"move cd 2 to shelf 3",
+"examine shelf 3",
+"take cd 2 from shelf 3",
+"examine cd 2",
+"move cd 2 to shelf 5",
+"take cd 2 from shelf 5",
+"examine cd 2",
+"examine shelf 5",
+"go to shelf 4",
+"examine shelf 4",
+"move cd 2 to shelf 4",
+"take cd 2 from shelf 4",
+"examine cd 2",
+"go to desk 1",
+"move cd 2 to desk 1",
+"examine desk 1",
+"take cd 1 from desk 1",
+"examine cd 1",
+"move cd 1 to desk 1",
+"take cd 1 from desk 1",
+"examine cd 1"
+],
+"expert_actions": [
+"look",
+"go to shelf 1",
+"take cd 2 from shelf 1",
+"go to shelf 2",
+"go to shelf 2",
+"go to shelf 2",
+"go to shelf 1",
+"take cd 2 from shelf 5",
+"go to shelf 1",
+"go to shelf 1",
+"look",
+"look",
+"go to shelf 1",
+"go to shelf 1",
+"look",
+"go to shelf 1",
+"go to shelf 1",
+"go to shelf 1",
+"go to shelf 1",
+"go to shelf 1",
+"go to shelf 5",
+"go to shelf 1",
+"go to shelf 1",
+"go to shelf 1",
+"take cd 1 from desk 1",
+"take cd 1 from desk 1",
+"go to shelf 1",
+"go to shelf 1",
+"take cd 2 from desk 1",
+"go to shelf 1"
+],
+"n_actor_steps": 30,
+"invalid_actions": 0,
+"hit_cap": true,
+"seed_base": 910892978,
+"seeds_used": [
+910892978,
+910892979,
+910892980,
+910892981,
+910892982,
+910892983,
+910892984,
+910892985,
+910892986,
+910892987,
+910892988,
+910892989,
+910892990,
+910892991,
+910892992,
+910892993,
+910892994,
+910892995,
+910892996,
+910892997,
+910892998,
+910892999,
+910893000,
+910893001,
+910893002,
+910893003,
+910893004,
+910893005,
+910893006,
+910893007,
+910893008
+],
+"n_llm_calls": 31,
+"tokens": 47890,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 21.5
+},
+"alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r01": {
+"run_id": "alf_valid_seen_look_at_obj_in_light-CD-None-DeskLamp-320__trial_T20190907_224451_655673_r01",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look under desk 1 where the desklamp is located, retrieve the CD, and place it on shelf 3."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to desk 1 -> OBS: You arrive at desk 1. On the desk 1, you see a cd 1, a cellphone 1, a creditcard 2, and a creditcard 1."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 1 from desk 1 -> OBS: You pick up the cd 1 from the desk 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 1 -> OBS: There's nothing special about cd 1."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 1 to desk 1 -> OBS: You move the cd 1 to the desk 1."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 3 -> OBS: You arrive at shelf 3. On the shelf 3, you see nothing."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine shelf 3 -> OBS: On the shelf 3, you see nothing."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to desk 1 -> OBS: You arrive at desk 1. On the desk 1, you see a cd 1, a cellphone 1, a creditcard 2, and a creditcard 1."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 1 from desk 1 -> OBS: You pick up the cd 1 from the desk 1."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 1 to desk 1 -> OBS: You move the cd 1 to the desk 1."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 1 from desk 1 -> OBS: You pick up the cd 1 from the desk 1."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 1 -> OBS: There's nothing special about cd 1."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine desk 1 -> OBS: On the desk 1, you see a cellphone 1, a creditcard 2, and a creditcard 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to desk 2 -> OBS: You arrive at desk 2. On the desk 2, you see a book 1, a pen 2, a pen 1, and a pencil 2."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 1 to desk 2 -> OBS: You move the cd 1 to the desk 2."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 1 from desk 2 -> OBS: You pick up the cd 1 from the desk 2."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 1 -> OBS: There's nothing special about cd 1."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 1 to desk 2 -> OBS: You move the cd 1 to the desk 2."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 2 -> OBS: You arrive at shelf 2. On the shelf 2, you see a alarmclock 1, and a desklamp 1."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to desk 1 -> OBS: You arrive at desk 1. On the desk 1, you see a cellphone 1, a creditcard 2, and a creditcard 1."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine desk 1 -> OBS: On the desk 1, you see a cellphone 1, a creditcard 2, and a creditcard 1."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to desk 2 -> OBS: You arrive at desk 2. On the desk 2, you see a book 1, a cd 1, a pen 2, a pen 1, and a pencil 2."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 1 from desk 2 -> OBS: You pick up the cd 1 from the desk 2."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 1 -> OBS: There's nothing special about cd 1."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 1 to desk 2 -> OBS: You move the cd 1 to the desk 2."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to desk 1 -> OBS: You arrive at desk 1. On the desk 1, you see a cellphone 1, a creditcard 2, and a creditcard 1."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to desk 2 -> OBS: You arrive at desk 2. On the desk 2, you see a book 1, a cd 1, a pen 2, a pen 1, and a pencil 2."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take cd 1 from desk 2 -> OBS: You pick up the cd 1 from the desk 2."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cd 1 -> OBS: There's nothing special about cd 1."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine desk 2 -> OBS: On the desk 2, you see a book 1, a pen 2, a pen 1, and a pencil 2."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move cd 1 to desk 2 -> OBS: You move the cd 1 to the desk 2."
+}
+],
+"game_id": "look_at_obj_in_light-CD-None-DeskLamp-320/trial_T20190907_224451_655673",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/look_at_obj_in_light-CD-None-DeskLamp-320/trial_T20190907_224451_655673/game.tw-pddl",
+"task_type": "look_at_obj_in_light",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "look at cd under the desklamp.",
+"plan": "Look under desk 1 where the desklamp is located, retrieve the CD, and place it on shelf 3.",
+"actions": [
+"go to desk 1",
+"take cd 1 from desk 1",
+"examine cd 1",
+"move cd 1 to desk 1",
+"go to shelf 3",
+"examine shelf 3",
+"go to desk 1",
+"take cd 1 from desk 1",
+"move cd 1 to desk 1",
+"take cd 1 from desk 1",
+"examine cd 1",
+"examine desk 1",
+"go to desk 2",
+"move cd 1 to desk 2",
+"take cd 1 from desk 2",
+"examine cd 1",
+"move cd 1 to desk 2",
+"go to shelf 2",
+"go to desk 1",
+"examine desk 1",
+"go to desk 2",
+"take cd 1 from desk 2",
+"examine cd 1",
+"move cd 1 to desk 2",
+"go to desk 1",
+"go to desk 2",
+"take cd 1 from desk 2",
+"examine cd 1",
+"examine desk 2",
+"move cd 1 to desk 2"
+],
+"expert_actions": [
+"look",
+"take cd 1 from desk 1",
+"go to shelf 1",
+"go to shelf 1",
+"help",
+"go to desk 1",
+"go to desk 1",
+"take cd 1 from desk 1",
+"go to shelf 1",
+"examine desk 1",
+"go to shelf 1",
+"go to shelf 1",
+"go to shelf 1",
+"go to shelf 1",
+"go to desk 1",
+"go to shelf 1",
+"go to shelf 1",
+"examine desk 2",
+"go to desk 2",
+"go to desk 2",
+"go to desk 2",
+"take cd 1 from desk 2",
+"go to shelf 2",
+"go to shelf 2",
+"go to desk 1",
+"go to desk 2",
+"take cd 1 from desk 2",
+"go to shelf 2",
+"go to shelf 2",
+"go to shelf 2"
+],
+"n_actor_steps": 30,
+"invalid_actions": 1,
+"hit_cap": true,
+"seed_base": 1095511844,
+"seeds_used": [
+1095511844,
+1095511845,
+1095511846,
+1095511847,
+1095511848,
+1095511849,
+1095511850,
+1095511851,
+1095511852,
+1095511853,
+1095511854,
+1095511855,
+1095511856,
+1095511857,
+1095511858,
+1095511859,
+1095511860,
+1095511861,
+1095511862,
+1095511863,
+1095511864,
+1095511865,
+1095511866,
+1095511867,
+1095511868,
+1095511869,
+1095511870,
+1095511871,
+1095511872,
+1095511873,
+1095511874
+],
+"n_llm_calls": 31,
+"tokens": 49968,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 23.3
+},
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00": {
+"run_id": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r00",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the candle on the shelves. Once found, place the candle in the cart."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 2 -> OBS: You arrive at shelf 2. On the shelf 2, you see nothing."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 3 -> OBS: You arrive at shelf 3. On the shelf 3, you see nothing."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cart 1 -> OBS: You arrive at cart 1. On the cart 1, you see a dishsponge 1, a spraybottle 3, and a spraybottle 2."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, and a soapbar 1."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to handtowelholder 1 -> OBS: You arrive at handtowelholder 1. On the handtowelholder 1, you see nothing."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to towelholder 1 -> OBS: You arrive at towelholder 1. On the towelholder 1, you see a towel 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to sinkbasin 1 -> OBS: You arrive at sinkbasin 1. On the sinkbasin 1, you see a dishsponge 2."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, and a soapbar 1."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 2 -> OBS: You arrive at shelf 2. On the shelf 2, you see nothing."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 3 -> OBS: You arrive at shelf 3. On the shelf 3, you see nothing."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, and a soapbar 1."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, and a soapbar 1."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 2 -> OBS: You arrive at shelf 2. On the shelf 2, you see nothing."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+}
+],
+"game_id": "pick_and_place_simple-Candle-None-Cart-401/trial_T20190909_081908_677973",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_and_place_simple-Candle-None-Cart-401/trial_T20190909_081908_677973/game.tw-pddl",
+"task_type": "pick_and_place_simple",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "put a candle in cart.",
+"plan": "Look for the candle on the shelves. Once found, place the candle in the cart.",
+"actions": [
+"go to shelf 1",
+"go to shelf 2",
+"go to shelf 3",
+"go to shelf 4",
+"go to garbagecan 1",
+"go to cart 1",
+"go to shelf 1",
+"go to shelf 4",
+"go to bathtubbasin 1",
+"go to garbagecan 1",
+"go to handtowelholder 1",
+"go to towelholder 1",
+"go to sinkbasin 1",
+"go to garbagecan 1",
+"go to bathtubbasin 1",
+"go to shelf 1",
+"go to shelf 4",
+"go to shelf 1",
+"go to shelf 2",
+"go to shelf 3",
+"go to bathtubbasin 1",
+"go to garbagecan 1",
+"go to shelf 1",
+"go to shelf 4",
+"go to garbagecan 1",
+"go to bathtubbasin 1",
+"go to shelf 1",
+"go to shelf 2",
+"go to shelf 1",
+"go to shelf 4"
+],
+"expert_actions": [
+"look",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1"
+],
+"n_actor_steps": 30,
+"invalid_actions": 0,
+"hit_cap": true,
+"seed_base": 406362752,
+"seeds_used": [
+406362752,
+406362753,
+406362754,
+406362755,
+406362756,
+406362757,
+406362758,
+406362759,
+406362760,
+406362761,
+406362762,
+406362763,
+406362764,
+406362765,
+406362766,
+406362767,
+406362768,
+406362769,
+406362770,
+406362771,
+406362772,
+406362773,
+406362774,
+406362775,
+406362776,
+406362777,
+406362778,
+406362779,
+406362780,
+406362781,
+406362782
+],
+"n_llm_calls": 31,
+"tokens": 50555,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 23.5
+},
+"alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r01": {
+"run_id": "alf_valid_seen_pick_and_place_simple-Candle-None-Cart-401__trial_T20190909_081908_677973_r01",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the candle on one of the shelves. Once found, place the candle in the cart."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 2 -> OBS: You arrive at shelf 2. On the shelf 2, you see nothing."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 3 -> OBS: You arrive at shelf 3. On the shelf 3, you see nothing."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cart 1 -> OBS: You arrive at cart 1. On the cart 1, you see a dishsponge 1, a spraybottle 3, and a spraybottle 2."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine shelf 4 -> OBS: On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 2 -> OBS: You arrive at shelf 2. On the shelf 2, you see nothing."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 3 -> OBS: You arrive at shelf 3. On the shelf 3, you see nothing."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, and a soapbar 1."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to handtowelholder 1 -> OBS: You arrive at handtowelholder 1. On the handtowelholder 1, you see nothing."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to towelholder 1 -> OBS: You arrive at towelholder 1. On the towelholder 1, you see a towel 1."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, and a soapbar 1."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, and a soapbar 1."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, and a soapbar 1."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine shelf 1 -> OBS: On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 4 -> OBS: You arrive at shelf 4. On the shelf 4, you see a soapbottle 1, and a toiletpaper 1."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 1 -> OBS: You arrive at shelf 1. On the shelf 1, you see a cloth 1, and a toiletpaper 2."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to shelf 2 -> OBS: You arrive at shelf 2. On the shelf 2, you see nothing."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 2, and a soapbar 1."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbottle 2."
+}
+],
+"game_id": "pick_and_place_simple-Candle-None-Cart-401/trial_T20190909_081908_677973",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_and_place_simple-Candle-None-Cart-401/trial_T20190909_081908_677973/game.tw-pddl",
+"task_type": "pick_and_place_simple",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "put a candle in cart.",
+"plan": "Look for the candle on one of the shelves. Once found, place the candle in the cart.",
+"actions": [
+"go to shelf 1",
+"go to shelf 2",
+"go to shelf 3",
+"go to shelf 4",
+"go to cart 1",
+"go to garbagecan 1",
+"go to shelf 1",
+"go to shelf 4",
+"examine shelf 4",
+"go to shelf 1",
+"go to shelf 2",
+"go to shelf 3",
+"go to bathtubbasin 1",
+"go to handtowelholder 1",
+"go to towelholder 1",
+"go to bathtubbasin 1",
+"go to garbagecan 1",
+"go to bathtubbasin 1",
+"go to garbagecan 1",
+"go to bathtubbasin 1",
+"go to garbagecan 1",
+"go to shelf 1",
+"go to shelf 4",
+"go to shelf 1",
+"examine shelf 1",
+"go to shelf 4",
+"go to shelf 1",
+"go to shelf 2",
+"go to bathtubbasin 1",
+"go to garbagecan 1"
+],
+"expert_actions": [
+"look",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1"
+],
+"n_actor_steps": 30,
+"invalid_actions": 0,
+"hit_cap": true,
+"seed_base": 1866443286,
+"seeds_used": [
+1866443286,
+1866443287,
+1866443288,
+1866443289,
+1866443290,
+1866443291,
+1866443292,
+1866443293,
+1866443294,
+1866443295,
+1866443296,
+1866443297,
+1866443298,
+1866443299,
+1866443300,
+1866443301,
+1866443302,
+1866443303,
+1866443304,
+1866443305,
+1866443306,
+1866443307,
+1866443308,
+1866443309,
+1866443310,
+1866443311,
+1866443312,
+1866443313,
+1866443314,
+1866443315,
+1866443316
+],
+"n_llm_calls": 31,
+"tokens": 50364,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 24.2
+},
+"alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01": {
+"run_id": "alf_valid_seen_pick_and_place_simple-Watch-None-SideTable-222__trial_T20190909_051813_197569_r01",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look in the drawers for the watch, retrieve it, and then place it on sidetable 1."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 1 -> OBS: You open the drawer 1. The drawer 1 is open. In it, you see nothing."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see nothing."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 3 -> OBS: You arrive at drawer 3. The drawer 3 is closed."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 3 -> OBS: You open the drawer 3. The drawer 3 is open. In it, you see nothing."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 4 -> OBS: You open the drawer 4. The drawer 4 is open. In it, you see nothing."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 5 -> OBS: You arrive at drawer 5. The drawer 5 is closed."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 5 -> OBS: You open the drawer 5. The drawer 5 is open. In it, you see nothing."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 6 -> OBS: You open the drawer 6. The drawer 6 is open. In it, you see nothing."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see nothing."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to sidetable 1 -> OBS: You arrive at sidetable 1. On the sidetable 1, you see a newspaper 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "look",
+"content": "ACTION: look -> OBS: You are facing the sidetable 1. Next to it, you see nothing."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine sidetable 1 -> OBS: On the sidetable 1, you see a newspaper 1."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to armchair 1 -> OBS: You arrive at armchair 1. On the armchair 1, you see a creditcard 2, and a newspaper 2."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine armchair 1 -> OBS: On the armchair 1, you see a creditcard 2, and a newspaper 2."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to sofa 1 -> OBS: You arrive at sofa 1. On the sofa 1, you see a box 1, a keychain 1, and a remotecontrol 1."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine sofa 1 -> OBS: On the sofa 1, you see a box 1, a keychain 1, and a remotecontrol 1."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take box 1 from sofa 1 -> OBS: You pick up the box 1 from the sofa 1."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine box 1 -> OBS: This is a normal box 1. In it, you see nothing."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to tvstand 1 -> OBS: You arrive at tvstand 1. On the tvstand 1, you see a remotecontrol 3, a statue 2, a statue 1, and a television 1."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine tvstand 1 -> OBS: On the tvstand 1, you see a remotecontrol 3, a statue 2, a statue 1, and a television 1."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to coffeetable 1 -> OBS: You arrive at coffeetable 1. On the coffeetable 1, you see a laptop 1, a watch 2, and a watch 1."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine coffeetable 1 -> OBS: On the coffeetable 1, you see a laptop 1, a watch 2, and a watch 1."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine coffeetable 1 -> OBS: On the coffeetable 1, you see a laptop 1, a watch 2, and a watch 1."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move box 1 to coffeetable 1 -> OBS: You move the box 1 to the coffeetable 1."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take watch 1 from coffeetable 1 -> OBS: You pick up the watch 1 from the coffeetable 1."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to sidetable 1 -> OBS: You arrive at sidetable 1. On the sidetable 1, you see a newspaper 1."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move watch 1 to sidetable 1 -> OBS: You move the watch 1 to the sidetable 1."
+}
+],
+"game_id": "pick_and_place_simple-Watch-None-SideTable-222/trial_T20190909_051813_197569",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_and_place_simple-Watch-None-SideTable-222/trial_T20190909_051813_197569/game.tw-pddl",
+"task_type": "pick_and_place_simple",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "put some watch on sidetable.",
+"plan": "Look in the drawers for the watch, retrieve it, and then place it on sidetable 1.",
+"actions": [
+"go to drawer 1",
+"open drawer 1",
+"go to drawer 2",
+"open drawer 2",
+"go to drawer 3",
+"open drawer 3",
+"open drawer 4",
+"go to drawer 5",
+"open drawer 5",
+"open drawer 6",
+"go to garbagecan 1",
+"go to sidetable 1",
+"look",
+"examine sidetable 1",
+"go to armchair 1",
+"examine armchair 1",
+"go to sofa 1",
+"examine sofa 1",
+"take box 1 from sofa 1",
+"examine box 1",
+"go to tvstand 1",
+"examine tvstand 1",
+"go to coffeetable 1",
+"examine coffeetable 1",
+"examine coffeetable 1",
+"move box 1 to coffeetable 1",
+"take watch 1 from coffeetable 1",
+"go to sidetable 1",
+"move watch 1 to sidetable 1"
+],
+"expert_actions": [
+"look",
+"open drawer 1",
+"close drawer 1",
+"open drawer 2",
+"close drawer 2",
+"open drawer 3",
+"close drawer 3",
+"go to sidetable 1",
+"open drawer 5",
+"close drawer 5",
+"go to sidetable 1",
+"go to sidetable 1",
+"go to sidetable 2",
+"go to sidetable 2",
+"go to sidetable 2",
+"go to sidetable 2",
+"go to sidetable 2",
+"go to sidetable 2",
+"go to sidetable 2",
+"move box 1 to sofa 1",
+"move box 1 to sofa 1",
+"go to sofa 1",
+"go to sofa 1",
+"go to sofa 1",
+"go to sofa 1",
+"go to sofa 1",
+"take watch 2 from coffeetable 1",
+"go to sidetable 1",
+"look"
+],
+"n_actor_steps": 29,
+"invalid_actions": 3,
+"hit_cap": false,
+"seed_base": 4101718966,
+"seeds_used": [
+4101718966,
+4101718967,
+4101718968,
+4101718969,
+4101718970,
+4101718971,
+4101718972,
+4101718973,
+4101718974,
+4101718975,
+4101718976,
+4101718977,
+4101718978,
+4101718979,
+4101718980,
+4101718981,
+4101718982,
+4101718983,
+4101718984,
+4101718985,
+4101718986,
+4101718987,
+4101718988,
+4101718989,
+4101718990,
+4101718991,
+4101718992,
+4101718993,
+4101718994,
+4101718995
+],
+"n_llm_calls": 30,
+"tokens": 46002,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 20.7
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00": {
+"run_id": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r00",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look in countertop 1 for the clean soapbar, pick it up, and place it in cabinet 4."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a candle 3."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 4 -> OBS: You arrive at cabinet 4. The cabinet 4 is closed."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 4 -> OBS: You open the cabinet 4. The cabinet 4 is open. In it, you see a spraybottle 3."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close cabinet 4 -> OBS: You close the cabinet 4."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbar 4."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take soapbar 4 from garbagecan 1 -> OBS: You pick up the soapbar 4 from the garbagecan 1."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine soapbar 4 -> OBS: There's nothing special about soapbar 4."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move soapbar 4 to garbagecan 1 -> OBS: You move the soapbar 4 to the garbagecan 1."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take soapbar 4 from garbagecan 1 -> OBS: You pick up the soapbar 4 from the garbagecan 1."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine soapbar 4 -> OBS: There's nothing special about soapbar 4."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to sinkbasin 1 -> OBS: You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "clean",
+"content": "ACTION: clean soapbar 4 with sinkbasin 1 -> OBS: You clean the soapbar 4 using the sinkbasin 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move soapbar 4 to sinkbasin 1 -> OBS: You move the soapbar 4 to the sinkbasin 1."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take soapbar 4 from sinkbasin 1 -> OBS: You pick up the soapbar 4 from the sinkbasin 1."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 1 -> OBS: You arrive at cabinet 1. The cabinet 1 is closed."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 1 -> OBS: You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close cabinet 1 -> OBS: You close the cabinet 1."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 2 -> OBS: You arrive at cabinet 2. The cabinet 2 is closed."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 2 -> OBS: You open the cabinet 2. The cabinet 2 is open. In it, you see a candle 2, a soapbottle 2, and a spraybottle 2."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move soapbar 4 to cabinet 2 -> OBS: You move the soapbar 4 to the cabinet 2."
+}
+],
+"game_id": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402/trial_T20190908_055221_984342",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402/trial_T20190908_055221_984342/game.tw-pddl",
+"task_type": "pick_clean_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "put a clean soapbar in cabinet.",
+"plan": "Look in countertop 1 for the clean soapbar, pick it up, and place it in cabinet 4.",
+"actions": [
+"go to countertop 1",
+"go to cabinet 4",
+"open cabinet 4",
+"close cabinet 4",
+"go to garbagecan 1",
+"take soapbar 4 from garbagecan 1",
+"examine soapbar 4",
+"move soapbar 4 to garbagecan 1",
+"take soapbar 4 from garbagecan 1",
+"examine soapbar 4",
+"go to sinkbasin 1",
+"clean soapbar 4 with sinkbasin 1",
+"move soapbar 4 to sinkbasin 1",
+"take soapbar 4 from sinkbasin 1",
+"go to cabinet 1",
+"open cabinet 1",
+"close cabinet 1",
+"go to cabinet 2",
+"open cabinet 2",
+"move soapbar 4 to cabinet 2"
+],
+"expert_actions": [
+"look",
+"go to toilet 1",
+"open cabinet 4",
+"close cabinet 4",
+"go to toilet 1",
+"take soapbar 4 from garbagecan 1",
+"go to sinkbasin 2",
+"go to sinkbasin 2",
+"go to toiletpaperhanger 1",
+"go to sinkbasin 2",
+"go to sinkbasin 2",
+"clean soapbar 4 with sinkbasin 1",
+"go to cabinet 1",
+"go to garbagecan 1",
+"go to cabinet 1",
+"open cabinet 1",
+"move soapbar 4 to cabinet 1",
+"examine cabinet 1",
+"open cabinet 2",
+"move soapbar 4 to cabinet 2"
+],
+"n_actor_steps": 20,
+"invalid_actions": 1,
+"hit_cap": false,
+"seed_base": 2242798505,
+"seeds_used": [
+2242798505,
+2242798506,
+2242798507,
+2242798508,
+2242798509,
+2242798510,
+2242798511,
+2242798512,
+2242798513,
+2242798514,
+2242798515,
+2242798516,
+2242798517,
+2242798518,
+2242798519,
+2242798520,
+2242798521,
+2242798522,
+2242798523,
+2242798524,
+2242798525
+],
+"n_llm_calls": 21,
+"tokens": 36201,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 15.9
+},
+"alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00": {
+"run_id": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r00",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the plate on the countertop or dining table, cool it down for a moment if needed, then place it in cabinet 10."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a peppershaker 1, and a saltshaker 2."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a bowl 1, a bread 1, a sink 1, a spatula 2, and a statue 2."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to diningtable 1 -> OBS: You arrive at diningtable 1. On the diningtable 1, you see a book 2, a book 1, a bowl 2, a butterknife 1, a fork 2, a fork 1, a houseplant 1, a lettuce 2, a lettuce 1, a plate 3, a spoon 1, a statue 1, a tomato 2, and a tomato 1."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take plate 3 from diningtable 1 -> OBS: You pick up the plate 3 from the diningtable 1."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to fridge 1 -> OBS: You arrive at fridge 1. The fridge 1 is closed."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open fridge 1 -> OBS: You open the fridge 1. The fridge 1 is open. In it, you see a apple 1, a bowl 3, a egg 2, a egg 1, a potato 1, and a tomato 3."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "cool",
+"content": "ACTION: cool plate 3 with fridge 1 -> OBS: You cool the plate 3 using the fridge 1."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 10 -> OBS: You arrive at cabinet 10. The cabinet 10 is closed."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 10 -> OBS: You open the cabinet 10. The cabinet 10 is open. In it, you see a vase 2."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move plate 3 to cabinet 10 -> OBS: You move the plate 3 to the cabinet 10."
+}
+],
+"game_id": "pick_cool_then_place_in_recep-Plate-None-Cabinet-7/trial_T20190907_231206_512424",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_cool_then_place_in_recep-Plate-None-Cabinet-7/trial_T20190907_231206_512424/game.tw-pddl",
+"task_type": "pick_cool_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "cool some plate and put it in cabinet.",
+"plan": "Look for the plate on the countertop or dining table, cool it down for a moment if needed, then place it in cabinet 10.",
+"actions": [
+"go to countertop 1",
+"go to countertop 2",
+"go to diningtable 1",
+"take plate 3 from diningtable 1",
+"go to fridge 1",
+"open fridge 1",
+"cool plate 3 with fridge 1",
+"go to cabinet 10",
+"open cabinet 10",
+"move plate 3 to cabinet 10"
+],
+"expert_actions": [
+"look",
+"look",
+"go to toaster 1",
+"take plate 3 from diningtable 1",
+"go to fridge 1",
+"cool plate 3 with fridge 1",
+"cool plate 3 with fridge 1",
+"close fridge 1",
+"open cabinet 10",
+"move plate 3 to cabinet 10"
+],
+"n_actor_steps": 10,
+"invalid_actions": 0,
+"hit_cap": false,
+"seed_base": 2417176280,
+"seeds_used": [
+2417176280,
+2417176281,
+2417176282,
+2417176283,
+2417176284,
+2417176285,
+2417176286,
+2417176287,
+2417176288,
+2417176289,
+2417176290
+],
+"n_llm_calls": 11,
+"tokens": 19798,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 10.3
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16__trial_T20190909_051630_092360_r00": {
+"run_id": "alf_valid_seen_pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16__trial_T20190909_051630_092360_r00",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look in cabinet 1 for the clean lettuce, take it out, and place it on countertop 1."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 1 -> OBS: You arrive at cabinet 1. The cabinet 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 1 -> OBS: You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to fridge 1 -> OBS: You arrive at fridge 1. The fridge 1 is closed."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open fridge 1 -> OBS: You open the fridge 1. The fridge 1 is open. In it, you see a plate 3, a potato 1, and a tomato 1."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close fridge 1 -> OBS: You close the fridge 1."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 2 -> OBS: You arrive at cabinet 2. The cabinet 2 is closed."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 2 -> OBS: You open the cabinet 2. The cabinet 2 is open. In it, you see nothing."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 3 -> OBS: You arrive at cabinet 3. The cabinet 3 is closed."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 3 -> OBS: You open the cabinet 3. The cabinet 3 is open. In it, you see nothing."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 4 -> OBS: You arrive at cabinet 4. The cabinet 4 is closed."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 4 -> OBS: You open the cabinet 4. The cabinet 4 is open. In it, you see nothing."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 5 -> OBS: You arrive at cabinet 5. The cabinet 5 is closed."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 5 -> OBS: You open the cabinet 5. The cabinet 5 is open. In it, you see a peppershaker 1."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close cabinet 5 -> OBS: You close the cabinet 5."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 6 -> OBS: You arrive at cabinet 6. The cabinet 6 is closed."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 6 -> OBS: You open the cabinet 6. The cabinet 6 is open. In it, you see nothing."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 7 -> OBS: You arrive at cabinet 7. On the cabinet 7, you see nothing."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 8 -> OBS: You arrive at cabinet 8. The cabinet 8 is closed."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 8 -> OBS: You open the cabinet 8. The cabinet 8 is open. In it, you see nothing."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 9 -> OBS: You arrive at cabinet 9. The cabinet 9 is closed."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 9 -> OBS: You open the cabinet 9. The cabinet 9 is open. In it, you see nothing."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 10 -> OBS: You arrive at cabinet 10. The cabinet 10 is closed."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 10 -> OBS: You open the cabinet 10. The cabinet 10 is open. In it, you see nothing."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 11 -> OBS: You arrive at cabinet 11. The cabinet 11 is closed."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 11 -> OBS: You open the cabinet 11. The cabinet 11 is open. In it, you see nothing."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 12 -> OBS: You arrive at cabinet 12. On the cabinet 12, you see nothing."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 3 -> OBS: You arrive at cabinet 3. The cabinet 3 is open. In it, you see nothing."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 13 -> OBS: You arrive at cabinet 13. On the cabinet 13, you see nothing."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 14 -> OBS: You arrive at cabinet 14. The cabinet 14 is closed."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 14 -> OBS: You open the cabinet 14. The cabinet 14 is open. In it, you see nothing."
+}
+],
+"game_id": "pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16/trial_T20190909_051630_092360",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16/trial_T20190909_051630_092360/game.tw-pddl",
+"task_type": "pick_clean_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "put a clean lettuce in countertop.",
+"plan": "Look in cabinet 1 for the clean lettuce, take it out, and place it on countertop 1.",
+"actions": [
+"go to cabinet 1",
+"open cabinet 1",
+"go to fridge 1",
+"open fridge 1",
+"close fridge 1",
+"go to cabinet 2",
+"open cabinet 2",
+"go to cabinet 3",
+"open cabinet 3",
+"go to cabinet 4",
+"open cabinet 4",
+"go to cabinet 5",
+"open cabinet 5",
+"close cabinet 5",
+"go to cabinet 6",
+"open cabinet 6",
+"go to cabinet 7",
+"go to cabinet 8",
+"open cabinet 8",
+"go to cabinet 9",
+"open cabinet 9",
+"go to cabinet 10",
+"open cabinet 10",
+"go to cabinet 11",
+"open cabinet 11",
+"go to cabinet 12",
+"go to cabinet 3",
+"go to cabinet 13",
+"go to cabinet 14",
+"open cabinet 14"
+],
+"expert_actions": [
+"look",
+"open cabinet 1",
+"close cabinet 1",
+"open fridge 1",
+"close fridge 1",
+"go to sinkbasin 1",
+"open cabinet 2",
+"close cabinet 2",
+"open cabinet 3",
+"close cabinet 3",
+"open cabinet 4",
+"close cabinet 4",
+"open cabinet 5",
+"close cabinet 5",
+"go to sinkbasin 1",
+"open cabinet 6",
+"close cabinet 6",
+"go to sinkbasin 1",
+"open cabinet 8",
+"close cabinet 8",
+"open cabinet 9",
+"close cabinet 9",
+"open cabinet 10",
+"close cabinet 10",
+"open cabinet 11",
+"close cabinet 11",
+"go to sinkbasin 1",
+"go to sinkbasin 1",
+"go to sinkbasin 1",
+"open cabinet 14"
+],
+"n_actor_steps": 30,
+"invalid_actions": 1,
+"hit_cap": true,
+"seed_base": 991213863,
+"seeds_used": [
+991213863,
+991213864,
+991213865,
+991213866,
+991213867,
+991213868,
+991213869,
+991213870,
+991213871,
+991213872,
+991213873,
+991213874,
+991213875,
+991213876,
+991213877,
+991213878,
+991213879,
+991213880,
+991213881,
+991213882,
+991213883,
+991213884,
+991213885,
+991213886,
+991213887,
+991213888,
+991213889,
+991213890,
+991213891,
+991213892,
+991213893
+],
+"n_llm_calls": 31,
+"tokens": 66311,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 29.0
+},
+"alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r01": {
+"run_id": "alf_valid_seen_pick_cool_then_place_in_recep-Plate-None-Cabinet-7__trial_T20190907_231206_512424_r01",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the plate on the countertop or dining table, place it in the fridge to cool, and then put it back in cabinet 5."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a peppershaker 1, and a saltshaker 2."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a bowl 1, a bread 1, a sink 1, a spatula 2, and a statue 2."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to diningtable 1 -> OBS: You arrive at diningtable 1. On the diningtable 1, you see a book 2, a book 1, a bowl 2, a butterknife 1, a fork 2, a fork 1, a houseplant 1, a lettuce 2, a lettuce 1, a plate 3, a spoon 1, a statue 1, a tomato 2, and a tomato 1."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take plate 3 from diningtable 1 -> OBS: You pick up the plate 3 from the diningtable 1."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to fridge 1 -> OBS: You arrive at fridge 1. The fridge 1 is closed."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open fridge 1 -> OBS: You open the fridge 1. The fridge 1 is open. In it, you see a apple 1, a bowl 3, a egg 2, a egg 1, a potato 1, and a tomato 3."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "cool",
+"content": "ACTION: cool plate 3 with fridge 1 -> OBS: You cool the plate 3 using the fridge 1."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close fridge 1 -> OBS: You close the fridge 1."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 5 -> OBS: You arrive at cabinet 5. The cabinet 5 is closed."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 5 -> OBS: You open the cabinet 5. The cabinet 5 is open. In it, you see nothing."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move plate 3 to cabinet 5 -> OBS: You move the plate 3 to the cabinet 5."
+}
+],
+"game_id": "pick_cool_then_place_in_recep-Plate-None-Cabinet-7/trial_T20190907_231206_512424",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_cool_then_place_in_recep-Plate-None-Cabinet-7/trial_T20190907_231206_512424/game.tw-pddl",
+"task_type": "pick_cool_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "cool some plate and put it in cabinet.",
+"plan": "Look for the plate on the countertop or dining table, place it in the fridge to cool, and then put it back in cabinet 5.",
+"actions": [
+"go to countertop 1",
+"go to countertop 2",
+"go to diningtable 1",
+"take plate 3 from diningtable 1",
+"go to fridge 1",
+"open fridge 1",
+"cool plate 3 with fridge 1",
+"close fridge 1",
+"go to cabinet 5",
+"open cabinet 5",
+"move plate 3 to cabinet 5"
+],
+"expert_actions": [
+"look",
+"look",
+"go to toaster 1",
+"take plate 3 from diningtable 1",
+"go to fridge 1",
+"cool plate 3 with fridge 1",
+"cool plate 3 with fridge 1",
+"close fridge 1",
+"go to cabinet 1",
+"open cabinet 5",
+"move plate 3 to cabinet 5"
+],
+"n_actor_steps": 11,
+"invalid_actions": 0,
+"hit_cap": false,
+"seed_base": 3876855374,
+"seeds_used": [
+3876855374,
+3876855375,
+3876855376,
+3876855377,
+3876855378,
+3876855379,
+3876855380,
+3876855381,
+3876855382,
+3876855383,
+3876855384,
+3876855385
+],
+"n_llm_calls": 12,
+"tokens": 21838,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 10.3
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16__trial_T20190909_051630_092360_r01": {
+"run_id": "alf_valid_seen_pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16__trial_T20190909_051630_092360_r01",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the clean lettuce in cabinets 1 through 27. Once found, place it on countertop 1."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 1 -> OBS: You arrive at cabinet 1. The cabinet 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 1 -> OBS: You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 2 -> OBS: You arrive at cabinet 2. The cabinet 2 is closed."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 2 -> OBS: You open the cabinet 2. The cabinet 2 is open. In it, you see nothing."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 3 -> OBS: You arrive at cabinet 3. The cabinet 3 is closed."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 3 -> OBS: You open the cabinet 3. The cabinet 3 is open. In it, you see nothing."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 4 -> OBS: You arrive at cabinet 4. The cabinet 4 is closed."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 4 -> OBS: You open the cabinet 4. The cabinet 4 is open. In it, you see nothing."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 5 -> OBS: You arrive at cabinet 5. The cabinet 5 is closed."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 5 -> OBS: You open the cabinet 5. The cabinet 5 is open. In it, you see a peppershaker 1."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 6 -> OBS: You arrive at cabinet 6. The cabinet 6 is closed."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 6 -> OBS: You open the cabinet 6. The cabinet 6 is open. In it, you see nothing."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 7 -> OBS: You arrive at cabinet 7. On the cabinet 7, you see nothing."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 8 -> OBS: You arrive at cabinet 8. The cabinet 8 is closed."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 8 -> OBS: You open the cabinet 8. The cabinet 8 is open. In it, you see nothing."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 9 -> OBS: You arrive at cabinet 9. The cabinet 9 is closed."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 9 -> OBS: You open the cabinet 9. The cabinet 9 is open. In it, you see nothing."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 10 -> OBS: You arrive at cabinet 10. The cabinet 10 is closed."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 10 -> OBS: You open the cabinet 10. The cabinet 10 is open. In it, you see nothing."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 11 -> OBS: You arrive at cabinet 11. The cabinet 11 is closed."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 11 -> OBS: You open the cabinet 11. The cabinet 11 is open. In it, you see nothing."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 12 -> OBS: You arrive at cabinet 12. On the cabinet 12, you see nothing."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cabinet 13 -> OBS: On the cabinet 13, you see nothing."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 14 -> OBS: You arrive at cabinet 14. The cabinet 14 is closed."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 14 -> OBS: You open the cabinet 14. The cabinet 14 is open. In it, you see nothing."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 15 -> OBS: You arrive at cabinet 15. On the cabinet 15, you see nothing."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 16 -> OBS: You arrive at cabinet 16. The cabinet 16 is closed."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 16 -> OBS: You open the cabinet 16. The cabinet 16 is open. In it, you see nothing."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 17 -> OBS: You arrive at cabinet 17. The cabinet 17 is closed."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 17 -> OBS: You open the cabinet 17. The cabinet 17 is open. In it, you see a peppershaker 3, a saltshaker 2, and a winebottle 3."
+}
+],
+"game_id": "pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16/trial_T20190909_051630_092360",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16/trial_T20190909_051630_092360/game.tw-pddl",
+"task_type": "pick_clean_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "put a clean lettuce in countertop.",
+"plan": "Look for the clean lettuce in cabinets 1 through 27. Once found, place it on countertop 1.",
+"actions": [
+"go to cabinet 1",
+"open cabinet 1",
+"go to cabinet 2",
+"open cabinet 2",
+"go to cabinet 3",
+"open cabinet 3",
+"go to cabinet 4",
+"open cabinet 4",
+"go to cabinet 5",
+"open cabinet 5",
+"go to cabinet 6",
+"open cabinet 6",
+"go to cabinet 7",
+"go to cabinet 8",
+"open cabinet 8",
+"go to cabinet 9",
+"open cabinet 9",
+"go to cabinet 10",
+"open cabinet 10",
+"go to cabinet 11",
+"open cabinet 11",
+"go to cabinet 12",
+"examine cabinet 13",
+"go to cabinet 14",
+"open cabinet 14",
+"go to cabinet 15",
+"go to cabinet 16",
+"open cabinet 16",
+"go to cabinet 17",
+"open cabinet 17"
+],
+"expert_actions": [
+"look",
+"open cabinet 1",
+"close cabinet 1",
+"open cabinet 2",
+"close cabinet 2",
+"open cabinet 3",
+"close cabinet 3",
+"open cabinet 4",
+"close cabinet 4",
+"open cabinet 5",
+"close cabinet 5",
+"open cabinet 6",
+"close cabinet 6",
+"go to sinkbasin 1",
+"open cabinet 8",
+"close cabinet 8",
+"open cabinet 9",
+"close cabinet 9",
+"open cabinet 10",
+"close cabinet 10",
+"open cabinet 11",
+"close cabinet 11",
+"go to sinkbasin 1",
+"go to sinkbasin 1",
+"open cabinet 14",
+"close cabinet 14",
+"go to sinkbasin 1",
+"open cabinet 16",
+"close cabinet 16",
+"open cabinet 17"
+],
+"n_actor_steps": 30,
+"invalid_actions": 0,
+"hit_cap": true,
+"seed_base": 1276348849,
+"seeds_used": [
+1276348849,
+1276348850,
+1276348851,
+1276348852,
+1276348853,
+1276348854,
+1276348855,
+1276348856,
+1276348857,
+1276348858,
+1276348859,
+1276348860,
+1276348861,
+1276348862,
+1276348863,
+1276348864,
+1276348865,
+1276348866,
+1276348867,
+1276348868,
+1276348869,
+1276348870,
+1276348871,
+1276348872,
+1276348873,
+1276348874,
+1276348875,
+1276348876,
+1276348877,
+1276348878,
+1276348879
+],
+"n_llm_calls": 31,
+"tokens": 66329,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 29.9
+},
+"alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r01": {
+"run_id": "alf_valid_seen_pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402__trial_T20190908_055221_984342_r01",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the clean soapbar on the countertop or in the bathroom area. Once found, place it in cabinet 1."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a candle 3."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to sinkbasin 1 -> OBS: You arrive at sinkbasin 1. On the sinkbasin 1, you see nothing."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see nothing."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 1 -> OBS: You arrive at cabinet 1. The cabinet 1 is closed."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 1 -> OBS: You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 2 -> OBS: You arrive at cabinet 2. The cabinet 2 is closed."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 2 -> OBS: You open the cabinet 2. The cabinet 2 is open. In it, you see a candle 2, a soapbottle 2, and a spraybottle 2."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take soapbottle 2 from cabinet 2 -> OBS: You pick up the soapbottle 2 from the cabinet 2."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine soapbottle 2 -> OBS: There's nothing special about soapbottle 2."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close cabinet 2 -> OBS: You close the cabinet 2."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 3 -> OBS: You arrive at cabinet 3. The cabinet 3 is closed."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 3 -> OBS: You open the cabinet 3. The cabinet 3 is open. In it, you see nothing."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 4 -> OBS: You arrive at cabinet 4. The cabinet 4 is closed."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 4 -> OBS: You open the cabinet 4. The cabinet 4 is open. In it, you see a spraybottle 3."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 2 -> OBS: You arrive at cabinet 2. The cabinet 2 is closed."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to garbagecan 1 -> OBS: You arrive at garbagecan 1. On the garbagecan 1, you see a soapbar 4."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move soapbottle 2 to garbagecan 1 -> OBS: You move the soapbottle 2 to the garbagecan 1."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take soapbar 4 from garbagecan 1 -> OBS: You pick up the soapbar 4 from the garbagecan 1."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine soapbar 4 -> OBS: There's nothing special about soapbar 4."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 1 -> OBS: You arrive at cabinet 1. The cabinet 1 is open. In it, you see nothing."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move soapbar 4 to cabinet 1 -> OBS: You move the soapbar 4 to the cabinet 1."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close cabinet 1 -> OBS: You close the cabinet 1."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cabinet 1 -> OBS: The cabinet 1 is closed."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine cabinet 1 -> OBS: The cabinet 1 is closed."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 1 -> OBS: You open the cabinet 1. The cabinet 1 is open. In it, you see a soapbar 4."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take soapbar 4 from cabinet 1 -> OBS: You pick up the soapbar 4 from the cabinet 1."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move soapbar 4 to cabinet 3 -> OBS: You move the soapbar 4 to the cabinet 3."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take soapbar 4 from cabinet 3 -> OBS: You pick up the soapbar 4 from the cabinet 3."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move soapbar 4 to cabinet 1 -> OBS: You move the soapbar 4 to the cabinet 1."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take soapbar 4 from cabinet 1 -> OBS: You pick up the soapbar 4 from the cabinet 1."
+}
+],
+"game_id": "pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402/trial_T20190908_055221_984342",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_clean_then_place_in_recep-SoapBar-None-Cabinet-402/trial_T20190908_055221_984342/game.tw-pddl",
+"task_type": "pick_clean_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "put a clean soapbar in cabinet.",
+"plan": "Look for the clean soapbar on the countertop or in the bathroom area. Once found, place it in cabinet 1.",
+"actions": [
+"go to countertop 1",
+"go to sinkbasin 1",
+"go to bathtubbasin 1",
+"go to cabinet 1",
+"open cabinet 1",
+"go to cabinet 2",
+"open cabinet 2",
+"take soapbottle 2 from cabinet 2",
+"examine soapbottle 2",
+"close cabinet 2",
+"go to cabinet 3",
+"open cabinet 3",
+"go to cabinet 4",
+"open cabinet 4",
+"go to cabinet 2",
+"go to garbagecan 1",
+"move soapbottle 2 to garbagecan 1",
+"take soapbar 4 from garbagecan 1",
+"examine soapbar 4",
+"go to cabinet 1",
+"move soapbar 4 to cabinet 1",
+"close cabinet 1",
+"examine cabinet 1",
+"examine cabinet 1",
+"open cabinet 1",
+"take soapbar 4 from cabinet 1",
+"move soapbar 4 to cabinet 3",
+"take soapbar 4 from cabinet 3",
+"move soapbar 4 to cabinet 1",
+"take soapbar 4 from cabinet 1"
+],
+"expert_actions": [
+"look",
+"go to toilet 1",
+"go to toilet 1",
+"go to toilet 1",
+"open cabinet 1",
+"close cabinet 1",
+"open cabinet 2",
+"close cabinet 2",
+"move soapbottle 2 to cabinet 2",
+"move soapbottle 2 to cabinet 2",
+"look",
+"go to cabinet 2",
+"go to cabinet 2",
+"go to cabinet 2",
+"go to cabinet 2",
+"look",
+"go to cabinet 2",
+"take soapbar 4 from garbagecan 1",
+"go to sinkbasin 2",
+"go to sinkbasin 2",
+"go to sinkbasin 2",
+"go to garbagecan 1",
+"go to garbagecan 1",
+"go to garbagecan 1",
+"go to garbagecan 1",
+"take soapbar 4 from cabinet 1",
+"go to sinkbasin 2",
+"look",
+"go to sinkbasin 2",
+"look"
+],
+"n_actor_steps": 30,
+"invalid_actions": 1,
+"hit_cap": true,
+"seed_base": 4071183167,
+"seeds_used": [
+4071183167,
+4071183168,
+4071183169,
+4071183170,
+4071183171,
+4071183172,
+4071183173,
+4071183174,
+4071183175,
+4071183176,
+4071183177,
+4071183178,
+4071183179,
+4071183180,
+4071183181,
+4071183182,
+4071183183,
+4071183184,
+4071183185,
+4071183186,
+4071183187,
+4071183188,
+4071183189,
+4071183190,
+4071183191,
+4071183192,
+4071183193,
+4071183194,
+4071183195,
+4071183196,
+4071183197
+],
+"n_llm_calls": 31,
+"tokens": 58647,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 21.6
+},
+"alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r01": {
+"run_id": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r01",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look inside the fridge to find the lettuce, take it out, and then place it on countertop 1."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to fridge 1 -> OBS: You arrive at fridge 1. The fridge 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open fridge 1 -> OBS: You open the fridge 1. The fridge 1 is open. In it, you see a cup 1, a mug 2, a plate 1, a pot 1, a potato 1, a tomato 2, and a tomato 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close fridge 1 -> OBS: You close the fridge 1."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 1 -> OBS: You arrive at cabinet 1. The cabinet 1 is closed."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 1 -> OBS: You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 2 -> OBS: You arrive at cabinet 2. The cabinet 2 is closed."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 2 -> OBS: You open the cabinet 2. The cabinet 2 is open. In it, you see nothing."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 3 -> OBS: You arrive at cabinet 3. The cabinet 3 is closed."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 3 -> OBS: You open the cabinet 3. The cabinet 3 is open. In it, you see nothing."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 4 -> OBS: You arrive at cabinet 4. On the cabinet 4, you see nothing."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 5 -> OBS: You arrive at cabinet 5. The cabinet 5 is closed."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 5 -> OBS: You open the cabinet 5. The cabinet 5 is open. In it, you see nothing."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 6 -> OBS: You arrive at cabinet 6. The cabinet 6 is closed."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 6 -> OBS: You open the cabinet 6. The cabinet 6 is open. In it, you see a kettle 1."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 7 -> OBS: You arrive at cabinet 7. The cabinet 7 is closed."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 7 -> OBS: You open the cabinet 7. The cabinet 7 is open. In it, you see nothing."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 8 -> OBS: You arrive at cabinet 8. The cabinet 8 is closed."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 8 -> OBS: You open the cabinet 8. The cabinet 8 is open. In it, you see a plate 2."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 9 -> OBS: You arrive at cabinet 9. The cabinet 9 is closed."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 9 -> OBS: You open the cabinet 9. The cabinet 9 is open. In it, you see nothing."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a apple 1, a creditcard 1, a fork 1, a glassbottle 1, a lettuce 1, a saltshaker 2, and a spatula 1."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take lettuce 1 from countertop 1 -> OBS: You pick up the lettuce 1 from the countertop 1."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to fridge 1 -> OBS: You arrive at fridge 1. The fridge 1 is closed."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open fridge 1 -> OBS: You open the fridge 1. The fridge 1 is open. In it, you see a cup 1, a mug 2, a plate 1, a pot 1, a potato 1, a tomato 2, and a tomato 1."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "cool",
+"content": "ACTION: cool lettuce 1 with fridge 1 -> OBS: You cool the lettuce 1 using the fridge 1."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close fridge 1 -> OBS: You close the fridge 1."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a apple 1, a creditcard 1, a fork 1, a glassbottle 1, a saltshaker 2, and a spatula 1."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move lettuce 1 to countertop 1 -> OBS: You move the lettuce 1 to the countertop 1."
+}
+],
+"game_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1/trial_T20190908_042713_075616",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1/trial_T20190908_042713_075616/game.tw-pddl",
+"task_type": "pick_cool_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "cool some lettuce and put it in countertop.",
+"plan": "Look inside the fridge to find the lettuce, take it out, and then place it on countertop 1.",
+"actions": [
+"go to fridge 1",
+"open fridge 1",
+"close fridge 1",
+"go to cabinet 1",
+"open cabinet 1",
+"go to cabinet 2",
+"open cabinet 2",
+"go to cabinet 3",
+"open cabinet 3",
+"go to cabinet 4",
+"go to cabinet 5",
+"open cabinet 5",
+"go to cabinet 6",
+"open cabinet 6",
+"go to cabinet 7",
+"open cabinet 7",
+"go to cabinet 8",
+"open cabinet 8",
+"go to cabinet 9",
+"open cabinet 9",
+"go to countertop 1",
+"take lettuce 1 from countertop 1",
+"go to fridge 1",
+"open fridge 1",
+"cool lettuce 1 with fridge 1",
+"close fridge 1",
+"go to countertop 1",
+"move lettuce 1 to countertop 1"
+],
+"expert_actions": [
+"look",
+"open fridge 1",
+"close fridge 1",
+"go to sinkbasin 1",
+"open cabinet 1",
+"close cabinet 1",
+"open cabinet 2",
+"close cabinet 2",
+"open cabinet 3",
+"close cabinet 3",
+"go to sinkbasin 1",
+"open cabinet 5",
+"close cabinet 5",
+"open cabinet 6",
+"close cabinet 6",
+"open cabinet 7",
+"close cabinet 7",
+"open cabinet 8",
+"close cabinet 8",
+"open cabinet 9",
+"close cabinet 9",
+"take lettuce 1 from countertop 1",
+"go to fridge 1",
+"cool lettuce 1 with fridge 1",
+"cool lettuce 1 with fridge 1",
+"close fridge 1",
+"go to countertop 1",
+"move lettuce 1 to countertop 1"
+],
+"n_actor_steps": 28,
+"invalid_actions": 1,
+"hit_cap": false,
+"seed_base": 1836193786,
+"seeds_used": [
+1836193786,
+1836193787,
+1836193788,
+1836193789,
+1836193790,
+1836193791,
+1836193792,
+1836193793,
+1836193794,
+1836193795,
+1836193796,
+1836193797,
+1836193798,
+1836193799,
+1836193800,
+1836193801,
+1836193802,
+1836193803,
+1836193804,
+1836193805,
+1836193806,
+1836193807,
+1836193808,
+1836193809,
+1836193810,
+1836193811,
+1836193812,
+1836193813,
+1836193814
+],
+"n_llm_calls": 29,
+"tokens": 58802,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 23.6
+},
+"alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r00": {
+"run_id": "alf_valid_seen_pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1__trial_T20190908_042713_075616_r00",
+"outcome": "success",
+"final_answer": "won",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the lettuce in the fridge 1, take it out, and place it on countertop 1 to cool."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to fridge 1 -> OBS: You arrive at fridge 1. The fridge 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open fridge 1 -> OBS: You open the fridge 1. The fridge 1 is open. In it, you see a cup 1, a mug 2, a plate 1, a pot 1, a potato 1, a tomato 2, and a tomato 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close fridge 1 -> OBS: You close the fridge 1."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 1 -> OBS: You arrive at cabinet 1. The cabinet 1 is closed."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 1 -> OBS: You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 2 -> OBS: You arrive at cabinet 2. The cabinet 2 is closed."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 2 -> OBS: You open the cabinet 2. The cabinet 2 is open. In it, you see nothing."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 3 -> OBS: You arrive at cabinet 3. The cabinet 3 is closed."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 3 -> OBS: You open the cabinet 3. The cabinet 3 is open. In it, you see nothing."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 4 -> OBS: You arrive at cabinet 4. On the cabinet 4, you see nothing."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 5 -> OBS: You arrive at cabinet 5. The cabinet 5 is closed."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 5 -> OBS: You open the cabinet 5. The cabinet 5 is open. In it, you see nothing."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 6 -> OBS: You arrive at cabinet 6. The cabinet 6 is closed."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 6 -> OBS: You open the cabinet 6. The cabinet 6 is open. In it, you see a kettle 1."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 7 -> OBS: You arrive at cabinet 7. The cabinet 7 is closed."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 7 -> OBS: You open the cabinet 7. The cabinet 7 is open. In it, you see nothing."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 8 -> OBS: You arrive at cabinet 8. The cabinet 8 is closed."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 8 -> OBS: You open the cabinet 8. The cabinet 8 is open. In it, you see a plate 2."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a apple 1, a creditcard 1, a fork 1, a glassbottle 1, a lettuce 1, a saltshaker 2, and a spatula 1."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take lettuce 1 from countertop 1 -> OBS: You pick up the lettuce 1 from the countertop 1."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "look",
+"content": "ACTION: look -> OBS: You are facing the countertop 1. Next to it, you see nothing."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "look",
+"content": "ACTION: look -> OBS: You are facing the countertop 1. Next to it, you see nothing."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "look",
+"content": "ACTION: look -> OBS: You are facing the countertop 1. Next to it, you see nothing."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "look",
+"content": "ACTION: look -> OBS: You are facing the countertop 1. Next to it, you see nothing."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "look",
+"content": "ACTION: look -> OBS: You are facing the countertop 1. Next to it, you see nothing."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to fridge 1 -> OBS: You arrive at fridge 1. The fridge 1 is closed."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open fridge 1 -> OBS: You open the fridge 1. The fridge 1 is open. In it, you see a cup 1, a mug 2, a plate 1, a pot 1, a potato 1, a tomato 2, and a tomato 1."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "cool",
+"content": "ACTION: cool lettuce 1 with fridge 1 -> OBS: You cool the lettuce 1 using the fridge 1."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a apple 1, a creditcard 1, a fork 1, a glassbottle 1, a saltshaker 2, and a spatula 1."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move lettuce 1 to countertop 1 -> OBS: You move the lettuce 1 to the countertop 1."
+}
+],
+"game_id": "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1/trial_T20190908_042713_075616",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1/trial_T20190908_042713_075616/game.tw-pddl",
+"task_type": "pick_cool_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "cool some lettuce and put it in countertop.",
+"plan": "Look for the lettuce in the fridge 1, take it out, and place it on countertop 1 to cool.",
+"actions": [
+"go to fridge 1",
+"open fridge 1",
+"close fridge 1",
+"go to cabinet 1",
+"open cabinet 1",
+"go to cabinet 2",
+"open cabinet 2",
+"go to cabinet 3",
+"open cabinet 3",
+"go to cabinet 4",
+"go to cabinet 5",
+"open cabinet 5",
+"go to cabinet 6",
+"open cabinet 6",
+"go to cabinet 7",
+"open cabinet 7",
+"go to cabinet 8",
+"open cabinet 8",
+"go to countertop 1",
+"take lettuce 1 from countertop 1",
+"look",
+"look",
+"look",
+"look",
+"look",
+"go to fridge 1",
+"open fridge 1",
+"cool lettuce 1 with fridge 1",
+"go to countertop 1",
+"move lettuce 1 to countertop 1"
+],
+"expert_actions": [
+"look",
+"open fridge 1",
+"close fridge 1",
+"go to sinkbasin 1",
+"open cabinet 1",
+"close cabinet 1",
+"open cabinet 2",
+"close cabinet 2",
+"open cabinet 3",
+"close cabinet 3",
+"go to sinkbasin 1",
+"open cabinet 5",
+"close cabinet 5",
+"open cabinet 6",
+"close cabinet 6",
+"open cabinet 7",
+"close cabinet 7",
+"open cabinet 8",
+"close cabinet 8",
+"take lettuce 1 from countertop 1",
+"go to fridge 1",
+"go to fridge 1",
+"go to fridge 1",
+"go to fridge 1",
+"go to fridge 1",
+"go to fridge 1",
+"cool lettuce 1 with fridge 1",
+"cool lettuce 1 with fridge 1",
+"close fridge 1",
+"move lettuce 1 to countertop 1"
+],
+"n_actor_steps": 30,
+"invalid_actions": 5,
+"hit_cap": false,
+"seed_base": 443885420,
+"seeds_used": [
+443885420,
+443885421,
+443885422,
+443885423,
+443885424,
+443885425,
+443885426,
+443885427,
+443885428,
+443885429,
+443885430,
+443885431,
+443885432,
+443885433,
+443885434,
+443885435,
+443885436,
+443885437,
+443885438,
+443885439,
+443885440,
+443885441,
+443885442,
+443885443,
+443885444,
+443885445,
+443885446,
+443885447,
+443885448,
+443885449,
+443885450
+],
+"n_llm_calls": 31,
+"tokens": 63822,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 27.0
+},
+"alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Dresser-311__trial_T20190907_201917_045715_r00": {
+"run_id": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Dresser-311__trial_T20190907_201917_045715_r00",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Search the countertop and both drawers for the credit cards. Once found, place both credit cards in the dresser."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a creditcard 3, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take creditcard 3 from countertop 1 -> OBS: You pick up the creditcard 3 from the countertop 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is closed."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 1 -> OBS: You open the drawer 1. The drawer 1 is open. In it, you see a cd 1."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a book 1, and a cd 2."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move creditcard 3 to drawer 2 -> OBS: You move the creditcard 3 to the drawer 2."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take creditcard 3 from drawer 2 -> OBS: You pick up the creditcard 3 from the drawer 2."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to diningtable 1 -> OBS: You arrive at diningtable 1. On the diningtable 1, you see a alarmclock 1, a bowl 2, a bowl 1, a pen 2, and a remotecontrol 1."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine diningtable 1 -> OBS: On the diningtable 1, you see a alarmclock 1, a bowl 2, a bowl 1, a pen 2, and a remotecontrol 1."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to dresser 1 -> OBS: You arrive at dresser 1. On the dresser 1, you see a keychain 2, a pen 1, a pencil 2, a pencil 1, and a television 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move creditcard 3 to dresser 1 -> OBS: You move the creditcard 3 to the dresser 1."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to diningtable 1 -> OBS: You arrive at diningtable 1. On the diningtable 1, you see a alarmclock 1, a bowl 2, a bowl 1, a pen 2, and a remotecontrol 1."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine countertop 1 -> OBS: On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is open. In it, you see a cd 1."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is open. In it, you see a book 1, and a cd 2."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close drawer 2 -> OBS: You close the drawer 2."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is open. In it, you see a cd 1."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a book 1, and a cd 2."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close drawer 2 -> OBS: You close the drawer 2."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine drawer 2 -> OBS: The drawer 2 is closed."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a book 1, and a cd 2."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close drawer 2 -> OBS: You close the drawer 2."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to diningtable 1 -> OBS: You arrive at diningtable 1. On the diningtable 1, you see a alarmclock 1, a bowl 2, a bowl 1, a pen 2, and a remotecontrol 1."
+}
+],
+"game_id": "pick_two_obj_and_place-CreditCard-None-Dresser-311/trial_T20190907_201917_045715",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_two_obj_and_place-CreditCard-None-Dresser-311/trial_T20190907_201917_045715/game.tw-pddl",
+"task_type": "pick_two_obj_and_place",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "put two creditcard in dresser.",
+"plan": "Search the countertop and both drawers for the credit cards. Once found, place both credit cards in the dresser.",
+"actions": [
+"go to countertop 1",
+"take creditcard 3 from countertop 1",
+"go to drawer 1",
+"open drawer 1",
+"go to drawer 2",
+"open drawer 2",
+"move creditcard 3 to drawer 2",
+"take creditcard 3 from drawer 2",
+"go to countertop 1",
+"go to diningtable 1",
+"examine diningtable 1",
+"go to dresser 1",
+"move creditcard 3 to dresser 1",
+"go to countertop 1",
+"go to diningtable 1",
+"go to countertop 1",
+"examine countertop 1",
+"go to drawer 1",
+"go to drawer 2",
+"close drawer 2",
+"go to countertop 1",
+"go to drawer 1",
+"go to drawer 2",
+"open drawer 2",
+"close drawer 2",
+"examine drawer 2",
+"open drawer 2",
+"close drawer 2",
+"go to countertop 1",
+"go to diningtable 1"
+],
+"expert_actions": [
+"look",
+"take creditcard 3 from countertop 1",
+"go to dresser 1",
+"open drawer 1",
+"close drawer 1",
+"open drawer 2",
+"close drawer 2",
+"go to countertop 1",
+"go to dresser 1",
+"go to dresser 1",
+"go to dresser 1",
+"go to dresser 1",
+"move creditcard 3 to dresser 1",
+"go to drawer 2",
+"go to drawer 2",
+"go to drawer 2",
+"go to drawer 2",
+"go to drawer 2",
+"go to drawer 2",
+"look",
+"look",
+"go to drawer 2",
+"go to drawer 2",
+"look",
+"look",
+"look",
+"look",
+"look",
+"look",
+"go to drawer 2"
+],
+"n_actor_steps": 30,
+"invalid_actions": 0,
+"hit_cap": true,
+"seed_base": 3510130161,
+"seeds_used": [
+3510130161,
+3510130162,
+3510130163,
+3510130164,
+3510130165,
+3510130166,
+3510130167,
+3510130168,
+3510130169,
+3510130170,
+3510130171,
+3510130172,
+3510130173,
+3510130174,
+3510130175,
+3510130176,
+3510130177,
+3510130178,
+3510130179,
+3510130180,
+3510130181,
+3510130182,
+3510130183,
+3510130184,
+3510130185,
+3510130186,
+3510130187,
+3510130188,
+3510130189,
+3510130190,
+3510130191
+],
+"n_llm_calls": 31,
+"tokens": 51954,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 24.1
+},
+"alf_valid_seen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1__trial_T20190907_222640_487432_r00": {
+"run_id": "alf_valid_seen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1__trial_T20190907_222640_487432_r00",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the hot mug on the nearest countertop and pick it up. Then, place the mug in the coffeemachine 1."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a egg 1, a fork 2, a kettle 1, a peppershaker 1, and a vase 2."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a mug 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from countertop 2 -> OBS: You pick up the mug 2 from the countertop 2."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to coffeemachine 1 -> OBS: You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 2."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move mug 2 to coffeemachine 1 -> OBS: You move the mug 2 to the coffeemachine 1."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine coffeemachine 1 -> OBS: On the coffeemachine 1, you see a mug 2."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from coffeemachine 1 -> OBS: You pick up the mug 2 from the coffeemachine 1."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine mug 2 -> OBS: This is a normal mug 2. In it, you see nothing."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 3 -> OBS: You arrive at countertop 3. On the countertop 3, you see a book 1, a bowl 2, a bread 1, a butterknife 1, a knife 2, a lettuce 1, a pan 2, a papertowelroll 1, a peppershaker 3, a plate 1, a saltshaker 1, a spoon 1, a statue 1, a tomato 3, and a winebottle 1."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine mug 2 -> OBS: This is a normal mug 2. In it, you see nothing."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move mug 2 to countertop 3 -> OBS: You move the mug 2 to the countertop 3."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine countertop 3 -> OBS: On the countertop 3, you see a book 1, a bowl 2, a bread 1, a butterknife 1, a knife 2, a lettuce 1, a mug 2, a pan 2, a papertowelroll 1, a peppershaker 3, a plate 1, a saltshaker 1, a spoon 1, a statue 1, a tomato 3, and a winebottle 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from countertop 3 -> OBS: You pick up the mug 2 from the countertop 3."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to coffeemachine 1 -> OBS: You arrive at coffeemachine 1. On the coffeemachine 1, you see nothing."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move mug 2 to countertop 2 -> OBS: You move the mug 2 to the countertop 2."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from countertop 2 -> OBS: You pick up the mug 2 from the countertop 2."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to coffeemachine 1 -> OBS: You arrive at coffeemachine 1. On the coffeemachine 1, you see nothing."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine countertop 2 -> OBS: On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 1 -> OBS: You arrive at cabinet 1. The cabinet 1 is closed."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 1 -> OBS: You open the cabinet 1. The cabinet 1 is open. In it, you see nothing."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move mug 2 to cabinet 1 -> OBS: You move the mug 2 to the cabinet 1."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from cabinet 1 -> OBS: You pick up the mug 2 from the cabinet 1."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to cabinet 2 -> OBS: You arrive at cabinet 2. The cabinet 2 is closed."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open cabinet 2 -> OBS: You open the cabinet 2. The cabinet 2 is open. In it, you see nothing."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move mug 2 to cabinet 2 -> OBS: You move the mug 2 to the cabinet 2."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from cabinet 2 -> OBS: You pick up the mug 2 from the cabinet 2."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to coffeemachine 1 -> OBS: You arrive at coffeemachine 1. On the coffeemachine 1, you see nothing."
+}
+],
+"game_id": "pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1/trial_T20190907_222640_487432",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1/trial_T20190907_222640_487432/game.tw-pddl",
+"task_type": "pick_heat_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "put a hot mug in coffeemachine.",
+"plan": "Look for the hot mug on the nearest countertop and pick it up. Then, place the mug in the coffeemachine 1.",
+"actions": [
+"go to countertop 1",
+"go to countertop 2",
+"take mug 2 from countertop 2",
+"go to coffeemachine 1",
+"move mug 2 to coffeemachine 1",
+"examine coffeemachine 1",
+"take mug 2 from coffeemachine 1",
+"examine mug 2",
+"go to countertop 3",
+"examine mug 2",
+"move mug 2 to countertop 3",
+"examine countertop 3",
+"take mug 2 from countertop 3",
+"go to coffeemachine 1",
+"go to countertop 2",
+"move mug 2 to countertop 2",
+"take mug 2 from countertop 2",
+"go to coffeemachine 1",
+"go to countertop 2",
+"examine countertop 2",
+"go to cabinet 1",
+"open cabinet 1",
+"move mug 2 to cabinet 1",
+"take mug 2 from cabinet 1",
+"go to countertop 2",
+"go to cabinet 2",
+"open cabinet 2",
+"move mug 2 to cabinet 2",
+"take mug 2 from cabinet 2",
+"go to coffeemachine 1"
+],
+"expert_actions": [
+"look",
+"go to toaster 1",
+"take mug 2 from countertop 2",
+"go to microwave 1",
+"go to microwave 1",
+"take mug 2 from coffeemachine 1",
+"take mug 2 from coffeemachine 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to coffeemachine 1",
+"take mug 2 from countertop 3",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to countertop 3",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to countertop 2",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to cabinet 1",
+"go to microwave 1"
+],
+"n_actor_steps": 30,
+"invalid_actions": 0,
+"hit_cap": true,
+"seed_base": 2070869920,
+"seeds_used": [
+2070869920,
+2070869921,
+2070869922,
+2070869923,
+2070869924,
+2070869925,
+2070869926,
+2070869927,
+2070869928,
+2070869929,
+2070869930,
+2070869931,
+2070869932,
+2070869933,
+2070869934,
+2070869935,
+2070869936,
+2070869937,
+2070869938,
+2070869939,
+2070869940,
+2070869941,
+2070869942,
+2070869943,
+2070869944,
+2070869945,
+2070869946,
+2070869947,
+2070869948,
+2070869949,
+2070869950
+],
+"n_llm_calls": 31,
+"tokens": 65477,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 28.9
+},
+"alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Dresser-311__trial_T20190907_201917_045715_r01": {
+"run_id": "alf_valid_seen_pick_two_obj_and_place-CreditCard-None-Dresser-311__trial_T20190907_201917_045715_r01",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "First, look in both drawers for the credit cards. Once found, place the two credit cards in the dresser."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is closed."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 1 -> OBS: You open the drawer 1. The drawer 1 is open. In it, you see a cd 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a book 1, and a cd 2."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a creditcard 3, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take creditcard 3 from countertop 1 -> OBS: You pick up the creditcard 3 from the countertop 1."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to dresser 1 -> OBS: You arrive at dresser 1. On the dresser 1, you see a keychain 2, a pen 1, a pencil 2, a pencil 1, and a television 1."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move creditcard 3 to dresser 1 -> OBS: You move the creditcard 3 to the dresser 1."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to diningtable 1 -> OBS: You arrive at diningtable 1. On the diningtable 1, you see a alarmclock 1, a bowl 2, a bowl 1, a pen 2, and a remotecontrol 1."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to diningtable 1 -> OBS: You arrive at diningtable 1. On the diningtable 1, you see a alarmclock 1, a bowl 2, a bowl 1, a pen 2, and a remotecontrol 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to diningtable 1 -> OBS: You arrive at diningtable 1. On the diningtable 1, you see a alarmclock 1, a bowl 2, a bowl 1, a pen 2, and a remotecontrol 1."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine countertop 1 -> OBS: On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is open. In it, you see a cd 1."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is open. In it, you see a book 1, and a cd 2."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close drawer 2 -> OBS: You close the drawer 2."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine drawer 2 -> OBS: The drawer 2 is closed."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a book 1, and a cd 2."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is open. In it, you see a cd 1."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is open. In it, you see a cd 1."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a cellphone 1, a mirror 1, a mug 2, a mug 1, a pen 3, a pencil 3, and a remotecontrol 3."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is open. In it, you see a cd 1."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is open. In it, you see a book 1, and a cd 2."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close drawer 2 -> OBS: You close the drawer 2."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see a book 1, and a cd 2."
+}
+],
+"game_id": "pick_two_obj_and_place-CreditCard-None-Dresser-311/trial_T20190907_201917_045715",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_two_obj_and_place-CreditCard-None-Dresser-311/trial_T20190907_201917_045715/game.tw-pddl",
+"task_type": "pick_two_obj_and_place",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "put two creditcard in dresser.",
+"plan": "First, look in both drawers for the credit cards. Once found, place the two credit cards in the dresser.",
+"actions": [
+"go to drawer 1",
+"open drawer 1",
+"go to drawer 2",
+"open drawer 2",
+"go to countertop 1",
+"take creditcard 3 from countertop 1",
+"go to dresser 1",
+"move creditcard 3 to dresser 1",
+"go to countertop 1",
+"go to diningtable 1",
+"go to countertop 1",
+"go to diningtable 1",
+"go to countertop 1",
+"go to diningtable 1",
+"go to countertop 1",
+"examine countertop 1",
+"go to drawer 1",
+"go to drawer 2",
+"close drawer 2",
+"examine drawer 2",
+"open drawer 2",
+"go to countertop 1",
+"go to drawer 1",
+"go to countertop 1",
+"go to drawer 1",
+"go to countertop 1",
+"go to drawer 1",
+"go to drawer 2",
+"close drawer 2",
+"open drawer 2"
+],
+"expert_actions": [
+"look",
+"open drawer 1",
+"close drawer 1",
+"open drawer 2",
+"close drawer 2",
+"take creditcard 3 from countertop 1",
+"go to dresser 1",
+"move creditcard 3 to dresser 1",
+"go to countertop 1",
+"look",
+"go to countertop 1",
+"look",
+"go to countertop 1",
+"look",
+"go to countertop 1",
+"look",
+"look",
+"go to countertop 1",
+"go to countertop 1",
+"go to countertop 1",
+"go to countertop 1",
+"go to countertop 1",
+"look",
+"go to countertop 1",
+"look",
+"go to countertop 1",
+"look",
+"go to countertop 1",
+"go to countertop 1",
+"go to countertop 1"
+],
+"n_actor_steps": 30,
+"invalid_actions": 0,
+"hit_cap": true,
+"seed_base": 2789172583,
+"seeds_used": [
+2789172583,
+2789172584,
+2789172585,
+2789172586,
+2789172587,
+2789172588,
+2789172589,
+2789172590,
+2789172591,
+2789172592,
+2789172593,
+2789172594,
+2789172595,
+2789172596,
+2789172597,
+2789172598,
+2789172599,
+2789172600,
+2789172601,
+2789172602,
+2789172603,
+2789172604,
+2789172605,
+2789172606,
+2789172607,
+2789172608,
+2789172609,
+2789172610,
+2789172611,
+2789172612,
+2789172613
+],
+"n_llm_calls": 31,
+"tokens": 53561,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 24.6
+},
+"alf_valid_seen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1__trial_T20190907_222640_487432_r01": {
+"run_id": "alf_valid_seen_pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1__trial_T20190907_222640_487432_r01",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the hot mug on the countertop or any nearby surfaces. Once found, carefully pick it up and place it directly in the coffeemachine."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a egg 1, a fork 2, a kettle 1, a peppershaker 1, and a vase 2."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a mug 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from countertop 2 -> OBS: You pick up the mug 2 from the countertop 2."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to coffeemachine 1 -> OBS: You arrive at coffeemachine 1. On the coffeemachine 1, you see a mug 2."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move mug 2 to coffeemachine 1 -> OBS: You move the mug 2 to the coffeemachine 1."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from coffeemachine 1 -> OBS: You pick up the mug 2 from the coffeemachine 1."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine mug 2 -> OBS: This is a normal mug 2. In it, you see nothing."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine coffeemachine 1 -> OBS: On the coffeemachine 1, you see nothing."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 3 -> OBS: You arrive at countertop 3. On the countertop 3, you see a book 1, a bowl 2, a bread 1, a butterknife 1, a knife 2, a lettuce 1, a pan 2, a papertowelroll 1, a peppershaker 3, a plate 1, a saltshaker 1, a spoon 1, a statue 1, a tomato 3, and a winebottle 1."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move mug 2 to countertop 2 -> OBS: You move the mug 2 to the countertop 2."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine countertop 2 -> OBS: On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a mug 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from countertop 2 -> OBS: You pick up the mug 2 from the countertop 2."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to coffeemachine 1 -> OBS: You arrive at coffeemachine 1. On the coffeemachine 1, you see nothing."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a egg 1, a fork 2, a kettle 1, a peppershaker 1, and a vase 2."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move mug 2 to countertop 1 -> OBS: You move the mug 2 to the countertop 1."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from countertop 1 -> OBS: You pick up the mug 2 from the countertop 1."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to coffeemachine 1 -> OBS: You arrive at coffeemachine 1. On the coffeemachine 1, you see nothing."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a egg 1, a fork 2, a kettle 1, a peppershaker 1, and a vase 2."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a egg 1, a fork 2, a kettle 1, a peppershaker 1, and a vase 2."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to microwave 1 -> OBS: You arrive at microwave 1. The microwave 1 is closed."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open microwave 1 -> OBS: You open the microwave 1. The microwave 1 is open. In it, you see a cup 3."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "heat",
+"content": "ACTION: heat mug 2 with microwave 1 -> OBS: You heat the mug 2 using the microwave 1."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "close",
+"content": "ACTION: close microwave 1 -> OBS: You close the microwave 1."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 2 -> OBS: You arrive at countertop 2. On the countertop 2, you see a creditcard 3, a cup 2, a fork 3, a glassbottle 1, a houseplant 1, a knife 1, a lettuce 2, a soapbottle 1, a spatula 1, and a tomato 1."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move mug 2 to countertop 2 -> OBS: You move the mug 2 to the countertop 2."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take mug 2 from countertop 2 -> OBS: You pick up the mug 2 from the countertop 2."
+}
+],
+"game_id": "pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1/trial_T20190907_222640_487432",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_heat_then_place_in_recep-Mug-None-CoffeeMachine-1/trial_T20190907_222640_487432/game.tw-pddl",
+"task_type": "pick_heat_then_place_in_recep",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "put a hot mug in coffeemachine.",
+"plan": "Look for the hot mug on the countertop or any nearby surfaces. Once found, carefully pick it up and place it directly in the coffeemachine.",
+"actions": [
+"go to countertop 1",
+"go to countertop 2",
+"take mug 2 from countertop 2",
+"go to coffeemachine 1",
+"move mug 2 to coffeemachine 1",
+"take mug 2 from coffeemachine 1",
+"examine mug 2",
+"examine coffeemachine 1",
+"go to countertop 3",
+"go to countertop 2",
+"move mug 2 to countertop 2",
+"examine countertop 2",
+"take mug 2 from countertop 2",
+"go to coffeemachine 1",
+"go to countertop 1",
+"move mug 2 to countertop 1",
+"take mug 2 from countertop 1",
+"go to coffeemachine 1",
+"go to countertop 2",
+"go to countertop 1",
+"go to countertop 2",
+"go to countertop 1",
+"go to countertop 2",
+"go to microwave 1",
+"open microwave 1",
+"heat mug 2 with microwave 1",
+"close microwave 1",
+"go to countertop 2",
+"move mug 2 to countertop 2",
+"take mug 2 from countertop 2"
+],
+"expert_actions": [
+"look",
+"go to toaster 1",
+"take mug 2 from countertop 2",
+"go to microwave 1",
+"go to microwave 1",
+"take mug 2 from coffeemachine 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to coffeemachine 1",
+"take mug 2 from countertop 2",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to countertop 2",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"go to microwave 1",
+"heat mug 2 with microwave 1",
+"heat mug 2 with microwave 1",
+"close microwave 1",
+"go to coffeemachine 1",
+"go to coffeemachine 1",
+"go to countertop 1"
+],
+"n_actor_steps": 30,
+"invalid_actions": 0,
+"hit_cap": true,
+"seed_base": 208258870,
+"seeds_used": [
+208258870,
+208258871,
+208258872,
+208258873,
+208258874,
+208258875,
+208258876,
+208258877,
+208258878,
+208258879,
+208258880,
+208258881,
+208258882,
+208258883,
+208258884,
+208258885,
+208258886,
+208258887,
+208258888,
+208258889,
+208258890,
+208258891,
+208258892,
+208258893,
+208258894,
+208258895,
+208258896,
+208258897,
+208258898,
+208258899,
+208258900
+],
+"n_llm_calls": 31,
+"tokens": 66525,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 30.3
+},
+"alf_valid_seen_pick_two_obj_and_place-ToiletPaper-None-Drawer-423__trial_T20190907_111251_461099_r00": {
+"run_id": "alf_valid_seen_pick_two_obj_and_place-ToiletPaper-None-Drawer-423__trial_T20190907_111251_461099_r00",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the toilet paper on the toilet paper hanger 1, take two rolls, and put them in drawer 8."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toiletpaperhanger 1 -> OBS: You arrive at toiletpaperhanger 1. On the toiletpaperhanger 1, you see nothing."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 8 -> OBS: You arrive at drawer 8. The drawer 8 is closed."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 8 -> OBS: You open the drawer 8. The drawer 8 is open. In it, you see nothing."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a candle 1, and a cloth 2."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to bathtubbasin 1 -> OBS: You arrive at bathtubbasin 1. On the bathtubbasin 1, you see a cloth 1, and a soapbar 1."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toilet 1 -> OBS: You arrive at toilet 1. On the toilet 1, you see a soapbottle 1, a toiletpaper 2, and a toiletpaper 1."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toilet 1 -> OBS: You pick up the toiletpaper 1 from the toilet 1."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toilet 1 -> OBS: You move the toiletpaper 1 to the toilet 1."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 2 from toilet 1 -> OBS: You pick up the toiletpaper 2 from the toilet 1."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 2 to toilet 1 -> OBS: You move the toiletpaper 2 to the toilet 1."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toilet 1 -> OBS: You pick up the toiletpaper 1 from the toilet 1."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toilet 1 -> OBS: You move the toiletpaper 1 to the toilet 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toilet 1 -> OBS: You pick up the toiletpaper 1 from the toilet 1."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toiletpaperhanger 1 -> OBS: You arrive at toiletpaperhanger 1. On the toiletpaperhanger 1, you see nothing."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toiletpaperhanger 1 -> OBS: You move the toiletpaper 1 to the toiletpaperhanger 1."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toiletpaperhanger 1 -> OBS: You pick up the toiletpaper 1 from the toiletpaperhanger 1."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "inventory",
+"content": "ACTION: inventory -> OBS: You are carrying: a toiletpaper 1."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 8 -> OBS: You arrive at drawer 8. The drawer 8 is open. In it, you see nothing."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to drawer 8 -> OBS: You move the toiletpaper 1 to the drawer 8."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from drawer 8 -> OBS: You pick up the toiletpaper 1 from the drawer 8."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toilet 1 -> OBS: You arrive at toilet 1. On the toilet 1, you see a soapbottle 1, and a toiletpaper 2."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toilet 1 -> OBS: You move the toiletpaper 1 to the toilet 1."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 2 from toilet 1 -> OBS: You pick up the toiletpaper 2 from the toilet 1."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 2 to toilet 1 -> OBS: You move the toiletpaper 2 to the toilet 1."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 2 from toilet 1 -> OBS: You pick up the toiletpaper 2 from the toilet 1."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 2 to toilet 1 -> OBS: You move the toiletpaper 2 to the toilet 1."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toilet 1 -> OBS: You pick up the toiletpaper 1 from the toilet 1."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toilet 1 -> OBS: You move the toiletpaper 1 to the toilet 1."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toilet 1 -> OBS: You pick up the toiletpaper 1 from the toilet 1."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 8 -> OBS: You arrive at drawer 8. The drawer 8 is open. In it, you see nothing."
+}
+],
+"game_id": "pick_two_obj_and_place-ToiletPaper-None-Drawer-423/trial_T20190907_111251_461099",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_two_obj_and_place-ToiletPaper-None-Drawer-423/trial_T20190907_111251_461099/game.tw-pddl",
+"task_type": "pick_two_obj_and_place",
+"split": "valid_seen",
+"rollout": 0,
+"goal": "put two toiletpaper in drawer.",
+"plan": "Look for the toilet paper on the toilet paper hanger 1, take two rolls, and put them in drawer 8.",
+"actions": [
+"go to toiletpaperhanger 1",
+"go to drawer 8",
+"open drawer 8",
+"go to countertop 1",
+"go to bathtubbasin 1",
+"go to toilet 1",
+"take toiletpaper 1 from toilet 1",
+"move toiletpaper 1 to toilet 1",
+"take toiletpaper 2 from toilet 1",
+"move toiletpaper 2 to toilet 1",
+"take toiletpaper 1 from toilet 1",
+"move toiletpaper 1 to toilet 1",
+"take toiletpaper 1 from toilet 1",
+"go to toiletpaperhanger 1",
+"move toiletpaper 1 to toiletpaperhanger 1",
+"take toiletpaper 1 from toiletpaperhanger 1",
+"inventory",
+"go to drawer 8",
+"move toiletpaper 1 to drawer 8",
+"take toiletpaper 1 from drawer 8",
+"go to toilet 1",
+"move toiletpaper 1 to toilet 1",
+"take toiletpaper 2 from toilet 1",
+"move toiletpaper 2 to toilet 1",
+"take toiletpaper 2 from toilet 1",
+"move toiletpaper 2 to toilet 1",
+"take toiletpaper 1 from toilet 1",
+"move toiletpaper 1 to toilet 1",
+"take toiletpaper 1 from toilet 1",
+"go to drawer 8"
+],
+"expert_actions": [
+"look",
+"go to toilet 1",
+"open drawer 8",
+"close drawer 8",
+"go to toilet 1",
+"go to toilet 1",
+"take toiletpaper 1 from toilet 1",
+"go to drawer 1",
+"take toiletpaper 2 from toilet 1",
+"go to drawer 1",
+"look",
+"go to drawer 1",
+"take soapbottle 1 from toilet 1",
+"go to drawer 1",
+"go to drawer 1",
+"go to toilet 1",
+"go to drawer 1",
+"go to drawer 1",
+"move toiletpaper 1 to drawer 8",
+"go to toiletpaperhanger 1",
+"move toiletpaper 1 to drawer 8",
+"go to drawer 1",
+"take toiletpaper 2 from toilet 1",
+"go to drawer 1",
+"look",
+"go to drawer 1",
+"look",
+"go to drawer 1",
+"inventory",
+"go to drawer 1"
+],
+"n_actor_steps": 30,
+"invalid_actions": 7,
+"hit_cap": true,
+"seed_base": 1025298761,
+"seeds_used": [
+1025298761,
+1025298762,
+1025298763,
+1025298764,
+1025298765,
+1025298766,
+1025298767,
+1025298768,
+1025298769,
+1025298770,
+1025298771,
+1025298772,
+1025298773,
+1025298774,
+1025298775,
+1025298776,
+1025298777,
+1025298778,
+1025298779,
+1025298780,
+1025298781,
+1025298782,
+1025298783,
+1025298784,
+1025298785,
+1025298786,
+1025298787,
+1025298788,
+1025298789,
+1025298790,
+1025298791
+],
+"n_llm_calls": 31,
+"tokens": 50068,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 27.9
+},
+"alf_valid_seen_pick_two_obj_and_place-ToiletPaper-None-Drawer-423__trial_T20190907_111251_461099_r01": {
+"run_id": "alf_valid_seen_pick_two_obj_and_place-ToiletPaper-None-Drawer-423__trial_T20190907_111251_461099_r01",
+"outcome": "failure",
+"final_answer": "failed",
+"steps": [
+{
+"index": 0,
+"agent": "Planner",
+"action": "plan",
+"content": "Look for the toilet paper on the toilet paper hanger, take two rolls, and place them in drawer 1."
+},
+{
+"index": 1,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toiletpaperhanger 1 -> OBS: You arrive at toiletpaperhanger 1. On the toiletpaperhanger 1, you see nothing."
+},
+{
+"index": 2,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to countertop 1 -> OBS: You arrive at countertop 1. On the countertop 1, you see a candle 1, and a cloth 2."
+},
+{
+"index": 3,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 1 -> OBS: You arrive at drawer 1. The drawer 1 is closed."
+},
+{
+"index": 4,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 1 -> OBS: You open the drawer 1. The drawer 1 is open. In it, you see nothing."
+},
+{
+"index": 5,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to drawer 2 -> OBS: You arrive at drawer 2. The drawer 2 is closed."
+},
+{
+"index": 6,
+"agent": "Actor",
+"action": "open",
+"content": "ACTION: open drawer 2 -> OBS: You open the drawer 2. The drawer 2 is open. In it, you see nothing."
+},
+{
+"index": 7,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toilet 1 -> OBS: You arrive at toilet 1. On the toilet 1, you see a soapbottle 1, a toiletpaper 2, and a toiletpaper 1."
+},
+{
+"index": 8,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toilet 1 -> OBS: You pick up the toiletpaper 1 from the toilet 1."
+},
+{
+"index": 9,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toiletpaperhanger 1 -> OBS: You arrive at toiletpaperhanger 1. On the toiletpaperhanger 1, you see nothing."
+},
+{
+"index": 10,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toiletpaperhanger 1 -> OBS: You move the toiletpaper 1 to the toiletpaperhanger 1."
+},
+{
+"index": 11,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toiletpaperhanger 1 -> OBS: You pick up the toiletpaper 1 from the toiletpaperhanger 1."
+},
+{
+"index": 12,
+"agent": "Actor",
+"action": "examine",
+"content": "ACTION: examine toiletpaper 1 -> OBS: There's nothing special about toiletpaper 1."
+},
+{
+"index": 13,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toiletpaperhanger 1 -> OBS: You move the toiletpaper 1 to the toiletpaperhanger 1."
+},
+{
+"index": 14,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toiletpaperhanger 1 -> OBS: You pick up the toiletpaper 1 from the toiletpaperhanger 1."
+},
+{
+"index": 15,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toiletpaperhanger 1 -> OBS: You move the toiletpaper 1 to the toiletpaperhanger 1."
+},
+{
+"index": 16,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toiletpaperhanger 1 -> OBS: You pick up the toiletpaper 1 from the toiletpaperhanger 1."
+},
+{
+"index": 17,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toilet 1 -> OBS: You arrive at toilet 1. On the toilet 1, you see a soapbottle 1, and a toiletpaper 2."
+},
+{
+"index": 18,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toilet 1 -> OBS: You move the toiletpaper 1 to the toilet 1."
+},
+{
+"index": 19,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 2 from toilet 1 -> OBS: You pick up the toiletpaper 2 from the toilet 1."
+},
+{
+"index": 20,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 2 to toilet 1 -> OBS: You move the toiletpaper 2 to the toilet 1."
+},
+{
+"index": 21,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 2 from toilet 1 -> OBS: You pick up the toiletpaper 2 from the toilet 1."
+},
+{
+"index": 22,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 2 to toilet 1 -> OBS: You move the toiletpaper 2 to the toilet 1."
+},
+{
+"index": 23,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 2 from toilet 1 -> OBS: You pick up the toiletpaper 2 from the toilet 1."
+},
+{
+"index": 24,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 2 to toilet 1 -> OBS: You move the toiletpaper 2 to the toilet 1."
+},
+{
+"index": 25,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 2 from toilet 1 -> OBS: You pick up the toiletpaper 2 from the toilet 1."
+},
+{
+"index": 26,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 2 to toilet 1 -> OBS: You move the toiletpaper 2 to the toilet 1."
+},
+{
+"index": 27,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 1 from toilet 1 -> OBS: You pick up the toiletpaper 1 from the toilet 1."
+},
+{
+"index": 28,
+"agent": "Actor",
+"action": "move",
+"content": "ACTION: move toiletpaper 1 to toilet 1 -> OBS: You move the toiletpaper 1 to the toilet 1."
+},
+{
+"index": 29,
+"agent": "Actor",
+"action": "take",
+"content": "ACTION: take toiletpaper 2 from toilet 1 -> OBS: You pick up the toiletpaper 2 from the toilet 1."
+},
+{
+"index": 30,
+"agent": "Actor",
+"action": "go",
+"content": "ACTION: go to toiletpaperhanger 1 -> OBS: You arrive at toiletpaperhanger 1. On the toiletpaperhanger 1, you see nothing."
+}
+],
+"game_id": "pick_two_obj_and_place-ToiletPaper-None-Drawer-423/trial_T20190907_111251_461099",
+"game_file": "/path/to/workspace/alfworld_data/json_2.1.1/valid_seen/pick_two_obj_and_place-ToiletPaper-None-Drawer-423/trial_T20190907_111251_461099/game.tw-pddl",
+"task_type": "pick_two_obj_and_place",
+"split": "valid_seen",
+"rollout": 1,
+"goal": "put two toiletpaper in drawer.",
+"plan": "Look for the toilet paper on the toilet paper hanger, take two rolls, and place them in drawer 1.",
+"actions": [
+"go to toiletpaperhanger 1",
+"go to countertop 1",
+"go to drawer 1",
+"open drawer 1",
+"go to drawer 2",
+"open drawer 2",
+"go to toilet 1",
+"take toiletpaper 1 from toilet 1",
+"go to toiletpaperhanger 1",
+"move toiletpaper 1 to toiletpaperhanger 1",
+"take toiletpaper 1 from toiletpaperhanger 1",
+"examine toiletpaper 1",
+"move toiletpaper 1 to toiletpaperhanger 1",
+"take toiletpaper 1 from toiletpaperhanger 1",
+"move toiletpaper 1 to toiletpaperhanger 1",
+"take toiletpaper 1 from toiletpaperhanger 1",
+"go to toilet 1",
+"move toiletpaper 1 to toilet 1",
+"take toiletpaper 2 from toilet 1",
+"move toiletpaper 2 to toilet 1",
+"take toiletpaper 2 from toilet 1",
+"move toiletpaper 2 to toilet 1",
+"take toiletpaper 2 from toilet 1",
+"move toiletpaper 2 to toilet 1",
+"take toiletpaper 2 from toilet 1",
+"move toiletpaper 2 to toilet 1",
+"take toiletpaper 1 from toilet 1",
+"move toiletpaper 1 to toilet 1",
+"take toiletpaper 2 from toilet 1",
+"go to toiletpaperhanger 1"
+],
+"expert_actions": [
+"look",
+"go to toilet 1",
+"go to toilet 1",
+"open drawer 1",
+"close drawer 1",
+"open drawer 2",
+"close drawer 2",
+"take toiletpaper 1 from toilet 1",
+"go to drawer 1",
+"go to drawer 1",
+"go to toilet 1",
+"go to drawer 1",
+"go to drawer 1",
+"go to drawer 1",
+"go to drawer 1",
+"go to handtowelholder 4",
+"go to drawer 1",
+"go to drawer 1",
+"take toiletpaper 2 from toilet 1",
+"go to drawer 1",
+"look",
+"go to drawer 1",
+"look",
+"go to drawer 1",
+"look",
+"go to drawer 1",
+"look",
+"go to drawer 1",
+"examine toilet 1",
+"go to drawer 1"
+],
+"n_actor_steps": 30,
+"invalid_actions": 4,
+"hit_cap": true,
+"seed_base": 1243341279,
+"seeds_used": [
+1243341279,
+1243341280,
+1243341281,
+1243341282,
+1243341283,
+1243341284,
+1243341285,
+1243341286,
+1243341287,
+1243341288,
+1243341289,
+1243341290,
+1243341291,
+1243341292,
+1243341293,
+1243341294,
+1243341295,
+1243341296,
+1243341297,
+1243341298,
+1243341299,
+1243341300,
+1243341301,
+1243341302,
+1243341303,
+1243341304,
+1243341305,
+1243341306,
+1243341307,
+1243341308,
+1243341309
+],
+"n_llm_calls": 31,
+"tokens": 49835,
+"response_models": [
+"gpt-4o-mini-2024-07-18"
+],
+"wall_s": 25.8
+}
+}

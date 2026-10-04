@@ -1,0 +1,32 @@
+% Experiment 4A: reference availability on GSM8K (external tasks).
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lc}
+\toprule
+quantity & value \\
+\midrule
+tasks sampled (GSM8K test, seed 0) & 60 \\
+rollouts per task & 14 \\
+tasks with $\ge 1$ success and $\ge 1$ failure & 45/60 = 0.75 [0.63, 0.84] \\
+tasks with all rollouts successful & 2 \\
+tasks with no successful rollout (no reference) & 13 \\
+run-level success rate & 253/840 = 0.30 [0.27, 0.33] \\
+rollouts to first success (mean / median / max) & 3.85 / 3 / 13 \\
+failing runs with a reference / without & 405 / 182 \\
+RefAlign fallback rate on failing runs with a reference & 25/405 \\
+\midrule
+\multicolumn{2}{l}{\emph{agreement between methods (unlabeled runs; a proxy, not accuracy)}} \\
+RefAlign vs.\ matched judge, same step / within $\pm1$ & 0.21 [0.18, 0.25] / 0.59 \\
+RefAlign vs.\ single-trace AAO, same step & 0.17 [0.13, 0.20] \\
+matched judge vs.\ single-trace AAO, same step & 0.55 [0.50, 0.60] \\
+\bottomrule
+\end{tabular}
+\caption{Reference availability of the Planner$\to$Worker$\to$Verifier system on 60 randomly
+sampled GSM8K test problems (14 rollouts each, Qwen2.5-7B-Instruct, temperature 1.0,
+fixed seeds; problem ids in \texttt{results/new/external\_gsm8k.json}). Intervals are 95\% Wilson.
+GSM8K provides only the final answer, so there is no decisive-step ground truth: the agreement rows compare
+two attribution methods on unlabeled failing runs and must not be read as accuracy; the judge is
+\texttt{Qwen/Qwen2.5-7B-Instruct} at temperature 0. An unlabeled annotation package for
+40 failing runs is exported to \texttt{annotation/external\_pending/}.}
+\label{tab:external-availability-qwen}
+\end{table}

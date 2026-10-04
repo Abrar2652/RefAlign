@@ -1,0 +1,106 @@
+{
+ "query_id": "gsm8k_0045",
+ "query": "Meredith is a freelance blogger who writes about health topics and submits to clients each day as her permanent job. A blog article takes an average of 4 hours to research and write about. Last week, she wrote 5 articles on Monday and  2/5 times more articles on Tuesday than on Monday. On Wednesday, she wrote twice the number of articles she wrote on Tuesday. Calculate the total number of hours she spent writing articles in the three days.",
+ "ground_truth": "104.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 45,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_0045_r05",
+   "outcome": "success",
+   "final_answer": "104.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Meredith wrote 5 articles on Monday, 2/5 * 5 = 2 more on Tuesday (7 articles), and twice as many on Wednesday as Tuesday (14 articles); total articles are 5 + 7 + 14 = 26, so she spent 26 * 4 = 104 hours."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH Confirmation of calculation steps and final total articles calculation."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH Confirmation of calculation: 5 + (2/5 * 5) + 2 * (2/5 * 5)"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 5 + (2/5 * 5) + 2 * (2/5 * 5) = 11.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER 104"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 96"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0045_r03",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate the number of articles written each day, sum them up, and multiply by 4 hours per article."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH Number of articles Meredith wrote on Tuesday compared to Monday"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH Number of articles Meredith wrote on Tuesday compared to Monday"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH Number of articles Meredith wrote"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_0045_r07",
+   "outcome": "failure",
+   "final_answer": "None",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Calculate the number of articles written each day, sum the total number of articles, and multiply by the time taken per article (4 hours)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH Number of articles written on Tuesday compared to Monday"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "ANSWER SEARCH Number of articles written on Tue"
+    },
+    {
+     "index": 3,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 0"
+    }
+   ]
+  }
+ ]
+}

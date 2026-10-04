@@ -1,0 +1,105 @@
+{
+ "query_id": "real_t09",
+ "annotator": "annotator_05",
+ "labels": {
+  "real_t09_r00": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "At answer step emits a SEARCH stub instead of computing 300/3.75; no answer produced (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r01": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers 3 (floored duration); the 300/time speed division is missing (alt wrong_operation).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r02": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers 3.75 (the duration); the 300/time speed division is missing (alt premature_stop).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r03": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers 3.75 (duration) at step 4; the 300/time speed division is missing.",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r06": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers duration 3.75; the 300/time speed division is missing (alt premature_stop).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r07": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers duration 3.75; the 300/time speed division is missing (alt premature_stop).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r08": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "Answer step is a SEARCH stub instead of CALC 300/time; no answer produced (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r09": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "wrong_operation",
+   "confidence": 3,
+   "reason": "At answer step emits a SEARCH stub instead of computing 300/3.75; no answer produced (alt missing_step).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r10": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 2,
+   "reason": "ANSWER holds unevaluated 300/3.75 (=80); not reduced to a value, parsed as 3.75 (alt other/parse-artifact).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r11": {
+   "responsible_agent": "Worker",
+   "decisive_step": 4,
+   "fault_type": "missing_step",
+   "confidence": 3,
+   "reason": "Answers 3 (floored duration); the 300/time speed division is missing (alt wrong_operation).",
+   "annotator": "annotator_05",
+   "flag": null
+  },
+  "real_t09_r13": {
+   "responsible_agent": "Worker",
+   "decisive_step": 3,
+   "fault_type": "premature_stop",
+   "confidence": 2,
+   "reason": "ANSWER holds unevaluated 300/3.75 (=80); not reduced to a value, parsed as 3.75 (alt other/parse-artifact).",
+   "annotator": "annotator_05",
+   "flag": null
+  }
+ }
+}

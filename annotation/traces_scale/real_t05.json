@@ -1,0 +1,460 @@
+{
+ "query_id": "real_t05",
+ "query": "A car travels 210 km using 15 L of fuel. At the same efficiency, how many liters are needed for 350 km?",
+ "ground_truth": "25",
+ "runs": [
+  {
+   "run_id": "real_t05_r00",
+   "outcome": "success",
+   "final_answer": "25.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the fuel efficiency in liters per kilometer and then multiply it by 350 km to find the required liters of fuel."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 0.07142857142857142 * 350 = 25.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 25.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find out how many liters are needed for 350 km, we first need to determine the fuel efficiency of the car. \n\nThe car travels 210 km using 15 L of fuel, which gives us the fuel efficiency:\n\nFuel efficiency = Distance traveled / Fuel used = 210 km / 15 L = 14 km/L\n\nNow, to find out how many liters are needed for 350 km, we can use the fuel efficiency:\n\nLiters needed = Distance to travel / Fuel efficiency = 350 km / (14 km/L) = 25 L\n\nThe worker's answer of 25.0 L is correct.\n\nVERDICT: CORRECT\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r01",
+   "outcome": "success",
+   "final_answer": "25.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the fuel needed for 350 km, first calculate the fuel efficiency in liters per kilometer, then multiply that efficiency by 350 km."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 0.07142857142857142 * 350 = 25.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 25.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find the fuel needed for 350 km, we first determine the car's fuel efficiency in kilometers per liter (km/L).\n\n1. Calculate the efficiency:\n   Efficiency = Distance / Fuel = 210 km / 15 L = 14 km/L\n\n2. Now, we calculate the fuel needed for 350 km:\n   Fuel needed = Distance / Efficiency = 350 km / 14 km/L = 25 L\n\nThe worker's answer is correct.\n\nVERDICT: CORRECT\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r02",
+   "outcome": "failure",
+   "final_answer": "210.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the fuel needed for 350 km, first calculate the fuel consumption per kilometer and then multiply that by 350 km."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH fuel consumption per kilometer for the car"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 15 L / 210 km = None"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker CALC 15 / 210"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r03",
+   "outcome": "success",
+   "final_answer": "25.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find out how many liters of fuel are needed for 350 km, first calculate the fuel efficiency (liters per km) by dividing 15 L by 210 km, then multiply the result by 350 km."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 0.07142857142857142 * 350 = 25.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 25.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find out how many liters are needed for 350 km, we first determine the fuel efficiency of the car.\n\nThe car travels 210 km using 15 L of fuel, which gives us a fuel efficiency of:\n\nFuel Efficiency = Distance / Fuel Used\nFuel Efficiency = 210 km / 15 L\nFuel Efficiency = 14 km/L\n\nNow, to find out how many liters are needed for 350 km, we use the formula:\n\nLiters Needed = Distance / Fuel Efficiency\nLiters Needed = 350 km / 14 km/L\nLiters Needed = 25 L\n\nThe worker's answer of 25.0 L is correct.\n\nVERDICT: CORRECT\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r04",
+   "outcome": "failure",
+   "final_answer": "350.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the liters needed for 350 km, first calculate the fuel consumption per kilometer and then multiply by 350 km."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 L / 210 km = None"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 0.07142857142857142 * 350"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r05",
+   "outcome": "success",
+   "final_answer": "25.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the fuel efficiency (liters per km) and then multiply by 350 km to find the required liters."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 0.07142857142857142 * 350 = 25.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 25.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find out how many liters of fuel are needed for 350 km, we first need to determine the fuel efficiency based on the initial information.\n\nThe car travels 210 km using 15 L of fuel. The fuel efficiency can be calculated as follows:\n\nFuel efficiency (in L/km) = Total fuel used (L) / Distance traveled (km)  \nFuel efficiency = 15 L / 210 km \u2248 0.07143 L/km\n\nNow, to find out how many liters are needed for 350 km, we multiply the distance by the fuel efficiency:\n\nLiters needed = Fuel efficiency (L/km) \u00d7 Distance (km)  \nLiters needed = 0.07143 L/km \u00d7 350 km \u2248 25.0 L\n\nThe worker answered 25.0 liters, which matches the calculated amount.\n\nVERDICT: CORRECT\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r06",
+   "outcome": "failure",
+   "final_answer": "350.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the liters needed for 350 km, calculate the fuel efficiency (liters per km) from the initial distance and fuel, then multiply that by 350 km."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 L / 210 km = None"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 0.07142857142857142 * 350"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r07",
+   "outcome": "success",
+   "final_answer": "25.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the fuel needed for 350 km, first calculate the fuel efficiency (liters per km) and then multiply that by 350 km."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 0.07142857142857142 * 350 = 25.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 25.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find out how many liters of fuel are needed to travel 350 km at the same efficiency, we first calculate the fuel consumption rate:\n\nFuel consumption rate = Fuel used / Distance traveled  \n= 15 L / 210 km  \n= 0.07142857 L/km  \n\nNow, to find out how many liters are needed for 350 km:\n\nLiters needed = Fuel consumption rate * Distance  \n= 0.07142857 L/km * 350 km  \n= 25 L  \n\nThe worker's answer of 25.0 is correct.\n\nVERDICT: CORRECT  \nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r08",
+   "outcome": "success",
+   "final_answer": "25.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the fuel needed for 350 km, use the fuel efficiency calculated from the initial data (15 L for 210 km) to determine the required liters for the new distance."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 350 * 0.07142857142857142 = 25.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 25.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To find out how many liters are needed for 350 km, we can first determine the fuel efficiency of the car.\n\nThe car travels 210 km using 15 L of fuel, so we can calculate the efficiency as follows:\n\nEfficiency = Distance / Fuel = 210 km / 15 L = 14 km/L\n\nNow, we want to find out how many liters are needed for 350 km. We can use the efficiency we just calculated:\n\nLiters needed = Distance / Efficiency = 350 km / (14 km/L) = 25 L\n\nTherefore, the worker's answer of 25.0 L is correct.\n\nVERDICT: CORRECT\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r09",
+   "outcome": "failure",
+   "final_answer": "350.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the fuel consumption per kilometer and then multiply that rate by 350 km to find the total liters needed."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 L / 210 km = None"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 0.07142857142857142 * 350"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r10",
+   "outcome": "failure",
+   "final_answer": "350.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "First, calculate the fuel consumption rate per kilometer and then multiply it by 350 km to find the total liters of fuel needed."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 L / 210 km = None"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC 0.07142857142857142 * 350"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r11",
+   "outcome": "success",
+   "final_answer": "25.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the fuel needed for 350 km, first calculate the fuel efficiency (liters per km) and then multiply that efficiency by 350 km."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 0.07142857142857142 * 350 = 25.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 25.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 25"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r12",
+   "outcome": "success",
+   "final_answer": "25.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "To find the liters needed for 350 km, first calculate the fuel efficiency (liters per km) from the initial distance and then use that efficiency to determine the fuel required for 350 km."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 L / 210 km = None"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 0.07142857142857142 * 350 = 25.0"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER 25.0"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "To determine the fuel needed for 350 km, we first need to calculate the fuel efficiency based on the information given:\n\n1. Calculate the fuel consumption per kilometer:\n   \\[\n   \\text{Fuel consumption per km} = \\frac{15 \\text{ L}}{210 \\text{ km}} = 0.07142857 \\text{ L/km}\n   \\]\n\n2. Then, calculate the fuel needed for 350 km:\n   \\[\n   \\text{Fuel needed for 350 km} = 350 \\text{ km} \\times 0.07142857 \\text{ L/km} = 25.0 \\text{ L}\n   \\]\n\nThe worker's answer is consistent with this calculation.\n\nVERDICT: CORRECT\nFINAL: 25.0"
+    }
+   ]
+  },
+  {
+   "run_id": "real_t05_r13",
+   "outcome": "success",
+   "final_answer": "25.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Calculate the fuel consumption per kilometer and then multiply it by 350 km to find the total liters needed."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 15 / 210 = 0.07142857142857142"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "CALC 0.07142857142857142 * 350 = 25.0"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER 25.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "To determine the amount of fuel needed for 350 km, we first need to find the fuel efficiency of the car.\n\nThe car travels 210 km using 15 L of fuel. Thus, the fuel efficiency can be calculated as follows:\n\nFuel efficiency = Distance / Fuel used\nFuel efficiency = 210 km / 15 L = 14 km/L\n\nNow, to find out how many liters are needed for 350 km, we can use the fuel efficiency:\n\nFuel needed = Distance / Fuel efficiency\nFuel needed = 350 km / (14 km/L) = 25 L\n\nThe worker's answer was 25.0 L, which is correct.\n\nVERDICT: CORRECT\nFINAL: 25"
+    }
+   ]
+  }
+ ]
+}

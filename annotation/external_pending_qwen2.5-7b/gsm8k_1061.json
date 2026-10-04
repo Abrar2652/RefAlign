@@ -1,0 +1,111 @@
+{
+ "query_id": "gsm8k_1061",
+ "query": "Betsy and Donovan made a meal together. Betsy's part took 18 minutes longer than Donovan's part. The meal was made in 98 minutes. How many minutes long was Betsy's part?",
+ "ground_truth": "58.0",
+ "source": "GSM8K test",
+ "gsm8k_test_index": 1061,
+ "note": "UNLABELED external package; reference = first successful rollout; all other successful rollouts are omitted so the annotator view matches annotate.py",
+ "runs": [
+  {
+   "run_id": "gsm8k_1061_r09",
+   "outcome": "success",
+   "final_answer": "58.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Let Donovan's part be \\(d\\) minutes; then Betsy's part is \\(d + 18\\) minutes; solve \\(d + (d + 18) = 98\\) for \\(d\\), then find \\(d + 18\\)."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH how to solve a linear equation \\(d + (d + 18) = 98\\) to find \\(d\\)"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH how to solve a linear equation d + (d + 18) = 98 to find d"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "CALC 2*d + 18 = 98 = None"
+    },
+    {
+     "index": 4,
+     "agent": "Worker",
+     "content": "ANSWER 58"
+    },
+    {
+     "index": 5,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 58"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1061_r01",
+   "outcome": "failure",
+   "final_answer": "2.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Plan: Divide the total time by the sum of 1 and 18, then add 18 to half the result."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "SEARCH Donovan's part time in minutes. Let D be Donovan's part time. Betsy's part time is D + 18. The sum is D + (D + 18) = 98. Solve for D."
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH Donovan's part time in minutes"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER Worker CALC D = (98 - 18) / 2"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: WRONG\nFINAL: 53"
+    }
+   ]
+  },
+  {
+   "run_id": "gsm8k_1061_r11",
+   "outcome": "failure",
+   "final_answer": "40.0",
+   "steps": [
+    {
+     "index": 0,
+     "agent": "Planner",
+     "content": "Betsy's part took 53 minutes."
+    },
+    {
+     "index": 1,
+     "agent": "Worker",
+     "content": "CALC 98 - 18 / 2 = 89.0"
+    },
+    {
+     "index": 2,
+     "agent": "Worker",
+     "content": "SEARCH how to find one part when one part is 18 minutes longer and their sum is 98"
+    },
+    {
+     "index": 3,
+     "agent": "Worker",
+     "content": "ANSWER CALC (98 - 18) / 2 = 40.0"
+    },
+    {
+     "index": 4,
+     "agent": "Verifier",
+     "content": "VERDICT: CORRECT\nFINAL: 98"
+    }
+   ]
+  }
+ ]
+}
